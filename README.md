@@ -50,8 +50,3 @@ bash run.sh score
 
 模型提供验证集选择的图文联合 MoralLLaVA LoRA，以及作为对照的旧图像 LoRA。权重通过 Git LFS 保存，配合指定版本的 LLaVA-1.5-7B-HF 基模加载；基模需另行下载。见 [模型说明](3.1/models/README.md)。
 
-## 添加成员
-
-仓库管理员进入 [Settings → Collaborators](https://github.com/Muc-26302077/moral-llava-clip/settings/access)，选择 **Add people** 并输入成员 GitHub 用户名。成员接受邀请后即可按权限协作，详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
-
-README 的介绍顺序参考 [POPE 项目](https://github.com/Rosy0912/hallucination/tree/main/pope)：先给运行入口，再说明实验协议、数据/模型与已验证结果。本仓库的命令、数据和方法均以实际文件为准。

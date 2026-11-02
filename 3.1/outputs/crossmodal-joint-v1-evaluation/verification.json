@@ -1,0 +1,590 @@
+{
+  "status": "PASS",
+  "prompts_identical": true,
+  "protocol_sha256": "b8952a3288905e452e1993fac7719eefa79e1d2a210cf0dc55a28b2691f4390d",
+  "training_selection": {
+    "selected_epoch": 2,
+    "selected_adapter": "runs/crossmodal-joint-v1/epoch-002",
+    "best_validation_agreement": 0.7388059701492538,
+    "selection_split": "validation",
+    "quality_tolerance": 0.02
+  },
+  "pair_changes": {
+    "constrained": {
+      "A": {
+        "old_consistent": 36,
+        "new_consistent": 43,
+        "gained": [
+          "b13_p223_17",
+          "b14_p258_3",
+          "b15_p292_10",
+          "b15_p312_4",
+          "b15_p313_9",
+          "b15_p420_10",
+          "b15_p444_20",
+          "b15_p445_17",
+          "b2_p22_4",
+          "b4_p54_4",
+          "b5_p83_12",
+          "b6_p88_13",
+          "b999_p482_7",
+          "b999_p485_8"
+        ],
+        "lost": [
+          "b13_p228_15",
+          "b14_p270_12",
+          "b15_p377_4",
+          "b15_p383_12",
+          "b15_p415_1",
+          "b15_p449_1",
+          "b999_p495_2"
+        ],
+        "retained": 29,
+        "retention_rate": 0.8055555555555556
+      },
+      "B": {
+        "old_consistent": 36,
+        "new_consistent": 38,
+        "gained": [
+          "b14_p276_6",
+          "b15_p360_15",
+          "b15_p388_15",
+          "b2_p20_11",
+          "b4_p49_3",
+          "b4_p59_12",
+          "b4_p61_8",
+          "b4_p72_12"
+        ],
+        "lost": [
+          "b11_p166_20",
+          "b11_p176_6",
+          "b13_p223_18",
+          "b13_p245_6",
+          "b15_p406_16",
+          "b999_p494_10"
+        ],
+        "retained": 30,
+        "retention_rate": 0.8333333333333334
+      }
+    },
+    "free": {
+      "A": {
+        "old_consistent": 36,
+        "new_consistent": 43,
+        "gained": [
+          "b13_p223_17",
+          "b14_p258_3",
+          "b15_p292_10",
+          "b15_p312_4",
+          "b15_p313_9",
+          "b15_p420_10",
+          "b15_p444_20",
+          "b15_p445_17",
+          "b2_p22_4",
+          "b4_p54_4",
+          "b5_p83_12",
+          "b6_p88_13",
+          "b999_p482_7",
+          "b999_p485_8"
+        ],
+        "lost": [
+          "b13_p228_15",
+          "b14_p270_12",
+          "b15_p377_4",
+          "b15_p383_12",
+          "b15_p415_1",
+          "b15_p449_1",
+          "b999_p495_2"
+        ],
+        "retained": 29,
+        "retention_rate": 0.8055555555555556
+      },
+      "B": {
+        "old_consistent": 36,
+        "new_consistent": 38,
+        "gained": [
+          "b14_p276_6",
+          "b15_p360_15",
+          "b15_p388_15",
+          "b2_p20_11",
+          "b4_p49_3",
+          "b4_p59_12",
+          "b4_p61_8",
+          "b4_p72_12"
+        ],
+        "lost": [
+          "b11_p166_20",
+          "b11_p176_6",
+          "b13_p223_18",
+          "b13_p245_6",
+          "b15_p406_16",
+          "b999_p494_10"
+        ],
+        "retained": 30,
+        "retention_rate": 0.8333333333333334
+      }
+    }
+  },
+  "dominant_predictions": {
+    "old_constrained_image": [
+      {
+        "prediction": {
+          "authority": "not_annotated",
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "non_moral": true,
+          "sanctity": "not_annotated"
+        },
+        "count": 45
+      },
+      {
+        "prediction": {
+          "authority": "virtue",
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "non_moral": false,
+          "sanctity": "virtue"
+        },
+        "count": 16
+      },
+      {
+        "prediction": {
+          "authority": "virtue",
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "non_moral": false,
+          "sanctity": "virtue"
+        },
+        "count": 13
+      },
+      {
+        "prediction": {
+          "authority": "vice",
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "non_moral": false,
+          "sanctity": "vice"
+        },
+        "count": 13
+      },
+      {
+        "prediction": {
+          "authority": "virtue",
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "non_moral": false,
+          "sanctity": "not_annotated"
+        },
+        "count": 9
+      }
+    ],
+    "old_constrained_text": [
+      {
+        "prediction": {
+          "authority": "not_annotated",
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "non_moral": true,
+          "sanctity": "not_annotated"
+        },
+        "count": 55
+      },
+      {
+        "prediction": {
+          "authority": "virtue",
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "non_moral": false,
+          "sanctity": "virtue"
+        },
+        "count": 12
+      },
+      {
+        "prediction": {
+          "authority": "vice",
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "non_moral": false,
+          "sanctity": "vice"
+        },
+        "count": 12
+      },
+      {
+        "prediction": {
+          "authority": "not_annotated",
+          "care": "vice",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "non_moral": false,
+          "sanctity": "vice"
+        },
+        "count": 8
+      },
+      {
+        "prediction": {
+          "authority": "not_annotated",
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "non_moral": false,
+          "sanctity": "not_annotated"
+        },
+        "count": 7
+      }
+    ],
+    "new_constrained_image": [
+      {
+        "prediction": {
+          "authority": "not_annotated",
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "non_moral": true,
+          "sanctity": "not_annotated"
+        },
+        "count": 49
+      },
+      {
+        "prediction": {
+          "authority": "vice",
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "non_moral": false,
+          "sanctity": "vice"
+        },
+        "count": 17
+      },
+      {
+        "prediction": {
+          "authority": "virtue",
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "non_moral": false,
+          "sanctity": "virtue"
+        },
+        "count": 14
+      },
+      {
+        "prediction": {
+          "authority": "virtue",
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "non_moral": false,
+          "sanctity": "virtue"
+        },
+        "count": 12
+      },
+      {
+        "prediction": {
+          "authority": "not_annotated",
+          "care": "vice",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "non_moral": false,
+          "sanctity": "vice"
+        },
+        "count": 10
+      }
+    ],
+    "new_constrained_text": [
+      {
+        "prediction": {
+          "authority": "not_annotated",
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "non_moral": true,
+          "sanctity": "not_annotated"
+        },
+        "count": 49
+      },
+      {
+        "prediction": {
+          "authority": "vice",
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "non_moral": false,
+          "sanctity": "vice"
+        },
+        "count": 22
+      },
+      {
+        "prediction": {
+          "authority": "virtue",
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "non_moral": false,
+          "sanctity": "virtue"
+        },
+        "count": 19
+      },
+      {
+        "prediction": {
+          "authority": "virtue",
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "non_moral": false,
+          "sanctity": "virtue"
+        },
+        "count": 13
+      },
+      {
+        "prediction": {
+          "authority": "not_annotated",
+          "care": "vice",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "non_moral": false,
+          "sanctity": "vice"
+        },
+        "count": 11
+      }
+    ],
+    "old_free_image": [
+      {
+        "prediction": {
+          "authority": "not_annotated",
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "non_moral": true,
+          "sanctity": "not_annotated"
+        },
+        "count": 45
+      },
+      {
+        "prediction": {
+          "authority": "virtue",
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "non_moral": false,
+          "sanctity": "virtue"
+        },
+        "count": 16
+      },
+      {
+        "prediction": {
+          "authority": "virtue",
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "non_moral": false,
+          "sanctity": "virtue"
+        },
+        "count": 13
+      },
+      {
+        "prediction": {
+          "authority": "vice",
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "non_moral": false,
+          "sanctity": "vice"
+        },
+        "count": 13
+      },
+      {
+        "prediction": {
+          "authority": "virtue",
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "non_moral": false,
+          "sanctity": "not_annotated"
+        },
+        "count": 9
+      }
+    ],
+    "old_free_text": [
+      {
+        "prediction": {
+          "authority": "not_annotated",
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "non_moral": true,
+          "sanctity": "not_annotated"
+        },
+        "count": 55
+      },
+      {
+        "prediction": {
+          "authority": "virtue",
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "non_moral": false,
+          "sanctity": "virtue"
+        },
+        "count": 12
+      },
+      {
+        "prediction": {
+          "authority": "vice",
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "non_moral": false,
+          "sanctity": "vice"
+        },
+        "count": 12
+      },
+      {
+        "prediction": {
+          "authority": "not_annotated",
+          "care": "vice",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "non_moral": false,
+          "sanctity": "vice"
+        },
+        "count": 8
+      },
+      {
+        "prediction": {
+          "authority": "not_annotated",
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "non_moral": false,
+          "sanctity": "not_annotated"
+        },
+        "count": 7
+      }
+    ],
+    "new_free_image": [
+      {
+        "prediction": {
+          "authority": "not_annotated",
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "non_moral": true,
+          "sanctity": "not_annotated"
+        },
+        "count": 49
+      },
+      {
+        "prediction": {
+          "authority": "vice",
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "non_moral": false,
+          "sanctity": "vice"
+        },
+        "count": 17
+      },
+      {
+        "prediction": {
+          "authority": "virtue",
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "non_moral": false,
+          "sanctity": "virtue"
+        },
+        "count": 14
+      },
+      {
+        "prediction": {
+          "authority": "virtue",
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "non_moral": false,
+          "sanctity": "virtue"
+        },
+        "count": 12
+      },
+      {
+        "prediction": {
+          "authority": "not_annotated",
+          "care": "vice",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "non_moral": false,
+          "sanctity": "vice"
+        },
+        "count": 10
+      }
+    ],
+    "new_free_text": [
+      {
+        "prediction": {
+          "authority": "not_annotated",
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "non_moral": true,
+          "sanctity": "not_annotated"
+        },
+        "count": 49
+      },
+      {
+        "prediction": {
+          "authority": "vice",
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "non_moral": false,
+          "sanctity": "vice"
+        },
+        "count": 22
+      },
+      {
+        "prediction": {
+          "authority": "virtue",
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "non_moral": false,
+          "sanctity": "virtue"
+        },
+        "count": 19
+      },
+      {
+        "prediction": {
+          "authority": "virtue",
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "non_moral": false,
+          "sanctity": "virtue"
+        },
+        "count": 13
+      },
+      {
+        "prediction": {
+          "authority": "not_annotated",
+          "care": "vice",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "non_moral": false,
+          "sanctity": "vice"
+        },
+        "count": 11
+      }
+    ]
+  },
+  "new_prediction_sha256": {
+    "lora_free.jsonl": "948850b19a3f7f6b89fa8ef765afce36f6f0241f2e76619019f8105c1c8b8141",
+    "lora_constrained.jsonl": "12fde0432238dbbd557bef099b794668dc23e18d59738fd1bbb592943ebde4c3"
+  }
+}

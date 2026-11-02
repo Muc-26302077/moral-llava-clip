@@ -1,0 +1,839 @@
+{
+  "num_samples": 126,
+  "valid_output_count": 0,
+  "valid_output_rate": 0.0,
+  "invalid_output_count": 126,
+  "parse_failure_count": 65,
+  "constraint_failure_count": 61,
+  "micro_precision": 0.0,
+  "micro_recall": 0.0,
+  "micro_f1": 0.0,
+  "macro_precision": 0.0,
+  "macro_recall": 0.0,
+  "macro_f1": 0.0,
+  "samples_jaccard": 0.0,
+  "exact_match": 0.0,
+  "mean_foundation_accuracy": 0.0,
+  "per_label": {
+    "Care": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 38
+    },
+    "Harm": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 34
+    },
+    "Fairness": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 19
+    },
+    "Cheating": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 23
+    },
+    "Loyalty": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 42
+    },
+    "Betrayal": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 21
+    },
+    "Respect": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 35
+    },
+    "Subversion": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 20
+    },
+    "Sanctity": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 25
+    },
+    "Degradation": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 31
+    },
+    "non-moral": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 39
+    }
+  },
+  "per_foundation": {
+    "care": {
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "per_class": {
+        "virtue": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 38
+        },
+        "vice": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 34
+        },
+        "not_annotated": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 54
+        }
+      }
+    },
+    "fairness": {
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "per_class": {
+        "virtue": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 19
+        },
+        "vice": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 23
+        },
+        "not_annotated": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 84
+        }
+      }
+    },
+    "loyalty": {
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "per_class": {
+        "virtue": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 42
+        },
+        "vice": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 21
+        },
+        "not_annotated": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 63
+        }
+      }
+    },
+    "authority": {
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "per_class": {
+        "virtue": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 35
+        },
+        "vice": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 20
+        },
+        "not_annotated": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 71
+        }
+      }
+    },
+    "sanctity": {
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "per_class": {
+        "virtue": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 25
+        },
+        "vice": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 31
+        },
+        "not_annotated": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 70
+        }
+      }
+    }
+  },
+  "invalid_outputs": [
+    {
+      "id": "b10_p126_12",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b10_p132_3",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b10_p136_20",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b10_p138_15",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b11_p158_3",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b11_p158_9",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b11_p160_4",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b11_p162_1",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b11_p166_20",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b11_p166_7",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b11_p171_9",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b11_p172_10",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b11_p176_4",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b11_p176_6",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b13_p213_4",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b13_p213_9",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b13_p214_14",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b13_p218_10",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b13_p218_7",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b13_p220_7",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b13_p223_17",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b13_p223_18",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b13_p228_15",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b13_p236_16",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b13_p240_7",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b13_p245_14",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b13_p245_6",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b14_p252_7",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b14_p253_7",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b14_p255_14",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b14_p255_20",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b14_p258_3",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b14_p260_16",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b14_p260_3",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b14_p262_12",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b14_p263_1",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b14_p270_12",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b14_p276_6",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b14_p278_11",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b14_p282_2",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b14_p282_6",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b14_p285_14",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b15_p292_10",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b15_p295_17",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b15_p298_4",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b15_p303_10",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b15_p310_13",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b15_p310_3",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b15_p312_4",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b15_p313_9",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b15_p316_20",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b15_p323_7",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b15_p330_7",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b15_p335_3",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b15_p345_19",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b15_p354_2",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b15_p356_1",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b15_p360_15",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b15_p360_6",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b15_p363_17",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b15_p371_19",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b15_p377_4",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b15_p379_6",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b15_p383_12",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b15_p388_15",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b15_p401_9",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b15_p406_14",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b15_p406_16",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b15_p409_16",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b15_p409_5",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b15_p415_1",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b15_p420_10",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b15_p437_20",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b15_p440_15",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b15_p444_20",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b15_p445_17",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b15_p447_16",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b15_p449_1",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b15_p454_1",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b15_p467_2",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b15_p468_15",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b15_p473_17",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b1_p1_2",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b1_p1_20",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b1_p8_20",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b1_p8_6",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b2_p20_11",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b2_p22_4",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b2_p23_17",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b2_p23_18",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b2_p23_20",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b2_p26_6",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b2_p30_15",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b2_p34_5",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b2_p37_6",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b4_p49_3",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b4_p51_2",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b4_p54_13",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b4_p54_4",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b4_p59_12",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b4_p61_13",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b4_p61_8",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b4_p67_10",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b4_p71_2",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b4_p72_12",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b4_p78_18",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b5_p80_10",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b5_p83_12",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b6_p88_13",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b6_p88_16",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b8_p109_16",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b8_p109_8",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b8_p112_19",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b8_p119_18",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b8_p119_2",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b999_p479_17",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b999_p482_7",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b999_p483_6",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b999_p485_16",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b999_p485_8",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b999_p487_2",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b999_p493_11",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b999_p494_10",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b999_p495_2",
+      "kind": "parse",
+      "error": "Invalid JSON: Invalid \\escape"
+    },
+    {
+      "id": "b9_p120_12",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    },
+    {
+      "id": "b9_p124_13",
+      "kind": "constraint",
+      "error": "Wrong keys: missing=['non_moral'], extra=[]"
+    }
+  ]
+}

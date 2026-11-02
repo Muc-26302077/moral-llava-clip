@@ -1,0 +1,38 @@
+# 新版图文匹配 + 道德约束；请一行一行执行。
+# 已在本服务器执行正式对照；重跑时给两组换新的output-dir，别覆盖结果。
+
+cd /root/autodl-tmp/moral-llava
+source scripts/activate_autodl.sh
+export HF_HUB_OFFLINE=1
+
+# 这台服务器已经下载过普通CLIP B/16，先核验；换机器时先运行下一行注释中的下载命令。
+# python scripts/download_alignment_vision.py --endpoint https://hf-mirror.com
+python scripts/download_alignment_vision.py --verify-only
+
+# 运行回归检查。
+python -m unittest discover -s tests -p 'test_alignment*.py' -v
+
+# 两步烟测。此处使用普通CLIP ViT-B/16初始化，不用已训MoralCLIP权重。
+python -m moral_llava.train_alignment --vision-model /root/autodl-tmp/clip-vit-base-patch16 --output-dir runs/alignment-smoke-b16 --batch-size 4 --smoke-test
+
+# 正式对照1：图文匹配，无额外道德项。
+python -m moral_llava.train_alignment --vision-model /root/autodl-tmp/clip-vit-base-patch16 --output-dir runs/alignment-clip-b16 --batch-size 64 --epochs 10 --moral-weight 0 --seed 42 --text-max-length 320
+
+# 正式对照2：相同结构、相同预算，加入道德项。
+python -m moral_llava.train_alignment --vision-model /root/autodl-tmp/clip-vit-base-patch16 --output-dir runs/alignment-moral-b16 --batch-size 64 --epochs 10 --moral-weight 0.4 --moral-similarity paper_scaled --seed 42 --text-max-length 320
+
+# 两组都跑完后再测test；按各自validation最优权重评估。
+MATCH_CKPT=$(python -c 'import json; print(json.load(open("runs/alignment-clip-b16/best_checkpoint.json"))["checkpoint"])')
+MORAL_CKPT=$(python -c 'import json; print(json.load(open("runs/alignment-moral-b16/best_checkpoint.json"))["checkpoint"])')
+python scripts/evaluate_alignment.py --checkpoint "$MATCH_CKPT" --split test --precision bf16 --text-max-length 320 --output outputs/alignment_clip_b16_test.json
+python scripts/evaluate_alignment.py --checkpoint "$MORAL_CKPT" --split test --precision bf16 --text-max-length 320 --output outputs/alignment_moral_b16_test.json
+
+# 单张图片：默认在原test描述中检索前5条，可换图片路径。
+python scripts/retrieve_alignment.py --checkpoint "$MORAL_CKPT" --image uploads/user_test_20261018.png --top-k 5 --text-max-length 320 --output outputs/user_image_retrieval.json
+
+# 自定义候选描述（UTF-8文本，每行一句），文件存在时才运行。
+# python scripts/retrieve_alignment.py --checkpoint "$MORAL_CKPT" --image uploads/user_test_20261018.png --captions-file candidates.txt --top-k 5 --text-max-length 320
+
+# 如果batch64显存不足，两组一起降为32并换新output-dir；梯度累积不会扩大负例池。
+# 完整训练caption最长263 tokens，因此两组均用320上限，不截断。
+# 旧JSON问答模型、standalone MoralCLIP结果不能充作新版结果。

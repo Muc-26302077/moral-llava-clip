@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+._*
+.env
+.env.*
+*.pem
+*.key
+*token*.txt
+tmp/
+wandb/
+3.1_evaluation/runs/local-*/
+3.1_evaluation/runs/recomputed*/
+3.1_evaluation/release_verification.json

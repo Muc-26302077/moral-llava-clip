@@ -1,0 +1,313 @@
+{
+  "status": "PASS",
+  "recomputed_metrics_match": true,
+  "files": {
+    "base_constrained.jsonl": {
+      "count": 252,
+      "sha256": "ac9a06377cd56ec122ecfa0284549aa213e4e2d4fa43835dfad14a4ede346395"
+    },
+    "lora_constrained.jsonl": {
+      "count": 252,
+      "sha256": "19b273ba1c812df9b39238697ada6bf184ab0b5461de1f43ca2a7031748f3821"
+    },
+    "base_free.jsonl": {
+      "count": 252,
+      "sha256": "90f8e7d01ffda0b1d47e38edf2281840f3f9a4546d70ac4d46e46f7c4489c99c"
+    },
+    "lora_free.jsonl": {
+      "count": 252,
+      "sha256": "9b240287ac9a72e1f887456c3d9f1730e166a2159df2a88bc8b2449a6120d908"
+    }
+  },
+  "prediction_distributions": {
+    "base_constrained_image": {
+      "valid": 126,
+      "distinct_valid_targets": 1,
+      "most_common_targets": [
+        {
+          "prediction": {
+            "authority": "not_annotated",
+            "care": "not_annotated",
+            "fairness": "not_annotated",
+            "loyalty": "not_annotated",
+            "non_moral": true,
+            "sanctity": "not_annotated"
+          },
+          "count": 126
+        }
+      ]
+    },
+    "base_constrained_text": {
+      "valid": 126,
+      "distinct_valid_targets": 1,
+      "most_common_targets": [
+        {
+          "prediction": {
+            "authority": "not_annotated",
+            "care": "not_annotated",
+            "fairness": "not_annotated",
+            "loyalty": "not_annotated",
+            "non_moral": true,
+            "sanctity": "not_annotated"
+          },
+          "count": 126
+        }
+      ]
+    },
+    "lora_constrained_image": {
+      "valid": 126,
+      "distinct_valid_targets": 17,
+      "most_common_targets": [
+        {
+          "prediction": {
+            "authority": "not_annotated",
+            "care": "not_annotated",
+            "fairness": "not_annotated",
+            "loyalty": "not_annotated",
+            "non_moral": true,
+            "sanctity": "not_annotated"
+          },
+          "count": 45
+        },
+        {
+          "prediction": {
+            "authority": "virtue",
+            "care": "virtue",
+            "fairness": "virtue",
+            "loyalty": "virtue",
+            "non_moral": false,
+            "sanctity": "virtue"
+          },
+          "count": 16
+        },
+        {
+          "prediction": {
+            "authority": "virtue",
+            "care": "virtue",
+            "fairness": "not_annotated",
+            "loyalty": "virtue",
+            "non_moral": false,
+            "sanctity": "virtue"
+          },
+          "count": 13
+        },
+        {
+          "prediction": {
+            "authority": "vice",
+            "care": "vice",
+            "fairness": "vice",
+            "loyalty": "vice",
+            "non_moral": false,
+            "sanctity": "vice"
+          },
+          "count": 13
+        },
+        {
+          "prediction": {
+            "authority": "virtue",
+            "care": "virtue",
+            "fairness": "not_annotated",
+            "loyalty": "virtue",
+            "non_moral": false,
+            "sanctity": "not_annotated"
+          },
+          "count": 9
+        }
+      ]
+    },
+    "lora_constrained_text": {
+      "valid": 126,
+      "distinct_valid_targets": 19,
+      "most_common_targets": [
+        {
+          "prediction": {
+            "authority": "not_annotated",
+            "care": "not_annotated",
+            "fairness": "not_annotated",
+            "loyalty": "not_annotated",
+            "non_moral": true,
+            "sanctity": "not_annotated"
+          },
+          "count": 55
+        },
+        {
+          "prediction": {
+            "authority": "virtue",
+            "care": "virtue",
+            "fairness": "virtue",
+            "loyalty": "virtue",
+            "non_moral": false,
+            "sanctity": "virtue"
+          },
+          "count": 12
+        },
+        {
+          "prediction": {
+            "authority": "vice",
+            "care": "vice",
+            "fairness": "vice",
+            "loyalty": "vice",
+            "non_moral": false,
+            "sanctity": "vice"
+          },
+          "count": 12
+        },
+        {
+          "prediction": {
+            "authority": "not_annotated",
+            "care": "vice",
+            "fairness": "not_annotated",
+            "loyalty": "not_annotated",
+            "non_moral": false,
+            "sanctity": "vice"
+          },
+          "count": 8
+        },
+        {
+          "prediction": {
+            "authority": "not_annotated",
+            "care": "virtue",
+            "fairness": "not_annotated",
+            "loyalty": "not_annotated",
+            "non_moral": false,
+            "sanctity": "not_annotated"
+          },
+          "count": 7
+        }
+      ]
+    },
+    "base_free_image": {
+      "valid": 0,
+      "distinct_valid_targets": 0,
+      "most_common_targets": []
+    },
+    "base_free_text": {
+      "valid": 0,
+      "distinct_valid_targets": 0,
+      "most_common_targets": []
+    },
+    "lora_free_image": {
+      "valid": 126,
+      "distinct_valid_targets": 17,
+      "most_common_targets": [
+        {
+          "prediction": {
+            "authority": "not_annotated",
+            "care": "not_annotated",
+            "fairness": "not_annotated",
+            "loyalty": "not_annotated",
+            "non_moral": true,
+            "sanctity": "not_annotated"
+          },
+          "count": 45
+        },
+        {
+          "prediction": {
+            "authority": "virtue",
+            "care": "virtue",
+            "fairness": "virtue",
+            "loyalty": "virtue",
+            "non_moral": false,
+            "sanctity": "virtue"
+          },
+          "count": 16
+        },
+        {
+          "prediction": {
+            "authority": "virtue",
+            "care": "virtue",
+            "fairness": "not_annotated",
+            "loyalty": "virtue",
+            "non_moral": false,
+            "sanctity": "virtue"
+          },
+          "count": 13
+        },
+        {
+          "prediction": {
+            "authority": "vice",
+            "care": "vice",
+            "fairness": "vice",
+            "loyalty": "vice",
+            "non_moral": false,
+            "sanctity": "vice"
+          },
+          "count": 13
+        },
+        {
+          "prediction": {
+            "authority": "virtue",
+            "care": "virtue",
+            "fairness": "not_annotated",
+            "loyalty": "virtue",
+            "non_moral": false,
+            "sanctity": "not_annotated"
+          },
+          "count": 9
+        }
+      ]
+    },
+    "lora_free_text": {
+      "valid": 126,
+      "distinct_valid_targets": 19,
+      "most_common_targets": [
+        {
+          "prediction": {
+            "authority": "not_annotated",
+            "care": "not_annotated",
+            "fairness": "not_annotated",
+            "loyalty": "not_annotated",
+            "non_moral": true,
+            "sanctity": "not_annotated"
+          },
+          "count": 55
+        },
+        {
+          "prediction": {
+            "authority": "virtue",
+            "care": "virtue",
+            "fairness": "virtue",
+            "loyalty": "virtue",
+            "non_moral": false,
+            "sanctity": "virtue"
+          },
+          "count": 12
+        },
+        {
+          "prediction": {
+            "authority": "vice",
+            "care": "vice",
+            "fairness": "vice",
+            "loyalty": "vice",
+            "non_moral": false,
+            "sanctity": "vice"
+          },
+          "count": 12
+        },
+        {
+          "prediction": {
+            "authority": "not_annotated",
+            "care": "vice",
+            "fairness": "not_annotated",
+            "loyalty": "not_annotated",
+            "non_moral": false,
+            "sanctity": "vice"
+          },
+          "count": 8
+        },
+        {
+          "prediction": {
+            "authority": "not_annotated",
+            "care": "virtue",
+            "fairness": "not_annotated",
+            "loyalty": "not_annotated",
+            "non_moral": false,
+            "sanctity": "not_annotated"
+          },
+          "count": 7
+        }
+      ]
+    }
+  },
+  "protocol_sha256": "b8952a3288905e452e1993fac7719eefa79e1d2a210cf0dc55a28b2691f4390d"
+}

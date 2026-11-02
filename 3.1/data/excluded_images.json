@@ -1,0 +1,26 @@
+{
+  "images": [
+    {
+      "id": "b15_p445_5",
+      "split": "train",
+      "image_path": "train/b15_p445_5.jpg",
+      "sha256": "c050a154651198b5e7eb199f7ef4282da82e5648cc203bfe160485b2e132bf5b",
+      "original_author": "dickuhne",
+      "original_source_url": "https://farm1.staticflickr.com/214/509005153_355a19d400_o_d.jpg",
+      "image_license": "All Rights Reserved",
+      "reason": "Excluded from the public repository because redistribution permission is not established"
+    },
+    {
+      "id": "b15_p465_20",
+      "split": "train",
+      "image_path": "train/b15_p465_20.jpg",
+      "sha256": "85761d4ffc5a402cde87cb945a352bf87b8a4b588f47f9e331978cc2ade8bb56",
+      "original_author": "keith ellwood",
+      "original_source_url": "https://farm9.staticflickr.com/8527/8574815566_497be2cd8e_o.jpg",
+      "image_license": "All Rights Reserved",
+      "reason": "Excluded from the public repository because redistribution permission is not established"
+    }
+  ],
+  "source_archive_unchanged": true,
+  "complete_test_set": true
+}

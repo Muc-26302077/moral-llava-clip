@@ -1,0 +1,105 @@
+{
+  "input_archive": "SMID_moralclip.zip",
+  "input_archive_sha256": "7ae968024ba499fcaadc5aaada2ccf0a5badc1a1492d4ab466396b69b01fedc8",
+  "source_dataset": "SMID-derived local archive; not verified as an official MoralCLIP release",
+  "original_dataset_url": "https://osf.io/2rqad/",
+  "original_paper_doi": "10.1371/journal.pone.0190954",
+  "paper_license": "CC BY 4.0; does not establish a uniform license for all images",
+  "image_license": "Per-image terms transcribed from official SMID metadata; no blanket relicensing",
+  "caption_and_derived_annotation_license": "not provided in input archive; pending source confirmation",
+  "counts": {
+    "train": 2140,
+    "validation": 134,
+    "test": 126
+  },
+  "modifications": [
+    "Converted labels into LLaVA instruction JSON",
+    "Created fixed A/B evaluation protocol; images unchanged"
+  ],
+  "attribution_inventory": "image_attribution.csv",
+  "official_metadata_url": "https://osf.io/e7gej/",
+  "official_metadata_download_url": "https://osf.io/download/e7gej/",
+  "official_metadata_sha256": "26245d45a1a1c72130d28953b6cb413f819988007f442cdbc4e97586cdb051ca",
+  "official_metadata_local_copy": "upstream/SMID_metadata.json",
+  "official_metadata_match": "All 2400 local image IDs matched; original image bytes were not re-downloaded or compared",
+  "image_license_distribution": {
+    "CC BY-SA 3.0": 397,
+    "CC BY 3.0": 75,
+    "CC BY-SA 2.0": 318,
+    "Public domain": 557,
+    "CC BY-SA 2.5": 30,
+    "CC BY 3.0 br": 7,
+    "CC BY 2.0": 666,
+    "CC-BY-SA-3.0": 97,
+    "CC BY-NC-SA 2.0": 5,
+    "CC BY 2.5": 33,
+    "CC BY-NC 2.0": 5,
+    "CC BY-ND 2.0": 80,
+    "CC BY-SA 2.0 fr": 5,
+    "CC BY-SA 3.0 de": 14,
+    "U.S. Government Work": 11,
+    "GFDL": 30,
+    "CC BY-SA 2.0 de": 5,
+    "CC BY 3.0 de": 1,
+    "CC BY-SA 4.0": 19,
+    "CC BY-NC-ND 2.0": 4,
+    "CC BY-SA 3.0 us": 2,
+    "CC BY-SA 3.0 ro": 1,
+    "CC BY-SA 3.0 no": 1,
+    "GFDL 1.2": 3,
+    "CC BY-SA 2.5 ca": 1,
+    "CC BY-SA 3.0 nl": 2,
+    "CC0": 14,
+    "10": 2,
+    "CC BY 4.0": 3,
+    "CC BY 2.5 in": 1,
+    "All Rights Reserved": 2,
+    "CC BY 1.0": 2,
+    "CC BY-SA 3.0 at": 1,
+    "CC BY 2.1 jp": 1,
+    "CC BY-SA 3.0 pl": 1,
+    "CC BY-SA 3.0 au": 2,
+    "CC BY 2.5 br": 1,
+    "9": 1
+  },
+  "image_license_review_items": [
+    {
+      "id": "b15_p454_1",
+      "split": "test",
+      "image_license": "9",
+      "license_review_status": "raw_numeric_license_requires_review",
+      "original_source_url": "https://farm2.staticflickr.com/1286/4701954090_0bf3caf0ff_o_d.jpg"
+    },
+    {
+      "id": "b15_p345_20",
+      "split": "train",
+      "image_license": "10",
+      "license_review_status": "raw_numeric_license_requires_review",
+      "original_source_url": "https://farm1.staticflickr.com/352/18641122433_93881db0c9_o_d.jpg"
+    },
+    {
+      "id": "b15_p445_5",
+      "split": "train",
+      "image_license": "All Rights Reserved",
+      "license_review_status": "permission_not_established",
+      "original_source_url": "https://farm1.staticflickr.com/214/509005153_355a19d400_o_d.jpg"
+    },
+    {
+      "id": "b15_p465_20",
+      "split": "train",
+      "image_license": "All Rights Reserved",
+      "license_review_status": "permission_not_established",
+      "original_source_url": "https://farm9.staticflickr.com/8527/8574815566_497be2cd8e_o.jpg"
+    },
+    {
+      "id": "b10_p125_14",
+      "split": "validation",
+      "image_license": "10",
+      "license_review_status": "raw_numeric_license_requires_review",
+      "original_source_url": "https://c1.staticflickr.com/9/8026/7637737280_16a1f2aeff_h.jpg"
+    }
+  ],
+  "upstream_image_modifications": "Images unchanged relative to local input archive; any earlier resizing or other transformations not verified",
+  "packaged_images": 2398,
+  "public_package_exclusions": "excluded_images.json"
+}

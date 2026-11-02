@@ -1,0 +1,156 @@
+{
+  "num_images": 2400,
+  "split_counts": {
+    "train": 2140,
+    "validation": 134,
+    "test": 126
+  },
+  "label_counts": {
+    "train": {
+      "Care": 672,
+      "Harm": 539,
+      "Fairness": 309,
+      "Cheating": 359,
+      "Loyalty": 698,
+      "Betrayal": 345,
+      "Respect": 657,
+      "Subversion": 321,
+      "Sanctity": 481,
+      "Degradation": 522,
+      "non-moral": 759
+    },
+    "validation": {
+      "Care": 40,
+      "Harm": 30,
+      "Fairness": 17,
+      "Cheating": 25,
+      "Loyalty": 39,
+      "Betrayal": 24,
+      "Respect": 35,
+      "Subversion": 23,
+      "Sanctity": 25,
+      "Degradation": 32,
+      "non-moral": 55
+    },
+    "test": {
+      "Care": 38,
+      "Harm": 34,
+      "Fairness": 19,
+      "Cheating": 23,
+      "Loyalty": 42,
+      "Betrayal": 21,
+      "Respect": 35,
+      "Subversion": 20,
+      "Sanctity": 25,
+      "Degradation": 31,
+      "non-moral": 39
+    }
+  },
+  "foundation_state_counts": {
+    "train": {
+      "care": {
+        "not_annotated": 929,
+        "vice": 539,
+        "virtue": 672
+      },
+      "fairness": {
+        "not_annotated": 1472,
+        "vice": 359,
+        "virtue": 309
+      },
+      "loyalty": {
+        "virtue": 698,
+        "not_annotated": 1097,
+        "vice": 345
+      },
+      "authority": {
+        "virtue": 657,
+        "not_annotated": 1162,
+        "vice": 321
+      },
+      "sanctity": {
+        "virtue": 481,
+        "not_annotated": 1137,
+        "vice": 522
+      }
+    },
+    "validation": {
+      "care": {
+        "virtue": 40,
+        "vice": 30,
+        "not_annotated": 64
+      },
+      "fairness": {
+        "not_annotated": 92,
+        "virtue": 17,
+        "vice": 25
+      },
+      "loyalty": {
+        "virtue": 39,
+        "vice": 24,
+        "not_annotated": 71
+      },
+      "authority": {
+        "virtue": 35,
+        "not_annotated": 76,
+        "vice": 23
+      },
+      "sanctity": {
+        "virtue": 25,
+        "not_annotated": 77,
+        "vice": 32
+      }
+    },
+    "test": {
+      "care": {
+        "not_annotated": 54,
+        "virtue": 38,
+        "vice": 34
+      },
+      "fairness": {
+        "not_annotated": 84,
+        "virtue": 19,
+        "vice": 23
+      },
+      "loyalty": {
+        "not_annotated": 63,
+        "virtue": 42,
+        "vice": 21
+      },
+      "authority": {
+        "not_annotated": 71,
+        "virtue": 35,
+        "vice": 20
+      },
+      "sanctity": {
+        "not_annotated": 70,
+        "virtue": 25,
+        "vice": 31
+      }
+    }
+  },
+  "caption_count_distribution": {
+    "10": 2400
+  },
+  "same_split_exact_duplicates": [],
+  "cross_split_exact_duplicates": [],
+  "image_integrity_checked": true,
+  "duplicate_check": "SHA-256 of file bytes; not a near-duplicate search",
+  "archive_sha256": "7ae968024ba499fcaadc5aaada2ccf0a5badc1a1492d4ab466396b69b01fedc8",
+  "schema_version": 1,
+  "archive": "SMID_moralclip.zip",
+  "manifest_counts": {
+    "smid_manifest.json": 2274,
+    "test/smid_manifest.json": 126
+  },
+  "label_semantics": "Absent poles are not_annotated, not verified neutral.",
+  "training_input": "image and fixed instruction only; no source captions",
+  "split_policy": "Preserve original image-level split without resampling.",
+  "historical_missing_images": [
+    {
+      "split": "train",
+      "id": "b10_p135_4"
+    }
+  ],
+  "historical_ambiguous_images": []
+}

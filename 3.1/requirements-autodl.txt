@@ -1,0 +1,10 @@
+# 这台镜像已有 torch 2.8.0+cu128 / torchvision 0.23.0，直接复用。
+# A800 用 BF16 LoRA，不装 bitsandbytes。
+transformers==4.49.0
+peft==0.14.0
+accelerate==1.3.0
+sentencepiece==0.2.0
+safetensors>=0.4.5,<1
+Pillow>=10.4,<12
+# 只用于下载加速，不参与训练。
+hf_transfer==0.1.9

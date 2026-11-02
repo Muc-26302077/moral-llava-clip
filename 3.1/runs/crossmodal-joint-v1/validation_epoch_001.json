@@ -1,0 +1,4568 @@
+{
+  "metrics": {
+    "num_scenes": 134,
+    "strict_agreement": 0.7313432835820896,
+    "image_exact_match": 0.6791044776119403,
+    "text_exact_match": 0.6268656716417911,
+    "joint_correct_rate": 0.582089552238806,
+    "consistent_count": 98
+  },
+  "predictions": [
+    {
+      "id": "b10_p125_14",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "not_annotated",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "not_annotated",
+        "non_moral": false
+      },
+      "consistent": false
+    },
+    {
+      "id": "b10_p129_16",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b10_p132_11",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b10_p132_2",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "virtue",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b10_p135_6",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b10_p137_19",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "not_annotated",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "virtue",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b10_p137_2",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "vice",
+        "loyalty": "vice",
+        "authority": "not_annotated",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b10_p138_9",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b10_p140_8",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b10_p143_20",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "virtue",
+        "loyalty": "not_annotated",
+        "authority": "virtue",
+        "sanctity": "not_annotated",
+        "non_moral": false
+      },
+      "consistent": false
+    },
+    {
+      "id": "b10_p151_3",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b11_p157_16",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b11_p159_1",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b11_p159_2",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b11_p160_20",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b11_p162_3",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b11_p164_11",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b11_p164_2",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "vice",
+        "loyalty": "vice",
+        "authority": "vice",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b11_p165_15",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b11_p166_11",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b11_p167_16",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "vice",
+        "loyalty": "vice",
+        "authority": "vice",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b11_p168_19",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "vice",
+        "loyalty": "vice",
+        "authority": "vice",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b11_p173_1",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "vice",
+        "loyalty": "vice",
+        "authority": "vice",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b11_p173_20",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "vice",
+        "loyalty": "vice",
+        "authority": "vice",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b11_p174_12",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b11_p178_3",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": false
+    },
+    {
+      "id": "b13_p214_15",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b13_p215_16",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "not_annotated",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "virtue",
+        "non_moral": false
+      },
+      "consistent": false
+    },
+    {
+      "id": "b13_p217_1",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "virtue",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "virtue",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b13_p225_1",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b13_p225_19",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": false
+    },
+    {
+      "id": "b13_p227_12",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "virtue",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "virtue",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b13_p231_11",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b13_p231_18",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"not_annotated\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "not_annotated",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "not_annotated",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "not_annotated",
+        "non_moral": false
+      },
+      "consistent": false
+    },
+    {
+      "id": "b13_p232_2",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b13_p232_7",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"not_annotated\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "not_annotated",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "not_annotated",
+        "loyalty": "virtue",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": false
+      },
+      "consistent": false
+    },
+    {
+      "id": "b13_p236_6",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b13_p242_3",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b14_p255_13",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b14_p256_16",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"virtue\",\"loyalty\":\"not_annotated\",\"authority\":\"virtue\",\"sanctity\":\"not_annotated\",\"non_moral\":false}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "virtue",
+          "loyalty": "not_annotated",
+          "authority": "virtue",
+          "sanctity": "not_annotated",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": false
+    },
+    {
+      "id": "b14_p259_20",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b14_p262_15",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b14_p267_1",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b14_p268_16",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "not_annotated",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "virtue",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b14_p269_4",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b14_p270_11",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": false
+    },
+    {
+      "id": "b14_p275_15",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": false
+    },
+    {
+      "id": "b14_p277_5",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"not_annotated\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "not_annotated",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": false
+    },
+    {
+      "id": "b14_p282_15",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"not_annotated\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "not_annotated",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "not_annotated",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "not_annotated",
+        "non_moral": false
+      },
+      "consistent": false
+    },
+    {
+      "id": "b14_p282_7",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "virtue",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "virtue",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b14_p285_16",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b15_p292_16",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "not_annotated",
+        "loyalty": "virtue",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b15_p295_3",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": false
+    },
+    {
+      "id": "b15_p295_4",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": false
+      },
+      "consistent": false
+    },
+    {
+      "id": "b15_p296_19",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b15_p311_2",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "vice",
+        "loyalty": "vice",
+        "authority": "vice",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b15_p313_10",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"not_annotated\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "not_annotated",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"not_annotated\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "not_annotated",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b15_p313_15",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "virtue",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b15_p317_15",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "not_annotated",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "not_annotated",
+        "non_moral": false
+      },
+      "consistent": false
+    },
+    {
+      "id": "b15_p319_17",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"not_annotated\",\"non_moral\":false}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "not_annotated",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "virtue",
+        "loyalty": "not_annotated",
+        "authority": "virtue",
+        "sanctity": "not_annotated",
+        "non_moral": false
+      },
+      "consistent": false
+    },
+    {
+      "id": "b15_p319_6",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "virtue",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "virtue",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b15_p340_9",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "virtue",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "virtue",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b15_p350_17",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b15_p355_10",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b15_p363_14",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "vice",
+        "loyalty": "vice",
+        "authority": "vice",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b15_p367_13",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "vice",
+        "loyalty": "vice",
+        "authority": "vice",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": false
+    },
+    {
+      "id": "b15_p371_16",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "virtue",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "virtue",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b15_p375_10",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "vice",
+        "loyalty": "vice",
+        "authority": "vice",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b15_p375_14",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "virtue",
+        "non_moral": false
+      },
+      "consistent": false
+    },
+    {
+      "id": "b15_p375_20",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "virtue",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "virtue",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b15_p380_5",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"virtue\",\"sanctity\":\"not_annotated\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "virtue",
+          "sanctity": "not_annotated",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "not_annotated",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "not_annotated",
+        "non_moral": false
+      },
+      "consistent": false
+    },
+    {
+      "id": "b15_p384_17",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"not_annotated\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "not_annotated",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"not_annotated\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "not_annotated",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "not_annotated",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "not_annotated",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b15_p388_4",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b15_p394_7",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b15_p403_18",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"not_annotated\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "not_annotated",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"not_annotated\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "not_annotated",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "not_annotated",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "not_annotated",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b15_p426_4",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b15_p439_4",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "vice",
+        "loyalty": "vice",
+        "authority": "vice",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b15_p443_19",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "virtue",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "virtue",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b15_p447_17",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"vice\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":false}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "vice",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "vice",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": false
+    },
+    {
+      "id": "b15_p460_14",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b15_p461_16",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b15_p463_3",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "virtue",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "virtue",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b15_p463_9",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "virtue",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "virtue",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b15_p465_18",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "not_annotated",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "not_annotated",
+        "non_moral": false
+      },
+      "consistent": false
+    },
+    {
+      "id": "b15_p466_5",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "vice",
+        "loyalty": "vice",
+        "authority": "vice",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": false
+    },
+    {
+      "id": "b15_p473_10",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "virtue",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "virtue",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b15_p474_4",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b15_p475_5",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "vice",
+        "loyalty": "vice",
+        "authority": "vice",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b1_p11_1",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "virtue",
+        "loyalty": "virtue",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b1_p1_4",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b2_p16_20",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b2_p17_11",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "not_annotated",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "not_annotated",
+        "non_moral": false
+      },
+      "consistent": false
+    },
+    {
+      "id": "b2_p17_7",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "vice",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": false
+    },
+    {
+      "id": "b2_p18_19",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "vice",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": false
+    },
+    {
+      "id": "b2_p18_7",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "not_annotated",
+        "loyalty": "vice",
+        "authority": "vice",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b2_p19_7",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": false
+    },
+    {
+      "id": "b2_p20_20",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "vice",
+        "loyalty": "not_annotated",
+        "authority": "vice",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": false
+    },
+    {
+      "id": "b2_p26_3",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "not_annotated",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "virtue",
+        "non_moral": false
+      },
+      "consistent": false
+    },
+    {
+      "id": "b2_p27_2",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "vice",
+        "loyalty": "vice",
+        "authority": "vice",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b2_p28_20",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "vice",
+        "loyalty": "vice",
+        "authority": "vice",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b2_p30_13",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "not_annotated",
+        "loyalty": "virtue",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b2_p33_10",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b2_p35_4",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "virtue",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "virtue",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b2_p38_13",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "virtue",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "virtue",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b4_p52_14",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "not_annotated",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "virtue",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b4_p53_19",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "vice",
+        "loyalty": "vice",
+        "authority": "vice",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": false
+    },
+    {
+      "id": "b4_p54_10",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "not_annotated",
+        "loyalty": "vice",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b4_p54_3",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "not_annotated",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "virtue",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b4_p57_16",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "not_annotated",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "vice",
+        "loyalty": "vice",
+        "authority": "vice",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": false
+    },
+    {
+      "id": "b4_p58_19",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "vice",
+        "loyalty": "vice",
+        "authority": "not_annotated",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": false
+    },
+    {
+      "id": "b4_p61_2",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "not_annotated",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "not_annotated",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b4_p66_1",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "virtue",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "virtue",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "virtue",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b6_p88_4",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b6_p89_9",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b7_p101_12",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b7_p95_18",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b8_p109_15",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b8_p114_1",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "not_annotated",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "virtue",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b8_p116_12",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b999_p477_1",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"not_annotated\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "not_annotated",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "not_annotated",
+        "loyalty": "virtue",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": false
+      },
+      "consistent": false
+    },
+    {
+      "id": "b999_p477_17",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "vice",
+        "loyalty": "vice",
+        "authority": "vice",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b999_p481_11",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "not_annotated",
+        "loyalty": "vice",
+        "authority": "not_annotated",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b999_p481_16",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "vice",
+        "loyalty": "not_annotated",
+        "authority": "vice",
+        "sanctity": "not_annotated",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b999_p482_17",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b999_p484_20",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "not_annotated",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "virtue",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b999_p486_2",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b999_p488_4",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "vice",
+        "loyalty": "vice",
+        "authority": "vice",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b999_p489_4",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": false
+      },
+      "consistent": false
+    },
+    {
+      "id": "b999_p490_1",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": true
+    },
+    {
+      "id": "b999_p494_2",
+      "image": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "virtue",
+        "fairness": "not_annotated",
+        "loyalty": "virtue",
+        "authority": "virtue",
+        "sanctity": "virtue",
+        "non_moral": false
+      },
+      "consistent": true
+    },
+    {
+      "id": "b999_p496_1",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"virtue\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":false}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "virtue",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": false
+    },
+    {
+      "id": "b999_p496_13",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "not_annotated",
+          "non_moral": true
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}",
+        "prediction": {
+          "care": "virtue",
+          "fairness": "not_annotated",
+          "loyalty": "virtue",
+          "authority": "virtue",
+          "sanctity": "virtue",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "not_annotated",
+        "non_moral": true
+      },
+      "consistent": false
+    },
+    {
+      "id": "b999_p496_18",
+      "image": {
+        "raw_prediction": " {\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "not_annotated",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "not_annotated",
+          "loyalty": "not_annotated",
+          "authority": "not_annotated",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "not_annotated",
+        "fairness": "not_annotated",
+        "loyalty": "not_annotated",
+        "authority": "not_annotated",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": false
+    },
+    {
+      "id": "b9_p124_16",
+      "image": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "text": {
+        "raw_prediction": " {\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}",
+        "prediction": {
+          "care": "vice",
+          "fairness": "vice",
+          "loyalty": "vice",
+          "authority": "vice",
+          "sanctity": "vice",
+          "non_moral": false
+        }
+      },
+      "reference": {
+        "care": "vice",
+        "fairness": "vice",
+        "loyalty": "vice",
+        "authority": "vice",
+        "sanctity": "vice",
+        "non_moral": false
+      },
+      "consistent": true
+    }
+  ]
+}

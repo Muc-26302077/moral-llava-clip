@@ -1,0 +1,1878 @@
+[
+  {
+    "id": "b10_p125_14",
+    "image": "validation/b10_p125_14.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"not_annotated\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b10_p129_16",
+    "image": "validation/b10_p129_16.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b10_p132_11",
+    "image": "validation/b10_p132_11.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b10_p132_2",
+    "image": "validation/b10_p132_2.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"virtue\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b10_p135_6",
+    "image": "validation/b10_p135_6.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b10_p137_19",
+    "image": "validation/b10_p137_19.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b10_p137_2",
+    "image": "validation/b10_p137_2.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b10_p138_9",
+    "image": "validation/b10_p138_9.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b10_p140_8",
+    "image": "validation/b10_p140_8.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b10_p143_20",
+    "image": "validation/b10_p143_20.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"not_annotated\",\"authority\":\"virtue\",\"sanctity\":\"not_annotated\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b10_p151_3",
+    "image": "validation/b10_p151_3.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b11_p157_16",
+    "image": "validation/b11_p157_16.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b11_p159_1",
+    "image": "validation/b11_p159_1.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b11_p159_2",
+    "image": "validation/b11_p159_2.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b11_p160_20",
+    "image": "validation/b11_p160_20.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b11_p162_3",
+    "image": "validation/b11_p162_3.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b11_p164_11",
+    "image": "validation/b11_p164_11.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b11_p164_2",
+    "image": "validation/b11_p164_2.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b11_p165_15",
+    "image": "validation/b11_p165_15.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b11_p166_11",
+    "image": "validation/b11_p166_11.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b11_p167_16",
+    "image": "validation/b11_p167_16.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b11_p168_19",
+    "image": "validation/b11_p168_19.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b11_p173_1",
+    "image": "validation/b11_p173_1.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b11_p173_20",
+    "image": "validation/b11_p173_20.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b11_p174_12",
+    "image": "validation/b11_p174_12.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b11_p178_3",
+    "image": "validation/b11_p178_3.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b13_p214_15",
+    "image": "validation/b13_p214_15.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b13_p215_16",
+    "image": "validation/b13_p215_16.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b13_p217_1",
+    "image": "validation/b13_p217_1.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b13_p225_1",
+    "image": "validation/b13_p225_1.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b13_p225_19",
+    "image": "validation/b13_p225_19.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b13_p227_12",
+    "image": "validation/b13_p227_12.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b13_p231_11",
+    "image": "validation/b13_p231_11.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b13_p231_18",
+    "image": "validation/b13_p231_18.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"not_annotated\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b13_p232_2",
+    "image": "validation/b13_p232_2.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b13_p232_7",
+    "image": "validation/b13_p232_7.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b13_p236_6",
+    "image": "validation/b13_p236_6.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b13_p242_3",
+    "image": "validation/b13_p242_3.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b14_p255_13",
+    "image": "validation/b14_p255_13.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b14_p256_16",
+    "image": "validation/b14_p256_16.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b14_p259_20",
+    "image": "validation/b14_p259_20.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b14_p262_15",
+    "image": "validation/b14_p262_15.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b14_p267_1",
+    "image": "validation/b14_p267_1.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b14_p268_16",
+    "image": "validation/b14_p268_16.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b14_p269_4",
+    "image": "validation/b14_p269_4.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b14_p270_11",
+    "image": "validation/b14_p270_11.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b14_p275_15",
+    "image": "validation/b14_p275_15.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b14_p277_5",
+    "image": "validation/b14_p277_5.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b14_p282_15",
+    "image": "validation/b14_p282_15.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"not_annotated\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b14_p282_7",
+    "image": "validation/b14_p282_7.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b14_p285_16",
+    "image": "validation/b14_p285_16.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p292_16",
+    "image": "validation/b15_p292_16.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p295_3",
+    "image": "validation/b15_p295_3.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p295_4",
+    "image": "validation/b15_p295_4.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p296_19",
+    "image": "validation/b15_p296_19.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p311_2",
+    "image": "validation/b15_p311_2.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p313_10",
+    "image": "validation/b15_p313_10.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p313_15",
+    "image": "validation/b15_p313_15.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p317_15",
+    "image": "validation/b15_p317_15.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"not_annotated\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p319_17",
+    "image": "validation/b15_p319_17.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"virtue\",\"loyalty\":\"not_annotated\",\"authority\":\"virtue\",\"sanctity\":\"not_annotated\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p319_6",
+    "image": "validation/b15_p319_6.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p340_9",
+    "image": "validation/b15_p340_9.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p350_17",
+    "image": "validation/b15_p350_17.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p355_10",
+    "image": "validation/b15_p355_10.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p363_14",
+    "image": "validation/b15_p363_14.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p367_13",
+    "image": "validation/b15_p367_13.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p371_16",
+    "image": "validation/b15_p371_16.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p375_10",
+    "image": "validation/b15_p375_10.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p375_14",
+    "image": "validation/b15_p375_14.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"virtue\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p375_20",
+    "image": "validation/b15_p375_20.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p380_5",
+    "image": "validation/b15_p380_5.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"not_annotated\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p384_17",
+    "image": "validation/b15_p384_17.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"not_annotated\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p388_4",
+    "image": "validation/b15_p388_4.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p394_7",
+    "image": "validation/b15_p394_7.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p403_18",
+    "image": "validation/b15_p403_18.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"not_annotated\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p426_4",
+    "image": "validation/b15_p426_4.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p439_4",
+    "image": "validation/b15_p439_4.jpeg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p443_19",
+    "image": "validation/b15_p443_19.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p447_17",
+    "image": "validation/b15_p447_17.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"vice\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p460_14",
+    "image": "validation/b15_p460_14.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p461_16",
+    "image": "validation/b15_p461_16.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p463_3",
+    "image": "validation/b15_p463_3.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p463_9",
+    "image": "validation/b15_p463_9.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p465_18",
+    "image": "validation/b15_p465_18.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"not_annotated\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p466_5",
+    "image": "validation/b15_p466_5.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p473_10",
+    "image": "validation/b15_p473_10.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p474_4",
+    "image": "validation/b15_p474_4.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b15_p475_5",
+    "image": "validation/b15_p475_5.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b1_p11_1",
+    "image": "validation/b1_p11_1.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b1_p1_4",
+    "image": "validation/b1_p1_4.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b2_p16_20",
+    "image": "validation/b2_p16_20.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b2_p17_11",
+    "image": "validation/b2_p17_11.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"not_annotated\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b2_p17_7",
+    "image": "validation/b2_p17_7.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b2_p18_19",
+    "image": "validation/b2_p18_19.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b2_p18_7",
+    "image": "validation/b2_p18_7.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"not_annotated\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b2_p19_7",
+    "image": "validation/b2_p19_7.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b2_p20_20",
+    "image": "validation/b2_p20_20.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"not_annotated\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b2_p26_3",
+    "image": "validation/b2_p26_3.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b2_p27_2",
+    "image": "validation/b2_p27_2.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b2_p28_20",
+    "image": "validation/b2_p28_20.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b2_p30_13",
+    "image": "validation/b2_p30_13.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b2_p33_10",
+    "image": "validation/b2_p33_10.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b2_p35_4",
+    "image": "validation/b2_p35_4.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b2_p38_13",
+    "image": "validation/b2_p38_13.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b4_p52_14",
+    "image": "validation/b4_p52_14.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b4_p53_19",
+    "image": "validation/b4_p53_19.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b4_p54_10",
+    "image": "validation/b4_p54_10.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"not_annotated\",\"loyalty\":\"vice\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b4_p54_3",
+    "image": "validation/b4_p54_3.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b4_p57_16",
+    "image": "validation/b4_p57_16.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b4_p58_19",
+    "image": "validation/b4_p58_19.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b4_p61_2",
+    "image": "validation/b4_p61_2.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"not_annotated\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b4_p66_1",
+    "image": "validation/b4_p66_1.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"virtue\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b6_p88_4",
+    "image": "validation/b6_p88_4.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b6_p89_9",
+    "image": "validation/b6_p89_9.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b7_p101_12",
+    "image": "validation/b7_p101_12.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b7_p95_18",
+    "image": "validation/b7_p95_18.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b8_p109_15",
+    "image": "validation/b8_p109_15.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b8_p114_1",
+    "image": "validation/b8_p114_1.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b8_p116_12",
+    "image": "validation/b8_p116_12.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b999_p477_1",
+    "image": "validation/b999_p477_1.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b999_p477_17",
+    "image": "validation/b999_p477_17.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b999_p481_11",
+    "image": "validation/b999_p481_11.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"not_annotated\",\"loyalty\":\"vice\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b999_p481_16",
+    "image": "validation/b999_p481_16.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"vice\",\"loyalty\":\"not_annotated\",\"authority\":\"vice\",\"sanctity\":\"not_annotated\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b999_p482_17",
+    "image": "validation/b999_p482_17.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b999_p484_20",
+    "image": "validation/b999_p484_20.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b999_p486_2",
+    "image": "validation/b999_p486_2.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b999_p488_4",
+    "image": "validation/b999_p488_4.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b999_p489_4",
+    "image": "validation/b999_p489_4.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b999_p490_1",
+    "image": "validation/b999_p490_1.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b999_p494_2",
+    "image": "validation/b999_p494_2.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"virtue\",\"fairness\":\"not_annotated\",\"loyalty\":\"virtue\",\"authority\":\"virtue\",\"sanctity\":\"virtue\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b999_p496_1",
+    "image": "validation/b999_p496_1.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b999_p496_13",
+    "image": "validation/b999_p496_13.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"not_annotated\",\"non_moral\":true}"
+      }
+    ]
+  },
+  {
+    "id": "b999_p496_18",
+    "image": "validation/b999_p496_18.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"not_annotated\",\"fairness\":\"not_annotated\",\"loyalty\":\"not_annotated\",\"authority\":\"not_annotated\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  },
+  {
+    "id": "b9_p124_16",
+    "image": "validation/b9_p124_16.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nInfer this image's annotations under the five moral foundations. Return exactly one JSON object with keys care, fairness, loyalty, authority, sanctity, and non_moral. For each foundation use exactly one of virtue, vice, or not_annotated. The virtue/vice pairs are care: Care/Harm; fairness: Fairness/Cheating; loyalty: Loyalty/Betrayal; authority: Respect/Subversion; sanctity: Sanctity/Degradation. not_annotated means that neither pole is annotated in this dataset; it does not assert morally neutral content. non_moral must be a JSON boolean, true exactly when all five foundations are not_annotated. Include all six keys and no other keys. Do not include explanations, captions, or text outside the JSON object."
+      },
+      {
+        "from": "gpt",
+        "value": "{\"care\":\"vice\",\"fairness\":\"vice\",\"loyalty\":\"vice\",\"authority\":\"vice\",\"sanctity\":\"vice\",\"non_moral\":false}"
+      }
+    ]
+  }
+]

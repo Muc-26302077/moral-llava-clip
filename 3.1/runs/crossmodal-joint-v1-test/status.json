@@ -1,0 +1,38 @@
+{
+  "status": "complete",
+  "started_at": "2026-11-01T14:58:25.326138+00:00",
+  "protocol_sha256": "b8952a3288905e452e1993fac7719eefa79e1d2a210cf0dc55a28b2691f4390d",
+  "torch": "2.6.0+cu124",
+  "python": "3.12.3",
+  "device": "cuda",
+  "precision": "bf16",
+  "base_revision": "b234b804b114d9e37bb655e11cbbb5f5e971b7a9",
+  "training": false,
+  "output_repair": false,
+  "arguments": {
+    "protocol": "/root/autodl-tmp/moral-llava/runs/crossmodal-v1/protocol.json",
+    "base_model": "/root/autodl-tmp/cache/huggingface/hub/models--llava-hf--llava-1.5-7b-hf/snapshots/b234b804b114d9e37bb655e11cbbb5f5e971b7a9",
+    "adapter": "runs/crossmodal-joint-v1/epoch-002",
+    "output": "runs/crossmodal-joint-v1-test",
+    "device": "cuda",
+    "precision": "bf16",
+    "batch_size": 8,
+    "max_new_tokens": 256,
+    "cpu_threads": 8,
+    "decoding": "both",
+    "models": "lora",
+    "limit": 0
+  },
+  "source_sha256": {
+    "infer_crossmodal.py": "08d7adaa355f0b6f5863b09f6d724b0f33b8e53701fea3378ae64891de7f55cf",
+    "crossmodal.py": "a44c9ea5bff4fb613ea93ddb3432db2799a9ba7788c1747c922a8cf453e0e84f",
+    "schema.py": "0fe9a39be60143a8f480cda54f60e63a931cdbaf6b38eea84415de87b25dfe3c"
+  },
+  "adapter_sha256": "22cbec8ded2c355f113cf9d55b0cd98e83372e2133b42af41918a09ae8e20fbb",
+  "transformers": "4.49.0",
+  "peft": "0.14.0",
+  "model_load_seconds": 5.43512424454093,
+  "finished_at": "2026-11-01T15:01:16.671150+00:00",
+  "benchmark_complete": false,
+  "total_seconds": 171.09987419471145
+}

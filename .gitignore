@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+.pytest_cache/
+tmp/
+data/raw/
+data/processed/
+runs/
+outputs/
+checkpoints/
+*.zip
+*.safetensors
+*.bin
+wandb/

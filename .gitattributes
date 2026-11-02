@@ -1,2 +1,5 @@
+* -text
+*.sh text eol=lf
+*.py text eol=lf
 *.safetensors filter=lfs diff=lfs merge=lfs -text
 *.bin filter=lfs diff=lfs merge=lfs -text

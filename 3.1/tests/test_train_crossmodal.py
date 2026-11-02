@@ -2,7 +2,7 @@
 import unittest
 from pathlib import Path
 
-from moral_llava.train_crossmodal import (BASE, ROOT, PairCollator, load_splits,
+from moral_llava.train_crossmodal import (ROOT, PairCollator,
                                           paired_state_loss, state_logits)
 
 
@@ -42,15 +42,22 @@ class PairTrainingTests(unittest.TestCase):
     def test_real_collator_masks_prompts_and_aligns_state_prediction_positions(self):
         from transformers import AutoProcessor
         from types import SimpleNamespace
-        processor=AutoProcessor.from_pretrained(str(BASE),local_files_only=True)
+        processor=AutoProcessor.from_pretrained(str(ROOT/'models/moralllava'),local_files_only=True)
         from moral_llava.train import configure_processor
         from moral_llava.crossmodal import read_json
-        config=SimpleNamespace(**read_json(BASE/'config.json'))
-        config.vision_config=SimpleNamespace(**config.vision_config)
+        from moral_llava.schema import labels_to_target
+        config=SimpleNamespace(model_type='llava',vision_config=SimpleNamespace(patch_size=14,image_size=336),
+                               vision_feature_select_strategy='default',image_token_index=32000,image_seq_length=576)
         expected=configure_processor(processor,config,padding_side='right')
-        splits=load_splits(ROOT/'data/raw/SMID_moralclip')
+        image_root=ROOT/'data/raw/SMID_moralclip'
+        source=read_json(image_root/'smid_manifest.json')
+        rows=[{'id':r['id'],'image':str(image_root/r['image_path']),'captions':r['captions'],
+               'target':labels_to_target(r['moral_labels'])}
+              for r in sorted(source,key=lambda r:r['id'])
+              if r['split']=='train' and (image_root/r['image_path']).is_file()][:2]
+        self.assertEqual(len(rows),2)
         collator=PairCollator(processor,expected)
-        batch=collator(splits['train'][:2])
+        batch=collator(rows)
         for modality in ('image','text'):
             for row in range(2):
                 positions=batch[modality+'_positions'][row]

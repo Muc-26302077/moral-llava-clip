@@ -13,9 +13,6 @@ from .crossmodal import (ROOT, REVISION, AnswerTrie, read_json, score, sha256,
                          validate_protocol, write_new_json)
 from .infer import format_prediction
 
-DEFAULT_BASE = Path('/root/autodl-tmp/cache/huggingface/hub/models--llava-hf--llava-1.5-7b-hf/snapshots')/REVISION
-
-
 def now():
     return datetime.now(timezone.utc).isoformat()
 
@@ -158,9 +155,9 @@ def run(args):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--protocol', type=Path, default=ROOT/'runs/crossmodal-v1/protocol.json')
-    parser.add_argument('--base-model', type=Path, default=DEFAULT_BASE)
-    parser.add_argument('--adapter', type=Path, default=ROOT/'runs/moral-llava-1.5')
+    parser.add_argument('--protocol', type=Path, default=ROOT/'results/reference/runs/crossmodal-v1/protocol.json')
+    parser.add_argument('--base-model', type=Path, required=True)
+    parser.add_argument('--adapter', type=Path, default=ROOT/'models/moralllava')
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--device', choices=('cuda', 'cpu'), default='cuda')
     parser.add_argument('--precision', choices=('bf16', 'fp32'), default='bf16')

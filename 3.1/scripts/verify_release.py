@@ -75,15 +75,17 @@ def verify():
     for left, right in [('train','validation'),('train','test'),('validation','test')]:
         require(not (hashes_by_split[left] & hashes_by_split[right]), 'Image bytes overlap across splits')
 
-    training = ROOT / 'runs/crossmodal-joint-v1'
+    reference = ROOT / 'results/reference'
+    training = reference / 'runs/crossmodal-joint-v1'
     selection = read(training / 'selection.json')
     config = read(training / 'run_config.json')
     require(selection['selected_epoch'] == 2, 'Unexpected selected epoch')
-    selected = ROOT / selection['selected_adapter']
+    selected = ROOT / 'models/moralllava'
+    require(selection['selected_adapter'] == 'runs/crossmodal-joint-v1/epoch-002', 'Unexpected historical selection')
     require(read(training / 'status.json')['status'] == 'complete', 'Training incomplete')
     require(sha256(ROOT/'moral_llava/train_crossmodal.py') == config['source_sha256'], 'Training code changed')
     require(sha256(image_root/'smid_manifest.json') == config['manifest_sha256'], 'Training source manifest changed')
-    initial_hash = sha256(ROOT/'runs/moral-llava-1.5/adapter_model.safetensors')
+    initial_hash = sha256(ROOT/'models/image-lora/adapter_model.safetensors')
     require(initial_hash == config['initial_adapter_sha256'], 'Initial adapter mismatch')
     selected_hash = sha256(selected/'adapter_model.safetensors')
     require(selected_hash != initial_hash, 'Selected adapter equals initialization')
@@ -100,7 +102,7 @@ def verify():
             best_epoch, best_value = epoch, m['strict_agreement']
     require(best_epoch == selection['selected_epoch'], 'Validation selection cannot be reproduced')
 
-    protocol_path = ROOT/'runs/crossmodal-v1/protocol.json'
+    protocol_path = reference/'runs/crossmodal-v1/protocol.json'
     protocol, protocol_hash = read(protocol_path), sha256(protocol_path)
     require({s['id'] for s in protocol['scenes']} == {r['id'] for r in original if r['split']=='test'},
             'Protocol does not cover the test set')
@@ -110,8 +112,8 @@ def verify():
         require(scene['image_sha256'] == sha256(image_root/row['image_path']), 'Protocol image mismatch')
         require(scene['caption'] == row['captions'][0] and scene['reference'] == labels_to_target(row['moral_labels']),
                 'Protocol caption/reference mismatch')
-    old = ROOT/'runs/crossmodal-v1/full'
-    new = ROOT/'runs/crossmodal-joint-v1-test'
+    old = reference/'runs/crossmodal-v1/full'
+    new = reference/'runs/crossmodal-joint-v1-test'
     for directory in [old,new]:
         status = read(directory/'status.json')
         require(status['status']=='complete' and status['protocol_sha256']==protocol_hash, 'Inference provenance mismatch')
@@ -134,7 +136,7 @@ def verify():
         for version,directory in [('old',old),('new',new)]:
             lora = predictions(directory/f'lora_{decoding}.jsonl')
             actual = score(protocol, {'base':base,'lora':lora})
-            saved_path = (directory if version=='old' else ROOT/'outputs/crossmodal-joint-v1-evaluation')/f'metrics_{decoding}.json'
+            saved_path = (directory if version=='old' else reference/'evaluation')/f'metrics_{decoding}.json'
             saved = read(saved_path)
             require(actual == {k:saved[k] for k in actual}, f'Recomputed metrics differ: {version}/{decoding}')
             results[f'{version}_{decoding}'] = {

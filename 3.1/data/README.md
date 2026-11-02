@@ -11,7 +11,7 @@
 
 原始训练/验证清单位于 `raw/SMID_moralclip/smid_manifest.json`，测试清单位于
 `raw/SMID_moralclip/test/smid_manifest.json`；原清单包含道德标签和每图 10 条描述。
-测试 A/B 各 63 个场景，固定使用第 0 条描述，分组协议为 `../runs/crossmodal-v1/protocol.json`。
+测试 A/B 各 63 个场景，固定使用第 0 条描述，分组协议为 `../results/reference/runs/crossmodal-v1/protocol.json`。
 图片、清单和处理后 JSON 均原样保留，没有重新划分测试样本。
 
 `image_attribution.csv` 逐图记录 ID、划分、相对路径、SHA-256 和署名状态。

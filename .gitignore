@@ -12,6 +12,6 @@ __pycache__/
 *token*.txt
 tmp/
 wandb/
-3.1_evaluation/runs/local-*/
-3.1_evaluation/runs/recomputed*/
-3.1_evaluation/release_verification.json
+3.1/results/runs/
+3.1/models/base/
+3.1/release_verification.json

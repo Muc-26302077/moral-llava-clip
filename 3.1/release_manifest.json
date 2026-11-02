@@ -2,84 +2,14 @@
   "format_version": 1,
   "files": [
     {
-      "path": "ALIGNMENT.md",
-      "bytes": 10020,
-      "sha256": "6fe42658445516d9fa34e743d1c72353aa1f9b43959be2e9ba02c8ac76e8fa3a"
-    },
-    {
-      "path": "CROSSMODAL_CONDITIONAL_DISTILLATION_PLAN.md",
-      "bytes": 13696,
-      "sha256": "dca5b4cff3dac220aafdcd9c81bfd5337dbab9e65a5ce8d6c31e1c49c35aea69"
-    },
-    {
-      "path": "CROSSMODAL_EVALUATION.md",
-      "bytes": 4581,
-      "sha256": "560dbfb35a01505082a8c26757aee03967ed286a3eeeb726d1c8b2cee5a16f42"
-    },
-    {
-      "path": "CROSSMODAL_IMPROVEMENT_PLAN.md",
-      "bytes": 4600,
-      "sha256": "452068461fa2deb945da3b2d7038551bfdac57934228c4024618f957ae9d779f"
-    },
-    {
-      "path": "CROSSMODAL_IMPROVEMENT_RESULTS.md",
-      "bytes": 9117,
-      "sha256": "40b4680914d43a4cc8021213e9667a9fa28dd40e5e133bb2e964c5184bbc6a4d"
-    },
-    {
-      "path": "CROSSMODAL_RESULTS.md",
-      "bytes": 4923,
-      "sha256": "7c926b4f8e363bc6f602694efdad74c1dda9a2e8ae6103a33967734e645e79e9"
-    },
-    {
-      "path": "EXPERIMENT_REPORT.md",
-      "bytes": 7604,
-      "sha256": "a39678791b75d4632c62f73d86e18b74574706c8d88c284c4fb0f07bf6dcb67f"
-    },
-    {
-      "path": "HISTORY.md",
-      "bytes": 16087,
-      "sha256": "fc84e3eebbe3bc2b3547284bc7a54e727fdf530f0dd57f18b3f69231032a0449"
-    },
-    {
-      "path": "PROGRESS_CROSSMODAL.md",
-      "bytes": 9055,
-      "sha256": "5ff7bafff9a5e598cff887f8af2d1a64565432b782d40fe001d0ffe441e2fb7a"
-    },
-    {
       "path": "README.md",
-      "bytes": 7279,
-      "sha256": "55bf351c074c3f26363b66160750d5f80efd2128e64975cef9ba2920c0e810de"
-    },
-    {
-      "path": "alignment_commands.txt",
-      "bytes": 2856,
-      "sha256": "6bdfd16ebe6b75bacbf81fa4f625f588b1cc65cb9f13703d0e78e60ae993850f"
-    },
-    {
-      "path": "alignment_inference_commands.txt",
-      "bytes": 1724,
-      "sha256": "47f25e8be2d1dc5b62cc361ea375fa8e208be0f8348c51d60347f31646f66312"
+      "bytes": 4379,
+      "sha256": "534ed61b26d4dd29eda22013d2295b88e8872c92354d35ce279350ad8a7d86f6"
     },
     {
       "path": "benchmark/.gitkeep",
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "path": "configs/conditional_distillation_v1/A_supervised.json",
-      "bytes": 4104,
-      "sha256": "cc05dec622b82e2a4013cc6a8a37200899fe30c9cb445a166f909bb2b507da0f"
-    },
-    {
-      "path": "configs/conditional_distillation_v1/B_symmetric_js.json",
-      "bytes": 4194,
-      "sha256": "6900c3b446fbf3eaf9b982246ddd57f8898f477687a277605f94158a15c92831"
-    },
-    {
-      "path": "configs/conditional_distillation_v1/C_conditional_kd.json",
-      "bytes": 4673,
-      "sha256": "2fe39ec55790956407b69e54c9560e0b61247a0a1be17eda985d92801a9a403b"
     },
     {
       "path": "data/COPYRIGHT.md",
@@ -88,8 +18,8 @@
     },
     {
       "path": "data/README.md",
-      "bytes": 1753,
-      "sha256": "b90aec7b6924a5968b4f25c5780c04c0c16f32eb1fdcb97638d59950278609e3"
+      "bytes": 1771,
+      "sha256": "282a2cea01a51a258aec40bbb4852cf3762e45ddc815166dacd609ed285f27f8"
     },
     {
       "path": "data/excluded_images.json",
@@ -12157,6 +12087,166 @@
       "sha256": "26245d45a1a1c72130d28953b6cb413f819988007f442cdbc4e97586cdb051ca"
     },
     {
+      "path": "docs/README.md",
+      "bytes": 1434,
+      "sha256": "257e13f636efbd278a67cab4b323ddd02c884ad066878d6e15c1522741210db2"
+    },
+    {
+      "path": "docs/archive/ALIGNMENT.md",
+      "bytes": 10020,
+      "sha256": "6fe42658445516d9fa34e743d1c72353aa1f9b43959be2e9ba02c8ac76e8fa3a"
+    },
+    {
+      "path": "docs/archive/CROSSMODAL_CONDITIONAL_DISTILLATION_PLAN.md",
+      "bytes": 13696,
+      "sha256": "dca5b4cff3dac220aafdcd9c81bfd5337dbab9e65a5ce8d6c31e1c49c35aea69"
+    },
+    {
+      "path": "docs/archive/CROSSMODAL_EVALUATION.md",
+      "bytes": 4581,
+      "sha256": "560dbfb35a01505082a8c26757aee03967ed286a3eeeb726d1c8b2cee5a16f42"
+    },
+    {
+      "path": "docs/archive/CROSSMODAL_IMPROVEMENT_PLAN.md",
+      "bytes": 4600,
+      "sha256": "452068461fa2deb945da3b2d7038551bfdac57934228c4024618f957ae9d779f"
+    },
+    {
+      "path": "docs/archive/CROSSMODAL_IMPROVEMENT_RESULTS.md",
+      "bytes": 9117,
+      "sha256": "40b4680914d43a4cc8021213e9667a9fa28dd40e5e133bb2e964c5184bbc6a4d"
+    },
+    {
+      "path": "docs/archive/CROSSMODAL_RESULTS.md",
+      "bytes": 4923,
+      "sha256": "7c926b4f8e363bc6f602694efdad74c1dda9a2e8ae6103a33967734e645e79e9"
+    },
+    {
+      "path": "docs/archive/EXPERIMENT_REPORT.md",
+      "bytes": 7604,
+      "sha256": "a39678791b75d4632c62f73d86e18b74574706c8d88c284c4fb0f07bf6dcb67f"
+    },
+    {
+      "path": "docs/archive/HISTORY.md",
+      "bytes": 16087,
+      "sha256": "fc84e3eebbe3bc2b3547284bc7a54e727fdf530f0dd57f18b3f69231032a0449"
+    },
+    {
+      "path": "docs/archive/PROGRESS_CROSSMODAL.md",
+      "bytes": 9055,
+      "sha256": "5ff7bafff9a5e598cff887f8af2d1a64565432b782d40fe001d0ffe441e2fb7a"
+    },
+    {
+      "path": "docs/archive/alignment_commands.txt",
+      "bytes": 2856,
+      "sha256": "6bdfd16ebe6b75bacbf81fa4f625f588b1cc65cb9f13703d0e78e60ae993850f"
+    },
+    {
+      "path": "docs/archive/alignment_inference_commands.txt",
+      "bytes": 1724,
+      "sha256": "47f25e8be2d1dc5b62cc361ea375fa8e208be0f8348c51d60347f31646f66312"
+    },
+    {
+      "path": "docs/archive/configs/conditional_distillation_v1/A_supervised.json",
+      "bytes": 4104,
+      "sha256": "cc05dec622b82e2a4013cc6a8a37200899fe30c9cb445a166f909bb2b507da0f"
+    },
+    {
+      "path": "docs/archive/configs/conditional_distillation_v1/B_symmetric_js.json",
+      "bytes": 4194,
+      "sha256": "6900c3b446fbf3eaf9b982246ddd57f8898f477687a277605f94158a15c92831"
+    },
+    {
+      "path": "docs/archive/configs/conditional_distillation_v1/C_conditional_kd.json",
+      "bytes": 4673,
+      "sha256": "2fe39ec55790956407b69e54c9560e0b61247a0a1be17eda985d92801a9a403b"
+    },
+    {
+      "path": "docs/archive/requirements-autodl.txt",
+      "bytes": 300,
+      "sha256": "d7c31dd7e4ec4618d4a932659fa20932571542bc66899e5b0667854ec34dc186"
+    },
+    {
+      "path": "docs/archive/requirements-data.txt",
+      "bytes": 17,
+      "sha256": "ac9c3643a3b5bb62b04c1826e9ed6cb8058a1a686e11d6f97d9f90701b5d0bb1"
+    },
+    {
+      "path": "docs/archive/requirements-train.txt",
+      "bytes": 346,
+      "sha256": "706198f87e6195ba6d7f0775e7d3baf890c75af5a4243c090a04e094ecf831f8"
+    },
+    {
+      "path": "docs/archive/scripts/activate_autodl.sh",
+      "bytes": 664,
+      "sha256": "7295e28e244fc5359ea6c9ff67bd21d7a16b90073a00f74ac49c3c5ca4ee61b2"
+    },
+    {
+      "path": "docs/archive/scripts/check_model_load.py",
+      "bytes": 6695,
+      "sha256": "fdb6511f6ea446166984128e44d0107583a1f0a39d6d4b0f159c8502bac7a7c9"
+    },
+    {
+      "path": "docs/archive/scripts/check_trainer_loss.py",
+      "bytes": 4527,
+      "sha256": "3c082dac95709864bfc1e186d330f379c70365a6167aaaa0b4948ee5bda4636d"
+    },
+    {
+      "path": "docs/archive/scripts/download_alignment_vision.py",
+      "bytes": 2435,
+      "sha256": "57b8959ee6da61e01c79e219c0e6716d960eea207ac62a763087c7267cbcc3b8"
+    },
+    {
+      "path": "docs/archive/scripts/evaluate_crossmodal_improvement.py",
+      "bytes": 7596,
+      "sha256": "8d2d01f026c9e3d58d2b132649abe045fbc691186f98ca1f7c68ea8978d7ba45"
+    },
+    {
+      "path": "docs/archive/scripts/evaluate_majority.py",
+      "bytes": 3703,
+      "sha256": "a97e82bbc705faaaf1b1d22565d07fbed91ea034036042d47fea05a37bc9cd96"
+    },
+    {
+      "path": "docs/archive/scripts/plot_alignment_architecture.py",
+      "bytes": 9552,
+      "sha256": "5842f4566e1cccc11cda22222740b5bf57889766974c00dd00ecb1ca2cc59bd9"
+    },
+    {
+      "path": "docs/archive/scripts/plot_alignment_retrieval.py",
+      "bytes": 8943,
+      "sha256": "aca01a24f7b777160b37926f75762690e517d0d5cd3339d69355c4297eff09b2"
+    },
+    {
+      "path": "docs/archive/scripts/report_crossmodal.py",
+      "bytes": 8768,
+      "sha256": "366738076e559c584b9cdb512fda7a161d125a263f8ad3e17a754367f26f608d"
+    },
+    {
+      "path": "docs/archive/scripts/retrieve_alignment.py",
+      "bytes": 4785,
+      "sha256": "f141ef673b715e0783abcf3af78f922c68477464d810b4c3ad1a115e6e776f0c"
+    },
+    {
+      "path": "docs/archive/scripts/run_alignment_experiment.py",
+      "bytes": 4827,
+      "sha256": "3e7c0434c768b93af15aefe7e0aa272285dcb0dfab48fac4d872efb7d03a029b"
+    },
+    {
+      "path": "docs/archive/scripts/run_alignment_lambda_sweep.py",
+      "bytes": 5668,
+      "sha256": "bafbb5702c3cf18e936ea9b75b0ea73fd5ef6f36c31a274fb0627113cb64a0c1"
+    },
+    {
+      "path": "docs/archive/scripts/summarize_alignment_experiment.py",
+      "bytes": 31502,
+      "sha256": "27a24035c8b66e6533ed239755e3ce27a6c8ba134780cb9d070fc8f4eba6e088"
+    },
+    {
+      "path": "docs/archive/scripts/verify_crossmodal_improvement.py",
+      "bytes": 8192,
+      "sha256": "ed82de7cede5c8a811bf09d8759d27b28599a3bff0f4bc420f1fe98762fb3ddd"
+    },
+    {
       "path": "models/BASE_MODEL_CARD.md",
       "bytes": 5639,
       "sha256": "36693f49ccf7bae2d1f328154cb30b075bc12f08f57917c8ea344bfa54edf423"
@@ -12168,8 +12258,128 @@
     },
     {
       "path": "models/README.md",
-      "bytes": 3207,
-      "sha256": "528ac7daba781ae6bbded8c3e2ed3d17dad6e864727b076eeab5d48e992de53c"
+      "bytes": 1762,
+      "sha256": "27dba726980185454d90b5cf3b77404b7311005423763151eb843ec3c1531657"
+    },
+    {
+      "path": "models/image-lora/README.md",
+      "bytes": 207,
+      "sha256": "d84660b19c9d1fc95ba1eef38b6100112a648670792937b5dd8e218186b7be93"
+    },
+    {
+      "path": "models/image-lora/adapter_config.json",
+      "bytes": 4254,
+      "sha256": "48ce20e7e340b993996a84e26a2ef1c3ffe0b5c043ddb5bf955a143701765b71"
+    },
+    {
+      "path": "models/image-lora/adapter_model.safetensors",
+      "bytes": 159974600,
+      "sha256": "8c7adaa741656e41f34434c347624844dcaa5a61589c6c0fef5274cc005eeb02"
+    },
+    {
+      "path": "models/image-lora/added_tokens.json",
+      "bytes": 41,
+      "sha256": "a94c56096001713e3eb9a34b1a545a8c1d5e8034ed2fb81f897c8cb54b420121"
+    },
+    {
+      "path": "models/image-lora/chat_template.json",
+      "bytes": 701,
+      "sha256": "854445c0a45532ecbee1ae9aa31d4be19644060a156f2c88456f50f584261543"
+    },
+    {
+      "path": "models/image-lora/preprocessor_config.json",
+      "bytes": 505,
+      "sha256": "a8d5e64ee5c07ff6d70142856d178ac39d0563da3612e32110fa824f5337b7a1"
+    },
+    {
+      "path": "models/image-lora/processor_config.json",
+      "bytes": 173,
+      "sha256": "fef918d6ba333f72a066877965bc4a162308568ba62aa90c806caedf7b45d64e"
+    },
+    {
+      "path": "models/image-lora/special_tokens_map.json",
+      "bytes": 580,
+      "sha256": "49d67258a3d88ecba09fb7fa47dd831717e08cb2ea12891ea2f3ad7dce3f6401"
+    },
+    {
+      "path": "models/image-lora/tokenizer.json",
+      "bytes": 3619380,
+      "sha256": "30e1294abd835edfebb24618fce6f47c21ffb2b2802520d150bdee0b808b47cb"
+    },
+    {
+      "path": "models/image-lora/tokenizer.model",
+      "bytes": 499723,
+      "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347"
+    },
+    {
+      "path": "models/image-lora/tokenizer_config.json",
+      "bytes": 1452,
+      "sha256": "9649cab5b938617d89006144c603f720239e62fa8d3137c2777250e417bfb067"
+    },
+    {
+      "path": "models/image-lora/training_metadata.json",
+      "bytes": 13934,
+      "sha256": "2c7c50a6c685cc03f7cb344fddd70f51b7533515bb6d8bbb37e14561b8baaa7b"
+    },
+    {
+      "path": "models/moralllava/README.md",
+      "bytes": 231,
+      "sha256": "d3a4683006564fa8f3a6df4771fceb81b8681bc2faf11a1579eeab8e973ee49f"
+    },
+    {
+      "path": "models/moralllava/adapter_config.json",
+      "bytes": 4254,
+      "sha256": "b052cf5e392aac48f5d01772b75717c7974ca874ecd3c05ff0db6f8f53f22686"
+    },
+    {
+      "path": "models/moralllava/adapter_model.safetensors",
+      "bytes": 159974600,
+      "sha256": "22cbec8ded2c355f113cf9d55b0cd98e83372e2133b42af41918a09ae8e20fbb"
+    },
+    {
+      "path": "models/moralllava/added_tokens.json",
+      "bytes": 41,
+      "sha256": "a94c56096001713e3eb9a34b1a545a8c1d5e8034ed2fb81f897c8cb54b420121"
+    },
+    {
+      "path": "models/moralllava/chat_template.json",
+      "bytes": 701,
+      "sha256": "854445c0a45532ecbee1ae9aa31d4be19644060a156f2c88456f50f584261543"
+    },
+    {
+      "path": "models/moralllava/preprocessor_config.json",
+      "bytes": 505,
+      "sha256": "a8d5e64ee5c07ff6d70142856d178ac39d0563da3612e32110fa824f5337b7a1"
+    },
+    {
+      "path": "models/moralllava/processor_config.json",
+      "bytes": 173,
+      "sha256": "fef918d6ba333f72a066877965bc4a162308568ba62aa90c806caedf7b45d64e"
+    },
+    {
+      "path": "models/moralllava/special_tokens_map.json",
+      "bytes": 580,
+      "sha256": "49d67258a3d88ecba09fb7fa47dd831717e08cb2ea12891ea2f3ad7dce3f6401"
+    },
+    {
+      "path": "models/moralllava/tokenizer.json",
+      "bytes": 3619538,
+      "sha256": "ff5f809bea59b1be0612704493869bcf3dc70371430f73f99cf5009e70ef8d9c"
+    },
+    {
+      "path": "models/moralllava/tokenizer.model",
+      "bytes": 499723,
+      "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347"
+    },
+    {
+      "path": "models/moralllava/tokenizer_config.json",
+      "bytes": 1452,
+      "sha256": "9649cab5b938617d89006144c603f720239e62fa8d3137c2777250e417bfb067"
+    },
+    {
+      "path": "models/moralllava/training_metadata.json",
+      "bytes": 44184,
+      "sha256": "060d665bbd124e3f09aebfcd9d941178a0676c44d1e90c707e5f8ff97c21f265"
     },
     {
       "path": "moral_llava/__init__.py",
@@ -12197,6 +12407,11 @@
       "sha256": "a44c9ea5bff4fb613ea93ddb3432db2799a9ba7788c1747c922a8cf453e0e84f"
     },
     {
+      "path": "moral_llava/download_model.py",
+      "bytes": 4482,
+      "sha256": "cb3e856cd566eb3f5d67832fc96be0acbfe528af928138cb739c592f3d241558"
+    },
+    {
       "path": "moral_llava/evaluate.py",
       "bytes": 11343,
       "sha256": "5f13ce52b03eb1d90b852edf7978f8840ff1b3fff665185c00b26455934790b7"
@@ -12208,8 +12423,13 @@
     },
     {
       "path": "moral_llava/infer_crossmodal.py",
-      "bytes": 11275,
-      "sha256": "08d7adaa355f0b6f5863b09f6d724b0f33b8e53701fea3378ae64891de7f55cf"
+      "bytes": 11166,
+      "sha256": "99f400bc3d0fcef1beaa9de51f003f769bf5b265ad6aab7789c030422bd1041f"
+    },
+    {
+      "path": "moral_llava/pipeline.py",
+      "bytes": 7339,
+      "sha256": "9cfb6bba41ca2489c09b958935c0c787b623b4e40c78b73d7275d9cdefeb8226"
     },
     {
       "path": "moral_llava/prepare.py",
@@ -12237,329 +12457,174 @@
       "sha256": "a68aee777243f7e96b19a328c0ba9222500e0970955505d344fb10353fa94a04"
     },
     {
-      "path": "moral_llava/归档.zip",
-      "bytes": 70653,
-      "sha256": "0bc20f666420880f55bb53af6fdf19682361803c8db404fcc9f660ee2b718367"
+      "path": "results/README.md",
+      "bytes": 562,
+      "sha256": "bc613a47692fb7a700d1e49302797f8c375321630e131d8028bf694a72309993"
     },
     {
-      "path": "outputs/crossmodal-joint-v1-evaluation/independent_verification.json",
+      "path": "results/reference/evaluation/independent_verification.json",
       "bytes": 4355,
       "sha256": "1eb2e04eed7c8ee2ae88b610b47b16e21e175f44c76f1789b7c8efc968cc38bc"
     },
     {
-      "path": "outputs/crossmodal-joint-v1-evaluation/metrics_constrained.json",
+      "path": "results/reference/evaluation/metrics_constrained.json",
       "bytes": 266979,
       "sha256": "c384b41b776ce90b1d4050741c34d25c46b2ece41dcfec5905ca81b4a005d5dc"
     },
     {
-      "path": "outputs/crossmodal-joint-v1-evaluation/metrics_free.json",
+      "path": "results/reference/evaluation/metrics_free.json",
       "bytes": 212476,
       "sha256": "5927dde6371e730e7661e96e983eea7aabe01752fade5592709b930c5304c046"
     },
     {
-      "path": "outputs/crossmodal-joint-v1-evaluation/report.md",
+      "path": "results/reference/evaluation/report.md",
       "bytes": 2487,
       "sha256": "ab8f2e2b8746466a2b724bc55b9eb76ba80a47cd9b64b14b4d6078cd372e1305"
     },
     {
-      "path": "outputs/crossmodal-joint-v1-evaluation/verification.json",
+      "path": "results/reference/evaluation/verification.json",
       "bytes": 14188,
       "sha256": "6a2654387b7cea589a2b35b4131f41ca317991483070445fb2e338b6b07b327e"
     },
     {
-      "path": "requirements-autodl.txt",
-      "bytes": 300,
-      "sha256": "d7c31dd7e4ec4618d4a932659fa20932571542bc66899e5b0667854ec34dc186"
-    },
-    {
-      "path": "requirements-data.txt",
-      "bytes": 17,
-      "sha256": "ac9c3643a3b5bb62b04c1826e9ed6cb8058a1a686e11d6f97d9f90701b5d0bb1"
-    },
-    {
-      "path": "requirements-train.txt",
-      "bytes": 346,
-      "sha256": "706198f87e6195ba6d7f0775e7d3baf890c75af5a4243c090a04e094ecf831f8"
-    },
-    {
-      "path": "run.sh",
-      "bytes": 1793,
-      "sha256": "49f1c58bed5dbfe837424e4dcdb4d64aa9612562dcb93042a14edec7f25b61ea"
-    },
-    {
-      "path": "runs/baseline.jsonl",
+      "path": "results/reference/runs/baseline.jsonl",
       "bytes": 41548,
       "sha256": "f3437b35e4af9efd1b2b163be84df72b6c1c6dcf4cba0fbb364f33ccee451c14"
     },
     {
-      "path": "runs/baseline_metrics.json",
+      "path": "results/reference/runs/baseline_metrics.json",
       "bytes": 19058,
       "sha256": "5af24e818947fda49e59835f953db4adb94343a196ce5a0c1941f53a5fe9913e"
     },
     {
-      "path": "runs/crossmodal-joint-v1/epoch-002/README.md",
-      "bytes": 5197,
-      "sha256": "a94d577d12389af547bc6dafe57e29ffc271b3cb03132d5f49bded04173325c4"
-    },
-    {
-      "path": "runs/crossmodal-joint-v1/epoch-002/adapter_config.json",
-      "bytes": 4254,
-      "sha256": "b052cf5e392aac48f5d01772b75717c7974ca874ecd3c05ff0db6f8f53f22686"
-    },
-    {
-      "path": "runs/crossmodal-joint-v1/epoch-002/adapter_model.safetensors",
-      "bytes": 159974600,
-      "sha256": "22cbec8ded2c355f113cf9d55b0cd98e83372e2133b42af41918a09ae8e20fbb"
-    },
-    {
-      "path": "runs/crossmodal-joint-v1/epoch-002/added_tokens.json",
-      "bytes": 41,
-      "sha256": "a94c56096001713e3eb9a34b1a545a8c1d5e8034ed2fb81f897c8cb54b420121"
-    },
-    {
-      "path": "runs/crossmodal-joint-v1/epoch-002/chat_template.json",
-      "bytes": 701,
-      "sha256": "854445c0a45532ecbee1ae9aa31d4be19644060a156f2c88456f50f584261543"
-    },
-    {
-      "path": "runs/crossmodal-joint-v1/epoch-002/preprocessor_config.json",
-      "bytes": 505,
-      "sha256": "a8d5e64ee5c07ff6d70142856d178ac39d0563da3612e32110fa824f5337b7a1"
-    },
-    {
-      "path": "runs/crossmodal-joint-v1/epoch-002/processor_config.json",
-      "bytes": 173,
-      "sha256": "fef918d6ba333f72a066877965bc4a162308568ba62aa90c806caedf7b45d64e"
-    },
-    {
-      "path": "runs/crossmodal-joint-v1/epoch-002/special_tokens_map.json",
-      "bytes": 580,
-      "sha256": "49d67258a3d88ecba09fb7fa47dd831717e08cb2ea12891ea2f3ad7dce3f6401"
-    },
-    {
-      "path": "runs/crossmodal-joint-v1/epoch-002/tokenizer.json",
-      "bytes": 3619538,
-      "sha256": "ff5f809bea59b1be0612704493869bcf3dc70371430f73f99cf5009e70ef8d9c"
-    },
-    {
-      "path": "runs/crossmodal-joint-v1/epoch-002/tokenizer.model",
-      "bytes": 499723,
-      "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347"
-    },
-    {
-      "path": "runs/crossmodal-joint-v1/epoch-002/tokenizer_config.json",
-      "bytes": 1452,
-      "sha256": "9649cab5b938617d89006144c603f720239e62fa8d3137c2777250e417bfb067"
-    },
-    {
-      "path": "runs/crossmodal-joint-v1/epoch-002/training_metadata.json",
-      "bytes": 44184,
-      "sha256": "060d665bbd124e3f09aebfcd9d941178a0676c44d1e90c707e5f8ff97c21f265"
-    },
-    {
-      "path": "runs/crossmodal-joint-v1/run_config.json",
-      "bytes": 42628,
-      "sha256": "cd5eafbd9f70ed1a901db0114437697be081e14da9248604dcd9938aca7ad901"
-    },
-    {
-      "path": "runs/crossmodal-joint-v1/selection.json",
-      "bytes": 201,
-      "sha256": "f9b1dc45549c771b9c6160ef94bfdd5390ab2b83cf9c5c98ca6899a10cd7a591"
-    },
-    {
-      "path": "runs/crossmodal-joint-v1/status.json",
-      "bytes": 235,
-      "sha256": "aa575289ac25ce7ea39a5c238b400a93a0a6945c408fd3d75cd7fc04f9e7b988"
-    },
-    {
-      "path": "runs/crossmodal-joint-v1/train_log.jsonl",
-      "bytes": 391241,
-      "sha256": "0015872ae03db3b517e214c4a1d487ad8660b32a60d3deae59708d0241302c1a"
-    },
-    {
-      "path": "runs/crossmodal-joint-v1/validation_epoch_001.json",
-      "bytes": 157815,
-      "sha256": "8f5cd07facdbf1def772c05d6db9ce39d7a28c120313bbda50c130c35d1a5901"
-    },
-    {
-      "path": "runs/crossmodal-joint-v1/validation_epoch_002.json",
-      "bytes": 157990,
-      "sha256": "47496ad111f818869656bd135e589c9378cd08e0ffb73ae010def5d09d12a493"
-    },
-    {
-      "path": "runs/crossmodal-joint-v1/validation_epoch_003.json",
-      "bytes": 157967,
-      "sha256": "cd308ff05ff4b20d6649ff117331427a143a7dc48333c73a13ccbf939501a5e5"
-    },
-    {
-      "path": "runs/crossmodal-joint-v1/validation_initial.json",
-      "bytes": 159055,
-      "sha256": "23cba923a641d135dafb43863656dfa45b1293ac87fc41360aa711aeded56dcb"
-    },
-    {
-      "path": "runs/crossmodal-joint-v1-test/lora_constrained.jsonl",
-      "bytes": 231214,
-      "sha256": "12fde0432238dbbd557bef099b794668dc23e18d59738fd1bbb592943ebde4c3"
-    },
-    {
-      "path": "runs/crossmodal-joint-v1-test/lora_free.jsonl",
-      "bytes": 229450,
-      "sha256": "948850b19a3f7f6b89fa8ef765afce36f6f0241f2e76619019f8105c1c8b8141"
-    },
-    {
-      "path": "runs/crossmodal-joint-v1-test/status.json",
-      "bytes": 1490,
-      "sha256": "18b68a888df7b0fe596cd1e353dbe131e4bd62146486a7fd54c5f640252c8818"
-    },
-    {
-      "path": "runs/crossmodal-joint-v1-test.log",
+      "path": "results/reference/runs/crossmodal-joint-v1-test.log",
       "bytes": 3636,
       "sha256": "1bcf3d1bce48d7389e7dfe6f98bb90d13f5c39bc30e4722ffb7585bd560b176d"
     },
     {
-      "path": "runs/crossmodal-joint-v1.log",
+      "path": "results/reference/runs/crossmodal-joint-v1-test/lora_constrained.jsonl",
+      "bytes": 231214,
+      "sha256": "12fde0432238dbbd557bef099b794668dc23e18d59738fd1bbb592943ebde4c3"
+    },
+    {
+      "path": "results/reference/runs/crossmodal-joint-v1-test/lora_free.jsonl",
+      "bytes": 229450,
+      "sha256": "948850b19a3f7f6b89fa8ef765afce36f6f0241f2e76619019f8105c1c8b8141"
+    },
+    {
+      "path": "results/reference/runs/crossmodal-joint-v1-test/status.json",
+      "bytes": 1490,
+      "sha256": "18b68a888df7b0fe596cd1e353dbe131e4bd62146486a7fd54c5f640252c8818"
+    },
+    {
+      "path": "results/reference/runs/crossmodal-joint-v1.log",
       "bytes": 17639,
       "sha256": "70357eca476d5d9ea612f3971038bcc067ab55093679dfcd94f1503367d72ebe"
     },
     {
-      "path": "runs/crossmodal-v1/full/base_constrained.jsonl",
+      "path": "results/reference/runs/crossmodal-joint-v1/run_config.json",
+      "bytes": 42628,
+      "sha256": "cd5eafbd9f70ed1a901db0114437697be081e14da9248604dcd9938aca7ad901"
+    },
+    {
+      "path": "results/reference/runs/crossmodal-joint-v1/selection.json",
+      "bytes": 201,
+      "sha256": "f9b1dc45549c771b9c6160ef94bfdd5390ab2b83cf9c5c98ca6899a10cd7a591"
+    },
+    {
+      "path": "results/reference/runs/crossmodal-joint-v1/status.json",
+      "bytes": 235,
+      "sha256": "aa575289ac25ce7ea39a5c238b400a93a0a6945c408fd3d75cd7fc04f9e7b988"
+    },
+    {
+      "path": "results/reference/runs/crossmodal-joint-v1/train_log.jsonl",
+      "bytes": 391241,
+      "sha256": "0015872ae03db3b517e214c4a1d487ad8660b32a60d3deae59708d0241302c1a"
+    },
+    {
+      "path": "results/reference/runs/crossmodal-joint-v1/validation_epoch_001.json",
+      "bytes": 157815,
+      "sha256": "8f5cd07facdbf1def772c05d6db9ce39d7a28c120313bbda50c130c35d1a5901"
+    },
+    {
+      "path": "results/reference/runs/crossmodal-joint-v1/validation_epoch_002.json",
+      "bytes": 157990,
+      "sha256": "47496ad111f818869656bd135e589c9378cd08e0ffb73ae010def5d09d12a493"
+    },
+    {
+      "path": "results/reference/runs/crossmodal-joint-v1/validation_epoch_003.json",
+      "bytes": 157967,
+      "sha256": "cd308ff05ff4b20d6649ff117331427a143a7dc48333c73a13ccbf939501a5e5"
+    },
+    {
+      "path": "results/reference/runs/crossmodal-joint-v1/validation_initial.json",
+      "bytes": 159055,
+      "sha256": "23cba923a641d135dafb43863656dfa45b1293ac87fc41360aa711aeded56dcb"
+    },
+    {
+      "path": "results/reference/runs/crossmodal-v1/full/base_constrained.jsonl",
       "bytes": 245214,
       "sha256": "ac9a06377cd56ec122ecfa0284549aa213e4e2d4fa43835dfad14a4ede346395"
     },
     {
-      "path": "runs/crossmodal-v1/full/base_free.jsonl",
+      "path": "results/reference/runs/crossmodal-v1/full/base_free.jsonl",
       "bytes": 188017,
       "sha256": "90f8e7d01ffda0b1d47e38edf2281840f3f9a4546d70ac4d46e46f7c4489c99c"
     },
     {
-      "path": "runs/crossmodal-v1/full/lora_constrained.jsonl",
+      "path": "results/reference/runs/crossmodal-v1/full/lora_constrained.jsonl",
       "bytes": 232632,
       "sha256": "19b273ba1c812df9b39238697ada6bf184ab0b5461de1f43ca2a7031748f3821"
     },
     {
-      "path": "runs/crossmodal-v1/full/lora_free.jsonl",
+      "path": "results/reference/runs/crossmodal-v1/full/lora_free.jsonl",
       "bytes": 230868,
       "sha256": "9b240287ac9a72e1f887456c3d9f1730e166a2159df2a88bc8b2449a6120d908"
     },
     {
-      "path": "runs/crossmodal-v1/full/metrics_constrained.json",
+      "path": "results/reference/runs/crossmodal-v1/full/metrics_constrained.json",
       "bytes": 267718,
       "sha256": "56055c757ce12dcc7755bac75b93b439616fb5e8d52bb5204afd995609ee2d19"
     },
     {
-      "path": "runs/crossmodal-v1/full/metrics_free.json",
+      "path": "results/reference/runs/crossmodal-v1/full/metrics_free.json",
       "bytes": 213216,
       "sha256": "55ba383152251427538321477e7bdd04b5488f67707def0b06075bef1db6f77e"
     },
     {
-      "path": "runs/crossmodal-v1/full/status.json",
+      "path": "results/reference/runs/crossmodal-v1/full/status.json",
       "bytes": 1498,
       "sha256": "824e2724e896935ac24f65a4d5bc88f5ee4fe1ddaec151f651b52c19b76360f0"
     },
     {
-      "path": "runs/crossmodal-v1/full/verification.json",
+      "path": "results/reference/runs/crossmodal-v1/full/verification.json",
       "bytes": 8197,
       "sha256": "620fe529f32b1fcc84bee37588a21504f3d2c74b144e87d7f2a923ecf1b2bc01"
     },
     {
-      "path": "runs/crossmodal-v1/protocol.json",
+      "path": "results/reference/runs/crossmodal-v1/protocol.json",
       "bytes": 101601,
       "sha256": "b8952a3288905e452e1993fac7719eefa79e1d2a210cf0dc55a28b2691f4390d"
     },
     {
-      "path": "runs/finetuned.jsonl",
+      "path": "results/reference/runs/finetuned.jsonl",
       "bytes": 73545,
       "sha256": "03a7bd3bb5854aa34f376fac18c83dc988c7c671e51a3d5a5e60761d917fcdff"
     },
     {
-      "path": "runs/finetuned_metrics.json",
+      "path": "results/reference/runs/finetuned_metrics.json",
       "bytes": 5453,
       "sha256": "7c3a0fc76afa9cf852530b2f660cb96008285990374cf4e8e1f416ca7b219e79"
     },
     {
-      "path": "runs/moral-llava-1.5/README.md",
-      "bytes": 5098,
-      "sha256": "d7558127d41a57e4a719e9b01eb1caf3ec295fa826fed549772049f5833711f8"
+      "path": "run.py",
+      "bytes": 258,
+      "sha256": "964de55338d08f5ea768e2603a70d78554f8022d92e9b8aef5b6e8ac8c673407"
     },
     {
-      "path": "runs/moral-llava-1.5/adapter_config.json",
-      "bytes": 4254,
-      "sha256": "48ce20e7e340b993996a84e26a2ef1c3ffe0b5c043ddb5bf955a143701765b71"
-    },
-    {
-      "path": "runs/moral-llava-1.5/adapter_model.safetensors",
-      "bytes": 159974600,
-      "sha256": "8c7adaa741656e41f34434c347624844dcaa5a61589c6c0fef5274cc005eeb02"
-    },
-    {
-      "path": "runs/moral-llava-1.5/added_tokens.json",
-      "bytes": 41,
-      "sha256": "a94c56096001713e3eb9a34b1a545a8c1d5e8034ed2fb81f897c8cb54b420121"
-    },
-    {
-      "path": "runs/moral-llava-1.5/chat_template.json",
-      "bytes": 701,
-      "sha256": "854445c0a45532ecbee1ae9aa31d4be19644060a156f2c88456f50f584261543"
-    },
-    {
-      "path": "runs/moral-llava-1.5/preprocessor_config.json",
-      "bytes": 505,
-      "sha256": "a8d5e64ee5c07ff6d70142856d178ac39d0563da3612e32110fa824f5337b7a1"
-    },
-    {
-      "path": "runs/moral-llava-1.5/processor_config.json",
-      "bytes": 173,
-      "sha256": "fef918d6ba333f72a066877965bc4a162308568ba62aa90c806caedf7b45d64e"
-    },
-    {
-      "path": "runs/moral-llava-1.5/special_tokens_map.json",
-      "bytes": 580,
-      "sha256": "49d67258a3d88ecba09fb7fa47dd831717e08cb2ea12891ea2f3ad7dce3f6401"
-    },
-    {
-      "path": "runs/moral-llava-1.5/tokenizer.json",
-      "bytes": 3619380,
-      "sha256": "30e1294abd835edfebb24618fce6f47c21ffb2b2802520d150bdee0b808b47cb"
-    },
-    {
-      "path": "runs/moral-llava-1.5/tokenizer.model",
-      "bytes": 499723,
-      "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347"
-    },
-    {
-      "path": "runs/moral-llava-1.5/tokenizer_config.json",
-      "bytes": 1452,
-      "sha256": "9649cab5b938617d89006144c603f720239e62fa8d3137c2777250e417bfb067"
-    },
-    {
-      "path": "runs/moral-llava-1.5/training_metadata.json",
-      "bytes": 13934,
-      "sha256": "2c7c50a6c685cc03f7cb344fddd70f51b7533515bb6d8bbb37e14561b8baaa7b"
-    },
-    {
-      "path": "scripts/activate_autodl.sh",
-      "bytes": 664,
-      "sha256": "7295e28e244fc5359ea6c9ff67bd21d7a16b90073a00f74ac49c3c5ca4ee61b2"
-    },
-    {
-      "path": "scripts/check_model_load.py",
-      "bytes": 6695,
-      "sha256": "fdb6511f6ea446166984128e44d0107583a1f0a39d6d4b0f159c8502bac7a7c9"
-    },
-    {
-      "path": "scripts/check_trainer_loss.py",
-      "bytes": 4527,
-      "sha256": "3c082dac95709864bfc1e186d330f379c70365a6167aaaa0b4948ee5bda4636d"
-    },
-    {
-      "path": "scripts/download_alignment_vision.py",
-      "bytes": 2435,
-      "sha256": "57b8959ee6da61e01c79e219c0e6716d960eea207ac62a763087c7267cbcc3b8"
-    },
-    {
-      "path": "scripts/download_model.py",
-      "bytes": 4482,
-      "sha256": "cb3e856cd566eb3f5d67832fc96be0acbfe528af928138cb739c592f3d241558"
+      "path": "run.sh",
+      "bytes": 130,
+      "sha256": "ec05e2a6e0a7c50256eabb72e29fb4e08e48044c7a4e537c6bd520bf219d44ef"
     },
     {
       "path": "scripts/evaluate_alignment.py",
@@ -12567,64 +12632,19 @@
       "sha256": "7c72ba200fd14398b8ad8ecacfeff5bc1953aeec4838bedbf93ca3559e5d49ef"
     },
     {
-      "path": "scripts/evaluate_crossmodal_improvement.py",
-      "bytes": 7596,
-      "sha256": "8d2d01f026c9e3d58d2b132649abe045fbc691186f98ca1f7c68ea8978d7ba45"
-    },
-    {
-      "path": "scripts/evaluate_majority.py",
-      "bytes": 3703,
-      "sha256": "a97e82bbc705faaaf1b1d22565d07fbed91ea034036042d47fea05a37bc9cd96"
-    },
-    {
       "path": "scripts/evaluate_retrieval.py",
       "bytes": 7111,
       "sha256": "2e851be7c2fd7758864e3ffd8b14723bef0f6d31b58fe6f9ccf3d4e0aa29ff4d"
     },
     {
-      "path": "scripts/plot_alignment_architecture.py",
-      "bytes": 9552,
-      "sha256": "5842f4566e1cccc11cda22222740b5bf57889766974c00dd00ecb1ca2cc59bd9"
-    },
-    {
-      "path": "scripts/plot_alignment_retrieval.py",
-      "bytes": 8943,
-      "sha256": "aca01a24f7b777160b37926f75762690e517d0d5cd3339d69355c4297eff09b2"
-    },
-    {
-      "path": "scripts/report_crossmodal.py",
-      "bytes": 8768,
-      "sha256": "366738076e559c584b9cdb512fda7a161d125a263f8ad3e17a754367f26f608d"
-    },
-    {
-      "path": "scripts/retrieve_alignment.py",
-      "bytes": 4785,
-      "sha256": "f141ef673b715e0783abcf3af78f922c68477464d810b4c3ad1a115e6e776f0c"
-    },
-    {
-      "path": "scripts/run_alignment_experiment.py",
-      "bytes": 4827,
-      "sha256": "3e7c0434c768b93af15aefe7e0aa272285dcb0dfab48fac4d872efb7d03a029b"
-    },
-    {
-      "path": "scripts/run_alignment_lambda_sweep.py",
-      "bytes": 5668,
-      "sha256": "bafbb5702c3cf18e936ea9b75b0ea73fd5ef6f36c31a274fb0627113cb64a0c1"
-    },
-    {
-      "path": "scripts/summarize_alignment_experiment.py",
-      "bytes": 31502,
-      "sha256": "27a24035c8b66e6533ed239755e3ce27a6c8ba134780cb9d070fc8f4eba6e088"
-    },
-    {
-      "path": "scripts/verify_crossmodal_improvement.py",
-      "bytes": 8192,
-      "sha256": "ed82de7cede5c8a811bf09d8759d27b28599a3bff0f4bc420f1fe98762fb3ddd"
+      "path": "scripts/rebuild_manifest.py",
+      "bytes": 1322,
+      "sha256": "f2bbc92429eec6f97ab29639476aa8ab4ca1aa456eb16327e687f00f2a148cc2"
     },
     {
       "path": "scripts/verify_release.py",
-      "bytes": 9202,
-      "sha256": "12f0e5d97f159bd4b41427a24b2322e57b16f630c5a399d9431dccfbe7a1b521"
+      "bytes": 9347,
+      "sha256": "e5e47aef543bc921449f264992a7c97d51a64c0e25953cc9e9c644bef7134615"
     },
     {
       "path": "tests/test_alignment_data.py",
@@ -12657,6 +12677,11 @@
       "sha256": "dc6337a16ccce6307b7df24097b8f06c7c4d930f660c9ed341b1647abe50a515"
     },
     {
+      "path": "tests/test_pipeline.py",
+      "bytes": 4254,
+      "sha256": "d66edebad1c3a34bc7e37a282d6c178c7b427fea02c3899946174b4e4160226d"
+    },
+    {
       "path": "tests/test_prepare.py",
       "bytes": 4397,
       "sha256": "3887906eefda26b3454671aa6e5e08aa60dc0113bc3b98ba0b83e467fe2f9081"
@@ -12668,8 +12693,8 @@
     },
     {
       "path": "tests/test_train_crossmodal.py",
-      "bytes": 3330,
-      "sha256": "a4a21ebbdde252faf705b4194a0db3d7c0af1dffeac2fd3b7d00adc743651b14"
+      "bytes": 3854,
+      "sha256": "3a81054418a3356e6adab8e904371cef46ba7bec5b57de2a64648c3051ae9161"
     },
     {
       "path": "tests/test_training_sequences.py",

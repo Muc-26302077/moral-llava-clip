@@ -2,6 +2,19 @@
 
 输入同一场景的图片或纯文字描述，分别判断 `care`、`fairness`、`loyalty`、`authority`、`sanctity` 五个道德维度，评估两路完整一致性及正确性。
 
+## 新增：六项是/否问答实验（尚无真实模型新成绩）
+
+2026-11-03 新增独立的 `run_binary.py`：保留原 LLaVA 视觉塔、投影器、语言解码器和生成头，将任务改为五个道德维度的标注有无问答，另报 non-moral 辅助项。Care/Harm 任一有标注均表示 care 维度存在，不再区分正负极性；这与旧五维三状态任务分开评分。
+
+```bash
+python 3.1/run_binary.py prepare --help
+python 3.1/run_binary.py train --help
+python 3.1/run_binary.py infer --help
+python 3.1/run_binary.py score --help
+```
+
+数据生成到新目录 `3.1/data/binary-v1/`，每项另有拆分文件；不覆盖旧数据。正式测试复用原 126 场景和 A/B 分组，以五项图文匹配率宏平均各组 >=60% 为阶段要求，同时检查正确率，常量回答不能作为有效成功。仅完成短 CPU 小样例验证，未启动正式训练或 7B CPU/GPU 推理。具体定义、未来命令、视觉结构核查、第二阶段架构及版本恢复见[新实验方案](docs/BINARY_MORAL_QA_PLAN.md)。原 `run.py` 命令及下文历史结果继续保留。
+
 ## 运行方式
 
 在仓库根目录创建并激活 [统一环境](../environment.yml) 后运行：

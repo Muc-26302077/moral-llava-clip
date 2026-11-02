@@ -15,3 +15,4 @@ wandb/
 3.1/results/runs/
 3.1/models/base/
 3.1/release_verification.json
+3.1/data/binary-v1/

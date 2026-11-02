@@ -3,8 +3,8 @@
   "files": [
     {
       "path": "README.md",
-      "bytes": 4379,
-      "sha256": "534ed61b26d4dd29eda22013d2295b88e8872c92354d35ce279350ad8a7d86f6"
+      "bytes": 5495,
+      "sha256": "68ff9e6485253a9cec52e9df5286ec9cf55e5e8045236a8802195f4bee1625c0"
     },
     {
       "path": "benchmark/.gitkeep",
@@ -12087,6 +12087,11 @@
       "sha256": "26245d45a1a1c72130d28953b6cb413f819988007f442cdbc4e97586cdb051ca"
     },
     {
+      "path": "docs/BINARY_MORAL_QA_PLAN.md",
+      "bytes": 12251,
+      "sha256": "2fd29f66b94db3b2e99a14e66738ad96d0c89c1564ea49e5ec1b2806a753d479"
+    },
+    {
       "path": "docs/README.md",
       "bytes": 1434,
       "sha256": "257e13f636efbd278a67cab4b323ddd02c884ad066878d6e15c1522741210db2"
@@ -12402,6 +12407,16 @@
       "sha256": "27477ee30f43fb6770b370ab91d882b4b7ac067cd8b600f62d1a502444dc4eb5"
     },
     {
+      "path": "moral_llava/binary.py",
+      "bytes": 20805,
+      "sha256": "65532115e57b8ced748f3c6b62b2685b3a29ecf56057fc44b39219bd6bd4fcd6"
+    },
+    {
+      "path": "moral_llava/binary_runtime.py",
+      "bytes": 2345,
+      "sha256": "8208ae1f8117e2540e587ea69187ef91e8421600c29a564e107d202e5635681f"
+    },
+    {
       "path": "moral_llava/crossmodal.py",
       "bytes": 14158,
       "sha256": "a44c9ea5bff4fb613ea93ddb3432db2799a9ba7788c1747c922a8cf453e0e84f"
@@ -12418,8 +12433,8 @@
     },
     {
       "path": "moral_llava/infer.py",
-      "bytes": 11150,
-      "sha256": "2766bf99891a26488e0a7a1a7af251fcd9f9605155487c82ae5285cc94bb091c"
+      "bytes": 13070,
+      "sha256": "378d8d1aec09a779532112df1bb04461aff1db2ef39724cd19a37630a03398e0"
     },
     {
       "path": "moral_llava/infer_crossmodal.py",
@@ -12443,8 +12458,8 @@
     },
     {
       "path": "moral_llava/train.py",
-      "bytes": 25809,
-      "sha256": "b7d6aa6c47170d57d0de9f7bdf5860e442d3b78c0a237158e84f3b8d3aada731"
+      "bytes": 28918,
+      "sha256": "51a9818c7c862df187940f2e292c4f88d4708e21c539b39ca267a9f89ff7d3d8"
     },
     {
       "path": "moral_llava/train_alignment.py",
@@ -12627,6 +12642,11 @@
       "sha256": "ec05e2a6e0a7c50256eabb72e29fb4e08e48044c7a4e537c6bd520bf219d44ef"
     },
     {
+      "path": "run_binary.py",
+      "bytes": 2644,
+      "sha256": "c0e28af85a1a997eb70df09f282fc067dc80ce4a2479e8a6bf37428978417f44"
+    },
+    {
       "path": "scripts/evaluate_alignment.py",
       "bytes": 13859,
       "sha256": "7c72ba200fd14398b8ad8ecacfeff5bc1953aeec4838bedbf93ca3559e5d49ef"
@@ -12660,6 +12680,11 @@
       "path": "tests/test_alignment_model.py",
       "bytes": 11466,
       "sha256": "f8ff57414f0bef4b4fa3d35d49831a08d9a2b8ac14c0b255621149e996f2b301"
+    },
+    {
+      "path": "tests/test_binary.py",
+      "bytes": 12188,
+      "sha256": "97a35da3cb777625a130d3aa5f67fd86f65e807e656902645057f0d538234866"
     },
     {
       "path": "tests/test_crossmodal.py",

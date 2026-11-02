@@ -62,8 +62,8 @@ def build_supervised_sequence(
     answer = [int(token) for token in answer_ids]
     if not prompt or not answer:
         raise ValueError("Prompt and answer must both contain tokens.")
-    if expected_image_tokens <= 0 or max_length <= 0:
-        raise ValueError("expected_image_tokens and max_length must be positive.")
+    if expected_image_tokens < 0 or max_length <= 0:
+        raise ValueError("expected_image_tokens must be nonnegative and max_length positive.")
     image_count = prompt.count(image_token_id)
     if image_count != expected_image_tokens:
         raise ValueError(
@@ -149,8 +149,14 @@ def load_records(
     image_root: str | Path,
     *,
     require_targets: bool = True,
+    task: str = "five_foundation_json",
 ) -> list[dict[str, Any]]:
     """Read standard two-turn LLaVA records and normalize their training fields."""
+    if task == "binary":
+        from .binary import load_records as load_binary_records
+        return load_binary_records(data_path, image_root, require_targets)
+    if task != "five_foundation_json":
+        raise ValueError("Unsupported annotation task")
     from moral_llava.schema import parse_prediction
 
     with Path(data_path).open(encoding="utf-8") as handle:
@@ -333,6 +339,8 @@ def find_language_lora_targets(model: Any, linear_type: type) -> list[str]:
 def make_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--model-id", default=DEFAULT_MODEL_ID)
+    parser.add_argument("--task", choices=("five_foundation_json", "binary"), default="five_foundation_json")
+    parser.add_argument("--initial-adapter", help="Optional existing language LoRA; supported for binary QA.")
     parser.add_argument("--revision", help="Optional Hugging Face model revision/commit.")
     parser.add_argument("--train-data", default="data/processed/train.json")
     parser.add_argument("--validation-data", default="data/processed/validation.json")
@@ -365,6 +373,8 @@ def make_parser() -> argparse.ArgumentParser:
 
 
 def validate_args(args: argparse.Namespace) -> None:
+    if args.initial_adapter and args.task != "binary":
+        raise ValueError("--initial-adapter is supported only for --task binary.")
     for name in (
         "epochs", "batch_size", "eval_batch_size", "gradient_accumulation_steps",
         "learning_rate", "max_length", "lora_r", "lora_alpha", "logging_steps",
@@ -409,14 +419,19 @@ def run_training(args: argparse.Namespace) -> None:
     output_dir = Path(args.output_dir).expanduser().resolve()
     if output_dir.exists() and any(output_dir.iterdir()) and not args.resume_from_checkpoint:
         raise ValueError("output-dir is nonempty. Choose a new directory or pass --resume-from-checkpoint.")
-    train_records = load_records(args.train_data, args.image_root)
-    validation_records = load_records(args.validation_data, args.image_root)
+    train_records = load_records(args.train_data, args.image_root, task=args.task)
+    validation_records = load_records(args.validation_data, args.image_root, task=args.task)
+    if args.task == "binary":
+        if {r['split'] for r in train_records} != {'train'} or {r['split'] for r in validation_records} != {'validation'}:
+            raise ValueError('Binary training requires original train/validation splits.')
+        if {r['scene_id'] for r in train_records} & {r['scene_id'] for r in validation_records}:
+            raise ValueError('Binary train/validation share source scenes.')
     train_ids = {record["id"] for record in train_records}
     validation_ids = {record["id"] for record in validation_records}
     if train_ids & validation_ids:
         raise ValueError("Training and validation share image ids.")
-    train_images = {record["image_path"] for record in train_records}
-    if train_images & {record["image_path"] for record in validation_records}:
+    train_images = {record["image_path"] for record in train_records if record["image_path"]}
+    if train_images & {record["image_path"] for record in validation_records if record["image_path"]}:
         raise ValueError("Training and validation share image files.")
     set_seed(args.seed)
     pretrained_kwargs = {"local_files_only": args.local_files_only}
@@ -450,14 +465,22 @@ def run_training(args: argparse.Namespace) -> None:
             model, use_gradient_checkpointing=args.gradient_checkpointing
         )
     targets = find_language_lora_targets(model, torch.nn.Linear)
-    model = get_peft_model(model, LoraConfig(
-        task_type=TaskType.CAUSAL_LM,
-        r=args.lora_r,
-        lora_alpha=args.lora_alpha,
-        lora_dropout=args.lora_dropout,
-        bias="none",
-        target_modules=targets,
-    ))
+    if args.initial_adapter:
+        from peft import PeftModel
+        initial = Path(args.initial_adapter).expanduser().resolve()
+        initial_metadata = json.loads((initial / 'training_metadata.json').read_text())
+        if initial_metadata.get('resolved_base_commit') != getattr(model.config, '_commit_hash', None):
+            raise ValueError('Initial adapter/base revision mismatch.')
+        model = PeftModel.from_pretrained(model, str(initial), is_trainable=True)
+    else:
+        model = get_peft_model(model, LoraConfig(
+            task_type=TaskType.CAUSAL_LM,
+            r=args.lora_r,
+            lora_alpha=args.lora_alpha,
+            lora_dropout=args.lora_dropout,
+            bias="none",
+            target_modules=targets,
+        ))
     trainable_names = [name for name, parameter in model.named_parameters() if parameter.requires_grad]
     if not trainable_names or any(
         ".language_model." not in name or "lora_" not in name for name in trainable_names
@@ -466,7 +489,11 @@ def run_training(args: argparse.Namespace) -> None:
     model.print_trainable_parameters()
     if args.gradient_checkpointing:
         model.enable_input_require_grads()
-    collator = LlavaSFTCollator(
+    collator_type = LlavaSFTCollator
+    if args.task == "binary":
+        from .binary_runtime import BinarySFTCollator
+        collator_type = BinarySFTCollator
+    collator = collator_type(
         processor,
         image_token_id=model.config.image_token_index,
         expected_image_tokens=expected_image_tokens,
@@ -500,6 +527,23 @@ def run_training(args: argparse.Namespace) -> None:
             "peft": peft.__version__, "accelerate": accelerate.__version__,
         },
     }
+    if args.task == "binary":
+        import hashlib
+        metadata.update(task='binary_foundation_presence_sft',
+                        prompt_format='USER: <optional image or scene description> binary question ASSISTANT:',
+                        supervision='assistant 是/否 plus EOS; prompt/image/padding masked',
+                        missing_foundation_value='否 means absent dataset annotation, not moral neutrality',
+                        primary_tasks=['care','fairness','loyalty','authority','sanctity'],
+                        auxiliary_tasks=['non_moral'],
+                        selection_metric='validation binary answer token loss (minimum); paired agreement scored separately',
+                        initial_adapter_sha256=None)
+        metadata['data_sha256'] = {}
+        for source in (args.train_data, args.validation_data):
+            with Path(source).open('rb') as handle:
+                metadata['data_sha256'][str(Path(source).resolve())] = hashlib.file_digest(handle,'sha256').hexdigest()
+        if args.initial_adapter:
+            with (Path(args.initial_adapter)/'adapter_model.safetensors').open('rb') as handle:
+                metadata['initial_adapter_sha256'] = hashlib.file_digest(handle,'sha256').hexdigest()
 
     def save_metadata(directory: Path, state: Any) -> None:
         directory.mkdir(parents=True, exist_ok=True)

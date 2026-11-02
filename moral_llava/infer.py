@@ -43,6 +43,8 @@ def make_parser() -> argparse.ArgumentParser:
     source.add_argument("--data", help="LLaVA JSON array for batch prediction; labels are never fed to the model.")
     source.add_argument("--image", help="A single local image.")
     parser.add_argument("--image-root", default="data/raw/SMID_moralclip")
+    parser.add_argument("--task", choices=("five_foundation_json", "binary"), default="five_foundation_json")
+    parser.add_argument("--limit", type=int, default=0, help="Binary smoke only; partial outputs cannot be formally scored.")
     parser.add_argument("--adapter", help="Local LoRA output directory or Trainer checkpoint; omit for zero-shot.")
     parser.add_argument("--model-id", default=None, help=f"Base model (default: adapter metadata or {DEFAULT_MODEL_ID}).")
     parser.add_argument("--revision", help="Optional base-model revision; otherwise use adapter metadata.")
@@ -58,6 +60,10 @@ def make_parser() -> argparse.ArgumentParser:
 
 
 def validate_args(args: argparse.Namespace) -> None:
+    if args.limit < 0 or (args.limit and args.task != "binary"):
+        raise ValueError("--limit is nonnegative and supported only for binary smoke runs.")
+    if args.task == "binary" and not args.data:
+        raise ValueError("Binary QA requires --data with explicit task questions.")
     if args.batch_size <= 0 or args.max_new_tokens <= 0 or args.max_length <= 0:
         raise ValueError("batch-size, max-new-tokens and max-length must be positive.")
     if args.max_new_tokens >= args.max_length:
@@ -72,8 +78,9 @@ def run_inference(args: argparse.Namespace) -> None:
     from moral_llava.schema import TASK_PROMPT
 
     # 先检查数据和图片路径，免得加载完大模型才发现文件不对。
+    task = getattr(args, 'task', 'five_foundation_json')
     if args.data:
-        records = load_records(args.data, args.image_root, require_targets=False)
+        records = load_records(args.data, args.image_root, require_targets=False, task=task)
     else:
         image_path = Path(args.image).expanduser().resolve()
         records = [{
@@ -81,12 +88,20 @@ def run_inference(args: argparse.Namespace) -> None:
             "image_path": str(image_path),
             "prompt": build_prompt("<image>\n" + TASK_PROMPT),
         }]
+    if task == 'binary':
+        from .binary import sha as file_sha
+        data_sha = file_sha(args.data)
+        if args.limit:
+            records = records[:args.limit]
+        if Path(args.output).expanduser().exists():
+            raise FileExistsError('Binary predictions must use a new output path.')
     adapter_dir = Path(args.adapter).expanduser().resolve() if args.adapter else None
     metadata: dict[str, Any] = {}
     if adapter_dir:
         metadata_path = adapter_dir / "training_metadata.json"
         if metadata_path.is_file():
             metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+    adapter_sha = file_sha(adapter_dir/'adapter_model.safetensors') if task == 'binary' and adapter_dir else None
     model_id = args.model_id or metadata.get("base_model_id") or DEFAULT_MODEL_ID
     revision = (
         args.revision or metadata.get("resolved_base_commit")
@@ -163,23 +178,28 @@ def run_inference(args: argparse.Namespace) -> None:
         with temporary.open("w", encoding="utf-8") as handle:
             for offset in range(0, len(records), args.batch_size):
                 current = records[offset:offset + args.batch_size]
-                images = []
-                for record in current:
-                    with Image.open(record["image_path"]) as image:
-                        images.append(ImageOps.exif_transpose(image).convert("RGB"))
-                inputs = processor(
-                    text=[record["prompt"] for record in current],
-                    images=images,
-                    padding=True,
-                    truncation=False,
-                    return_tensors="pt",
-                )
+                if task == 'binary':
+                    from .binary_runtime import inputs_for_records
+                    inputs = inputs_for_records(processor, current)
+                else:
+                    images = []
+                    for record in current:
+                        with Image.open(record["image_path"]) as image:
+                            images.append(ImageOps.exif_transpose(image).convert("RGB"))
+                    inputs = processor(
+                        text=[record["prompt"] for record in current],
+                        images=images,
+                        padding=True,
+                        truncation=False,
+                        return_tensors="pt",
+                    )
                 for index, record in enumerate(current):
                     ids = unpad_input_ids(
                         inputs["input_ids"][index].tolist(),
                         inputs["attention_mask"][index].tolist(),
                     )
-                    if ids.count(model.config.image_token_index) != expected_image_tokens:
+                    expected = 0 if task == 'binary' and record['modality'] == 'text' else expected_image_tokens
+                    if ids.count(model.config.image_token_index) != expected:
                         raise ValueError(f"{record['id']}: incorrect expanded image-token count.")
                     if len(ids) + args.max_new_tokens > maximum_context:
                         raise ValueError(
@@ -208,7 +228,15 @@ def run_inference(args: argparse.Namespace) -> None:
                     clean_up_tokenization_spaces=False,
                 )
                 for record, raw in zip(current, raw_predictions):
-                    result = format_prediction(record["id"], raw)
+                    if task == 'binary':
+                        from .binary import format_prediction as binary_format
+                        result = binary_format(record, raw)
+                        result.update(data_sha256=data_sha, smoke_only=bool(args.limit),
+                                      decoding='free', base_model_id=model_id, base_revision=revision,
+                                      adapter_sha256=adapter_sha, precision=str(dtype),
+                                      max_new_tokens=args.max_new_tokens)
+                    else:
+                        result = format_prediction(record["id"], raw)
                     parse_failures += int(result["parse_error"] is not None)
                     handle.write(json.dumps(result, ensure_ascii=False) + "\n")
                 handle.flush()

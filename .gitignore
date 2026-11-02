@@ -13,3 +13,7 @@ checkpoints/
 *.safetensors
 *.bin
 wandb/
+data/binary-v1/
+results/runs/
+.ipynb_checkpoints/
+github-project/

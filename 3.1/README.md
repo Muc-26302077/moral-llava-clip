@@ -2,7 +2,7 @@
 
 输入同一场景的图片或纯文字描述，分别判断 `care`、`fairness`、`loyalty`、`authority`、`sanctity` 五个道德维度，评估两路完整一致性及正确性。
 
-## 新增：六项是/否问答实验（尚无真实模型新成绩）
+## 新增：六项是/否问答实验（已完成小样本实测）
 
 2026-11-03 新增独立的 `run_binary.py`：保留原 LLaVA 视觉塔、投影器、语言解码器和生成头，将任务改为五个道德维度的标注有无问答，另报 non-moral 辅助项。Care/Harm 任一有标注均表示 care 维度存在，不再区分正负极性；这与旧五维三状态任务分开评分。
 
@@ -13,7 +13,25 @@ python 3.1/run_binary.py infer --help
 python 3.1/run_binary.py score --help
 ```
 
-数据生成到新目录 `3.1/data/binary-v1/`，每项另有拆分文件；不覆盖旧数据。正式测试复用原 126 场景和 A/B 分组，以五项图文匹配率宏平均各组 >=60% 为阶段要求，同时检查正确率，常量回答不能作为有效成功。仅完成短 CPU 小样例验证，未启动正式训练或 7B CPU/GPU 推理。具体定义、未来命令、视觉结构核查、第二阶段架构及版本恢复见[新实验方案](docs/BINARY_MORAL_QA_PLAN.md)。原 `run.py` 命令及下文历史结果继续保留。
+数据生成到新目录 `3.1/data/binary-v1/`，每项另有拆分文件；不覆盖旧数据。正式测试复用原 126 场景和 A/B 分组，以五项图文匹配率宏平均各组 >=60% 为阶段要求，并要求两路 macro balanced accuracy >0.5。常量回答不能作为有效成功。
+
+真实 7B 小样本训练／重载已完成：训练 32、验证 8、测试 12 场景，图片准确率 71.67%、文字 56.67%、一致率 68.33%、共同正确率 48.33%，不属于完整达标结论。见[小样本报告](docs/BINARY_SMALL_SAMPLE_REPORT.md)。[远端独立复现核验](docs/REMOTE_REPRODUCIBILITY_AUDIT.md)另证实旧主模型 504 条全量回答与旧参考逐条相同；旧指标和新二分类指标分别解释。小样本 adapter 未打包，归档包含固定抽样 ID、原始回答、指标及日志；脚本可按原 ID 重新训练。
+
+完整第一阶段流程使用公开训练 2138、验证 134、测试 126 场景；从旧图像 LoRA 初始化，3 epochs，BF16，batch 4、梯度累积 2、LR 2e-5、seed 42，仅验证 loss 选模。自动顺序执行准备、专项测试、GPU 两步烟雾与重载、众数对照、旧 LoRA 新提示基线、正式训练、选中权重全量测试、评分与报告。它不自动启动第二阶段视觉适配。
+
+```bash
+# 先安装统一环境和 git lfs pull；从仓库根目录执行。
+# screen 会话独立于 SSH；把 python 替换为已激活环境中的解释器即可。
+screen -DmS qav1-full python -u 3.1/scripts/run_binary_full_experiment.py \
+  --output 3.1/results/runs/binary-full-v1
+# 已缓存固定基模时，可追加 --local-files-only。
+screen -ls
+screen -r qav1-full
+```
+
+每个子阶段单独写日志，`status.json` 每 15 秒记录心跳、子进程 PID 和训练进度；完成后生成 `report.md`、`summary.json` 和各模型完整评分。仅在原 runner 和子进程确认退出后，才使用同一 `--output` 加 `--resume` 从已保存 checkpoint 恢复，避免重复启动。选参和协议在 `frozen_config.json` 中固定，测试结果不用于追加调参。
+
+具体任务定义、视觉结构、第二阶段架构及版本恢复见[新实验方案](docs/BINARY_MORAL_QA_PLAN.md)。原 `run.py` 命令及下文历史结果继续保留。
 
 ## 运行方式
 

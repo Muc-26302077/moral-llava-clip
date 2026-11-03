@@ -1,0 +1,22 @@
+test_60pct_binary_threshold_is_189_of_315_per_group (test_binary.BinaryTests.test_60pct_binary_threshold_is_189_of_315_per_group) ... ok
+test_both_poles_mean_present_without_claiming_care_virtue (test_binary.BinaryTests.test_both_poles_mean_present_without_claiming_care_virtue) ... ok
+test_constant_100pct_agreement_does_not_pass_quality (test_binary.BinaryTests.test_constant_100pct_agreement_does_not_pass_quality) ... ok
+test_conversion_keeps_splits_and_refuses_overwrite (test_binary.BinaryTests.test_conversion_keeps_splits_and_refuses_overwrite) ... ok
+test_cross_split_exact_images_rejected_before_writing (test_binary.BinaryTests.test_cross_split_exact_images_rejected_before_writing) ... ok
+test_entrypoint_help_from_another_working_directory (test_binary.BinaryTests.test_entrypoint_help_from_another_working_directory) ... ok
+test_explicit_public_exclusions_do_not_copy_missing_images (test_binary.BinaryTests.test_explicit_public_exclusions_do_not_copy_missing_images) ... ok
+test_fully_correct_grouped_fixture (test_binary.BinaryTests.test_fully_correct_grouped_fixture) ... ok
+test_image_prompt_has_no_caption_and_text_has_no_image_token (test_binary.BinaryTests.test_image_prompt_has_no_caption_and_text_has_no_image_token) ... ok
+test_inference_does_not_read_assistant (test_binary.BinaryTests.test_inference_does_not_read_assistant) ... ok
+test_invalid_outputs_fail_and_cached_fields_are_ignored (test_binary.BinaryTests.test_invalid_outputs_fail_and_cached_fields_are_ignored) ... ok
+test_majority_fits_train_only (test_binary.BinaryTests.test_majority_fits_train_only) ... ok
+test_missing_duplicate_changed_prompt_and_smoke_rejected (test_binary.BinaryTests.test_missing_duplicate_changed_prompt_and_smoke_rejected) ... ok
+test_strict_answer_parser (test_binary.BinaryTests.test_strict_answer_parser) ... ok
+test_mixed_modalities_real_processor_tiny_model_backward_and_text_only (test_binary.TinyBinaryModelTests.test_mixed_modalities_real_processor_tiny_model_backward_and_text_only) ... The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 3.233s
+
+OK

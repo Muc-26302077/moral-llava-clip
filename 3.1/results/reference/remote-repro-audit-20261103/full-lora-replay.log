@@ -1,0 +1,66 @@
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.48, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:01,  1.28it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:01<00:00,  1.20it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:02<00:00,  1.24it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:02<00:00,  1.24it/s]
+lora/free/image 8/126 batch_seconds=3.24
+lora/free/image 16/126 batch_seconds=2.79
+lora/free/image 24/126 batch_seconds=2.80
+lora/free/image 32/126 batch_seconds=2.82
+lora/free/image 40/126 batch_seconds=2.78
+lora/free/image 48/126 batch_seconds=2.79
+lora/free/image 56/126 batch_seconds=2.80
+lora/free/image 64/126 batch_seconds=2.77
+lora/free/image 72/126 batch_seconds=2.78
+lora/free/image 80/126 batch_seconds=2.78
+lora/free/image 88/126 batch_seconds=2.78
+lora/free/image 96/126 batch_seconds=2.77
+lora/free/image 104/126 batch_seconds=2.82
+lora/free/image 112/126 batch_seconds=2.77
+lora/free/image 120/126 batch_seconds=2.78
+lora/free/image 126/126 batch_seconds=2.62
+lora/free/text 8/126 batch_seconds=2.38
+lora/free/text 16/126 batch_seconds=2.37
+lora/free/text 24/126 batch_seconds=2.41
+lora/free/text 32/126 batch_seconds=2.40
+lora/free/text 40/126 batch_seconds=2.41
+lora/free/text 48/126 batch_seconds=2.43
+lora/free/text 56/126 batch_seconds=2.43
+lora/free/text 64/126 batch_seconds=2.47
+lora/free/text 72/126 batch_seconds=2.38
+lora/free/text 80/126 batch_seconds=2.39
+lora/free/text 88/126 batch_seconds=2.40
+lora/free/text 96/126 batch_seconds=2.37
+lora/free/text 104/126 batch_seconds=2.39
+lora/free/text 112/126 batch_seconds=2.46
+lora/free/text 120/126 batch_seconds=2.39
+lora/free/text 126/126 batch_seconds=2.35
+lora/constrained/image 8/126 batch_seconds=2.82
+lora/constrained/image 16/126 batch_seconds=2.82
+lora/constrained/image 24/126 batch_seconds=2.81
+lora/constrained/image 32/126 batch_seconds=2.83
+lora/constrained/image 40/126 batch_seconds=2.80
+lora/constrained/image 48/126 batch_seconds=2.81
+lora/constrained/image 56/126 batch_seconds=2.81
+lora/constrained/image 64/126 batch_seconds=2.84
+lora/constrained/image 72/126 batch_seconds=2.85
+lora/constrained/image 80/126 batch_seconds=2.82
+lora/constrained/image 88/126 batch_seconds=2.84
+lora/constrained/image 96/126 batch_seconds=2.83
+lora/constrained/image 104/126 batch_seconds=2.83
+lora/constrained/image 112/126 batch_seconds=2.80
+lora/constrained/image 120/126 batch_seconds=2.83
+lora/constrained/image 126/126 batch_seconds=2.65
+lora/constrained/text 8/126 batch_seconds=2.42
+lora/constrained/text 16/126 batch_seconds=2.42
+lora/constrained/text 24/126 batch_seconds=2.45
+lora/constrained/text 32/126 batch_seconds=2.43
+lora/constrained/text 40/126 batch_seconds=2.40
+lora/constrained/text 48/126 batch_seconds=2.47
+lora/constrained/text 56/126 batch_seconds=2.45
+lora/constrained/text 64/126 batch_seconds=2.48
+lora/constrained/text 72/126 batch_seconds=2.39
+lora/constrained/text 80/126 batch_seconds=2.38
+lora/constrained/text 88/126 batch_seconds=2.44
+lora/constrained/text 96/126 batch_seconds=2.41
+lora/constrained/text 104/126 batch_seconds=2.41
+lora/constrained/text 112/126 batch_seconds=2.46
+lora/constrained/text 120/126 batch_seconds=2.43
+lora/constrained/text 126/126 batch_seconds=2.34

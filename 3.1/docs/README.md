@@ -19,3 +19,8 @@
 | 散落的历史 Markdown、命令、依赖及辅助脚本 | `docs/archive/` |
 
 历史协议、预测、训练元数据和权重保留原内容。`scripts/verify_release.py` 按新位置核验原有哈希和验证集选择，不要求复原旧服务器路径。
+
+## TICR 正式极性评测
+
+- [五维极性二分类协议与运行](TICR_POLARITY_PROTOCOL.md)
+- [已完成存在性微调分析](PRESENCE_V1_ANALYSIS.md)

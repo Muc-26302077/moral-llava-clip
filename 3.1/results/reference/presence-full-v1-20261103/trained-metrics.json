@@ -1,0 +1,708 @@
+{
+  "protocol": "smid-binary-foundation-v1",
+  "primary_tasks": [
+    "care",
+    "fairness",
+    "loyalty",
+    "authority",
+    "sanctity"
+  ],
+  "auxiliary_tasks": [
+    "non_moral"
+  ],
+  "overall": {
+    "scenes": 126,
+    "per_task": {
+      "care": {
+        "pairs": 126,
+        "consistent": 107,
+        "agreement": 0.8492063492063492,
+        "joint_correct": 96,
+        "joint_accuracy": 0.7619047619047619,
+        "consistent_wrong": 11,
+        "positive_references": 72,
+        "image": {
+          "accuracy": 0.8571428571428571,
+          "balanced_accuracy": 0.8587962962962963,
+          "positive_f1": 0.8714285714285714,
+          "valid_output_rate": 1.0,
+          "positive_predictions": 68,
+          "invalid_outputs": 0,
+          "constant_prediction": false
+        },
+        "text": {
+          "accuracy": 0.8174603174603174,
+          "balanced_accuracy": 0.8148148148148149,
+          "positive_f1": 0.8391608391608392,
+          "valid_output_rate": 1.0,
+          "positive_predictions": 71,
+          "invalid_outputs": 0,
+          "constant_prediction": false
+        },
+        "agreement_wilson95": [
+          0.7764621251952817,
+          0.9012874996108018
+        ],
+        "joint_accuracy_wilson95": [
+          0.680487433986594,
+          0.8278247846179686
+        ]
+      },
+      "fairness": {
+        "pairs": 126,
+        "consistent": 107,
+        "agreement": 0.8492063492063492,
+        "joint_correct": 87,
+        "joint_accuracy": 0.6904761904761905,
+        "consistent_wrong": 20,
+        "positive_references": 42,
+        "image": {
+          "accuracy": 0.7857142857142857,
+          "balanced_accuracy": 0.7142857142857143,
+          "positive_f1": 0.6086956521739131,
+          "valid_output_rate": 1.0,
+          "positive_predictions": 27,
+          "invalid_outputs": 0,
+          "constant_prediction": false
+        },
+        "text": {
+          "accuracy": 0.746031746031746,
+          "balanced_accuracy": 0.6964285714285714,
+          "positive_f1": 0.5897435897435898,
+          "valid_output_rate": 1.0,
+          "positive_predictions": 36,
+          "invalid_outputs": 0,
+          "constant_prediction": false
+        },
+        "agreement_wilson95": [
+          0.7764621251952817,
+          0.9012874996108018
+        ],
+        "joint_accuracy_wilson95": [
+          0.60512385593929,
+          0.764557757591301
+        ]
+      },
+      "loyalty": {
+        "pairs": 126,
+        "consistent": 104,
+        "agreement": 0.8253968253968254,
+        "joint_correct": 91,
+        "joint_accuracy": 0.7222222222222222,
+        "consistent_wrong": 13,
+        "positive_references": 63,
+        "image": {
+          "accuracy": 0.8253968253968254,
+          "balanced_accuracy": 0.8253968253968254,
+          "positive_f1": 0.7962962962962963,
+          "valid_output_rate": 1.0,
+          "positive_predictions": 45,
+          "invalid_outputs": 0,
+          "constant_prediction": false
+        },
+        "text": {
+          "accuracy": 0.7936507936507936,
+          "balanced_accuracy": 0.7936507936507936,
+          "positive_f1": 0.7796610169491526,
+          "valid_output_rate": 1.0,
+          "positive_predictions": 55,
+          "invalid_outputs": 0,
+          "constant_prediction": false
+        },
+        "agreement_wilson95": [
+          0.7497659983259423,
+          0.8817734247888173
+        ],
+        "joint_accuracy_wilson95": [
+          0.638325933909405,
+          0.7929692818762846
+        ]
+      },
+      "authority": {
+        "pairs": 126,
+        "consistent": 106,
+        "agreement": 0.8412698412698413,
+        "joint_correct": 95,
+        "joint_accuracy": 0.753968253968254,
+        "consistent_wrong": 11,
+        "positive_references": 55,
+        "image": {
+          "accuracy": 0.8412698412698413,
+          "balanced_accuracy": 0.8284250960307298,
+          "positive_f1": 0.8,
+          "valid_output_rate": 1.0,
+          "positive_predictions": 45,
+          "invalid_outputs": 0,
+          "constant_prediction": false
+        },
+        "text": {
+          "accuracy": 0.8253968253968254,
+          "balanced_accuracy": 0.8225352112676056,
+          "positive_f1": 0.8,
+          "valid_output_rate": 1.0,
+          "positive_predictions": 55,
+          "invalid_outputs": 0,
+          "constant_prediction": false
+        },
+        "agreement_wilson95": [
+          0.7675124813817829,
+          0.8948337428605262
+        ],
+        "joint_accuracy_wilson95": [
+          0.6719921977689551,
+          0.820916620271833
+        ]
+      },
+      "sanctity": {
+        "pairs": 126,
+        "consistent": 101,
+        "agreement": 0.8015873015873016,
+        "joint_correct": 90,
+        "joint_accuracy": 0.7142857142857143,
+        "consistent_wrong": 11,
+        "positive_references": 56,
+        "image": {
+          "accuracy": 0.8174603174603174,
+          "balanced_accuracy": 0.8071428571428572,
+          "positive_f1": 0.7766990291262136,
+          "valid_output_rate": 1.0,
+          "positive_predictions": 47,
+          "invalid_outputs": 0,
+          "constant_prediction": false
+        },
+        "text": {
+          "accuracy": 0.8095238095238095,
+          "balanced_accuracy": 0.8089285714285714,
+          "positive_f1": 0.7894736842105263,
+          "valid_output_rate": 1.0,
+          "positive_predictions": 58,
+          "invalid_outputs": 0,
+          "constant_prediction": false
+        },
+        "agreement_wilson95": [
+          0.7234902999529838,
+          0.861838921470452
+        ],
+        "joint_accuracy_wilson95": [
+          0.6299837099284312,
+          0.7859081052934836
+        ]
+      },
+      "non_moral": {
+        "pairs": 126,
+        "consistent": 101,
+        "agreement": 0.8015873015873016,
+        "joint_correct": 93,
+        "joint_accuracy": 0.7380952380952381,
+        "consistent_wrong": 8,
+        "positive_references": 39,
+        "image": {
+          "accuracy": 0.8253968253968254,
+          "balanced_accuracy": 0.8381962864721486,
+          "positive_f1": 0.7555555555555555,
+          "valid_output_rate": 1.0,
+          "positive_predictions": 51,
+          "invalid_outputs": 0,
+          "constant_prediction": false
+        },
+        "text": {
+          "accuracy": 0.8492063492063492,
+          "balanced_accuracy": 0.8271441202475686,
+          "positive_f1": 0.759493670886076,
+          "valid_output_rate": 1.0,
+          "positive_predictions": 40,
+          "invalid_outputs": 0,
+          "constant_prediction": false
+        },
+        "agreement_wilson95": [
+          0.7234902999529838,
+          0.861838921470452
+        ],
+        "joint_accuracy_wilson95": [
+          0.6550979653395279,
+          0.8070040515737109
+        ]
+      }
+    },
+    "primary_macro": {
+      "agreement": 0.8333333333333334,
+      "joint_accuracy": 0.7285714285714285,
+      "consistent_pairs": 525,
+      "pairs": 630,
+      "minimum_consistent_pairs_60pct": 378,
+      "image_accuracy": 0.8253968253968254,
+      "image_balanced_accuracy": 0.8068093578304845,
+      "text_accuracy": 0.7984126984126985,
+      "text_balanced_accuracy": 0.7872715925180713
+    },
+    "five_presence_complete_agreement": 0.5634920634920635,
+    "five_presence_joint_exact": 0.40476190476190477
+  },
+  "groups": {
+    "A": {
+      "scenes": 63,
+      "per_task": {
+        "care": {
+          "pairs": 63,
+          "consistent": 54,
+          "agreement": 0.8571428571428571,
+          "joint_correct": 48,
+          "joint_accuracy": 0.7619047619047619,
+          "consistent_wrong": 6,
+          "positive_references": 36,
+          "image": {
+            "accuracy": 0.8571428571428571,
+            "balanced_accuracy": 0.8657407407407407,
+            "positive_f1": 0.8656716417910447,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 31,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "text": {
+            "accuracy": 0.8095238095238095,
+            "balanced_accuracy": 0.8194444444444444,
+            "positive_f1": 0.8181818181818182,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 30,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "agreement_wilson95": [
+            0.7502543407837413,
+            0.922980516652793
+          ],
+          "joint_accuracy_wilson95": [
+            0.6436433989030312,
+            0.8500621632170939
+          ]
+        },
+        "fairness": {
+          "pairs": 63,
+          "consistent": 53,
+          "agreement": 0.8412698412698413,
+          "joint_correct": 45,
+          "joint_accuracy": 0.7142857142857143,
+          "consistent_wrong": 8,
+          "positive_references": 21,
+          "image": {
+            "accuracy": 0.8095238095238095,
+            "balanced_accuracy": 0.7380952380952381,
+            "positive_f1": 0.6470588235294118,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 13,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "text": {
+            "accuracy": 0.7777777777777778,
+            "balanced_accuracy": 0.7261904761904762,
+            "positive_f1": 0.631578947368421,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 17,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "agreement_wilson95": [
+            0.7318842321822745,
+            0.9114290760348585
+          ],
+          "joint_accuracy_wilson95": [
+            0.5929728343259288,
+            0.810968080135992
+          ]
+        },
+        "loyalty": {
+          "pairs": 63,
+          "consistent": 55,
+          "agreement": 0.873015873015873,
+          "joint_correct": 49,
+          "joint_accuracy": 0.7777777777777778,
+          "consistent_wrong": 6,
+          "positive_references": 30,
+          "image": {
+            "accuracy": 0.873015873015873,
+            "balanced_accuracy": 0.8666666666666667,
+            "positive_f1": 0.8461538461538461,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 22,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "text": {
+            "accuracy": 0.8095238095238095,
+            "balanced_accuracy": 0.806060606060606,
+            "positive_f1": 0.7857142857142857,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 26,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "agreement_wilson95": [
+            0.7689296552173035,
+            0.9342267514386327
+          ],
+          "joint_accuracy_wilson95": [
+            0.6608771888656633,
+            0.8627499224738635
+          ]
+        },
+        "authority": {
+          "pairs": 63,
+          "consistent": 55,
+          "agreement": 0.873015873015873,
+          "joint_correct": 48,
+          "joint_accuracy": 0.7619047619047619,
+          "consistent_wrong": 7,
+          "positive_references": 27,
+          "image": {
+            "accuracy": 0.8412698412698413,
+            "balanced_accuracy": 0.8240740740740741,
+            "positive_f1": 0.7916666666666666,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 21,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "text": {
+            "accuracy": 0.8095238095238095,
+            "balanced_accuracy": 0.8055555555555556,
+            "positive_f1": 0.7777777777777778,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 27,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "agreement_wilson95": [
+            0.7689296552173035,
+            0.9342267514386327
+          ],
+          "joint_accuracy_wilson95": [
+            0.6436433989030312,
+            0.8500621632170939
+          ]
+        },
+        "sanctity": {
+          "pairs": 63,
+          "consistent": 53,
+          "agreement": 0.8412698412698413,
+          "joint_correct": 49,
+          "joint_accuracy": 0.7777777777777778,
+          "consistent_wrong": 4,
+          "positive_references": 28,
+          "image": {
+            "accuracy": 0.873015873015873,
+            "balanced_accuracy": 0.8607142857142858,
+            "positive_f1": 0.84,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 22,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "text": {
+            "accuracy": 0.8412698412698413,
+            "balanced_accuracy": 0.8392857142857142,
+            "positive_f1": 0.8214285714285714,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 28,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "agreement_wilson95": [
+            0.7318842321822745,
+            0.9114290760348585
+          ],
+          "joint_accuracy_wilson95": [
+            0.6608771888656633,
+            0.8627499224738635
+          ]
+        },
+        "non_moral": {
+          "pairs": 63,
+          "consistent": 50,
+          "agreement": 0.7936507936507936,
+          "joint_correct": 47,
+          "joint_accuracy": 0.746031746031746,
+          "consistent_wrong": 3,
+          "positive_references": 20,
+          "image": {
+            "accuracy": 0.873015873015873,
+            "balanced_accuracy": 0.8802325581395349,
+            "positive_f1": 0.8181818181818182,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 24,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "text": {
+            "accuracy": 0.8253968253968254,
+            "balanced_accuracy": 0.8052325581395349,
+            "positive_f1": 0.7317073170731707,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 21,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "agreement_wilson95": [
+            0.6783018567138667,
+            0.8752468038450617
+          ],
+          "joint_accuracy_wilson95": [
+            0.6265881256339354,
+            0.8371958872667884
+          ]
+        }
+      },
+      "primary_macro": {
+        "agreement": 0.8571428571428571,
+        "joint_accuracy": 0.7587301587301587,
+        "consistent_pairs": 270,
+        "pairs": 315,
+        "minimum_consistent_pairs_60pct": 189,
+        "image_accuracy": 0.8507936507936508,
+        "image_balanced_accuracy": 0.831058201058201,
+        "text_accuracy": 0.8095238095238095,
+        "text_balanced_accuracy": 0.7993073593073593
+      },
+      "five_presence_complete_agreement": 0.6190476190476191,
+      "five_presence_joint_exact": 0.4444444444444444
+    },
+    "B": {
+      "scenes": 63,
+      "per_task": {
+        "care": {
+          "pairs": 63,
+          "consistent": 53,
+          "agreement": 0.8412698412698413,
+          "joint_correct": 48,
+          "joint_accuracy": 0.7619047619047619,
+          "consistent_wrong": 5,
+          "positive_references": 36,
+          "image": {
+            "accuracy": 0.8571428571428571,
+            "balanced_accuracy": 0.8518518518518519,
+            "positive_f1": 0.8767123287671232,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 37,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "text": {
+            "accuracy": 0.8253968253968254,
+            "balanced_accuracy": 0.8101851851851851,
+            "positive_f1": 0.8571428571428571,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 41,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "agreement_wilson95": [
+            0.7318842321822745,
+            0.9114290760348585
+          ],
+          "joint_accuracy_wilson95": [
+            0.6436433989030312,
+            0.8500621632170939
+          ]
+        },
+        "fairness": {
+          "pairs": 63,
+          "consistent": 54,
+          "agreement": 0.8571428571428571,
+          "joint_correct": 42,
+          "joint_accuracy": 0.6666666666666666,
+          "consistent_wrong": 12,
+          "positive_references": 21,
+          "image": {
+            "accuracy": 0.7619047619047619,
+            "balanced_accuracy": 0.6904761904761905,
+            "positive_f1": 0.5714285714285714,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 14,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "text": {
+            "accuracy": 0.7142857142857143,
+            "balanced_accuracy": 0.6666666666666667,
+            "positive_f1": 0.55,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 19,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "agreement_wilson95": [
+            0.7502543407837413,
+            0.922980516652793
+          ],
+          "joint_accuracy_wilson95": [
+            0.5436724114497559,
+            0.7705038553539602
+          ]
+        },
+        "loyalty": {
+          "pairs": 63,
+          "consistent": 49,
+          "agreement": 0.7777777777777778,
+          "joint_correct": 42,
+          "joint_accuracy": 0.6666666666666666,
+          "consistent_wrong": 7,
+          "positive_references": 33,
+          "image": {
+            "accuracy": 0.7777777777777778,
+            "balanced_accuracy": 0.7848484848484849,
+            "positive_f1": 0.75,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 23,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "text": {
+            "accuracy": 0.7777777777777778,
+            "balanced_accuracy": 0.7803030303030303,
+            "positive_f1": 0.7741935483870968,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 29,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "agreement_wilson95": [
+            0.6608771888656633,
+            0.8627499224738635
+          ],
+          "joint_accuracy_wilson95": [
+            0.5436724114497559,
+            0.7705038553539602
+          ]
+        },
+        "authority": {
+          "pairs": 63,
+          "consistent": 51,
+          "agreement": 0.8095238095238095,
+          "joint_correct": 47,
+          "joint_accuracy": 0.746031746031746,
+          "consistent_wrong": 4,
+          "positive_references": 28,
+          "image": {
+            "accuracy": 0.8412698412698413,
+            "balanced_accuracy": 0.8321428571428571,
+            "positive_f1": 0.8076923076923077,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 24,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "text": {
+            "accuracy": 0.8412698412698413,
+            "balanced_accuracy": 0.8392857142857142,
+            "positive_f1": 0.8214285714285714,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 28,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "agreement_wilson95": [
+            0.6959321285012545,
+            0.8875380812770755
+          ],
+          "joint_accuracy_wilson95": [
+            0.6265881256339354,
+            0.8371958872667884
+          ]
+        },
+        "sanctity": {
+          "pairs": 63,
+          "consistent": 48,
+          "agreement": 0.7619047619047619,
+          "joint_correct": 41,
+          "joint_accuracy": 0.6507936507936508,
+          "consistent_wrong": 7,
+          "positive_references": 28,
+          "image": {
+            "accuracy": 0.7619047619047619,
+            "balanced_accuracy": 0.7535714285714286,
+            "positive_f1": 0.7169811320754716,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 25,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "text": {
+            "accuracy": 0.7777777777777778,
+            "balanced_accuracy": 0.7785714285714286,
+            "positive_f1": 0.7586206896551724,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 30,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "agreement_wilson95": [
+            0.6436433989030312,
+            0.8500621632170939
+          ],
+          "joint_accuracy_wilson95": [
+            0.5275146077366178,
+            0.7567401098476968
+          ]
+        },
+        "non_moral": {
+          "pairs": 63,
+          "consistent": 51,
+          "agreement": 0.8095238095238095,
+          "joint_correct": 46,
+          "joint_accuracy": 0.7301587301587301,
+          "consistent_wrong": 5,
+          "positive_references": 19,
+          "image": {
+            "accuracy": 0.7777777777777778,
+            "balanced_accuracy": 0.7960526315789473,
+            "positive_f1": 0.6956521739130435,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 27,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "text": {
+            "accuracy": 0.873015873015873,
+            "balanced_accuracy": 0.8492822966507176,
+            "positive_f1": 0.7894736842105263,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 19,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "agreement_wilson95": [
+            0.6959321285012545,
+            0.8875380812770755
+          ],
+          "joint_accuracy_wilson95": [
+            0.6097009078044822,
+            0.82416155587684
+          ]
+        }
+      },
+      "primary_macro": {
+        "agreement": 0.8095238095238095,
+        "joint_accuracy": 0.6984126984126984,
+        "consistent_pairs": 255,
+        "pairs": 315,
+        "minimum_consistent_pairs_60pct": 189,
+        "image_accuracy": 0.8,
+        "image_balanced_accuracy": 0.7825781625781626,
+        "text_accuracy": 0.7873015873015874,
+        "text_balanced_accuracy": 0.7750024050024049
+      },
+      "five_presence_complete_agreement": 0.5079365079365079,
+      "five_presence_joint_exact": 0.36507936507936506
+    }
+  },
+  "notes": [
+    "Presence merges virtue and vice; not comparable to original three-state exact match.",
+    "Two invalid answers never count as consistent. Cached predictions are ignored.",
+    "Agreement alone cannot establish correct moral classification."
+  ],
+  "complete_grouped_benchmark": true,
+  "agreement_passes_60pct_both_groups": true,
+  "above_chance_quality_guard": true,
+  "eligible_for_stage2": true
+}

@@ -2,7 +2,26 @@
 
 输入同一场景的图片或纯文字描述，分别判断 `care`、`fairness`、`loyalty`、`authority`、`sanctity` 五个道德维度，评估两路完整一致性及正确性。
 
-## 新增：六项是/否问答实验（已完成小样本实测）
+## 正式目标：TICR 五维极性二分类
+
+图文一致率正式命名为 **TICR（Text-Image Consistency Rate）**，不再使用 C@1。正式任务为在相应道德基础已标注的场景中判断正负极性，答案为关怀/伤害、公平/欺骗、忠诚/背叛、权威/颠覆、纯洁/污秽。某维度未标注时不进入该维度任务；不把未标注当作负向标签，也不再训练 non_moral 辅助项。
+
+完整存在性实验已先完成并独立复核：图片准确率 **82.54%**、文本准确率 **79.84%**、TICR **83.33%**、共同正确率 **72.86%**。这是旧“是否涉及”任务的对照结果，不代表极性任务达标。详见[本轮微调分析](docs/PRESENCE_V1_ANALYSIS.md)。随后建立独立极性分支，保留旧数据、模型与运行目录。
+
+公开数据仍按原 2138/134/126 场景划分筛选。筛选后参与极性任务的场景为 1381/79/87 个，训练/验证/测试问答为 **9806/580/576** 条。测试为 288 个图文判断对，五维样本数 72/42/63/55/56；原 39 个 non-moral 测试场景经过检查后不进入极性任务。
+
+```bash
+python 3.1/run_polarity.py prepare
+# 运行前按仓库环境安装依赖、准备固定基模并 git lfs pull。
+screen -L -Logfile ticr-polarity.screen.log -dmS ticr-polarity \
+  python -u 3.1/scripts/run_polarity_experiment.py \
+  --output 3.1/results/runs/ticr-polarity-v1
+# 固定基模已缓存时可追加 --local-files-only；恢复时须确认原进程退出后再加 --resume。
+```
+
+流程依次执行专项测试、GPU 两步 smoke、adapter 重载、众数对照、原 LoRA 新提示基线、3 epochs 正式训练、验证选模、完整测试、独立复算和报告。新训练从原图像 LoRA 初始化，不继续存在性权重。TICR 按五维宏平均，A/B 各自达到 60%，同时两路整体宏平均 balanced accuracy >0.5；各维度分母不同，不能沿用旧 189/315 的整数判定。完整协议与限制见 [TICR 极性方案](docs/TICR_POLARITY_PROTOCOL.md)。
+
+## 历史对照：六项是/否存在性问答（完整实验已结束）
 
 2026-11-03 新增独立的 `run_binary.py`：保留原 LLaVA 视觉塔、投影器、语言解码器和生成头，将任务改为五个道德维度的标注有无问答，另报 non-moral 辅助项。Care/Harm 任一有标注均表示 care 维度存在，不再区分正负极性；这与旧五维三状态任务分开评分。
 

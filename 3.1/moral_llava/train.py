@@ -155,6 +155,9 @@ def load_records(
     if task == "binary":
         from .binary import load_records as load_binary_records
         return load_binary_records(data_path, image_root, require_targets)
+    if task == "polarity":
+        from .polarity import load_records as load_polarity_records
+        return load_polarity_records(data_path, image_root, require_targets)
     if task != "five_foundation_json":
         raise ValueError("Unsupported annotation task")
     from moral_llava.schema import parse_prediction
@@ -339,8 +342,8 @@ def find_language_lora_targets(model: Any, linear_type: type) -> list[str]:
 def make_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--model-id", default=DEFAULT_MODEL_ID)
-    parser.add_argument("--task", choices=("five_foundation_json", "binary"), default="five_foundation_json")
-    parser.add_argument("--initial-adapter", help="Optional existing language LoRA; supported for binary QA.")
+    parser.add_argument("--task", choices=("five_foundation_json", "binary", "polarity"), default="five_foundation_json")
+    parser.add_argument("--initial-adapter", help="Optional existing language LoRA for presence or polarity QA.")
     parser.add_argument("--revision", help="Optional Hugging Face model revision/commit.")
     parser.add_argument("--train-data", default="data/processed/train.json")
     parser.add_argument("--validation-data", default="data/processed/validation.json")
@@ -373,8 +376,8 @@ def make_parser() -> argparse.ArgumentParser:
 
 
 def validate_args(args: argparse.Namespace) -> None:
-    if args.initial_adapter and args.task != "binary":
-        raise ValueError("--initial-adapter is supported only for --task binary.")
+    if args.initial_adapter and args.task not in ("binary", "polarity"):
+        raise ValueError("--initial-adapter requires --task binary or polarity.")
     for name in (
         "epochs", "batch_size", "eval_batch_size", "gradient_accumulation_steps",
         "learning_rate", "max_length", "lora_r", "lora_alpha", "logging_steps",
@@ -421,7 +424,7 @@ def run_training(args: argparse.Namespace) -> None:
         raise ValueError("output-dir is nonempty. Choose a new directory or pass --resume-from-checkpoint.")
     train_records = load_records(args.train_data, args.image_root, task=args.task)
     validation_records = load_records(args.validation_data, args.image_root, task=args.task)
-    if args.task == "binary":
+    if args.task in ("binary", "polarity"):
         if {r['split'] for r in train_records} != {'train'} or {r['split'] for r in validation_records} != {'validation'}:
             raise ValueError('Binary training requires original train/validation splits.')
         if {r['scene_id'] for r in train_records} & {r['scene_id'] for r in validation_records}:
@@ -493,6 +496,9 @@ def run_training(args: argparse.Namespace) -> None:
     if args.task == "binary":
         from .binary_runtime import BinarySFTCollator
         collator_type = BinarySFTCollator
+    elif args.task == "polarity":
+        from .polarity_runtime import PolaritySFTCollator
+        collator_type = PolaritySFTCollator
     collator = collator_type(
         processor,
         image_token_id=model.config.image_token_index,
@@ -527,7 +533,7 @@ def run_training(args: argparse.Namespace) -> None:
             "peft": peft.__version__, "accelerate": accelerate.__version__,
         },
     }
-    if args.task == "binary":
+    if args.task in ("binary", "polarity"):
         import hashlib
         metadata.update(task='binary_foundation_presence_sft',
                         prompt_format='USER: <optional image or scene description> binary question ASSISTANT:',
@@ -544,6 +550,15 @@ def run_training(args: argparse.Namespace) -> None:
         if args.initial_adapter:
             with (Path(args.initial_adapter)/'adapter_model.safetensors').open('rb') as handle:
                 metadata['initial_adapter_sha256'] = hashlib.file_digest(handle,'sha256').hexdigest()
+        if args.task == "polarity":
+            from .polarity import VERSION, ANSWERS
+            metadata.update(task='conditional_foundation_polarity_sft', protocol=VERSION,
+                            metric_name='TICR', metric_full_name='Text-Image Consistency Rate',
+                            prompt_format='USER: <optional image or fixed scene description> conditional polarity question ASSISTANT:',
+                            supervision='literal task-specific positive/negative label plus EOS; prompt/image/padding masked',
+                            missing_foundation_value='excluded from that task; never a negative polarity label',
+                            auxiliary_tasks=[], answer_labels={t:list(labels.values()) for t,labels in ANSWERS.items()},
+                            selection_metric='minimum validation polarity-answer token loss; test TICR never selects checkpoints')
 
     def save_metadata(directory: Path, state: Any) -> None:
         directory.mkdir(parents=True, exist_ok=True)

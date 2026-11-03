@@ -3,8 +3,8 @@
   "files": [
     {
       "path": "README.md",
-      "bytes": 7205,
-      "sha256": "8f8a27690cd7ffe714ffd01c3abfaa05906c50f3a7df1d0429b7bebef6b05889"
+      "bytes": 9229,
+      "sha256": "e5d8d65dd7af9a93ec1f3042d56b340ffb8145d1c0071d1b370ab784f5e7d19a"
     },
     {
       "path": "benchmark/.gitkeep",
@@ -12088,8 +12088,8 @@
     },
     {
       "path": "docs/BINARY_MORAL_QA_PLAN.md",
-      "bytes": 12619,
-      "sha256": "00939fa8545047881fab1d634e6d27574bbb4b957e49518490c77d72e760f621"
+      "bytes": 12915,
+      "sha256": "9348fef46ff7d038be42dc7a1c9e547f85f53ffa72b8ced745900c911c39723e"
     },
     {
       "path": "docs/BINARY_SMALL_SAMPLE_REPORT.md",
@@ -12097,14 +12097,24 @@
       "sha256": "a0dee230b26fb89deeab808a34f15dc353e0943e64d4479e409817ef494f2b1b"
     },
     {
+      "path": "docs/PRESENCE_V1_ANALYSIS.md",
+      "bytes": 3501,
+      "sha256": "c5b85a84a1fc400d261894295bfe324f2195487a432f337a8c47a31cc37acc6f"
+    },
+    {
       "path": "docs/README.md",
-      "bytes": 1434,
-      "sha256": "257e13f636efbd278a67cab4b323ddd02c884ad066878d6e15c1522741210db2"
+      "bytes": 1591,
+      "sha256": "7374626f50a84e0fb5efd1f5dae8253279cd5beb7beef78488117e3ba9187ccc"
     },
     {
       "path": "docs/REMOTE_REPRODUCIBILITY_AUDIT.md",
       "bytes": 5024,
       "sha256": "b333dc58ab78592aeb3275b342d05c30f52e8a8bff91670e41f656b6219cafd2"
+    },
+    {
+      "path": "docs/TICR_POLARITY_PROTOCOL.md",
+      "bytes": 7460,
+      "sha256": "d76f261c259450161efb8560696f90e8b3899267aeca9c69ad01bf887605b012"
     },
     {
       "path": "docs/archive/ALIGNMENT.md",
@@ -12423,8 +12433,8 @@
     },
     {
       "path": "moral_llava/binary_runtime.py",
-      "bytes": 2345,
-      "sha256": "8208ae1f8117e2540e587ea69187ef91e8421600c29a564e107d202e5635681f"
+      "bytes": 2418,
+      "sha256": "1d05d311c6b6d58f33ab8a520c82b8a64f1eb53fd2dacb3f666df7c6c4f0bf8c"
     },
     {
       "path": "moral_llava/crossmodal.py",
@@ -12443,8 +12453,8 @@
     },
     {
       "path": "moral_llava/infer.py",
-      "bytes": 13070,
-      "sha256": "378d8d1aec09a779532112df1bb04461aff1db2ef39724cd19a37630a03398e0"
+      "bytes": 13352,
+      "sha256": "a51cf7da05734f2524dbaa4c3b37fe00152a102b6d2a65d098fc093d6bac6a4f"
     },
     {
       "path": "moral_llava/infer_crossmodal.py",
@@ -12455,6 +12465,16 @@
       "path": "moral_llava/pipeline.py",
       "bytes": 7339,
       "sha256": "9cfb6bba41ca2489c09b958935c0c787b623b4e40c78b73d7275d9cdefeb8226"
+    },
+    {
+      "path": "moral_llava/polarity.py",
+      "bytes": 20517,
+      "sha256": "45e4e278df4294948033e00248c42a19c09f89e7542cb6a671653c25fb38e8d1"
+    },
+    {
+      "path": "moral_llava/polarity_runtime.py",
+      "bytes": 308,
+      "sha256": "b152b3cb9d6a42671f4368a255c9351db9888da078a18d0878eb1bd912c04c7b"
     },
     {
       "path": "moral_llava/prepare.py",
@@ -12468,8 +12488,8 @@
     },
     {
       "path": "moral_llava/train.py",
-      "bytes": 28918,
-      "sha256": "51a9818c7c862df187940f2e292c4f88d4708e21c539b39ca267a9f89ff7d3d8"
+      "bytes": 30187,
+      "sha256": "f7566674a72352216ba75c2b9cb3196e24f09a791a32f3ee6407e7fdfa3c4ba3"
     },
     {
       "path": "moral_llava/train_alignment.py",
@@ -12585,6 +12605,76 @@
       "path": "results/reference/evaluation/verification.json",
       "bytes": 14188,
       "sha256": "6a2654387b7cea589a2b35b4131f41ca317991483070445fb2e338b6b07b327e"
+    },
+    {
+      "path": "results/reference/polarity-v1-protocol/data_audit.json",
+      "bytes": 22881,
+      "sha256": "5bf06c67602cf91ca3ca5f3485d019684a0e7b5aeaf0eb8b7ef29d2394d2fd63"
+    },
+    {
+      "path": "results/reference/presence-full-v1-20261103/baseline-metrics.json",
+      "bytes": 22676,
+      "sha256": "81250ba1f5f2eb67b0e1bd5c9985725f7e3659ea6f6e8dfae36752b500732b51"
+    },
+    {
+      "path": "results/reference/presence-full-v1-20261103/baseline.jsonl",
+      "bytes": 1059215,
+      "sha256": "52157c232eba245ea0fbe024a5518527089af496a63e9b9ddaaad5b8991d35fa"
+    },
+    {
+      "path": "results/reference/presence-full-v1-20261103/frozen_config.json",
+      "bytes": 1696,
+      "sha256": "c3dc824808edc9b91d937c11340ce0fe94c8458bb3b2618381529495e3483ec8"
+    },
+    {
+      "path": "results/reference/presence-full-v1-20261103/majority-metrics.json",
+      "bytes": 21192,
+      "sha256": "1d7a6ace3ac27f6556a05d16f893b9743e062af52c85850f648000c02c5137c4"
+    },
+    {
+      "path": "results/reference/presence-full-v1-20261103/majority.jsonl",
+      "bytes": 675072,
+      "sha256": "84bcad20b961efcab745bceba685a758f4d33d65a0a91ea164af8a546bcae6b4"
+    },
+    {
+      "path": "results/reference/presence-full-v1-20261103/presence_analysis.json",
+      "bytes": 32475,
+      "sha256": "f310228a9e0da0b9460153e99f82cd0a0b2dd71b08321fd9cf0b380d282c222c"
+    },
+    {
+      "path": "results/reference/presence-full-v1-20261103/presence_analysis.md",
+      "bytes": 3501,
+      "sha256": "c5b85a84a1fc400d261894295bfe324f2195487a432f337a8c47a31cc37acc6f"
+    },
+    {
+      "path": "results/reference/presence-full-v1-20261103/status.json",
+      "bytes": 11898,
+      "sha256": "ce53abd9b7eb8a70949657658397c7fd03501d30c9b61dc77b7fa092878228f7"
+    },
+    {
+      "path": "results/reference/presence-full-v1-20261103/summary.json",
+      "bytes": 74498,
+      "sha256": "3efc6fb683817489082da8cab3da4370df26ef177f51f4b0a286342a89e26b34"
+    },
+    {
+      "path": "results/reference/presence-full-v1-20261103/trained-metrics.json",
+      "bytes": 22785,
+      "sha256": "75a9a78eb77c46e359654c13f34f97c1ebee08bd2c41ab3ca4885d1ce77194c2"
+    },
+    {
+      "path": "results/reference/presence-full-v1-20261103/trained.jsonl",
+      "bytes": 1058774,
+      "sha256": "4a1b824e5e0231adebefafa321d1b7c1587a392c9d53535650c3d8209e99c4bd"
+    },
+    {
+      "path": "results/reference/presence-full-v1-20261103/trainer_state.json",
+      "bytes": 68534,
+      "sha256": "46489b3c15d108330dddf9f1a08170fec709892745e25b58f1e49d60afde4b99"
+    },
+    {
+      "path": "results/reference/presence-full-v1-20261103/training_metadata.json",
+      "bytes": 14996,
+      "sha256": "12e36fca483f6d013ec4a803da17189a1cd02752fae4d02d3ee42e5c3c14433b"
     },
     {
       "path": "results/reference/remote-repro-audit-20261103/full-lora-replay.log",
@@ -12777,6 +12867,16 @@
       "sha256": "c0e28af85a1a997eb70df09f282fc067dc80ce4a2479e8a6bf37428978417f44"
     },
     {
+      "path": "run_polarity.py",
+      "bytes": 2677,
+      "sha256": "29ed47c825d0f27931c96d3eafee699d82fe37b8bee7c014d530a6f20c1483f9"
+    },
+    {
+      "path": "scripts/analyze_presence_experiment.py",
+      "bytes": 11237,
+      "sha256": "6d19c08b35fed3d45d9576fa8e011e6a1ac9ac7a6766d7d84a004cceb90b3931"
+    },
+    {
       "path": "scripts/evaluate_alignment.py",
       "bytes": 13859,
       "sha256": "7c72ba200fd14398b8ad8ecacfeff5bc1953aeec4838bedbf93ca3559e5d49ef"
@@ -12800,6 +12900,11 @@
       "path": "scripts/run_binary_small_sample.py",
       "bytes": 9445,
       "sha256": "aceb2c2ccd04a56421a6b938f4e3b7ef859629b0a2558218e441a0a8a3202ce3"
+    },
+    {
+      "path": "scripts/run_polarity_experiment.py",
+      "bytes": 19042,
+      "sha256": "356be074b8b565b4379d029311fb3bed95efe43272c96cbd889bcec9bbe3017e"
     },
     {
       "path": "scripts/verify_release.py",
@@ -12850,6 +12955,16 @@
       "path": "tests/test_pipeline.py",
       "bytes": 4254,
       "sha256": "d66edebad1c3a34bc7e37a282d6c178c7b427fea02c3899946174b4e4160226d"
+    },
+    {
+      "path": "tests/test_polarity.py",
+      "bytes": 11752,
+      "sha256": "9b4bf3cb669c6afe4003ad82cb434d1870d4bd5d37ef4b0236c493f0e18d37ae"
+    },
+    {
+      "path": "tests/test_polarity_experiment_runner.py",
+      "bytes": 6779,
+      "sha256": "8137db1bcdbcff81839daee6f6cdf1e7a41c4a2174f62c3c186bb5d84d63a8fe"
     },
     {
       "path": "tests/test_prepare.py",

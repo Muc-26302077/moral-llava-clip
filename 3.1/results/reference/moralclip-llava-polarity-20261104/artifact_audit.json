@@ -22,7 +22,7 @@
     "models/moralclip-llava-polarity/training_metadata.json": "79db0d3cedeff47500dc173cc07c66dfc05d8e613dc093c17e2de5970c44f6b3",
     "results/reference/moralclip-llava-polarity-20261104/adapter-trainer_state.json": "cefd21657549cfa40c59e5339d52434db9f64e8e6b515254ec3f30435cb1558c",
     "results/reference/moralclip-llava-polarity-20261104/adapter-training_metadata.json": "79db0d3cedeff47500dc173cc07c66dfc05d8e613dc093c17e2de5970c44f6b3",
-    "results/reference/moralclip-llava-polarity-20261104/analysis.md": "2446c8e4fd52e7fc889559665bc1cd2dcc81eab41bf15f571a3d11b9d4467d8f",
+    "results/reference/moralclip-llava-polarity-20261104/analysis.md": "dfeeec67e4a7dc9c4758c706ccd64855004cf8f49fccb35b95b5f005ef4eee79",
     "results/reference/moralclip-llava-polarity-20261104/base_model.json": "4727b8b80d74b186aa179ec92adf7fc1ece2857d1ec2078f285cfbf263db3b30",
     "results/reference/moralclip-llava-polarity-20261104/frozen_config.json": "5d7ed553dc504e95551445d2223ca32de531fd9d7b18c5db1803eacb6c2c2d1a",
     "results/reference/moralclip-llava-polarity-20261104/majority-metrics.json": "8be2cc01be54afc7da401433f892017f34cbeb21120ba92dcbdbdd6162aac88e",
@@ -33,6 +33,7 @@
     "results/reference/moralclip-llava-polarity-20261104/projector-warmup.log": "0354507b1a8f3c2e885bb565c047a407d1ec09e75aec6e12037bc0ec1486b0de",
     "results/reference/moralclip-llava-polarity-20261104/projector_only-metrics.json": "5c31733ce6b8f436030f8ab07f53913a06bc840018223ec045791d515d46e77e",
     "results/reference/moralclip-llava-polarity-20261104/projector_only.jsonl": "329f3e75b546867e6ea6cdc8a950edb58f33de7e75c60ca1d341b274444153b8",
+    "results/reference/moralclip-llava-polarity-20261104/publication_audit.json": "c748ea55e8ef89e24eed7363aee5514cdbf4ec108403ca2ae21611a38dbeef87",
     "results/reference/moralclip-llava-polarity-20261104/remote-reproduction/audit.json": "1491420a5721699945081ab6dd0ae7fa974319d4333b78e396f5fa2aa4ad346c",
     "results/reference/moralclip-llava-polarity-20261104/remote-reproduction/infer.log": "c73cf2395e9b1694877e6b99d40ea5798c0e91e32a8c9b452ecc8ead2946b5ba",
     "results/reference/moralclip-llava-polarity-20261104/remote-reproduction/metrics.json": "9e6c6a114093fe005196e921f732af5c2eb42a3a098d8da116202dad03779049",
@@ -96,5 +97,17 @@
       ]
     ],
     "note": "Model artifact upload is verified separately after publication; this run verifies fetched source execution."
+  },
+  "publication_audit": {
+    "remote_commit": "676c8b0629208f620ba186d937b073c3e51208e9",
+    "git_push_exit_code": 0,
+    "git_lfs_upload_completed": true,
+    "independently_fetched_remote_commit_matches": true,
+    "remote_lfs_pointer_sha256": "318b609354f115162f14de9136005ded3cde31865dda8823559b1e0b79f79e2c",
+    "remote_lfs_pointer_bytes": 199837384,
+    "local_selected_model_matches_remote_lfs_pointer": true,
+    "fresh_binary_download_completed": false,
+    "inference_reproduction": "fetched GitHub implementation plus verified local selected adapter; all 576 answers and metrics match",
+    "runtime_scope": "same GPU, pinned dependencies, BF16 and greedy decoding; external base-model caches required"
   }
 }

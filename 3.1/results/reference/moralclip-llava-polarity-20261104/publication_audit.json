@@ -1,0 +1,12 @@
+{
+  "remote_commit": "676c8b0629208f620ba186d937b073c3e51208e9",
+  "git_push_exit_code": 0,
+  "git_lfs_upload_completed": true,
+  "independently_fetched_remote_commit_matches": true,
+  "remote_lfs_pointer_sha256": "318b609354f115162f14de9136005ded3cde31865dda8823559b1e0b79f79e2c",
+  "remote_lfs_pointer_bytes": 199837384,
+  "local_selected_model_matches_remote_lfs_pointer": true,
+  "fresh_binary_download_completed": false,
+  "inference_reproduction": "fetched GitHub implementation plus verified local selected adapter; all 576 answers and metrics match",
+  "runtime_scope": "same GPU, pinned dependencies, BF16 and greedy decoding; external base-model caches required"
+}

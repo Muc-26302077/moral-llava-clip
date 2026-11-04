@@ -12698,13 +12698,13 @@
     },
     {
       "path": "results/reference/moralclip-llava-polarity-20261104/analysis.md",
-      "bytes": 4482,
-      "sha256": "2446c8e4fd52e7fc889559665bc1cd2dcc81eab41bf15f571a3d11b9d4467d8f"
+      "bytes": 4681,
+      "sha256": "dfeeec67e4a7dc9c4758c706ccd64855004cf8f49fccb35b95b5f005ef4eee79"
     },
     {
       "path": "results/reference/moralclip-llava-polarity-20261104/artifact_audit.json",
-      "bytes": 8200,
-      "sha256": "7ee243cae1bd961afe525d664948b81c6ee33bc2cfd5bf3226b821db4f0e9f48"
+      "bytes": 9071,
+      "sha256": "24ecdfc5036833f957edab81f5f21170111a4ef234f4b84d0782e0e82f5dbefd"
     },
     {
       "path": "results/reference/moralclip-llava-polarity-20261104/base_model.json",
@@ -12755,6 +12755,11 @@
       "path": "results/reference/moralclip-llava-polarity-20261104/projector_only.jsonl",
       "bytes": 499540,
       "sha256": "329f3e75b546867e6ea6cdc8a950edb58f33de7e75c60ca1d341b274444153b8"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/publication_audit.json",
+      "bytes": 675,
+      "sha256": "c748ea55e8ef89e24eed7363aee5514cdbf4ec108403ca2ae21611a38dbeef87"
     },
     {
       "path": "results/reference/moralclip-llava-polarity-20261104/remote-reproduction/audit.json",

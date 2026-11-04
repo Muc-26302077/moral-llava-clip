@@ -3,8 +3,8 @@
   "files": [
     {
       "path": "README.md",
-      "bytes": 9229,
-      "sha256": "e5d8d65dd7af9a93ec1f3042d56b340ffb8145d1c0071d1b370ab784f5e7d19a"
+      "bytes": 10321,
+      "sha256": "51f804a580c5b933e7588383136e9149f4952211a7c56bb5cac0959ceba85e70"
     },
     {
       "path": "benchmark/.gitkeep",
@@ -12097,14 +12097,19 @@
       "sha256": "a0dee230b26fb89deeab808a34f15dc353e0943e64d4479e409817ef494f2b1b"
     },
     {
+      "path": "docs/MORALCLIP_R1_PROTOCOL.md",
+      "bytes": 6095,
+      "sha256": "d0c8be53da5964c42328a260eb6a9752521f8915826207ba7bb996486c7c5594"
+    },
+    {
       "path": "docs/PRESENCE_V1_ANALYSIS.md",
       "bytes": 3501,
       "sha256": "c5b85a84a1fc400d261894295bfe324f2195487a432f337a8c47a31cc37acc6f"
     },
     {
       "path": "docs/README.md",
-      "bytes": 1591,
-      "sha256": "7374626f50a84e0fb5efd1f5dae8253279cd5beb7beef78488117e3ba9187ccc"
+      "bytes": 1846,
+      "sha256": "d79cd541c2d1e170a529596e5c5e0e79deaa77fd8bbadf3c2c0ce6c07e29e6e6"
     },
     {
       "path": "docs/REMOTE_REPRODUCIBILITY_AUDIT.md",
@@ -12118,8 +12123,8 @@
     },
     {
       "path": "docs/archive/ALIGNMENT.md",
-      "bytes": 10020,
-      "sha256": "6fe42658445516d9fa34e743d1c72353aa1f9b43959be2e9ba02c8ac76e8fa3a"
+      "bytes": 10378,
+      "sha256": "b07f0015fbdc624ad0712b3c297bc464fe635f93248a9cb00b5923bd76be75ca"
     },
     {
       "path": "docs/archive/CROSSMODAL_CONDITIONAL_DISTILLATION_PLAN.md",
@@ -12148,18 +12153,18 @@
     },
     {
       "path": "docs/archive/EXPERIMENT_REPORT.md",
-      "bytes": 7604,
-      "sha256": "a39678791b75d4632c62f73d86e18b74574706c8d88c284c4fb0f07bf6dcb67f"
+      "bytes": 7885,
+      "sha256": "bcd491bbc72953160065eeefab22251e64291140edc14f68d5208bbdf0bfa46c"
     },
     {
       "path": "docs/archive/HISTORY.md",
-      "bytes": 16087,
-      "sha256": "fc84e3eebbe3bc2b3547284bc7a54e727fdf530f0dd57f18b3f69231032a0449"
+      "bytes": 16368,
+      "sha256": "d243da52264f49ef81c10391ca0afe67872d875d3e0fe30da98fbfd541888f59"
     },
     {
       "path": "docs/archive/PROGRESS_CROSSMODAL.md",
-      "bytes": 9055,
-      "sha256": "5ff7bafff9a5e598cff887f8af2d1a64565432b782d40fe001d0ffe441e2fb7a"
+      "bytes": 9370,
+      "sha256": "3ffab9a4ff1ed67e37e2d64ebce7cbe581e601202ecebfc992e9641561f470bd"
     },
     {
       "path": "docs/archive/alignment_commands.txt",
@@ -12263,8 +12268,8 @@
     },
     {
       "path": "docs/archive/scripts/summarize_alignment_experiment.py",
-      "bytes": 31502,
-      "sha256": "27a24035c8b66e6533ed239755e3ce27a6c8ba134780cb9d070fc8f4eba6e088"
+      "bytes": 31525,
+      "sha256": "7dae01b0c4401879c594337d0567ae58ec51707e6ccfa75539766017a9820bfc"
     },
     {
       "path": "docs/archive/scripts/verify_crossmodal_improvement.py",
@@ -12283,8 +12288,8 @@
     },
     {
       "path": "models/README.md",
-      "bytes": 1762,
-      "sha256": "27dba726980185454d90b5cf3b77404b7311005423763151eb843ec3c1531657"
+      "bytes": 2134,
+      "sha256": "f33bf3574e1d99bc33eaa24df89ad13aa65838defe504a12753979b295428827"
     },
     {
       "path": "models/image-lora/README.md",
@@ -12345,6 +12350,11 @@
       "path": "models/image-lora/training_metadata.json",
       "bytes": 13934,
       "sha256": "2c7c50a6c685cc03f7cb344fddd70f51b7533515bb6d8bbb37e14561b8baaa7b"
+    },
+    {
+      "path": "models/moralclip-original.json",
+      "bytes": 696,
+      "sha256": "277ca0d2121287d63bd4e1d48fa66482c0911bfd45ad89739482545e4e9b9528"
     },
     {
       "path": "models/moralllava/README.md",
@@ -12493,8 +12503,8 @@
     },
     {
       "path": "moral_llava/train_alignment.py",
-      "bytes": 18203,
-      "sha256": "83006d35f2f5a04cab298b70dfef8c36b07918f4eacb668f0645169b4402f50d"
+      "bytes": 18601,
+      "sha256": "91faa257110476fcc09391b17d6fbdf6b9f44a5f148bbccbc23ae4a294a0c874"
     },
     {
       "path": "moral_llava/train_crossmodal.py",
@@ -12605,6 +12615,36 @@
       "path": "results/reference/evaluation/verification.json",
       "bytes": 14188,
       "sha256": "6a2654387b7cea589a2b35b4131f41ca317991483070445fb2e338b6b07b327e"
+    },
+    {
+      "path": "results/reference/moralclip-r1-original-20261104/screen.log",
+      "bytes": 1584,
+      "sha256": "60b6f369f5fd3a64695dfd5aa6767b8c54f1ea128c6df6f2b52dac11095c29ba"
+    },
+    {
+      "path": "results/reference/moralclip-r1-original-20261104/source_audit.json",
+      "bytes": 883,
+      "sha256": "36786f199da8bc478aca705c3e872c62fe1ad947c0173b10b0848f75dbbb3ce8"
+    },
+    {
+      "path": "results/reference/moralclip-r1-original-20261104/test.json",
+      "bytes": 20919,
+      "sha256": "5356ff47115babe1a65b7167eadd2df718e1babac34f3f6b5354941632271381"
+    },
+    {
+      "path": "results/reference/moralclip-r1-original-20261104/test.predictions.json",
+      "bytes": 120455,
+      "sha256": "cc699e771653dcb898717f99ee0d64f43aea673da6b1359565801997f2655c8f"
+    },
+    {
+      "path": "results/reference/moralclip-r1-original-20261104/test.report.md",
+      "bytes": 1172,
+      "sha256": "befe019a03db98076e51893d7dd808bc2b1dcabd86594a6b0c55984d0b6b6ee0"
+    },
+    {
+      "path": "results/reference/moralclip-r1-original-20261104/test.scores.npy",
+      "bytes": 635168,
+      "sha256": "97e9b5b933e241baeb8a561a2fe741501ca722f4d670512fd1ec85cf73a82876"
     },
     {
       "path": "results/reference/polarity-v1-protocol/data_audit.json",
@@ -12872,19 +12912,24 @@
       "sha256": "29ed47c825d0f27931c96d3eafee699d82fe37b8bee7c014d530a6f20c1483f9"
     },
     {
+      "path": "run_retrieval.py",
+      "bytes": 264,
+      "sha256": "6a4fdf2230cec3a07d3920516199d8ca5af47e3c742da24b18ffe46312e831c8"
+    },
+    {
       "path": "scripts/analyze_presence_experiment.py",
       "bytes": 11237,
       "sha256": "6d19c08b35fed3d45d9576fa8e011e6a1ac9ac7a6766d7d84a004cceb90b3931"
     },
     {
       "path": "scripts/evaluate_alignment.py",
-      "bytes": 13859,
-      "sha256": "7c72ba200fd14398b8ad8ecacfeff5bc1953aeec4838bedbf93ca3559e5d49ef"
+      "bytes": 14119,
+      "sha256": "a52009fbaa0ae9eaaf6f6b61c0b6dd9617239fcf908710db26399cdace99d26d"
     },
     {
       "path": "scripts/evaluate_retrieval.py",
-      "bytes": 7111,
-      "sha256": "2e851be7c2fd7758864e3ffd8b14723bef0f6d31b58fe6f9ccf3d4e0aa29ff4d"
+      "bytes": 19367,
+      "sha256": "1d793eb7c0a97e0b34d236448754127aae8e444db80a5ed3dbe390cab667f2f2"
     },
     {
       "path": "scripts/rebuild_manifest.py",
@@ -12907,14 +12952,19 @@
       "sha256": "356be074b8b565b4379d029311fb3bed95efe43272c96cbd889bcec9bbe3017e"
     },
     {
+      "path": "scripts/score_retrieval.py",
+      "bytes": 3797,
+      "sha256": "71d4e4be5dd4f5606c499ed272ae1b6ebed236c426200dd7a7981c615f78e385"
+    },
+    {
       "path": "scripts/verify_release.py",
       "bytes": 9347,
       "sha256": "e5e47aef543bc921449f264992a7c97d51a64c0e25953cc9e9c644bef7134615"
     },
     {
       "path": "tests/test_alignment_data.py",
-      "bytes": 10129,
-      "sha256": "e32b3884d997d754769fa0a1d3acf0dcc08dfbfbe4c4c64bf5ed788b2a8f4efc"
+      "bytes": 10428,
+      "sha256": "ebfcb8ef545a9f26dd7eeafbfd788cca7f59ec2c040d497a64f6386c365cf135"
     },
     {
       "path": "tests/test_alignment_losses.py",
@@ -12970,6 +13020,16 @@
       "path": "tests/test_prepare.py",
       "bytes": 4397,
       "sha256": "3887906eefda26b3454671aa6e5e08aa60dc0113bc3b98ba0b83e467fe2f9081"
+    },
+    {
+      "path": "tests/test_retrieval_rescore.py",
+      "bytes": 3348,
+      "sha256": "0d5aea783df36dcd5d21934531c1eb16e7839f6e0a4eef5b8d529cbb780d082d"
+    },
+    {
+      "path": "tests/test_retrieval_target.py",
+      "bytes": 2018,
+      "sha256": "0943b79fc1f2b4600fae9b753c49e3847d73f9dbed9b9c8d3c098b835e33cf6a"
     },
     {
       "path": "tests/test_schema.py",

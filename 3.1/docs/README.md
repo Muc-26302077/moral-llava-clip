@@ -1,6 +1,9 @@
 # 方法与历史记录
 
-- [最新实测报告](archive/CROSSMODAL_IMPROVEMENT_RESULTS.md)：方法、验证选择、测试结果及质量取舍。
+- [正式 MoralCLIP R@1 协议](MORALCLIP_R1_PROTOCOL.md)：原道德标签 Hit@1 更名为 R@1，包含原始模型、测试目标审计与实测结果。
+- [正式 TICR 极性协议](TICR_POLARITY_PROTOCOL.md)：与检索基准分别评分。
+
+- [历史三状态实测报告](archive/CROSSMODAL_IMPROVEMENT_RESULTS.md)：方法、验证选择、测试结果及质量取舍。
 - [评测协议](archive/CROSSMODAL_EVALUATION.md)：固定 A/B 划分和指标定义。
 - [训练方案](archive/CROSSMODAL_IMPROVEMENT_PLAN.md)：图像 / 文本联合监督与 JS 一致性。
 - [历史进度](archive/PROGRESS_CROSSMODAL.md)：不同阶段的目标与结果。

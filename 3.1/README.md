@@ -1,6 +1,18 @@
 # 3.1 跨模态道德判断评测
 
-输入同一场景的图片或纯文字描述，分别判断 `care`、`fairness`、`loyalty`、`authority`、`sanctity` 五个道德维度，评估两路完整一致性及正确性。
+本指标分别提供原始 MoralCLIP 的道德标签相关检索基准，以及 Moral-LLaVA 的图像／文字极性判断一致性与正确性评测。
+
+## MoralCLIP 检索基准：R@1
+
+项目将原“道德标签 Hit@1”正式命名为 **R@1**：图像查询全部测试文本，首位文本与查询场景共享至少一个道德标签即命中。126 张测试图像、1260 条候选描述，保留本图描述和 non-moral 标签。原始模型重测 **126/126，100.00%**；同图配对与跨场景检索仅作单独诊断，不替代本指标。
+
+```bash
+python 3.1/run_retrieval.py --model /path/to/moralclip-base \
+  --expected-model-sha256 4ace10e40a63343dc270afe776a0cc851d28dc36fd13417de07dccb12e4bac2a \
+  --output 3.1/results/runs/original-r1/test.json
+```
+
+原始权重版本、下载方式、候选池和独立复算见 [R@1 正式协议](docs/MORALCLIP_R1_PROTOCOL.md)，结果见[原始模型实测表](results/reference/moralclip-r1-original-20261104/test.report.md)。当前 Moral-LLaVA 极性模型仍保留原 LLaVA 视觉塔，未接入这份 MoralCLIP 权重。
 
 ## 正式目标：TICR 五维极性二分类
 
@@ -52,7 +64,9 @@ screen -r qav1-full
 
 具体任务定义、视觉结构、第二阶段架构及版本恢复见[新实验方案](docs/BINARY_MORAL_QA_PLAN.md)。原 `run.py` 命令及下文历史结果继续保留。
 
-## 运行方式
+## 历史三状态模型的运行方式
+
+以下 `run.py` 复现历史 JSON 三状态任务。当前 R@1 使用 `run_retrieval.py`，正式极性 TICR 使用 `run_polarity.py`。
 
 在仓库根目录创建并激活 [统一环境](../environment.yml) 后运行：
 
@@ -98,13 +112,13 @@ PYTHON=/path/to/python sh 3.1/run.sh score
 
 | 模型 | 目录 | 说明 |
 | --- | --- | --- |
-| 图文联合 MoralLLaVA | `models/moralllava/` | 验证集选中的第 2 轮，主要交付模型 |
+| 图文联合 MoralLLaVA | `models/moralllava/` | 验证集选中的第 2 轮，历史三状态模型 |
 | 旧图像标签 LoRA | `models/image-lora/` | 继续训练初始化和对照 |
 | 基模 | Hugging Face 缓存 | `llava-hf/llava-1.5-7b-hf`，revision `b234b804b114d9e37bb655e11cbbb5f5e971b7a9` |
 
 权重使用 Git LFS。模型训练与条款见 [models/README.md](models/README.md)。
 
-## 已有结果
+## 历史三状态模型的已有结果
 
 | 测试组 | 指标 | 旧图像 LoRA | 图文联合 MoralLLaVA |
 | --- | --- | ---: | ---: |

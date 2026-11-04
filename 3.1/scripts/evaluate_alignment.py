@@ -30,21 +30,21 @@ def alignment_retrieval_metrics(
     caption_image_ids: list[str],
     query_ids: list[str],
 ) -> dict[str, Any]:
-    """Shared-label retrieval plus a control with the query image removed.
+    """Project moral-label R@1 plus a separately named cross-image control.
 
-    The historical r_at_k keys measure whether a query has any relevant hit in
-    its first k results. They are retained as aliases, not caption-level recall.
+    Historical hit_at_k keys remain machine-readable compatibility aliases.
+    Project R@K is the query-level success rate, not caption-level recall.
     """
     metrics = score_queries(scores, query_labels, caption_labels, caption_image_ids, query_ids)
     label_metrics = metrics["label_relevance"]
     label_metrics["definition"] = (
-        "candidate and query share at least one moral label; hit_at_k is the fraction "
+        "candidate and query share at least one moral label; project R@K is the fraction "
         "of image queries with at least one relevant caption in the first k results; "
-        "r_at_k is a backward-compatible alias for hit_at_k, not caption-level recall"
+        "not caption-level recall; hit_at_k is a historical compatibility alias"
     )
     for k in (1, 5, 10):
         label_metrics[f"hit_at_{k}"] = label_metrics[f"r_at_{k}"]
-    label_metrics["recall_key_semantics"] = "legacy r_at_k keys equal query-level hit_at_k"
+    label_metrics["recall_key_semantics"] = "project R@K: query-level moral-label retrieval success"
 
     hit_counts = {1: 0, 5: 0, 10: 0}
     average_precisions = []
@@ -62,6 +62,7 @@ def alignment_retrieval_metrics(
             hit_counts[k] += int(any(relevant[:k]))
     count = len(query_ids)
     metrics["cross_image_moral_relevance"] = {
+        "metric_name": "cross-image R@1 (diagnostic only)",
         "definition": (
             "remove every caption belonging to the query image before ranking; a remaining "
             "caption is relevant iff it shares at least one moral label with the query"
@@ -75,6 +76,7 @@ def alignment_retrieval_metrics(
         "candidate_count_after_exclusion": {"min": min(candidate_counts), "max": max(candidate_counts)},
         "relevant_count_after_exclusion": {"min": min(relevant_counts), "max": max(relevant_counts)},
         **{f"hit_at_{k}": value / count for k, value in hit_counts.items()},
+        **{f"r_at_{k}": value / count for k, value in hit_counts.items()},
         "map_i2t": sum(average_precisions) / count,
     }
     return metrics
@@ -240,6 +242,9 @@ def run_evaluation(args: argparse.Namespace) -> dict[str, Any]:
         "manifest_sha256": manifest_fingerprints(args.image_root),
         "combined_manifest_sha256": alignment_manifest_hash(args.image_root),
         "metric_direction": "image_to_text",
+        "metric_name": "R@1",
+        "protocol": "moral-label-r1-v1",
+        "r_at_1": metrics["label_relevance"]["r_at_1"],
         "score": "cosine similarity of normalized learned LLaVA image/text embeddings",
         "candidate_pool": f"all original captions of the {args.split} image split",
         "recall_definition": "fraction of image queries with at least one relevant caption among top k",

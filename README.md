@@ -2,11 +2,11 @@
 
 ## 内容介绍
 
-本仓库提供指标 3.1 的测试数据、已训练模型和评测程序，并提供指标 3.9 的隐私保护图文检索实验代码包。
+本仓库提供指标 3.1 的测试数据、已训练模型和评测程序，并提供指标 3.9 的隐私保护图文检索实验代码包。当前 R@1 与极性 TICR 正式协议位于 `codex/ticr-polarity-v1` 分支。
 
 | 指标大类 | 内容 |
 | --- | --- |
-| [3.1 跨模态道德判断评测](3.1/README.md) | 同一场景的图片 / 文字道德判断一致性与正确性 |
+| [3.1 跨模态道德判断评测](3.1/README.md) | MoralCLIP 道德标签 R@1；Moral-LLaVA 极性 TICR 与准确率 |
 | [3.9 隐私保护图文检索评测](3.9/) | LDP-Slicing / CluSanT 隐私扰动与 MoralCLIP 检索实验代码包 |
 
 主要运行文件：
@@ -14,7 +14,9 @@
 ```text
 .
 ├── 3.1/
-│   ├── run.py               # 统一运行入口
+│   ├── run_retrieval.py     # 原始 MoralCLIP 道德标签 R@1
+│   ├── run_polarity.py      # 正式极性问答与 TICR
+│   ├── run.py               # 历史三状态任务入口
 │   ├── run.sh               # 可选的 shell 入口
 │   ├── benchmark/           # 空白预留
 │   ├── data/                # 数据、来源与版权
@@ -29,26 +31,36 @@
 └── NOTICE.md                # 版权说明
 ```
 
-## 最短运行步骤
+## 运行环境与入口
 
-真实模型评测需要 Linux、Python 3.11 和 NVIDIA CUDA GPU，建议显存 24 GB 或以上，默认 batch size 为 1。首次需下载约 14.1 GB 的 LLaVA 基模，建议预留 25 GB 磁盘空间。
+建议使用 Linux、Python 3.11 和 NVIDIA CUDA GPU。MoralCLIP 原始权重约 599 MB；Moral-LLaVA 推理另需约 14.1 GB 固定 LLaVA 基模，建议显存 24 GB 或以上并预留 25 GB 磁盘空间。
 
 ```bash
 git lfs install
-git clone https://github.com/Muc-26302077/moral-llava-clip.git
+git clone --branch codex/ticr-polarity-v1 https://github.com/Muc-26302077/moral-llava-clip.git
 cd moral-llava-clip
 conda env create -f environment.yml
 conda activate moral_llava
-python 3.1/run.py evaluate
+python 3.1/run_retrieval.py --model /path/to/moralclip-base \
+  --expected-model-sha256 4ace10e40a63343dc270afe776a0cc851d28dc36fd13417de07dccb12e4bac2a \
+  --output 3.1/results/runs/original-r1/test.json
 ```
 
-程序自动下载或复用固定版本基模，加载已训练的 MoralLLaVA，完成真实图像 / 文本推理并输出指标。结果保存在 `3.1/results/runs/evaluate-*/predictions/metrics_*.json`。
+上例测试原始 MoralCLIP 的项目 **R@1**（原道德标签 Hit@1），需先提供完整模型目录；固定权重和下载方式见 [R@1 协议](3.1/docs/MORALCLIP_R1_PROTOCOL.md)。原始模型实测为 **126/126，100.00%**，完整结果和诊断见[基准报告](3.1/results/reference/moralclip-r1-original-20261104/test.report.md)。
+
+Moral-LLaVA 正式极性任务使用 `python 3.1/run_polarity.py ...`，参见 [TICR 协议](3.1/docs/TICR_POLARITY_PROTOCOL.md)。`python 3.1/run.py evaluate` 保留用于历史三状态模型复现，不代表正式极性 TICR。
 
 ## 运行测试
 
 ### 指标 3.1：跨模态道德判断
 
-如果只核对已有结果，无需 GPU、基模或额外 Python 依赖，Python 3.11+ 即可：
+MoralCLIP R@1 可不加载模型、在 CPU 上独立核对归档矩阵和逐样本结果（需要 NumPy）：
+
+```bash
+python 3.1/scripts/score_retrieval.py --evaluation 3.1/results/reference/moralclip-r1-original-20261104/test.json
+```
+
+历史三状态任务的已有结果可仅用 Python 3.11+ 标准库复算：
 
 ```bash
 python 3.1/run.py score

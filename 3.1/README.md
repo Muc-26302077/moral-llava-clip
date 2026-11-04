@@ -134,3 +134,7 @@ PYTHON=/path/to/python sh 3.1/run.sh score
 ## 目录约定
 
 `data/` 放数据与版权，`models/` 放正式 LoRA，`results/reference/` 放历史证据，新实验写入已被 Git 忽略的 `results/runs/`。代码在 `moral_llava/`，历史文档与旧命令在 `docs/archive/`。`benchmark/` 保持空白，后续再补。
+
+### 原始 MoralCLIP 视觉塔接入的极性问答基线
+
+分支 `codex/moralclip-polarity-baseline` 新增真实 MoralCLIP ViT-B/16 视觉权重替换、768→4096→4096 投影器适配，以及投影器＋语言 LoRA 极性问答训练。完整方案、运行、检查点恢复和评测见 [MORALCLIP_LLAVA_BASELINE.md](docs/MORALCLIP_LLAVA_BASELINE.md)。当前训练状态以对应运行目录的 `status.json` 为准；本项独立于历史原 LLaVA 视觉塔的极性结果及原始 MoralCLIP 双向检索 R@1。

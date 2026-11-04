@@ -3,8 +3,8 @@
   "files": [
     {
       "path": "README.md",
-      "bytes": 10415,
-      "sha256": "b951ca7d419e2cff5fa224422faff30418ba7186ab4737a00d4befbce7fc8abb"
+      "bytes": 10937,
+      "sha256": "eecfca50d36ba0318b7f65fc86fcf33e939e1aa6848d2d7ae3c44cb381d21d1c"
     },
     {
       "path": "benchmark/.gitkeep",
@@ -12097,6 +12097,11 @@
       "sha256": "a0dee230b26fb89deeab808a34f15dc353e0943e64d4479e409817ef494f2b1b"
     },
     {
+      "path": "docs/MORALCLIP_LLAVA_BASELINE.md",
+      "bytes": 5877,
+      "sha256": "fe28627617d536cfaf55bfd1ebdc0868dfe7258ad825901905e91e370be3cd62"
+    },
+    {
       "path": "docs/MORALCLIP_R1_PROTOCOL.md",
       "bytes": 9088,
       "sha256": "ff6172486f7138626293e734175ef38f098b89510d007dbda81cd2c3167f1e11"
@@ -12463,13 +12468,18 @@
     },
     {
       "path": "moral_llava/infer.py",
-      "bytes": 13352,
-      "sha256": "a51cf7da05734f2524dbaa4c3b37fe00152a102b6d2a65d098fc093d6bac6a4f"
+      "bytes": 14337,
+      "sha256": "7fecff34543df35f37290b4ea68ee8c0354afdab9b7a225ce7a8af504eb70666"
     },
     {
       "path": "moral_llava/infer_crossmodal.py",
       "bytes": 11166,
       "sha256": "99f400bc3d0fcef1beaa9de51f003f769bf5b265ad6aab7789c030422bd1041f"
+    },
+    {
+      "path": "moral_llava/moralclip_integration.py",
+      "bytes": 6389,
+      "sha256": "28bbdca6ff0ccfc248e9b87fcc6aef4f416f32fa7a8baa6736d4e2e5974b19ae"
     },
     {
       "path": "moral_llava/pipeline.py",
@@ -12478,8 +12488,8 @@
     },
     {
       "path": "moral_llava/polarity.py",
-      "bytes": 20517,
-      "sha256": "45e4e278df4294948033e00248c42a19c09f89e7542cb6a671653c25fb38e8d1"
+      "bytes": 20596,
+      "sha256": "56ee3d8199f6013b9e2d7a4986f015369b8ba11b60ef80ce7c8277fcb50362c3"
     },
     {
       "path": "moral_llava/polarity_runtime.py",
@@ -12498,8 +12508,8 @@
     },
     {
       "path": "moral_llava/train.py",
-      "bytes": 30187,
-      "sha256": "f7566674a72352216ba75c2b9cb3196e24f09a791a32f3ee6407e7fdfa3c4ba3"
+      "bytes": 33688,
+      "sha256": "a57c18ff40e403071a23b05f9e496381e39891fe64ce8ee794ed450f40b238b3"
     },
     {
       "path": "moral_llava/train_alignment.py",
@@ -12947,6 +12957,11 @@
       "sha256": "c0e28af85a1a997eb70df09f282fc067dc80ce4a2479e8a6bf37428978417f44"
     },
     {
+      "path": "run_moralclip_polarity.py",
+      "bytes": 1341,
+      "sha256": "ba8a37d5124d73b600934b7d842b7a3e506814f6131d8d8e5b757065da9ba74a"
+    },
+    {
       "path": "run_polarity.py",
       "bytes": 2677,
       "sha256": "29ed47c825d0f27931c96d3eafee699d82fe37b8bee7c014d530a6f20c1483f9"
@@ -12985,6 +13000,11 @@
       "path": "scripts/run_binary_small_sample.py",
       "bytes": 9445,
       "sha256": "aceb2c2ccd04a56421a6b938f4e3b7ef859629b0a2558218e441a0a8a3202ce3"
+    },
+    {
+      "path": "scripts/run_moralclip_polarity_experiment.py",
+      "bytes": 16526,
+      "sha256": "d7a05c8aa1af49e37495d9a9817e740bb1202da27cbd5cc0baf31dd70db08657"
     },
     {
       "path": "scripts/run_polarity_experiment.py",
@@ -13040,6 +13060,11 @@
       "path": "tests/test_inference_contract.py",
       "bytes": 4700,
       "sha256": "dc6337a16ccce6307b7df24097b8f06c7c4d930f660c9ed341b1647abe50a515"
+    },
+    {
+      "path": "tests/test_moralclip_integration.py",
+      "bytes": 6066,
+      "sha256": "34f867bb39fb25e4e92bf57aab4e128edce3fc0b3d7ab8118b3e87cc6218a47b"
     },
     {
       "path": "tests/test_pipeline.py",

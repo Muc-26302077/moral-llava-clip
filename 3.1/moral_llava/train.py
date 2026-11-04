@@ -344,6 +344,11 @@ def make_parser() -> argparse.ArgumentParser:
     parser.add_argument("--model-id", default=DEFAULT_MODEL_ID)
     parser.add_argument("--task", choices=("five_foundation_json", "binary", "polarity"), default="five_foundation_json")
     parser.add_argument("--initial-adapter", help="Optional existing language LoRA for presence or polarity QA.")
+    parser.add_argument("--moralclip-model", help="Original MoralCLIP local checkpoint or pinned HF model ID.")
+    parser.add_argument("--moralclip-revision", default="1e337922befebde3f0cadb5749f37ae9521a0751")
+    parser.add_argument("--moralclip-sha256", default="4ace10e40a63343dc270afe776a0cc851d28dc36fd13417de07dccb12e4bac2a")
+    parser.add_argument("--moralclip-stage", choices=("projector", "joint"), default="joint")
+    parser.add_argument("--projector-learning-rate", type=float, default=1e-4)
     parser.add_argument("--revision", help="Optional Hugging Face model revision/commit.")
     parser.add_argument("--train-data", default="data/processed/train.json")
     parser.add_argument("--validation-data", default="data/processed/validation.json")
@@ -376,6 +381,11 @@ def make_parser() -> argparse.ArgumentParser:
 
 
 def validate_args(args: argparse.Namespace) -> None:
+    if args.moralclip_model:
+        if args.task != 'polarity' or args.load_in_4bit:
+            raise ValueError('Original MoralCLIP baseline requires polarity BF16/FP16 SFT, without 4-bit loading')
+        if args.projector_learning_rate <= 0:
+            raise ValueError('Projector learning rate must be positive')
     if args.initial_adapter and args.task not in ("binary", "polarity"):
         raise ValueError("--initial-adapter requires --task binary or polarity.")
     for name in (
@@ -457,6 +467,12 @@ def run_training(args: argparse.Namespace) -> None:
         )
         model_kwargs["device_map"] = {"": local_rank}
     model = LlavaForConditionalGeneration.from_pretrained(args.model_id, **model_kwargs)
+    integration = None
+    if args.moralclip_model:
+        from .moralclip_integration import install_vision_tower
+        integration = install_vision_tower(model, processor, args.moralclip_model,
+                      expected_sha256=args.moralclip_sha256, revision=args.moralclip_revision,
+                      local_files_only=args.local_files_only)
     expected_image_tokens = configure_processor(processor, model.config, padding_side="right")
     if args.max_length > context_length(model.config):
         raise ValueError(f"max_length exceeds the model context of {context_length(model.config)} tokens.")
@@ -474,6 +490,11 @@ def run_training(args: argparse.Namespace) -> None:
         initial_metadata = json.loads((initial / 'training_metadata.json').read_text())
         if initial_metadata.get('resolved_base_commit') != getattr(model.config, '_commit_hash', None):
             raise ValueError('Initial adapter/base revision mismatch.')
+        if integration:
+            from .moralclip_integration import validate_adapter_metadata
+            validate_adapter_metadata(initial_metadata, integration)
+        elif initial_metadata.get('moralclip_integration'):
+            raise ValueError('A MoralCLIP adapter requires --moralclip-model')
         model = PeftModel.from_pretrained(model, str(initial), is_trainable=True)
     else:
         model = get_peft_model(model, LoraConfig(
@@ -483,12 +504,19 @@ def run_training(args: argparse.Namespace) -> None:
             lora_dropout=args.lora_dropout,
             bias="none",
             target_modules=targets,
+            modules_to_save=["multi_modal_projector"] if integration else None,
         ))
-    trainable_names = [name for name, parameter in model.named_parameters() if parameter.requires_grad]
-    if not trainable_names or any(
-        ".language_model." not in name or "lora_" not in name for name in trainable_names
-    ):
-        raise RuntimeError("Freeze check failed: only language_model LoRA weights may be trainable.")
+    if integration:
+        from .moralclip_integration import configure_trainability
+        trainable_names = configure_trainability(model, args.moralclip_stage)
+        if args.moralclip_stage == 'projector' and any(r['modality'] != 'image' for r in train_records):
+            raise ValueError('Projector warmup accepts image-only training records')
+    else:
+        trainable_names = [name for name, parameter in model.named_parameters() if parameter.requires_grad]
+        if not trainable_names or any(
+            ".language_model." not in name or "lora_" not in name for name in trainable_names
+        ):
+            raise RuntimeError("Freeze check failed: only language_model LoRA weights may be trainable.")
     model.print_trainable_parameters()
     if args.gradient_checkpointing:
         model.enable_input_require_grads()
@@ -560,6 +588,12 @@ def run_training(args: argparse.Namespace) -> None:
                             auxiliary_tasks=[], answer_labels={t:list(labels.values()) for t,labels in ANSWERS.items()},
                             selection_metric='minimum validation polarity-answer token loss; test TICR never selects checkpoints')
 
+    if integration:
+        metadata.update(moralclip_integration=integration, moralclip_stage=args.moralclip_stage,
+                        freeze_policy='original MoralCLIP vision and language base frozen; dense projector trained; language LoRA trained only in joint stage',
+                        trainable_parameter_names=trainable_names,
+                        projector_learning_rate=args.projector_learning_rate)
+
     def save_metadata(directory: Path, state: Any) -> None:
         directory.mkdir(parents=True, exist_ok=True)
         saved = {
@@ -608,7 +642,23 @@ def run_training(args: argparse.Namespace) -> None:
         ddp_find_unused_parameters=False if int(os.environ.get("WORLD_SIZE", "1")) > 1 else None,
         label_names=["labels"],
     )
-    trainer = Trainer(
+    trainer_class = Trainer
+    if integration:
+        class MoralCLIPTrainer(Trainer):
+            def create_optimizer(self):
+                if self.optimizer is None:
+                    projector, language = [], []
+                    for name, parameter in self.model.named_parameters():
+                        if parameter.requires_grad:
+                            (projector if '.multi_modal_projector.' in name else language).append(parameter)
+                    groups = [{'params': projector, 'lr': args.projector_learning_rate}]
+                    if language:
+                        groups.append({'params': language, 'lr': args.learning_rate})
+                    self.optimizer = torch.optim.AdamW(groups, weight_decay=args.weight_decay,
+                                                       betas=(0.9, 0.999), eps=1e-8)
+                return self.optimizer
+        trainer_class = MoralCLIPTrainer
+    trainer = trainer_class(
         model=model,
         args=training_args,
         train_dataset=ConversationDataset(train_records),
@@ -624,6 +674,9 @@ def run_training(args: argparse.Namespace) -> None:
     trainer.save_model(str(output_dir))
     trainer.save_state()
     if trainer.is_world_process_zero():
+        if integration:
+            from .moralclip_integration import verify_frozen_vision
+            metadata['frozen_vision_verified_after_training'] = verify_frozen_vision(model, integration)
         save_metadata(output_dir, trainer.state)
         print(f"Saved validation-selected LoRA adapter and processor to {output_dir}")
 

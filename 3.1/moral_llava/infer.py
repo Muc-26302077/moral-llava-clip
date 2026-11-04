@@ -46,6 +46,7 @@ def make_parser() -> argparse.ArgumentParser:
     parser.add_argument("--task", choices=("five_foundation_json", "binary", "polarity"), default="five_foundation_json")
     parser.add_argument("--limit", type=int, default=0, help="QA smoke only; partial outputs cannot be formally scored.")
     parser.add_argument("--adapter", help="Local LoRA output directory or Trainer checkpoint; omit for zero-shot.")
+    parser.add_argument("--moralclip-model", help="Override external MoralCLIP location; weights must match adapter metadata.")
     parser.add_argument("--model-id", default=None, help=f"Base model (default: adapter metadata or {DEFAULT_MODEL_ID}).")
     parser.add_argument("--revision", help="Optional base-model revision; otherwise use adapter metadata.")
     parser.add_argument("--output", default="runs/predictions.jsonl")
@@ -163,6 +164,16 @@ def run_inference(args: argparse.Namespace) -> None:
             llm_int8_skip_modules=["vision_tower", "multi_modal_projector", "lm_head"],
         )
     model = LlavaForConditionalGeneration.from_pretrained(model_id, **model_kwargs)
+    integration = metadata.get('moralclip_integration')
+    if args.moralclip_model and not integration:
+        raise ValueError('--moralclip-model requires a trained MoralCLIP integration checkpoint')
+    if integration:
+        from .moralclip_integration import install_vision_tower, validate_adapter_metadata
+        loaded = install_vision_tower(model, processor,
+                 args.moralclip_model or integration['source'],
+                 expected_sha256=integration['weight_sha256'], revision=integration['revision'],
+                 local_files_only=args.local_files_only)
+        validate_adapter_metadata(metadata, loaded)
     expected_image_tokens = configure_processor(processor, model.config, padding_side="left")
     if adapter_dir:
         from peft import PeftModel
@@ -238,6 +249,9 @@ def run_inference(args: argparse.Namespace) -> None:
                                       decoding='free', base_model_id=model_id, base_revision=revision,
                                       adapter_sha256=adapter_sha, precision=str(dtype),
                                       max_new_tokens=args.max_new_tokens)
+                        if integration:
+                            result.update(vision_weight_sha256=integration['weight_sha256'],
+                                          integration_method=integration['method'])
                     else:
                         result = format_prediction(record["id"], raw)
                     parse_failures += int(result["parse_error"] is not None)

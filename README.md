@@ -2,7 +2,7 @@
 
 ## 内容介绍
 
-本仓库提供指标 3.1 的测试数据、已训练模型和评测程序，并提供指标 3.9 的隐私保护图文检索实验代码包。当前 R@1 与极性 TICR 正式协议位于 `codex/ticr-polarity-v1` 分支。
+本仓库提供指标 3.1 的测试数据、已训练模型和评测程序，并提供指标 3.9 的隐私保护图文检索实验代码包。当前分支 `codex/moralclip-polarity-baseline` 新增原始 MoralCLIP 视觉塔接入及极性问答基线；原 R@1 与极性 TICR 协议同时保留。
 
 | 指标大类 | 内容 |
 | --- | --- |
@@ -15,7 +15,8 @@
 .
 ├── 3.1/
 │   ├── run_retrieval.py     # 原始 MoralCLIP 道德标签 R@1
-│   ├── run_polarity.py      # 正式极性问答与 TICR
+│   ├── run_polarity.py      # 历史原 LLaVA 视觉塔极性问答与 TICR
+│   ├── run_moralclip_polarity.py # 原始 MoralCLIP 视觉塔极性问答
 │   ├── run.py               # 历史三状态任务入口
 │   ├── run.sh               # 可选的 shell 入口
 │   ├── benchmark/           # 空白预留
@@ -37,7 +38,7 @@
 
 ```bash
 git lfs install
-git clone --branch codex/ticr-polarity-v1 https://github.com/Muc-26302077/moral-llava-clip.git
+git clone --branch codex/moralclip-polarity-baseline https://github.com/Muc-26302077/moral-llava-clip.git
 cd moral-llava-clip
 conda env create -f environment.yml
 conda activate moral_llava
@@ -79,3 +80,5 @@ python 3.1/run.py score
 ## 数据与版权
 
 数据来自 [SMID](https://doi.org/10.1371/journal.pone.0190954) 的项目衍生包，126 张测试图完整提供。公开副本按版权记录排除 2 张训练图片，逐图署名和许可见 [数据版权说明](3.1/data/COPYRIGHT.md)。模型提供 LoRA 权重，基模和第三方材料分别遵守其原条款，见 [NOTICE.md](NOTICE.md)。
+
+原始 MoralCLIP 接入训练、推理和基线方案见 [MORALCLIP_LLAVA_BASELINE.md](3.1/docs/MORALCLIP_LLAVA_BASELINE.md)。训练在 screen 中运行，按验证集选模后评测完整极性测试集。

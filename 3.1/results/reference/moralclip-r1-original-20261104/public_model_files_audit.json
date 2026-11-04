@@ -1,0 +1,34 @@
+{
+  "upstream_revision": "1e337922befebde3f0cadb5749f37ae9521a0751",
+  "local_model_and_processor_match_upstream": true,
+  "files": {
+    "config.json": {
+      "matches_upstream_git_blob": true,
+      "sha256": "fbf02c3efb9566f8c60ed7f80be4204489b8dce80a699ba09d7e14dff81c0c3d"
+    },
+    "merges.txt": {
+      "matches_upstream_git_blob": true,
+      "sha256": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a"
+    },
+    "preprocessor_config.json": {
+      "matches_upstream_git_blob": true,
+      "sha256": "8fb547403656e9019b0982d2310b045bef39b9d2a811a0c98756e52d48e25db6"
+    },
+    "special_tokens_map.json": {
+      "matches_upstream_git_blob": true,
+      "sha256": "2cdb3b8331a60c92fc1e55a13e9fd61fd2293c5a51275fdcccd62b780052530e"
+    },
+    "tokenizer.json": {
+      "matches_upstream_git_blob": true,
+      "sha256": "77a1af6b322d9feab24f4b2365db74b999b7a3117c855da8a4626fb20b87221f"
+    },
+    "tokenizer_config.json": {
+      "matches_upstream_git_blob": true,
+      "sha256": "c3d2a67c48a59ffa8fd92de060608524b12cae93acb4fe83e5eb03147a001f5a"
+    },
+    "vocab.json": {
+      "matches_upstream_git_blob": true,
+      "sha256": "5047b556ce86ccaf6aa22b3ffccfc52d391ea4accdab9c2f2407da5b742d4363"
+    }
+  }
+}

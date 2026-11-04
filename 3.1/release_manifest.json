@@ -12098,8 +12098,8 @@
     },
     {
       "path": "docs/MORALCLIP_R1_PROTOCOL.md",
-      "bytes": 6095,
-      "sha256": "d0c8be53da5964c42328a260eb6a9752521f8915826207ba7bb996486c7c5594"
+      "bytes": 6874,
+      "sha256": "beeebcd6f8e4091da31c3f8ed0794634f4ea8d23eebc95d5c4c94169e134c42f"
     },
     {
       "path": "docs/PRESENCE_V1_ANALYSIS.md",
@@ -12617,6 +12617,16 @@
       "sha256": "6a2654387b7cea589a2b35b4131f41ca317991483070445fb2e338b6b07b327e"
     },
     {
+      "path": "results/reference/moralclip-r1-original-20261104/public_model_files_audit.json",
+      "bytes": 1239,
+      "sha256": "a09f687543823930e0b5b294f06a5c16ff7691754f3f00bcb275ddfdd38a0265"
+    },
+    {
+      "path": "results/reference/moralclip-r1-original-20261104/remote_audit.json",
+      "bytes": 1093,
+      "sha256": "9d8dcc5f9a404a25a6d55b21f2333f89d53e0a69cd47e9500f98e4f3d4bbbad9"
+    },
+    {
       "path": "results/reference/moralclip-r1-original-20261104/screen.log",
       "bytes": 1584,
       "sha256": "60b6f369f5fd3a64695dfd5aa6767b8c54f1ea128c6df6f2b52dac11095c29ba"
@@ -12638,8 +12648,8 @@
     },
     {
       "path": "results/reference/moralclip-r1-original-20261104/test.report.md",
-      "bytes": 1172,
-      "sha256": "befe019a03db98076e51893d7dd808bc2b1dcabd86594a6b0c55984d0b6b6ee0"
+      "bytes": 1918,
+      "sha256": "285aa113f2fe57e584a8f407e3b5455433295d5ec8d6815c6c217443aacf2024"
     },
     {
       "path": "results/reference/moralclip-r1-original-20261104/test.scores.npy",

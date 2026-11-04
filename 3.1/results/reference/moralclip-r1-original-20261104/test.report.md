@@ -14,3 +14,9 @@
 - 指标输出：`test.json`；逐样本记录：`test.predictions.json`；完整相似度矩阵：`test.scores.npy`。
 
 同图配对与跨场景结果仅作诊断，不替代主指标。该指标不代表 TICR 或极性分类准确率；本次未核验上游权重训练场景与固定测试集是否重合。
+
+## GitHub 远程代码复核
+
+已从 GitHub 的 `codex/ticr-polarity-v1` 分支重新克隆代码提交 `0d374b038daa7a3941a962685a3553ceffe548ba`，在 `/tmp` 中以同一原始 MoralCLIP 权重执行完整 GPU 推理。126 个查询的首位图像 ID、描述索引和命中判断全部一致，相似度矩阵逐元素完全相同（最大绝对差 0）；19 项相关测试及归档独立复算通过。证据见 `remote_audit.json`。
+
+原始权重以及配置、图像预处理器、分词器文件均与固定上游 revision 核对相同，见 `public_model_files_audit.json`。远程复核共享已安装 Python 环境并显式提供原始模型目录，不代表另建全新依赖环境，也不代表重跑 Moral-LLaVA 极性训练。

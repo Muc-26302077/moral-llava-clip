@@ -71,3 +71,9 @@ MoralCLIP R@1 衡量标签相关检索；Moral-LLaVA TICR 衡量同一场景图�
 | run_polarity.py | 五维条件极性二分类与 TICR | 保留正式极性协议，和检索基准分别运行 |
 
 历史原始预测、权重、训练元数据不改写；历史文档增加正式协议说明。更名不追认旧配对检索成绩为新主指标。
+
+## 已完成的 GitHub 远程复核
+
+从远程分支重新克隆代码提交 `0d374b038daa7a3941a962685a3553ceffe548ba`，在项目工作目录之外执行完整 GPU 推理；126 个查询的首位结果与命中判断全部一致，完整相似度矩阵逐元素相同，19 项相关测试及归档独立复算通过。原始 checkpoint 的配置和预处理／分词器文件也与固定上游 revision 的 Git blob 逐一一致。
+
+证据：[远程复核](../results/reference/moralclip-r1-original-20261104/remote_audit.json)、[公开模型文件核对](../results/reference/moralclip-r1-original-20261104/public_model_files_audit.json)。本次复核复用已安装依赖及显式指定的原始权重，不声称已验证新建 Conda 环境或重新训练 Moral-LLaVA。

@@ -61,3 +61,7 @@ python 3.1/run_moralclip_polarity.py score \
 ```
 
 若替换缓存位置，推理必须明确指定 `--moralclip-model`；检查点元数据、config 和预处理哈希必须一致。最终 adapter 包含语言 LoRA 与完整投影器，但仍依赖两个固定版本的外部基模及项目协议代码。
+
+## 已完成基线
+
+本次完整运行已结束，投影器适配 613 步、联合训练 3678 步，验证集选中第 1 轮 checkpoint-1226。[实测报告](../results/reference/moralclip-llava-polarity-20261104/report.md)、[结果分析](../results/reference/moralclip-llava-polarity-20261104/analysis.md)、[已发布 adapter 与投影器](../models/moralclip-llava-polarity/)。完整 576 条问答在 GitHub 独立检出的源码上重跑，所有原始回答及指标一致。

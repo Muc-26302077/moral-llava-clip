@@ -55,6 +55,8 @@
 
 报告包含按场景 bootstrap 的 TICR 95% 区间（seed 42，2000 次），同场景的多个维度共同抽样，并在每次抽样中重新计算各任务分母；不把 288 个相关判断对当成 288 个独立场景。
 
+本文件第 4 节记录历史原 LLaVA 视觉塔的极性训练。真实原始 MoralCLIP 视觉塔接入基线的结构、训练及实测结果见 [MORALCLIP_LLAVA_BASELINE.md](MORALCLIP_LLAVA_BASELINE.md)。
+
 ## 4. 冻结训练与完整流程
 
 LLaVA-1.5-7B 固定 revision `b234b804b114d9e37bb655e11cbbb5f5e971b7a9`。从原 `models/image-lora` 初始化（SHA-256 `8c7adaa741656e41f34434c347624844dcaa5a61589c6c0fef5274cc005eeb02`），不继续存在性任务 adapter。原视觉塔、投影器、基座语言参数与生成头冻结，只训练语言 LoRA，不新增分类头。

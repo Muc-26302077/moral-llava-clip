@@ -3,8 +3,8 @@
   "files": [
     {
       "path": "README.md",
-      "bytes": 10937,
-      "sha256": "eecfca50d36ba0318b7f65fc86fcf33e939e1aa6848d2d7ae3c44cb381d21d1c"
+      "bytes": 11137,
+      "sha256": "7be2d6582e78ab98c9ef9e358a80bd388815b144867a13d132caf8af9997135b"
     },
     {
       "path": "benchmark/.gitkeep",
@@ -12098,8 +12098,8 @@
     },
     {
       "path": "docs/MORALCLIP_LLAVA_BASELINE.md",
-      "bytes": 5877,
-      "sha256": "fe28627617d536cfaf55bfd1ebdc0868dfe7258ad825901905e91e370be3cd62"
+      "bytes": 6362,
+      "sha256": "db014733bc9b26f91a59a9c7e0c64a9ca65bf434174761523fc7847e6c1ba2bc"
     },
     {
       "path": "docs/MORALCLIP_R1_PROTOCOL.md",
@@ -12123,8 +12123,8 @@
     },
     {
       "path": "docs/TICR_POLARITY_PROTOCOL.md",
-      "bytes": 7460,
-      "sha256": "d76f261c259450161efb8560696f90e8b3899267aeca9c69ad01bf887605b012"
+      "bytes": 7671,
+      "sha256": "a2e30b2dc5855578745da036da6c1f4a72d2a45bd0d3cf63e7bc02af43dd758b"
     },
     {
       "path": "docs/archive/ALIGNMENT.md",
@@ -12293,8 +12293,8 @@
     },
     {
       "path": "models/README.md",
-      "bytes": 2134,
-      "sha256": "f33bf3574e1d99bc33eaa24df89ad13aa65838defe504a12753979b295428827"
+      "bytes": 2569,
+      "sha256": "0aa5dbe21b1a3fcd1cee33697c88a37e330331e1297a540442a372aa56614848"
     },
     {
       "path": "models/image-lora/README.md",
@@ -12355,6 +12355,66 @@
       "path": "models/image-lora/training_metadata.json",
       "bytes": 13934,
       "sha256": "2c7c50a6c685cc03f7cb344fddd70f51b7533515bb6d8bbb37e14561b8baaa7b"
+    },
+    {
+      "path": "models/moralclip-llava-polarity/README.md",
+      "bytes": 1769,
+      "sha256": "3af8efd15423fbcfabbf5553b2ec41f303fe910999d71f24689c8c30301a2877"
+    },
+    {
+      "path": "models/moralclip-llava-polarity/adapter_config.json",
+      "bytes": 3815,
+      "sha256": "37088ea3dc92a9a90e3877026ee988d8b9693de4f3e61253690f80b6e7dc339e"
+    },
+    {
+      "path": "models/moralclip-llava-polarity/adapter_model.safetensors",
+      "bytes": 199837384,
+      "sha256": "318b609354f115162f14de9136005ded3cde31865dda8823559b1e0b79f79e2c"
+    },
+    {
+      "path": "models/moralclip-llava-polarity/added_tokens.json",
+      "bytes": 41,
+      "sha256": "a94c56096001713e3eb9a34b1a545a8c1d5e8034ed2fb81f897c8cb54b420121"
+    },
+    {
+      "path": "models/moralclip-llava-polarity/chat_template.json",
+      "bytes": 701,
+      "sha256": "854445c0a45532ecbee1ae9aa31d4be19644060a156f2c88456f50f584261543"
+    },
+    {
+      "path": "models/moralclip-llava-polarity/preprocessor_config.json",
+      "bytes": 505,
+      "sha256": "6958784d1af9838ee9e7ec12b58aaf02137a39cf9fef6568fc6db33efd5e8d9e"
+    },
+    {
+      "path": "models/moralclip-llava-polarity/processor_config.json",
+      "bytes": 173,
+      "sha256": "7e43cbcf10dd9d85677df78c3df4541977add31baa224a7832c100f681e58e28"
+    },
+    {
+      "path": "models/moralclip-llava-polarity/special_tokens_map.json",
+      "bytes": 580,
+      "sha256": "49d67258a3d88ecba09fb7fa47dd831717e08cb2ea12891ea2f3ad7dce3f6401"
+    },
+    {
+      "path": "models/moralclip-llava-polarity/tokenizer.json",
+      "bytes": 3619380,
+      "sha256": "30e1294abd835edfebb24618fce6f47c21ffb2b2802520d150bdee0b808b47cb"
+    },
+    {
+      "path": "models/moralclip-llava-polarity/tokenizer.model",
+      "bytes": 499723,
+      "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347"
+    },
+    {
+      "path": "models/moralclip-llava-polarity/tokenizer_config.json",
+      "bytes": 1452,
+      "sha256": "9649cab5b938617d89006144c603f720239e62fa8d3137c2777250e417bfb067"
+    },
+    {
+      "path": "models/moralclip-llava-polarity/training_metadata.json",
+      "bytes": 58545,
+      "sha256": "79db0d3cedeff47500dc173cc07c66dfc05d8e613dc093c17e2de5970c44f6b3"
     },
     {
       "path": "models/moralclip-original.json",
@@ -12625,6 +12685,161 @@
       "path": "results/reference/evaluation/verification.json",
       "bytes": 14188,
       "sha256": "6a2654387b7cea589a2b35b4131f41ca317991483070445fb2e338b6b07b327e"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/adapter-trainer_state.json",
+      "bytes": 27511,
+      "sha256": "cefd21657549cfa40c59e5339d52434db9f64e8e6b515254ec3f30435cb1558c"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/adapter-training_metadata.json",
+      "bytes": 58545,
+      "sha256": "79db0d3cedeff47500dc173cc07c66dfc05d8e613dc093c17e2de5970c44f6b3"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/analysis.md",
+      "bytes": 4482,
+      "sha256": "2446c8e4fd52e7fc889559665bc1cd2dcc81eab41bf15f571a3d11b9d4467d8f"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/artifact_audit.json",
+      "bytes": 8200,
+      "sha256": "7ee243cae1bd961afe525d664948b81c6ee33bc2cfd5bf3226b821db4f0e9f48"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/base_model.json",
+      "bytes": 1364,
+      "sha256": "4727b8b80d74b186aa179ec92adf7fc1ece2857d1ec2078f285cfbf263db3b30"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/frozen_config.json",
+      "bytes": 4527,
+      "sha256": "5d7ed553dc504e95551445d2223ca32de531fd9d7b18c5db1803eacb6c2c2d1a"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/majority-metrics.json",
+      "bytes": 17222,
+      "sha256": "8be2cc01be54afc7da401433f892017f34cbeb21120ba92dcbdbdd6162aac88e"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/majority.jsonl",
+      "bytes": 261248,
+      "sha256": "53e2864fae463dc7013e869095cc5d27f3386d028fab57cf6f882944b20e24b4"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/polarity-train.log",
+      "bytes": 279914,
+      "sha256": "e69b049688d10b6faa168a01959667ad2a14dfd8a4972f9b772e44f023f47e25"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/projector-trainer_state.json",
+      "bytes": 5386,
+      "sha256": "ab7e3cd84bc1bc60c161ad3c1a89a79fc25b7ac8d0459064c5cf841c67439516"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/projector-training_metadata.json",
+      "bytes": 17310,
+      "sha256": "bc19814ef86792bf57ce545903125ae9049c3fd4c550940bacaaa48b7a8b8293"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/projector-warmup.log",
+      "bytes": 46996,
+      "sha256": "0354507b1a8f3c2e885bb565c047a407d1ec09e75aec6e12037bc0ec1486b0de"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/projector_only-metrics.json",
+      "bytes": 18349,
+      "sha256": "5c31733ce6b8f436030f8ab07f53913a06bc840018223ec045791d515d46e77e"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/projector_only.jsonl",
+      "bytes": 499540,
+      "sha256": "329f3e75b546867e6ea6cdc8a950edb58f33de7e75c60ca1d341b274444153b8"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/remote-reproduction/audit.json",
+      "bytes": 1561,
+      "sha256": "1491420a5721699945081ab6dd0ae7fa974319d4333b78e396f5fa2aa4ad346c"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/remote-reproduction/infer.log",
+      "bytes": 2133,
+      "sha256": "c73cf2395e9b1694877e6b99d40ea5798c0e91e32a8c9b452ecc8ead2946b5ba"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/remote-reproduction/metrics.json",
+      "bytes": 18349,
+      "sha256": "9e6c6a114093fe005196e921f732af5c2eb42a3a098d8da116202dad03779049"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/remote-reproduction/predictions.jsonl",
+      "bytes": 499712,
+      "sha256": "1202c6e2573128f1ecc521c4c63277428538df5fd4bbeb9e3de58a10df3b4d61"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/remote-reproduction/prepare.log",
+      "bytes": 22861,
+      "sha256": "3e28ff8a460992f9bfb935afc7d8b28f08453c57df6d97d845b2aa05acc8d42b"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/remote-reproduction/score.log",
+      "bytes": 18349,
+      "sha256": "9e6c6a114093fe005196e921f732af5c2eb42a3a098d8da116202dad03779049"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/report.md",
+      "bytes": 1774,
+      "sha256": "849c3905d36ee20c289443c697b4a2614ac73ba877285c26f33f469a30537c3b"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/screen.log",
+      "bytes": 1344,
+      "sha256": "0ee7c7126a610be1bc7c1a825d36a56c0e81147eab536f54bf27ae1765db9eb1"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/smoke-joint.log",
+      "bytes": 3420,
+      "sha256": "77d6e564942e21e61a679c760945de102446c044af089edeb61481f6eb0629fc"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/smoke-projector.log",
+      "bytes": 3208,
+      "sha256": "cd5eebb0791b3106512f36931bae5acf672566ea3b8936ac6a34f791fc756be8"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/smoke-reload.jsonl",
+      "bytes": 14302,
+      "sha256": "729280f0944e2e5d32fb6d9a19ee8f655c076bd6b375ac5ca2f158fe8dc0fe4a"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/smoke-reload.log",
+      "bytes": 936,
+      "sha256": "d42cd44de7d556a1340fd206de3767d0cb6922627570c6eab5fbbfc4ca689a11"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/status.json",
+      "bytes": 17308,
+      "sha256": "5ff605adc920829ee82250cd40fbd4d4cbde539595f279d702969e45f15f1d08"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/summary.json",
+      "bytes": 68035,
+      "sha256": "b637b49ac12383fc14008266a3697f2a9c0ee39a2f9760f6e7722a5a6589f052"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/tests.log",
+      "bytes": 17341,
+      "sha256": "003894fd8a49b41df6bf14a05975d52c4a4e8635cbc92849f38f30989d2834e1"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/trained-metrics.json",
+      "bytes": 18349,
+      "sha256": "9e6c6a114093fe005196e921f732af5c2eb42a3a098d8da116202dad03779049"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/trained.jsonl",
+      "bytes": 499712,
+      "sha256": "1202c6e2573128f1ecc521c4c63277428538df5fd4bbeb9e3de58a10df3b4d61"
     },
     {
       "path": "results/reference/moralclip-r1-bidirectional-20261104/screen.log",

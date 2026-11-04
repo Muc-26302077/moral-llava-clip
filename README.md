@@ -82,3 +82,5 @@ python 3.1/run.py score
 数据来自 [SMID](https://doi.org/10.1371/journal.pone.0190954) 的项目衍生包，126 张测试图完整提供。公开副本按版权记录排除 2 张训练图片，逐图署名和许可见 [数据版权说明](3.1/data/COPYRIGHT.md)。模型提供 LoRA 权重，基模和第三方材料分别遵守其原条款，见 [NOTICE.md](NOTICE.md)。
 
 原始 MoralCLIP 接入训练、推理和基线方案见 [MORALCLIP_LLAVA_BASELINE.md](3.1/docs/MORALCLIP_LLAVA_BASELINE.md)。训练在 screen 中运行，按验证集选模后评测完整极性测试集。
+
+真实 MoralCLIP 接入基线已完成：TICR **90.21%**，图像/文本准确率 **88.97%/92.32%**（五维宏平均）；[结果分析](3.1/results/reference/moralclip-llava-polarity-20261104/analysis.md)，[模型与推理](3.1/models/moralclip-llava-polarity/)。

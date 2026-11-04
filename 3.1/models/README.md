@@ -16,3 +16,7 @@
 训练记录见 [results/reference/runs/crossmodal-joint-v1](../results/reference/runs/crossmodal-joint-v1/)，方法见 [实测报告](../docs/archive/CROSSMODAL_IMPROVEMENT_RESULTS.md)。训练 3 轮，仅更新 39,976,960 个语言 LoRA 参数；测试不参与选参。后续条件蒸馏仅有方案与配置，未列为已训练模型。
 
 基模及其上游 LLaVA / Vicuna / Llama 2 组件遵守相应条款，见 [固定版本模型卡](https://huggingface.co/llava-hf/llava-1.5-7b-hf/blob/b234b804b114d9e37bb655e11cbbb5f5e971b7a9/README.md)、本目录的 `BASE_MODEL_CARD.md` 和 [仓库 NOTICE](../../NOTICE.md)。LLaVA 的代码许可与模型权重条款分别适用。
+
+## 原始 MoralCLIP 接入后的极性基线
+
+新增 [moralclip-llava-polarity/](moralclip-llava-polarity/)，保存真实 MoralCLIP 视觉塔接入实验选中的语言 LoRA 和完整投影器。必须使用 `run_moralclip_polarity.py infer` 重建视觉塔及投影器后加载，外部 MoralCLIP 与 LLaVA 基模按固定版本提供。[完整结果与分析](../results/reference/moralclip-llava-polarity-20261104/analysis.md)。

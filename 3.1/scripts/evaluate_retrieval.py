@@ -1,4 +1,4 @@
-"""Evaluate project R@1: top-1 image-to-text retrieval sharing a moral label.
+"""Evaluate bidirectional project R@1 with shared moral-label relevance.
 
 R@1 is the project name for the former moral-label Hit@1. The candidate pool
 includes the query image's captions. Paired retrieval and cross-image retrieval
@@ -64,7 +64,11 @@ def score_queries(
     caption_labels: list[set[str]],
     caption_image_ids: list[str],
     query_ids: list[str],
+    *,
+    direction: str = "image_to_text",
 ) -> dict[str, Any]:
+    if direction not in ("image_to_text", "text_to_image"):
+        raise ValueError("Unknown retrieval direction")
     if not query_ids or not caption_image_ids:
         raise ValueError("Queries and candidate captions must be nonempty")
     if len(query_ids) != len(query_labels) or len(caption_image_ids) != len(caption_labels):
@@ -88,6 +92,7 @@ def score_queries(
         top1_paired.append(paired[0])
     return {
         "primary_metric": "R@1",
+        "metric_direction": direction,
         "r_at_1": sum(top1_label) / len(top1_label),
         "correct_queries": sum(top1_label),
         "num_queries": len(query_ids),
@@ -98,15 +103,16 @@ def score_queries(
             "r_at_1": sum(top1_label) / len(top1_label),
             "r_at_5": sum(topk[5]) / len(topk[5]),
             "r_at_10": sum(topk[10]) / len(topk[10]),
-            "map_i2t": sum(aps) / len(aps),
+            ("map_i2t" if direction == "image_to_text" else "map_t2i"): sum(aps) / len(aps),
         },
         "same_image_pairing": {
             "metric_name": "paired R@1 (diagnostic only)",
-            "definition": "candidate caption belongs to the query image",
+            "definition": ("candidate caption belongs to the query image" if direction == "image_to_text"
+                           else "candidate image is the annotated source image of the query caption"),
             "r_at_1": sum(top1_paired) / len(top1_paired),
             "r_at_5": sum(paired_topk[5]) / len(paired_topk[5]),
             "r_at_10": sum(paired_topk[10]) / len(paired_topk[10]),
-            "map_i2t": sum(paired_aps) / len(paired_aps),
+            ("map_i2t" if direction == "image_to_text" else "map_t2i"): sum(paired_aps) / len(paired_aps),
         },
     }
 
@@ -152,9 +158,10 @@ def main(argv: Sequence[str] | None = None) -> int:
         raise RuntimeError('请求了 CUDA，但当前没有可用 GPU')
     output = args.output.expanduser().resolve()
     predictions_path = output.with_suffix('.predictions.json')
+    reverse_predictions_path = output.with_suffix('.text_to_image.predictions.json')
     scores_path = output.with_suffix('.scores.npy')
     report_path = output.with_suffix('.report.md')
-    paths = (output, predictions_path, scores_path, report_path)
+    paths = (output, predictions_path, reverse_predictions_path, scores_path, report_path)
     if any(path.exists() for path in paths):
         raise FileExistsError('Output already exists; use a new --output to preserve prior evidence')
     image_root = args.image_root.expanduser().resolve()
@@ -249,6 +256,8 @@ def main(argv: Sequence[str] | None = None) -> int:
         raise ValueError('Checkpoint produced invalid/zero embeddings')
     scores = im @ tx.T
     metrics = score_queries(scores, query_labels, caption_labels, caption_image_ids, query_ids)
+    reverse_metrics = score_queries(scores.T, caption_labels, query_labels, query_ids, caption_image_ids,
+                                    direction='text_to_image')
     records = []
     cross_hits = 0
     for i, query_id in enumerate(query_ids):
@@ -277,6 +286,23 @@ def main(argv: Sequence[str] | None = None) -> int:
     hits = sum(bool(set(r['query_labels']) & set(r['retrieved_labels'])) for r in records)
     if hits / len(records) != metrics['r_at_1']:
         raise RuntimeError('Independent R@1 recalculation disagrees')
+    reverse_records = []
+    for j, caption in enumerate(captions):
+        i = int(scores[:, j].argsort(descending=True)[0])
+        reverse_records.append({
+            'query_id': f'{caption_image_ids[j]}::caption::{caption_indices[j]}',
+            'query_image_id': caption_image_ids[j], 'caption_index': caption_indices[j],
+            'query_text': caption, 'query_labels': sorted(caption_labels[j]),
+            'retrieved_image_id': query_ids[i], 'retrieved_labels': sorted(query_labels[i]),
+            'shared_labels': sorted(caption_labels[j] & query_labels[i]),
+            'r_at_1_correct': bool(caption_labels[j] & query_labels[i]),
+            'paired_r_at_1_correct': caption_image_ids[j] == query_ids[i],
+            'cosine_similarity': float(scores[i, j]),
+            'top1_tie_count': int((scores[:, j] == scores[i, j]).sum()),
+        })
+    reverse_hits = sum(bool(set(r['query_labels']) & set(r['retrieved_labels'])) for r in reverse_records)
+    if reverse_hits / len(reverse_records) != reverse_metrics['r_at_1']:
+        raise RuntimeError('Independent text-to-image R@1 recalculation disagrees')
     groups = {}
     for name, subset in [('all', records), ('moral_queries', [r for r in records if r['query_labels'] != ['non-moral']]),
                          ('non_moral_queries', [r for r in records if r['query_labels'] == ['non-moral']])]:
@@ -286,7 +312,8 @@ def main(argv: Sequence[str] | None = None) -> int:
     result = {
         'status': 'PASS', 'evaluated_at': datetime.now(timezone.utc).isoformat(),
         'metric_name': 'R@1', 'protocol': 'moral-label-r1-v1',
-        'definition': 'fraction of image queries whose top-1 caption shares at least one moral label',
+        'format_version': 2,
+        'definition': 'for each direction, fraction of queries whose top-1 result shares at least one moral label',
         'former_name': 'moral-label Hit@1', 'r_at_1': metrics['r_at_1'],
         'correct_queries': hits, 'num_queries': len(rows), 'num_candidates': len(captions),
         'model': model_source, 'processor': processor_source, 'model_weight_sha256': hashes,
@@ -297,14 +324,17 @@ def main(argv: Sequence[str] | None = None) -> int:
         'loading_errors': {k: loading_info.get(k, []) for k in ('missing_keys', 'unexpected_keys', 'mismatched_keys', 'error_msgs')},
         'manifest_sha256': sha256(manifest), 'evaluation_script_sha256': sha256(Path(__file__)),
         'image_sha256': {r['id']: sha256(p) for r, p in zip(rows, image_paths)},
-        'metric_direction': 'image_to_text', 'original_split': args.split,
-        'candidate_pool': 'all selected-split captions; own-image captions included',
+        'metric_direction': 'bidirectional', 'original_split': args.split,
+        'directions': {'image_to_text': metrics, 'text_to_image': reverse_metrics},
+        'legacy_flat_metrics_direction': 'image_to_text',
+        'candidate_pool': 'image_to_text: all split captions; text_to_image: all split images; paired candidates retained',
         'non_moral_policy': 'included as an ordinary relevance label',
         'caption_count_distribution': sorted({len(r['captions']) for r in rows}),
         'text_max_length': max_length, 'truncated_captions': long_count,
         'score': 'cosine similarity of normalized dual-encoder embeddings',
         'tie_policy': 'torch descending argsort; tied first-place queries separately counted',
         'queries_with_top1_ties': sum(r['top1_tie_count'] > 1 for r in records),
+        'text_to_image_queries_with_top1_ties': sum(r['top1_tie_count'] > 1 for r in reverse_records),
         'metrics': metrics, 'groups': groups,
         'cross_image_diagnostic': {'metric_name': 'cross-image R@1', 'r_at_1': cross_hits / len(rows),
                                    'correct_queries': cross_hits, 'num_queries': len(rows),
@@ -317,21 +347,24 @@ def main(argv: Sequence[str] | None = None) -> int:
     import numpy as np
     np.save(scores_path, scores.numpy())
     write_json(predictions_path, records)
+    write_json(reverse_predictions_path, reverse_records)
     write_json(output, result)
     report = f'''# MoralCLIP 项目 R@1 基准实测
 
-本项目 R@1 为原道德标签 Hit@1 的正式名称：图像检索文本，首位结果与查询场景共享至少一个道德标签即命中。查询图像自身描述保留在候选库中，non-moral 作为普通标签纳入。
+本项目 R@1 为原道德标签 Hit@1 的正式名称：在图到文和文到图检索中，首位结果与查询场景共享至少一个道德标签即命中。两个方向分别报告，不合并分母。保留原配候选及 non-moral 标签。
 
 | 测试项 | 命中数/查询数 | 结果 |
 | --- | ---: | ---: |
-| 项目 R@1（主指标） | {hits}/{len(rows)} | {result['r_at_1']:.2%} |
-| 同图配对 R@1（诊断） | {sum(r['paired_r_at_1_correct'] for r in records)}/{len(rows)} | {metrics['same_image_pairing']['r_at_1']:.2%} |
+| 图到文 R@1（正式指标，{len(captions)} 条候选文本） | {hits}/{len(rows)} | {result['r_at_1']:.2%} |
+| 文到图 R@1（正式指标，{len(rows)} 张候选图像） | {reverse_hits}/{len(captions)} | {reverse_metrics['r_at_1']:.2%} |
+| 图到文同图配对 R@1（诊断） | {sum(r['paired_r_at_1_correct'] for r in records)}/{len(rows)} | {metrics['same_image_pairing']['r_at_1']:.2%} |
+| 文到图原配 R@1（诊断） | {sum(r['paired_r_at_1_correct'] for r in reverse_records)}/{len(captions)} | {reverse_metrics['same_image_pairing']['r_at_1']:.2%} |
 | 跨场景 R@1（排除本图描述，诊断） | {cross_hits}/{len(rows)} | {cross_hits / len(rows):.2%} |
 
 - 模型：`{model_source}`，完整权重 SHA-256：`{json.dumps(hashes)}`。
 - 划分：`{args.split}`；{len(rows)} 张图像、{len(captions)} 条候选描述；超过 {max_length} tokens 的 {long_count} 条文本按模型上限截断。
-- 独立逐样本重算通过；第一名并列的查询数为 {result['queries_with_top1_ties']}。
-- 指标输出：`{output.name}`；逐样本记录：`{predictions_path.name}`；完整相似度矩阵：`{scores_path.name}`。
+- 两个方向独立逐样本重算通过；第一名并列查询数分别为 {result['queries_with_top1_ties']} / {result['text_to_image_queries_with_top1_ties']}。
+- 指标输出：`{output.name}`；逐样本记录：`{predictions_path.name}`、`{reverse_predictions_path.name}`；完整相似度矩阵：`{scores_path.name}`。
 
 同图配对与跨场景结果仅作诊断，不替代主指标。该指标不代表 TICR 或极性分类准确率；本次未核验上游权重训练场景与固定测试集是否重合。
 '''

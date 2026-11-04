@@ -52,10 +52,49 @@ def verify(evaluation: Path, image_root: Path | None = None) -> dict:
             or paired / n != ev['metrics']['same_image_pairing']['r_at_1']
             or cross / n != ev['cross_image_diagnostic']['r_at_1']):
         raise ValueError('Metric name, objective or independent recount mismatch')
-    return {'status': 'PASS', 'metric_name': 'R@1', 'protocol': ev['protocol'],
+    result = {'status': 'PASS', 'metric_name': 'R@1', 'protocol': ev['protocol'],
             'correct_queries': correct, 'num_queries': n, 'r_at_1': actual,
             'paired_r_at_1_diagnostic': paired / n, 'cross_image_r_at_1_diagnostic': cross / n,
             'model_weight_sha256': ev['model_weight_sha256']}
+    if 'directions' in ev or ev.get('metric_direction') == 'bidirectional':
+        reverse = json.loads(evaluation.with_suffix('.text_to_image.predictions.json').read_text())
+        if (ev.get('format_version') != 2 or ev.get('metric_direction') != 'bidirectional'
+                or len(reverse) != len(candidates) or ev.get('text_to_image_queries_with_top1_ties') != 0
+                or ev['directions']['image_to_text'] != ev['metrics']):
+            raise ValueError('Invalid bidirectional metadata or text query count')
+        reverse_correct = reverse_paired = 0
+        for j, ((source, ci, caption), record) in enumerate(zip(candidates, reverse)):
+            i = int(scores[:, j].argmax())
+            target = rows[i]
+            relevant = bool(set(source['moral_labels']) & set(target['moral_labels']))
+            if (int((scores[:, j] == scores[i, j]).sum()) != 1
+                    or record['query_id'] != f'{source["id"]}::caption::{ci}'
+                    or record['query_image_id'] != source['id'] or record['caption_index'] != ci
+                    or record['query_text'] != caption or set(record['query_labels']) != set(source['moral_labels'])
+                    or record['retrieved_image_id'] != target['id']
+                    or set(record['retrieved_labels']) != set(target['moral_labels'])
+                    or record['r_at_1_correct'] != relevant
+                    or record['paired_r_at_1_correct'] != (source['id'] == target['id'])):
+                raise ValueError('Text-to-image prediction disagrees with transposed scores or source labels')
+            reverse_correct += int(relevant)
+            reverse_paired += int(source['id'] == target['id'])
+        count = len(candidates)
+        reverse_metrics = ev['directions']['text_to_image']
+        if (reverse_metrics['metric_direction'] != 'text_to_image'
+                or reverse_metrics['num_queries'] != count or reverse_metrics['num_candidates'] != n
+                or reverse_metrics['correct_queries'] != reverse_correct
+                or reverse_metrics['r_at_1'] != reverse_correct / count
+                or reverse_metrics['label_relevance']['r_at_1'] != reverse_correct / count
+                or reverse_metrics['same_image_pairing']['r_at_1'] != reverse_paired / count):
+            raise ValueError('Text-to-image R@1 denominator or success rule mismatch')
+        result['directions'] = {
+            'image_to_text': {'correct_queries': correct, 'num_queries': n,
+                              'num_candidates': count, 'r_at_1': actual},
+            'text_to_image': {'correct_queries': reverse_correct, 'num_queries': count,
+                              'num_candidates': n, 'r_at_1': reverse_correct / count,
+                              'paired_r_at_1_diagnostic': reverse_paired / count},
+        }
+    return result
 
 
 def main():

@@ -4,7 +4,7 @@
 
 ## MoralCLIP 检索基准：R@1
 
-项目将原“道德标签 Hit@1”正式命名为 **R@1**：图像查询全部测试文本，首位文本与查询场景共享至少一个道德标签即命中。126 张测试图像、1260 条候选描述，保留本图描述和 non-moral 标签。原始模型重测 **126/126，100.00%**；同图配对与跨场景检索仅作单独诊断，不替代本指标。
+项目将原“道德标签 Hit@1”正式命名为 **R@1**：图像查询文本、文本查询图像，首位结果与查询场景共享至少一个道德标签即命中，两个方向分别统计。126 张测试图像、1260 条候选描述，保留本图描述和 non-moral 标签。原始模型双向实测：图到文 **126/126，100.00%**，文到图 **1176/1260，93.33%**；同图配对与跨场景检索仅作单独诊断，不替代本指标。
 
 ```bash
 python 3.1/run_retrieval.py --model /path/to/moralclip-base \
@@ -12,7 +12,7 @@ python 3.1/run_retrieval.py --model /path/to/moralclip-base \
   --output 3.1/results/runs/original-r1/test.json
 ```
 
-原始权重版本、下载方式、候选池和独立复算见 [R@1 正式协议](docs/MORALCLIP_R1_PROTOCOL.md)，结果见[原始模型实测表](results/reference/moralclip-r1-original-20261104/test.report.md)。当前 Moral-LLaVA 极性模型仍保留原 LLaVA 视觉塔，未接入这份 MoralCLIP 权重。
+原始权重版本、下载方式、候选池和独立复算见 [R@1 正式协议](docs/MORALCLIP_R1_PROTOCOL.md)，结果见[原始模型实测表](results/reference/moralclip-r1-bidirectional-20261104/test.report.md)。当前 Moral-LLaVA 极性模型仍保留原 LLaVA 视觉塔，未接入这份 MoralCLIP 权重。
 
 ## 正式目标：TICR 五维极性二分类
 

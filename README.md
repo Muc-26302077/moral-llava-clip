@@ -46,7 +46,7 @@ python 3.1/run_retrieval.py --model /path/to/moralclip-base \
   --output 3.1/results/runs/original-r1/test.json
 ```
 
-上例测试原始 MoralCLIP 的项目 **R@1**（原道德标签 Hit@1），需先提供完整模型目录；固定权重和下载方式见 [R@1 协议](3.1/docs/MORALCLIP_R1_PROTOCOL.md)。原始模型实测为 **126/126，100.00%**，完整结果和诊断见[基准报告](3.1/results/reference/moralclip-r1-original-20261104/test.report.md)。
+上例测试原始 MoralCLIP 的项目 **R@1**（原道德标签 Hit@1），需先提供完整模型目录；固定权重和下载方式见 [R@1 协议](3.1/docs/MORALCLIP_R1_PROTOCOL.md)。原始模型双向实测为图到文 **126/126，100.00%**、文到图 **1176/1260，93.33%**，完整结果和诊断见[基准报告](3.1/results/reference/moralclip-r1-bidirectional-20261104/test.report.md)。
 
 Moral-LLaVA 正式极性任务使用 `python 3.1/run_polarity.py ...`，参见 [TICR 协议](3.1/docs/TICR_POLARITY_PROTOCOL.md)。`python 3.1/run.py evaluate` 保留用于历史三状态模型复现，不代表正式极性 TICR。
 
@@ -57,7 +57,7 @@ Moral-LLaVA 正式极性任务使用 `python 3.1/run_polarity.py ...`，参见 [
 MoralCLIP R@1 可不加载模型、在 CPU 上独立核对归档矩阵和逐样本结果（需要 NumPy）：
 
 ```bash
-python 3.1/scripts/score_retrieval.py --evaluation 3.1/results/reference/moralclip-r1-original-20261104/test.json
+python 3.1/scripts/score_retrieval.py --evaluation 3.1/results/reference/moralclip-r1-bidirectional-20261104/test.json
 ```
 
 历史三状态任务的已有结果可仅用 Python 3.11+ 标准库复算：

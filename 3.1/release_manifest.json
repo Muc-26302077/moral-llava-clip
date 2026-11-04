@@ -3,8 +3,8 @@
   "files": [
     {
       "path": "README.md",
-      "bytes": 10321,
-      "sha256": "51f804a580c5b933e7588383136e9149f4952211a7c56bb5cac0959ceba85e70"
+      "bytes": 10415,
+      "sha256": "b951ca7d419e2cff5fa224422faff30418ba7186ab4737a00d4befbce7fc8abb"
     },
     {
       "path": "benchmark/.gitkeep",
@@ -12098,8 +12098,8 @@
     },
     {
       "path": "docs/MORALCLIP_R1_PROTOCOL.md",
-      "bytes": 6874,
-      "sha256": "beeebcd6f8e4091da31c3f8ed0794634f4ea8d23eebc95d5c4c94169e134c42f"
+      "bytes": 9088,
+      "sha256": "ff6172486f7138626293e734175ef38f098b89510d007dbda81cd2c3167f1e11"
     },
     {
       "path": "docs/PRESENCE_V1_ANALYSIS.md",
@@ -12353,8 +12353,8 @@
     },
     {
       "path": "models/moralclip-original.json",
-      "bytes": 696,
-      "sha256": "277ca0d2121287d63bd4e1d48fa66482c0911bfd45ad89739482545e4e9b9528"
+      "bytes": 805,
+      "sha256": "683b082c17d348427298d92d3452444b50ded812b70eda18c0ff0b7b68373429"
     },
     {
       "path": "models/moralllava/README.md",
@@ -12615,6 +12615,36 @@
       "path": "results/reference/evaluation/verification.json",
       "bytes": 14188,
       "sha256": "6a2654387b7cea589a2b35b4131f41ca317991483070445fb2e338b6b07b327e"
+    },
+    {
+      "path": "results/reference/moralclip-r1-bidirectional-20261104/screen.log",
+      "bytes": 1835,
+      "sha256": "57c67c0ee7934c62a06edad026ace395960b22f32f30b4c26f434effb19438da"
+    },
+    {
+      "path": "results/reference/moralclip-r1-bidirectional-20261104/test.json",
+      "bytes": 22745,
+      "sha256": "006228149657bc940b14a7f2f2e266bd6b7a5e0f7937cab25c4e27a19ab84619"
+    },
+    {
+      "path": "results/reference/moralclip-r1-bidirectional-20261104/test.predictions.json",
+      "bytes": 120455,
+      "sha256": "cc699e771653dcb898717f99ee0d64f43aea673da6b1359565801997f2655c8f"
+    },
+    {
+      "path": "results/reference/moralclip-r1-bidirectional-20261104/test.report.md",
+      "bytes": 1421,
+      "sha256": "2cfe91530d24796c4383bcb8a13f95c41a9a2179d7243c80fb0a97be19fd7e17"
+    },
+    {
+      "path": "results/reference/moralclip-r1-bidirectional-20261104/test.scores.npy",
+      "bytes": 635168,
+      "sha256": "97e9b5b933e241baeb8a561a2fe741501ca722f4d670512fd1ec85cf73a82876"
+    },
+    {
+      "path": "results/reference/moralclip-r1-bidirectional-20261104/test.text_to_image.predictions.json",
+      "bytes": 879173,
+      "sha256": "147279bed41f5cae2a9822f9a9159f9f1abc3741a3f5d4bdbf96ac644ae1d26e"
     },
     {
       "path": "results/reference/moralclip-r1-original-20261104/public_model_files_audit.json",
@@ -12938,8 +12968,8 @@
     },
     {
       "path": "scripts/evaluate_retrieval.py",
-      "bytes": 19367,
-      "sha256": "1d793eb7c0a97e0b34d236448754127aae8e444db80a5ed3dbe390cab667f2f2"
+      "bytes": 22052,
+      "sha256": "a247df8848b757835ae6a5aa2b47c165d639205a24105dc3079ef32f7e4607c7"
     },
     {
       "path": "scripts/rebuild_manifest.py",
@@ -12963,8 +12993,8 @@
     },
     {
       "path": "scripts/score_retrieval.py",
-      "bytes": 3797,
-      "sha256": "71d4e4be5dd4f5606c499ed272ae1b6ebed236c426200dd7a7981c615f78e385"
+      "bytes": 6644,
+      "sha256": "8156ae3fd858587c78512eeb23e7a6114174439316a0004fcac107f4f66f405d"
     },
     {
       "path": "scripts/verify_release.py",
@@ -13033,13 +13063,13 @@
     },
     {
       "path": "tests/test_retrieval_rescore.py",
-      "bytes": 3348,
-      "sha256": "0d5aea783df36dcd5d21934531c1eb16e7839f6e0a4eef5b8d529cbb780d082d"
+      "bytes": 5482,
+      "sha256": "2c9346ec5a86c09ea4c52453a19710641eb74be084cca8bbdfb4280609bb0b1a"
     },
     {
       "path": "tests/test_retrieval_target.py",
-      "bytes": 2018,
-      "sha256": "0943b79fc1f2b4600fae9b753c49e3847d73f9dbed9b9c8d3c098b835e33cf6a"
+      "bytes": 2972,
+      "sha256": "717ea93fada231c3fb1be92b862bef660758368e10acab29eb29146ed335d402"
     },
     {
       "path": "tests/test_schema.py",

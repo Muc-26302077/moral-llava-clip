@@ -1,6 +1,9 @@
 # 方法与历史记录
 
-- [最新实测报告](archive/CROSSMODAL_IMPROVEMENT_RESULTS.md)：方法、验证选择、测试结果及质量取舍。
+- [正式 MoralCLIP R@1 协议](MORALCLIP_R1_PROTOCOL.md)：原道德标签 Hit@1 更名为 R@1，包含原始模型、测试目标审计与实测结果。
+- [正式 TICR 极性协议](TICR_POLARITY_PROTOCOL.md)：与检索基准分别评分。
+
+- [历史三状态实测报告](archive/CROSSMODAL_IMPROVEMENT_RESULTS.md)：方法、验证选择、测试结果及质量取舍。
 - [评测协议](archive/CROSSMODAL_EVALUATION.md)：固定 A/B 划分和指标定义。
 - [训练方案](archive/CROSSMODAL_IMPROVEMENT_PLAN.md)：图像 / 文本联合监督与 JS 一致性。
 - [历史进度](archive/PROGRESS_CROSSMODAL.md)：不同阶段的目标与结果。
@@ -19,3 +22,8 @@
 | 散落的历史 Markdown、命令、依赖及辅助脚本 | `docs/archive/` |
 
 历史协议、预测、训练元数据和权重保留原内容。`scripts/verify_release.py` 按新位置核验原有哈希和验证集选择，不要求复原旧服务器路径。
+
+## TICR 正式极性评测
+
+- [五维极性二分类协议与运行](TICR_POLARITY_PROTOCOL.md)
+- [已完成存在性微调分析](PRESENCE_V1_ANALYSIS.md)

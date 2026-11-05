@@ -1,0 +1,25 @@
+{
+  "started_at": "2026-11-05T13:04:25.490719+00:00",
+  "status": "complete",
+  "mode": "archive-replay",
+  "protocol": "smid-foundation-polarity-v1",
+  "records": 576,
+  "pairs": 288,
+  "workers": 1,
+  "batch_size": 8,
+  "ckpt": "/root/autodl-tmp/moral-llava/github-project/3.1/models/moralclip-llava-polarity",
+  "adapter_sha256": "318b609354f115162f14de9136005ded3cde31865dda8823559b1e0b79f79e2c",
+  "generation": {
+    "do_sample": false,
+    "temperature": null,
+    "max_new_tokens": 16,
+    "max_length": 2048,
+    "thinking": false,
+    "precision": "bf16"
+  },
+  "runtime_seconds": 0.011889297515153885,
+  "inference_seconds": null,
+  "answer_sha256": "1202c6e2573128f1ecc521c4c63277428538df5fd4bbeb9e3de58a10df3b4d61",
+  "data_sha256": "c3c63fc867c8c9308aa9bf46f9011265305bd93a3e145f699d225dcaf83831b5",
+  "finished_at": "2026-11-05T13:04:25.502812+00:00"
+}

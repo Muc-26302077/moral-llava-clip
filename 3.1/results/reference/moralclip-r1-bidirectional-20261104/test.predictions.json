@@ -1,0 +1,4492 @@
+[
+  {
+    "query_id": "b9_p120_12",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b9_p120_12",
+    "caption_index": 0,
+    "retrieved_caption": "A bustling outdoor market at dusk is filled with stalls offering a variety of goods under the glow of hanging lights. Umbrellas are scattered across the scene, with one particularly large one prominently positioned in the center. A prominent banner, visible on the left, displays the text \"Carnation,\" while the text \"3 99 99\" is also visible, suggesting a possible discount on merchandise. The illuminated crowd of people browsing and shopping adds to the vibrant atmosphere, creating a lively snapshot of community interaction and commerce.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.1741710603237152,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b8_p109_16",
+      "caption_index": 5,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.06402463465929031
+    }
+  },
+  {
+    "query_id": "b15_p298_4",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b15_p298_4",
+    "caption_index": 4,
+    "retrieved_caption": "In the image, two horned animals are in an outdoor setting amidst trees, with dust swirling around them, indicating the presence of a fire in the vicinity.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.1054341122508049,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b13_p213_9",
+      "caption_index": 2,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.07523946464061737
+    }
+  },
+  {
+    "query_id": "b9_p124_13",
+    "query_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "retrieved_image_id": "b9_p124_13",
+    "caption_index": 2,
+    "retrieved_caption": "The image shows three individuals at an indoor food service table: a woman handing out pizza to a man in a green shirt with yellow text on the sleeve, with boxes of pizza on the table.",
+    "retrieved_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "shared_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.12190641462802887,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p345_19",
+      "caption_index": 5,
+      "retrieved_labels": [
+        "Care",
+        "Loyalty",
+        "Respect",
+        "Sanctity"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.08560162782669067
+    }
+  },
+  {
+    "query_id": "b8_p119_2",
+    "query_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "retrieved_image_id": "b8_p119_2",
+    "caption_index": 8,
+    "retrieved_caption": "A military vehicle with mounted artillery is parked on a rocky terrain in front of a large poster featuring caricatures of people and a caption with Arabic text; the vehicle and its occupants are visible.",
+    "retrieved_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "shared_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.13156577944755554,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b1_p1_20",
+      "caption_index": 8,
+      "retrieved_labels": [
+        "Betrayal",
+        "Cheating",
+        "Degradation",
+        "Harm",
+        "Subversion"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.08251885324716568
+    }
+  },
+  {
+    "query_id": "b4_p54_4",
+    "query_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "retrieved_image_id": "b4_p54_4",
+    "caption_index": 1,
+    "retrieved_caption": "In a vintage black and white photograph, two men clad in baseball attire are caught in a handshake, one donning a red and black striped jersey proclaiming \"RED SOX.\" The other sports a pinstripe uniform with a prominent \"NY\" emblem on his cap.",
+    "retrieved_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "shared_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.139421284198761,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p345_19",
+      "caption_index": 9,
+      "retrieved_labels": [
+        "Care",
+        "Loyalty",
+        "Respect",
+        "Sanctity"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.05415885150432587
+    }
+  },
+  {
+    "query_id": "b2_p23_17",
+    "query_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "retrieved_image_id": "b2_p23_17",
+    "caption_index": 0,
+    "retrieved_caption": "A photograph showing a group of police officers restraining a man on a grassy area, with some officers wearing helmets, indicating a police procedure.",
+    "retrieved_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "shared_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.10870988667011261,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b2_p23_18",
+      "caption_index": 9,
+      "retrieved_labels": [
+        "Betrayal",
+        "Cheating",
+        "Degradation",
+        "Harm",
+        "Subversion"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.07890193164348602
+    }
+  },
+  {
+    "query_id": "b11_p158_3",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b11_p158_3",
+    "caption_index": 8,
+    "retrieved_caption": "A photo showing two emergency response personnel wearing yellow protective suits with equipment, including masks, a backpack, and an air supply tube.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.12436480820178986,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b11_p160_4",
+      "caption_index": 2,
+      "retrieved_labels": [
+        "Care",
+        "Fairness",
+        "Loyalty",
+        "Respect",
+        "Sanctity"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.08749592304229736
+    }
+  },
+  {
+    "query_id": "b15_p345_19",
+    "query_labels": [
+      "Care",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "retrieved_image_id": "b15_p345_19",
+    "caption_index": 6,
+    "retrieved_caption": "The image shows a man in a dress shirt and a woman in a blue shirt shaking hands while standing in front of a counter with food items and a glass display case.",
+    "retrieved_labels": [
+      "Care",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "shared_labels": [
+      "Care",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.1252119094133377,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b9_p124_13",
+      "caption_index": 3,
+      "retrieved_labels": [
+        "Care",
+        "Fairness",
+        "Loyalty",
+        "Respect",
+        "Sanctity"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.08092494308948517
+    }
+  },
+  {
+    "query_id": "b6_p88_13",
+    "query_labels": [
+      "Respect",
+      "Sanctity"
+    ],
+    "retrieved_image_id": "b6_p88_13",
+    "caption_index": 3,
+    "retrieved_caption": "The image captures an aged and weathered statue of a seated Buddha figure, its serene expression and detailed features accentuated by the erosion of the surrounding cave wall. Beneath the statue, two carved statues of figures flank it, creating a layered sense of depth and an impressionistic portrayal of the historical and spiritual ambiance of the scene.",
+    "retrieved_labels": [
+      "Respect",
+      "Sanctity"
+    ],
+    "shared_labels": [
+      "Respect",
+      "Sanctity"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.11666108667850494,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b10_p126_12",
+      "caption_index": 5,
+      "retrieved_labels": [
+        "Care",
+        "Fairness",
+        "Loyalty",
+        "Respect",
+        "Sanctity"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.028324756771326065
+    }
+  },
+  {
+    "query_id": "b15_p354_2",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b15_p354_2",
+    "caption_index": 8,
+    "retrieved_caption": "This is a close-up photo of an animal with large, slightly overlapping eyes, a prominent snout, and a mix of brown and grey fur, peeking out from a pile of leaves against a dark background.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.11680381000041962,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b8_p112_19",
+      "caption_index": 8,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": -0.0029599200934171677
+    }
+  },
+  {
+    "query_id": "b2_p23_20",
+    "query_labels": [
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "retrieved_image_id": "b2_p23_20",
+    "caption_index": 1,
+    "retrieved_caption": "The image shows a simple and modestly furnished prison cell with a toilet situated on one side and a compact bed on the other, all within yellow brick walls.",
+    "retrieved_labels": [
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "shared_labels": [
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.10386913269758224,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b999_p482_7",
+      "caption_index": 4,
+      "retrieved_labels": [
+        "Degradation",
+        "Harm"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.042624689638614655
+    }
+  },
+  {
+    "query_id": "b8_p119_18",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b8_p119_18",
+    "caption_index": 3,
+    "retrieved_caption": "A hawk perched on a tree branch with a focus on its watchful gaze against a backdrop of green foliage.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.12514373660087585,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p295_17",
+      "caption_index": 7,
+      "retrieved_labels": [
+        "Care",
+        "Loyalty"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.019285375252366066
+    }
+  },
+  {
+    "query_id": "b15_p415_1",
+    "query_labels": [
+      "Care",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "retrieved_image_id": "b15_p415_1",
+    "caption_index": 6,
+    "retrieved_caption": "A cheerful individual is seated on a blood bag donation chair in a room with another individual standing nearby, while a third person appears focused on another chair to their right. A donation taker is seated in the foreground, contributing to a room with boxes and an electronic device on the floor, indicating a medical or donation-related environment.",
+    "retrieved_labels": [
+      "Care",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "shared_labels": [
+      "Care",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.14510107040405273,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b14_p282_6",
+      "caption_index": 7,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.08260432630777359
+    }
+  },
+  {
+    "query_id": "b999_p485_16",
+    "query_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "retrieved_image_id": "b999_p485_16",
+    "caption_index": 9,
+    "retrieved_caption": "A burnt, abandoned car with flames on its hood is parked on a street next to a brick building.",
+    "retrieved_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "shared_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.12424952536821365,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b5_p80_10",
+      "caption_index": 2,
+      "retrieved_labels": [
+        "Betrayal",
+        "Cheating",
+        "Degradation",
+        "Harm",
+        "Subversion"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.08237160742282867
+    }
+  },
+  {
+    "query_id": "b13_p218_7",
+    "query_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "retrieved_image_id": "b13_p218_7",
+    "caption_index": 8,
+    "retrieved_caption": "A group of military personnel standing in uniform, with a woman in the center in a leadership role.",
+    "retrieved_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "shared_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.13625958561897278,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b14_p258_3",
+      "caption_index": 5,
+      "retrieved_labels": [
+        "Care",
+        "Fairness",
+        "Loyalty",
+        "Respect",
+        "Sanctity"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.09238991886377335
+    }
+  },
+  {
+    "query_id": "b13_p245_6",
+    "query_labels": [
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "retrieved_image_id": "b13_p245_6",
+    "caption_index": 1,
+    "retrieved_caption": "A close-up photo of a brown cow attempting to break free from the dirt, with dirt flying up from under its hooves.",
+    "retrieved_labels": [
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "shared_labels": [
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.05858512595295906,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p298_4",
+      "caption_index": 2,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.049277499318122864
+    }
+  },
+  {
+    "query_id": "b13_p223_18",
+    "query_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "retrieved_image_id": "b13_p223_18",
+    "caption_index": 2,
+    "retrieved_caption": "A close-up portrait of a woman in a naval uniform saluting, with a focused expression and a dark background.",
+    "retrieved_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "shared_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.14249059557914734,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b14_p258_3",
+      "caption_index": 0,
+      "retrieved_labels": [
+        "Care",
+        "Fairness",
+        "Loyalty",
+        "Respect",
+        "Sanctity"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.11060106754302979
+    }
+  },
+  {
+    "query_id": "b15_p420_10",
+    "query_labels": [
+      "Harm"
+    ],
+    "retrieved_image_id": "b15_p420_10",
+    "caption_index": 3,
+    "retrieved_caption": "An urban street scene with several vehicles, including police cars, a fire truck, and an SUV, all at a red traffic light.",
+    "retrieved_labels": [
+      "Harm"
+    ],
+    "shared_labels": [
+      "Harm"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.08702841401100159,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b14_p260_3",
+      "caption_index": 3,
+      "retrieved_labels": [
+        "Harm"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.05107218027114868
+    }
+  },
+  {
+    "query_id": "b15_p303_10",
+    "query_labels": [
+      "Degradation",
+      "Harm"
+    ],
+    "retrieved_image_id": "b15_p303_10",
+    "caption_index": 4,
+    "retrieved_caption": "The image captures a close-up view of a Revolver handgun, its barrel set in motion, accompanied by a collection of scattered 9mm ammunition pieces on a dark textured surface.",
+    "retrieved_labels": [
+      "Degradation",
+      "Harm"
+    ],
+    "shared_labels": [
+      "Degradation",
+      "Harm"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.13788795471191406,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b4_p67_10",
+      "caption_index": 3,
+      "retrieved_labels": [
+        "Degradation",
+        "Harm"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.10046947002410889
+    }
+  },
+  {
+    "query_id": "b15_p379_6",
+    "query_labels": [
+      "Fairness"
+    ],
+    "retrieved_image_id": "b15_p379_6",
+    "caption_index": 7,
+    "retrieved_caption": "A group of children is engaged in a basketball game in an urban setting with high-rise buildings in the background, under a clear blue sky.",
+    "retrieved_labels": [
+      "Fairness"
+    ],
+    "shared_labels": [
+      "Fairness"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.12469730526208878,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b14_p282_6",
+      "caption_index": 9,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.04424663260579109
+    }
+  },
+  {
+    "query_id": "b15_p406_16",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b15_p406_16",
+    "caption_index": 5,
+    "retrieved_caption": "The image showcases the interior of a large, cylindrical mining pit with multiple levels, a central pool of water, and a distant cityscape in the background.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.10943380743265152,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b11_p162_1",
+      "caption_index": 9,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.04011990875005722
+    }
+  },
+  {
+    "query_id": "b15_p406_14",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b15_p406_14",
+    "caption_index": 3,
+    "retrieved_caption": "An old and rusted oil pump stands in a vast, arid landscape under a clear sky, under the glow of the sun that casts its rays on the scene.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.06006510555744171,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p409_16",
+      "caption_index": 3,
+      "retrieved_labels": [
+        "Betrayal",
+        "Cheating",
+        "Degradation",
+        "Harm"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.04274186119437218
+    }
+  },
+  {
+    "query_id": "b5_p83_12",
+    "query_labels": [
+      "Loyalty",
+      "Respect"
+    ],
+    "retrieved_image_id": "b5_p83_12",
+    "caption_index": 7,
+    "retrieved_caption": "Three men in suits are standing together, smiling at the camera; one of them is holding an award.",
+    "retrieved_labels": [
+      "Loyalty",
+      "Respect"
+    ],
+    "shared_labels": [
+      "Loyalty",
+      "Respect"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.18704809248447418,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b13_p223_17",
+      "caption_index": 8,
+      "retrieved_labels": [
+        "Fairness",
+        "Respect"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.08021824061870575
+    }
+  },
+  {
+    "query_id": "b15_p447_16",
+    "query_labels": [
+      "Degradation",
+      "Harm"
+    ],
+    "retrieved_image_id": "b15_p447_16",
+    "caption_index": 9,
+    "retrieved_caption": "The image features a close-up view of a person's hand holding a lit cigarette, with the background blurred.",
+    "retrieved_labels": [
+      "Degradation",
+      "Harm"
+    ],
+    "shared_labels": [
+      "Degradation",
+      "Harm"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.1268853396177292,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p356_1",
+      "caption_index": 2,
+      "retrieved_labels": [
+        "Betrayal",
+        "Cheating",
+        "Degradation",
+        "Harm"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.0666029080748558
+    }
+  },
+  {
+    "query_id": "b15_p316_20",
+    "query_labels": [
+      "Care",
+      "Loyalty"
+    ],
+    "retrieved_image_id": "b15_p316_20",
+    "caption_index": 4,
+    "retrieved_caption": "A fluffy gray and white cat is resting comfortably on a couch, lying on its side with its head tilted to one side, and surrounded by kittens.",
+    "retrieved_labels": [
+      "Care",
+      "Loyalty"
+    ],
+    "shared_labels": [
+      "Care",
+      "Loyalty"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.13921576738357544,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p383_12",
+      "caption_index": 3,
+      "retrieved_labels": [
+        "Care",
+        "Loyalty",
+        "Respect"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.08809880167245865
+    }
+  },
+  {
+    "query_id": "b14_p258_3",
+    "query_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "retrieved_image_id": "b14_p258_3",
+    "caption_index": 0,
+    "retrieved_caption": "A jubilant naval officer, clad in a white uniform marked with multiple medals, is raising a \"B\" in the air, his uniform adorned with a cap, signifying a moment of celebration or recognition.",
+    "retrieved_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "shared_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.1263355016708374,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b13_p223_18",
+      "caption_index": 0,
+      "retrieved_labels": [
+        "Care",
+        "Fairness",
+        "Loyalty",
+        "Respect",
+        "Sanctity"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.11266781389713287
+    }
+  },
+  {
+    "query_id": "b15_p445_17",
+    "query_labels": [
+      "Degradation",
+      "Harm"
+    ],
+    "retrieved_image_id": "b15_p445_17",
+    "caption_index": 7,
+    "retrieved_caption": "A person is laying on a couch, appearing exhausted, with an assortment of bottles and glasses spread out in front of them.",
+    "retrieved_labels": [
+      "Degradation",
+      "Harm"
+    ],
+    "shared_labels": [
+      "Degradation",
+      "Harm"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.13702361285686493,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b999_p493_11",
+      "caption_index": 9,
+      "retrieved_labels": [
+        "Degradation"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.09305209666490555
+    }
+  },
+  {
+    "query_id": "b4_p78_18",
+    "query_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "retrieved_image_id": "b4_p78_18",
+    "caption_index": 7,
+    "retrieved_caption": "A somber black and white photo showing a group of men hung by ropes on a wooden beam, with a crowd observing in the background.",
+    "retrieved_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "shared_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.11389002948999405,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p388_15",
+      "caption_index": 2,
+      "retrieved_labels": [
+        "Betrayal",
+        "Cheating",
+        "Degradation",
+        "Harm",
+        "Subversion"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.08293625712394714
+    }
+  },
+  {
+    "query_id": "b15_p360_15",
+    "query_labels": [
+      "Care",
+      "Loyalty",
+      "Respect"
+    ],
+    "retrieved_image_id": "b15_p360_15",
+    "caption_index": 0,
+    "retrieved_caption": "A photograph showing a redheaded waterfowl, possibly a duck or a duckling, interacting with its parent or sibling in a body of water.",
+    "retrieved_labels": [
+      "Care",
+      "Loyalty",
+      "Respect"
+    ],
+    "shared_labels": [
+      "Care",
+      "Loyalty",
+      "Respect"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.14690029621124268,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b14_p276_6",
+      "caption_index": 1,
+      "retrieved_labels": [
+        "Care",
+        "Loyalty"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.09575505554676056
+    }
+  },
+  {
+    "query_id": "b10_p136_20",
+    "query_labels": [
+      "Harm"
+    ],
+    "retrieved_image_id": "b10_p136_20",
+    "caption_index": 8,
+    "retrieved_caption": "The image shows two overturned prescription bottles, one containing white pills and the other containing red pills, on a dark surface with other blurred bottles in the background.",
+    "retrieved_labels": [
+      "Harm"
+    ],
+    "shared_labels": [
+      "Harm"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.11740335822105408,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b11_p166_7",
+      "caption_index": 6,
+      "retrieved_labels": [
+        "Degradation",
+        "Harm"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.11387354880571365
+    }
+  },
+  {
+    "query_id": "b15_p323_7",
+    "query_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "retrieved_image_id": "b15_p323_7",
+    "caption_index": 1,
+    "retrieved_caption": "Two children are engaged in playful outdoor activities with a soccer ball; one is holding the ball above her head while the other kneels down in the foreground with her hand on her face.",
+    "retrieved_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "shared_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.12191975116729736,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p379_6",
+      "caption_index": 3,
+      "retrieved_labels": [
+        "Fairness"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.04138386622071266
+    }
+  },
+  {
+    "query_id": "b999_p482_7",
+    "query_labels": [
+      "Degradation",
+      "Harm"
+    ],
+    "retrieved_image_id": "b999_p482_7",
+    "caption_index": 1,
+    "retrieved_caption": "The image captures a festival ground bustling with people and tents emblazoned with graffiti, creating an urban art scene against a backdrop of lush greenery under a cloudy sky. Visible texts on the tent walls include \"RAPID\" and \"SILVERS,\" with a partial view of \"X\" and \"BOSS\" to the right. There's an obscured \"REDEX\" sign on the right, and on the left, text on a structure reads \"CHIC\" followed by \"RENO\" beneath it. Additionally, \"KLANTIC\" and a partially visible \"KJULY\" sign are discernible on a structure to the far right.",
+    "retrieved_labels": [
+      "Degradation",
+      "Harm"
+    ],
+    "shared_labels": [
+      "Degradation",
+      "Harm"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.11151115596294403,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p377_4",
+      "caption_index": 0,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.04579300060868263
+    }
+  },
+  {
+    "query_id": "b14_p282_2",
+    "query_labels": [
+      "Loyalty"
+    ],
+    "retrieved_image_id": "b14_p282_2",
+    "caption_index": 0,
+    "retrieved_caption": "The image captures a team of four professionals seated around a table engaged in a meeting, with a backdrop of greenery and reflective surfaces. No discernible text is visible within the image.",
+    "retrieved_labels": [
+      "Loyalty"
+    ],
+    "shared_labels": [
+      "Loyalty"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.13615287840366364,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b14_p282_6",
+      "caption_index": 0,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.08064913749694824
+    }
+  },
+  {
+    "query_id": "b2_p22_4",
+    "query_labels": [
+      "Care",
+      "Loyalty"
+    ],
+    "retrieved_image_id": "b2_p22_4",
+    "caption_index": 9,
+    "retrieved_caption": "A person is hugging a brown and white puppy in a room with a shelf in the background containing assorted memorabilia.",
+    "retrieved_labels": [
+      "Care",
+      "Loyalty"
+    ],
+    "shared_labels": [
+      "Care",
+      "Loyalty"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.13551560044288635,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p383_12",
+      "caption_index": 2,
+      "retrieved_labels": [
+        "Care",
+        "Loyalty",
+        "Respect"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.06886141002178192
+    }
+  },
+  {
+    "query_id": "b2_p26_6",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b2_p26_6",
+    "caption_index": 7,
+    "retrieved_caption": "Two wrestlers in a wrestling ring are locked in a grappling match; one wrestler is holding a belt, presumably after a championship win.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.09155493974685669,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b4_p61_8",
+      "caption_index": 9,
+      "retrieved_labels": [
+        "Betrayal",
+        "Cheating",
+        "Degradation",
+        "Harm",
+        "Subversion"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.052143070846796036
+    }
+  },
+  {
+    "query_id": "b15_p313_9",
+    "query_labels": [
+      "Care",
+      "Loyalty",
+      "Respect"
+    ],
+    "retrieved_image_id": "b15_p313_9",
+    "caption_index": 0,
+    "retrieved_caption": "A woman in military fatigues is training a dog in a grassy field, with military personnel and military vehicles in the background.",
+    "retrieved_labels": [
+      "Care",
+      "Loyalty",
+      "Respect"
+    ],
+    "shared_labels": [
+      "Care",
+      "Loyalty",
+      "Respect"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.13619154691696167,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b13_p218_7",
+      "caption_index": 2,
+      "retrieved_labels": [
+        "Care",
+        "Fairness",
+        "Loyalty",
+        "Respect",
+        "Sanctity"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.10852150619029999
+    }
+  },
+  {
+    "query_id": "b15_p409_16",
+    "query_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm"
+    ],
+    "retrieved_image_id": "b15_p409_16",
+    "caption_index": 4,
+    "retrieved_caption": "The image shows an offshore oil rig engulfed in flames, with multiple boats spraying water to combat the fire, and the ocean visible in the background.",
+    "retrieved_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm"
+    ],
+    "shared_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.13176117837429047,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b5_p80_10",
+      "caption_index": 3,
+      "retrieved_labels": [
+        "Betrayal",
+        "Cheating",
+        "Degradation",
+        "Harm",
+        "Subversion"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.07245729118585587
+    }
+  },
+  {
+    "query_id": "b8_p109_16",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b8_p109_16",
+    "caption_index": 8,
+    "retrieved_caption": "An aerial view of a busy urban intersection with multiple lanes of traffic, tall buildings, and a large fountain in the background.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.11692781001329422,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p379_6",
+      "caption_index": 6,
+      "retrieved_labels": [
+        "Fairness"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.0815616250038147
+    }
+  },
+  {
+    "query_id": "b13_p228_15",
+    "query_labels": [
+      "Care",
+      "Loyalty",
+      "Respect"
+    ],
+    "retrieved_image_id": "b13_p228_15",
+    "caption_index": 1,
+    "retrieved_caption": "Two soldiers are engaged in an outdoor exercise. One soldier is hanging from a rope on a tree branch, looking upwards, while the other soldier observes from below.",
+    "retrieved_labels": [
+      "Care",
+      "Loyalty",
+      "Respect"
+    ],
+    "shared_labels": [
+      "Care",
+      "Loyalty",
+      "Respect"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.1110789030790329,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b4_p78_18",
+      "caption_index": 9,
+      "retrieved_labels": [
+        "Betrayal",
+        "Cheating",
+        "Degradation",
+        "Harm",
+        "Subversion"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.04306025430560112
+    }
+  },
+  {
+    "query_id": "b13_p218_10",
+    "query_labels": [
+      "Care",
+      "Loyalty",
+      "Respect"
+    ],
+    "retrieved_image_id": "b13_p218_10",
+    "caption_index": 6,
+    "retrieved_caption": "A group of soldiers, donning their military gear and carrying backpacks, are marching or walking in formation with an outdoor setting featuring a brick building in the background.",
+    "retrieved_labels": [
+      "Care",
+      "Loyalty",
+      "Respect"
+    ],
+    "shared_labels": [
+      "Care",
+      "Loyalty",
+      "Respect"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.1407260298728943,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p467_2",
+      "caption_index": 8,
+      "retrieved_labels": [
+        "Care",
+        "Fairness",
+        "Loyalty",
+        "Respect",
+        "Sanctity"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.10545852780342102
+    }
+  },
+  {
+    "query_id": "b15_p388_15",
+    "query_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "retrieved_image_id": "b15_p388_15",
+    "caption_index": 2,
+    "retrieved_caption": "An old black and white photograph capturing a group of people in rural attire, likely taken during the time of slavery, standing and seated in front of buildings.",
+    "retrieved_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "shared_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.11610126495361328,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b4_p78_18",
+      "caption_index": 4,
+      "retrieved_labels": [
+        "Betrayal",
+        "Cheating",
+        "Degradation",
+        "Harm",
+        "Subversion"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.090302474796772
+    }
+  },
+  {
+    "query_id": "b4_p51_2",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b4_p51_2",
+    "caption_index": 9,
+    "retrieved_caption": "This is an image showing a serene landscape with a calm lake surrounded by grassy hills and mountains.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.15303447842597961,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p406_16",
+      "caption_index": 4,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.10510724037885666
+    }
+  },
+  {
+    "query_id": "b14_p270_12",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b14_p270_12",
+    "caption_index": 9,
+    "retrieved_caption": "A black and white photo of a group of people standing in front of a building with large signage advertising a \"BELL TRADING POST\" and \"HAND MADE NAVALJO INDIAN JEWELRY.\"",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.10931271314620972,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p388_15",
+      "caption_index": 2,
+      "retrieved_labels": [
+        "Betrayal",
+        "Cheating",
+        "Degradation",
+        "Harm",
+        "Subversion"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.06956930458545685
+    }
+  },
+  {
+    "query_id": "b999_p487_2",
+    "query_labels": [
+      "Harm"
+    ],
+    "retrieved_image_id": "b999_p487_2",
+    "caption_index": 1,
+    "retrieved_caption": "The image depicts industrial smokestacks with white plumes of smoke or steam escaping into a blue sky dotted with clouds.",
+    "retrieved_labels": [
+      "Harm"
+    ],
+    "shared_labels": [
+      "Harm"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.13174471259117126,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p406_16",
+      "caption_index": 7,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.041582539677619934
+    }
+  },
+  {
+    "query_id": "b10_p138_15",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b10_p138_15",
+    "caption_index": 2,
+    "retrieved_caption": "The image shows a close-up of a person's face adorned with piercings and jewelry, including multiple earrings and necklaces with colorful elements, set against a blurred outdoor background.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.13591276109218597,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p454_1",
+      "caption_index": 6,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.057166069746017456
+    }
+  },
+  {
+    "query_id": "b13_p213_4",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b13_p213_4",
+    "caption_index": 8,
+    "retrieved_caption": "The image captures a close-up view of a rhinoceros in a grassy field, focused on its snout as it grazes.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.13845443725585938,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b13_p213_9",
+      "caption_index": 8,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.09239690005779266
+    }
+  },
+  {
+    "query_id": "b15_p467_2",
+    "query_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "retrieved_image_id": "b15_p467_2",
+    "caption_index": 3,
+    "retrieved_caption": "In the image, a group of soldiers in fatigues is gathered for discussion in a desert setting with military vehicles in the background.",
+    "retrieved_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "shared_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.1426648199558258,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b13_p218_10",
+      "caption_index": 5,
+      "retrieved_labels": [
+        "Care",
+        "Loyalty",
+        "Respect"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.10348618030548096
+    }
+  },
+  {
+    "query_id": "b11_p176_4",
+    "query_labels": [
+      "Care"
+    ],
+    "retrieved_image_id": "b11_p176_4",
+    "caption_index": 9,
+    "retrieved_caption": "A cheerful group of children is enjoying a sunny day at a vibrant playground, featuring playground equipment like a slide and a jungle gym. Among the children, one little girl in the foreground waves playfully, while her smiling companions engage in various activities. The scene is set against a backdrop of a red brick building under a sky dotted with clouds, suggesting a school or community setting. The children's cheerful disposition and active play suggest a fun and social atmosphere.",
+    "retrieved_labels": [
+      "Care"
+    ],
+    "shared_labels": [
+      "Care"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.14959226548671722,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p379_6",
+      "caption_index": 5,
+      "retrieved_labels": [
+        "Fairness"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.06677606701850891
+    }
+  },
+  {
+    "query_id": "b11_p172_10",
+    "query_labels": [
+      "Care",
+      "Loyalty",
+      "Sanctity"
+    ],
+    "retrieved_image_id": "b11_p172_10",
+    "caption_index": 4,
+    "retrieved_caption": "A close-up photo of a hand holding a small red heart-shaped object in its palm.",
+    "retrieved_labels": [
+      "Care",
+      "Loyalty",
+      "Sanctity"
+    ],
+    "shared_labels": [
+      "Care",
+      "Loyalty",
+      "Sanctity"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.13273003697395325,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p415_1",
+      "caption_index": 6,
+      "retrieved_labels": [
+        "Care",
+        "Loyalty",
+        "Respect",
+        "Sanctity"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.043947551399469376
+    }
+  },
+  {
+    "query_id": "b14_p263_1",
+    "query_labels": [
+      "Care",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "retrieved_image_id": "b14_p263_1",
+    "caption_index": 3,
+    "retrieved_caption": "In the image, a bride and groom share an intimate kiss during their wedding ceremony, where the bride is wearing a wedding veil and the groom is dressed in a tuxedo.",
+    "retrieved_labels": [
+      "Care",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "shared_labels": [
+      "Care",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.14937131106853485,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b4_p71_2",
+      "caption_index": 3,
+      "retrieved_labels": [
+        "Care",
+        "Fairness",
+        "Loyalty",
+        "Respect",
+        "Sanctity"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.1407218873500824
+    }
+  },
+  {
+    "query_id": "b15_p473_17",
+    "query_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "retrieved_image_id": "b15_p473_17",
+    "caption_index": 0,
+    "retrieved_caption": "A group of riot police officers in full gear are seen in a street, some actively engaging with protesters in what appears to be a protest rally.",
+    "retrieved_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "shared_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.1293078362941742,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b2_p23_18",
+      "caption_index": 8,
+      "retrieved_labels": [
+        "Betrayal",
+        "Cheating",
+        "Degradation",
+        "Harm",
+        "Subversion"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.11891993880271912
+    }
+  },
+  {
+    "query_id": "b15_p371_19",
+    "query_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "retrieved_image_id": "b15_p371_19",
+    "caption_index": 6,
+    "retrieved_caption": "A group of runners in athletic gear participates in a marathon, with a line of spectators and a crowd of onlookers along the side of the road, capturing the energetic atmosphere of the event.",
+    "retrieved_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "shared_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.11101286858320236,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b2_p30_15",
+      "caption_index": 9,
+      "retrieved_labels": [
+        "Care",
+        "Fairness",
+        "Loyalty"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.05644877627491951
+    }
+  },
+  {
+    "query_id": "b14_p253_7",
+    "query_labels": [
+      "Care",
+      "Loyalty"
+    ],
+    "retrieved_image_id": "b14_p253_7",
+    "caption_index": 5,
+    "retrieved_caption": "In a grassy savannah, three giraffes are seen; an adult giraffe grazes, and two younger ones are attentively watching.",
+    "retrieved_labels": [
+      "Care",
+      "Loyalty"
+    ],
+    "shared_labels": [
+      "Care",
+      "Loyalty"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.12419980764389038,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b2_p20_11",
+      "caption_index": 5,
+      "retrieved_labels": [
+        "Care",
+        "Fairness",
+        "Loyalty",
+        "Respect",
+        "Sanctity"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.06787490844726562
+    }
+  },
+  {
+    "query_id": "b14_p282_6",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b14_p282_6",
+    "caption_index": 0,
+    "retrieved_caption": "A group of individuals is working on a model building or structure in a conference room.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.08004897832870483,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b14_p282_2",
+      "caption_index": 8,
+      "retrieved_labels": [
+        "Loyalty"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.061331428587436676
+    }
+  },
+  {
+    "query_id": "b2_p34_5",
+    "query_labels": [
+      "Care",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "retrieved_image_id": "b2_p34_5",
+    "caption_index": 6,
+    "retrieved_caption": "A soldier in camouflage is embracing a young child in a white shirt, likely a father embracing his daughter.",
+    "retrieved_labels": [
+      "Care",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "shared_labels": [
+      "Care",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.15532472729682922,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p360_6",
+      "caption_index": 0,
+      "retrieved_labels": [
+        "Care",
+        "Fairness",
+        "Loyalty",
+        "Respect",
+        "Sanctity"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.10609698295593262
+    }
+  },
+  {
+    "query_id": "b15_p335_3",
+    "query_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "retrieved_image_id": "b15_p335_3",
+    "caption_index": 8,
+    "retrieved_caption": "A black and white photo depicts a soldier lying on the ground beside a pile of rocks, with some debris in the foreground and a grassy area in the background.",
+    "retrieved_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "shared_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.1313355565071106,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b4_p78_18",
+      "caption_index": 1,
+      "retrieved_labels": [
+        "Betrayal",
+        "Cheating",
+        "Degradation",
+        "Harm",
+        "Subversion"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.08413033932447433
+    }
+  },
+  {
+    "query_id": "b14_p276_6",
+    "query_labels": [
+      "Care",
+      "Loyalty"
+    ],
+    "retrieved_image_id": "b14_p276_6",
+    "caption_index": 0,
+    "retrieved_caption": "A sea otter emerges from the water, grooming itself while floating with its young.",
+    "retrieved_labels": [
+      "Care",
+      "Loyalty"
+    ],
+    "shared_labels": [
+      "Care",
+      "Loyalty"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.146355539560318,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b14_p252_7",
+      "caption_index": 4,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.11706924438476562
+    }
+  },
+  {
+    "query_id": "b15_p409_5",
+    "query_labels": [
+      "Betrayal",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "retrieved_image_id": "b15_p409_5",
+    "caption_index": 9,
+    "retrieved_caption": "A black and white historical photograph capturing a large crowd gathered on the street as a parade of people and marching bands pass by, with buildings lining the background.",
+    "retrieved_labels": [
+      "Betrayal",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "shared_labels": [
+      "Betrayal",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.16049842536449432,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p437_20",
+      "caption_index": 9,
+      "retrieved_labels": [
+        "Betrayal",
+        "Cheating",
+        "Harm"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.1209670752286911
+    }
+  },
+  {
+    "query_id": "b15_p401_9",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b15_p401_9",
+    "caption_index": 3,
+    "retrieved_caption": "The image captures a bustling underground train station platform, where passengers are waiting with anticipation. Above them, overhead signs convey directional guidance, including an \"Emergency\" sign indicating the presence of a 'Gap' station to the right, while an additional sign instructs to \"Mind the Gap\" near the platform edge, cautioning passengers against potential hazards.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.15645523369312286,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b13_p240_7",
+      "caption_index": 4,
+      "retrieved_labels": [
+        "Care",
+        "Respect"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.14420753717422485
+    }
+  },
+  {
+    "query_id": "b11_p158_9",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b11_p158_9",
+    "caption_index": 4,
+    "retrieved_caption": "The image features a close-up of a fish swimming in a tank, highlighted by sunlight shining through the water's surface.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.09141502529382706,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p354_2",
+      "caption_index": 8,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.012794425711035728
+    }
+  },
+  {
+    "query_id": "b14_p285_14",
+    "query_labels": [
+      "Loyalty"
+    ],
+    "retrieved_image_id": "b14_p285_14",
+    "caption_index": 5,
+    "retrieved_caption": "A group of hikers navigates a rocky trail with verdant hills and towering mountains in the background under a clear blue sky.",
+    "retrieved_labels": [
+      "Loyalty"
+    ],
+    "shared_labels": [
+      "Loyalty"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.1330152302980423,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b13_p218_10",
+      "caption_index": 5,
+      "retrieved_labels": [
+        "Care",
+        "Loyalty",
+        "Respect"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.04007118195295334
+    }
+  },
+  {
+    "query_id": "b8_p109_8",
+    "query_labels": [
+      "Loyalty"
+    ],
+    "retrieved_image_id": "b8_p109_8",
+    "caption_index": 3,
+    "retrieved_caption": "From above, eight individuals stand in a circular formation in shallow water, each leg facing the same direction.",
+    "retrieved_labels": [
+      "Loyalty"
+    ],
+    "shared_labels": [
+      "Loyalty"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.08362364768981934,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p444_20",
+      "caption_index": 7,
+      "retrieved_labels": [
+        "Care",
+        "Loyalty",
+        "Respect",
+        "Sanctity"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.06260963529348373
+    }
+  },
+  {
+    "query_id": "b15_p292_10",
+    "query_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "retrieved_image_id": "b15_p292_10",
+    "caption_index": 1,
+    "retrieved_caption": "An individual in a blue jacket marked \"FEMA\" and an orange shirt is tending to a young child's arm in an outdoor public setting.",
+    "retrieved_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "shared_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.15202967822551727,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b2_p34_5",
+      "caption_index": 6,
+      "retrieved_labels": [
+        "Care",
+        "Loyalty",
+        "Respect",
+        "Sanctity"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.09730830788612366
+    }
+  },
+  {
+    "query_id": "b4_p72_12",
+    "query_labels": [
+      "Degradation"
+    ],
+    "retrieved_image_id": "b4_p72_12",
+    "caption_index": 2,
+    "retrieved_caption": "A stone peg is chained to a wooden post on a brick walkway, and the chain extends towards the bottom right of the image.",
+    "retrieved_labels": [
+      "Degradation"
+    ],
+    "shared_labels": [
+      "Degradation"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.10842540860176086,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b4_p78_18",
+      "caption_index": 7,
+      "retrieved_labels": [
+        "Betrayal",
+        "Cheating",
+        "Degradation",
+        "Harm",
+        "Subversion"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.06400763988494873
+    }
+  },
+  {
+    "query_id": "b4_p67_10",
+    "query_labels": [
+      "Degradation",
+      "Harm"
+    ],
+    "retrieved_image_id": "b4_p67_10",
+    "caption_index": 5,
+    "retrieved_caption": "A black, disassembled weapon resembling a firearm with a long barrel and a pull-tab is shown on a white background.",
+    "retrieved_labels": [
+      "Degradation",
+      "Harm"
+    ],
+    "shared_labels": [
+      "Degradation",
+      "Harm"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.11091497540473938,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p303_10",
+      "caption_index": 0,
+      "retrieved_labels": [
+        "Degradation",
+        "Harm"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.0813383162021637
+    }
+  },
+  {
+    "query_id": "b2_p37_6",
+    "query_labels": [
+      "Betrayal",
+      "Cheating"
+    ],
+    "retrieved_image_id": "b2_p37_6",
+    "caption_index": 7,
+    "retrieved_caption": "The image captures a close-up of a hand holding a piece of paper with handwriting, partially obscured by the fingers. To the right, partially visible on the page, is a pen, indicating some form of writing or note-taking.",
+    "retrieved_labels": [
+      "Betrayal",
+      "Cheating"
+    ],
+    "shared_labels": [
+      "Betrayal",
+      "Cheating"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.1204027384519577,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p330_7",
+      "caption_index": 7,
+      "retrieved_labels": [
+        "Betrayal",
+        "Cheating",
+        "Degradation",
+        "Harm",
+        "Subversion"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.06100460886955261
+    }
+  },
+  {
+    "query_id": "b14_p278_11",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b14_p278_11",
+    "caption_index": 5,
+    "retrieved_caption": "An image featuring a large brick school building with multiple floors and large windows, under a blue sky with a few clouds.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.13606145977973938,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b6_p88_16",
+      "caption_index": 6,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.07268408685922623
+    }
+  },
+  {
+    "query_id": "b2_p20_11",
+    "query_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "retrieved_image_id": "b2_p20_11",
+    "caption_index": 1,
+    "retrieved_caption": "Two people, one adult and one child, are drinking water from a plastic bottle in a dimly lit setting, with one person's face partially obscured by a hat.",
+    "retrieved_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "shared_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.11579399555921555,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b4_p54_13",
+      "caption_index": 2,
+      "retrieved_labels": [
+        "Care",
+        "Fairness",
+        "Loyalty"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.06643345952033997
+    }
+  },
+  {
+    "query_id": "b10_p126_12",
+    "query_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "retrieved_image_id": "b10_p126_12",
+    "caption_index": 5,
+    "retrieved_caption": "Two monks in orange robes are seen side by side, seemingly in a contemplative or meditative state.",
+    "retrieved_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "shared_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.1237727552652359,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b6_p88_13",
+      "caption_index": 5,
+      "retrieved_labels": [
+        "Respect",
+        "Sanctity"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.06605808436870575
+    }
+  },
+  {
+    "query_id": "b11_p166_7",
+    "query_labels": [
+      "Degradation",
+      "Harm"
+    ],
+    "retrieved_image_id": "b11_p166_7",
+    "caption_index": 1,
+    "retrieved_caption": "The image displays a row of open prescription medication bottles against a dark backdrop, with white pills scattered on the foreground. Visible on the right side is a bottle with a visible yellow and red label, but the text is not fully legible.",
+    "retrieved_labels": [
+      "Degradation",
+      "Harm"
+    ],
+    "shared_labels": [
+      "Degradation",
+      "Harm"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.12348289042711258,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b10_p136_20",
+      "caption_index": 9,
+      "retrieved_labels": [
+        "Harm"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.1220841258764267
+    }
+  },
+  {
+    "query_id": "b4_p61_8",
+    "query_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "retrieved_image_id": "b4_p61_8",
+    "caption_index": 3,
+    "retrieved_caption": "The image is a black and white photograph capturing a traditional fighting style or dance with two participants in the foreground, and a crowd of onlookers surrounding them, all set against a simple background.",
+    "retrieved_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "shared_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.11779119074344635,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p449_1",
+      "caption_index": 7,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.10689680278301239
+    }
+  },
+  {
+    "query_id": "b15_p330_7",
+    "query_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "retrieved_image_id": "b15_p330_7",
+    "caption_index": 3,
+    "retrieved_caption": "The image features a paper \"Lost Dog\" with a photograph of a smiling man atop the phrase. Below, the caption reads, \"Last seen humping his wife's best friend on hidden camera. Answers to Steven. To see this old dog practicing tricks with his new bitch.\"",
+    "retrieved_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "shared_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.1208445280790329,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b2_p37_6",
+      "caption_index": 9,
+      "retrieved_labels": [
+        "Betrayal",
+        "Cheating"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.014915857464075089
+    }
+  },
+  {
+    "query_id": "b999_p494_10",
+    "query_labels": [
+      "Care",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "retrieved_image_id": "b999_p494_10",
+    "caption_index": 0,
+    "retrieved_caption": "The image captures three men in a church setting, with one of them helping to clean a person's feet using a basin, while others are engaged in conversation with the seated individual.",
+    "retrieved_labels": [
+      "Care",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "shared_labels": [
+      "Care",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.1393141746520996,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p415_1",
+      "caption_index": 2,
+      "retrieved_labels": [
+        "Care",
+        "Loyalty",
+        "Respect",
+        "Sanctity"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.07337690889835358
+    }
+  },
+  {
+    "query_id": "b11_p176_6",
+    "query_labels": [
+      "Care"
+    ],
+    "retrieved_image_id": "b11_p176_6",
+    "caption_index": 6,
+    "retrieved_caption": "Two smiling children's faces are submerged in a bathtub filled with white soapy water, both making goofy facial expressions and showing their open mouths.",
+    "retrieved_labels": [
+      "Care"
+    ],
+    "shared_labels": [
+      "Care"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.11743995547294617,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b4_p54_13",
+      "caption_index": 1,
+      "retrieved_labels": [
+        "Care",
+        "Fairness",
+        "Loyalty"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.03636947274208069
+    }
+  },
+  {
+    "query_id": "b5_p80_10",
+    "query_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "retrieved_image_id": "b5_p80_10",
+    "caption_index": 1,
+    "retrieved_caption": "A scene of protest where a crowd of people have gathered, with a burning object at the center of the fire. Police officers in riot gear are standing in the background, and buildings are visible in the backdrop.",
+    "retrieved_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "shared_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.12818792462348938,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p473_17",
+      "caption_index": 2,
+      "retrieved_labels": [
+        "Betrayal",
+        "Cheating",
+        "Degradation",
+        "Harm",
+        "Subversion"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.10971397906541824
+    }
+  },
+  {
+    "query_id": "b999_p483_6",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b999_p483_6",
+    "caption_index": 3,
+    "retrieved_caption": "The image features a grand, ornate building with a classical Thai architectural style, characterized by golden spires and a colorful exterior, set against a blue sky with clouds.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.16041287779808044,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b6_p88_16",
+      "caption_index": 7,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.0670168474316597
+    }
+  },
+  {
+    "query_id": "b15_p454_1",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b15_p454_1",
+    "caption_index": 6,
+    "retrieved_caption": "A display of various masks, some with painted faces and others with plain white gazes, arranged on a shelf.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.12280803918838501,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b11_p166_7",
+      "caption_index": 4,
+      "retrieved_labels": [
+        "Degradation",
+        "Harm"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.03192772716283798
+    }
+  },
+  {
+    "query_id": "b10_p132_3",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b10_p132_3",
+    "caption_index": 3,
+    "retrieved_caption": "A close-up of a person's bare feet on a carpet, looking at the image.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.13523520529270172,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b8_p109_8",
+      "caption_index": 7,
+      "retrieved_labels": [
+        "Loyalty"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.052521999925374985
+    }
+  },
+  {
+    "query_id": "b15_p310_3",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b15_p310_3",
+    "caption_index": 1,
+    "retrieved_caption": "A praying mantis lies on the ground, its body facing downwards, surrounded by numerous ants.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.08905641734600067,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b4_p61_13",
+      "caption_index": 1,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.045166440308094025
+    }
+  },
+  {
+    "query_id": "b14_p252_7",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b14_p252_7",
+    "caption_index": 7,
+    "retrieved_caption": "The image shows a beaver standing on a nest of branches and twigs with its mouth holding a branch, resting beside a water body on a sunny day.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.06723257899284363,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p354_2",
+      "caption_index": 2,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.034689899533987045
+    }
+  },
+  {
+    "query_id": "b4_p61_13",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b4_p61_13",
+    "caption_index": 4,
+    "retrieved_caption": "A close-up image of a water droplet suspended in the water, captured against a blurred blue-toned background.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.12189672887325287,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b11_p162_1",
+      "caption_index": 8,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.040320757776498795
+    }
+  },
+  {
+    "query_id": "b13_p240_7",
+    "query_labels": [
+      "Care",
+      "Respect"
+    ],
+    "retrieved_image_id": "b13_p240_7",
+    "caption_index": 0,
+    "retrieved_caption": "In a bustling subway station, passengers wait as train doors open at 59 Street and Columbus Circle. A musician strums a guitar while standing near the tracks, and a woman strides past carrying shopping bags. To the right, a sign marks exit from the line.",
+    "retrieved_labels": [
+      "Care",
+      "Respect"
+    ],
+    "shared_labels": [
+      "Care",
+      "Respect"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.13802461326122284,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p401_9",
+      "caption_index": 3,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.10709302872419357
+    }
+  },
+  {
+    "query_id": "b1_p8_20",
+    "query_labels": [
+      "Subversion"
+    ],
+    "retrieved_image_id": "b1_p8_20",
+    "caption_index": 1,
+    "retrieved_caption": "A person is seen resting their head on a table while seated in a classroom, with another person sitting behind them in a red chair.",
+    "retrieved_labels": [
+      "Subversion"
+    ],
+    "shared_labels": [
+      "Subversion"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.1407308578491211,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b14_p282_2",
+      "caption_index": 6,
+      "retrieved_labels": [
+        "Loyalty"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.021493837237358093
+    }
+  },
+  {
+    "query_id": "b15_p363_17",
+    "query_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "retrieved_image_id": "b15_p363_17",
+    "caption_index": 0,
+    "retrieved_caption": "The image captures an indoor scene at a garment factory where workers are engaged in the production of clothing. Several factory tables are laden with garments, and the scene is illuminated by overhead light fixtures, indicating a well-lit environment. A lone bicycle is noticeable amidst the industrial setting.",
+    "retrieved_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "shared_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.09479711204767227,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p415_1",
+      "caption_index": 0,
+      "retrieved_labels": [
+        "Care",
+        "Loyalty",
+        "Respect",
+        "Sanctity"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.04088856652379036
+    }
+  },
+  {
+    "query_id": "b999_p493_11",
+    "query_labels": [
+      "Degradation"
+    ],
+    "retrieved_image_id": "b999_p493_11",
+    "caption_index": 0,
+    "retrieved_caption": "A cluttered indoor setting where various items, predominantly lingerie, are hung from the ceiling, alongside a bar with assorted liquor bottles visible below.",
+    "retrieved_labels": [
+      "Degradation"
+    ],
+    "shared_labels": [
+      "Degradation"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.12362897396087646,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p445_17",
+      "caption_index": 4,
+      "retrieved_labels": [
+        "Degradation",
+        "Harm"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.07625503093004227
+    }
+  },
+  {
+    "query_id": "b11_p162_1",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b11_p162_1",
+    "caption_index": 3,
+    "retrieved_caption": "A fast-flowing water body is shown with foam at its surface, featuring vegetation on the bank, a building in the background, and a man possibly involved in maintenance or monitoring work.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.12219702452421188,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b14_p252_7",
+      "caption_index": 8,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.05567024648189545
+    }
+  },
+  {
+    "query_id": "b15_p360_6",
+    "query_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "retrieved_image_id": "b15_p360_6",
+    "caption_index": 2,
+    "retrieved_caption": "Two individuals in camouflage military uniforms are interacting with a young child seated in a wheelchair, both focused on assisting the child.",
+    "retrieved_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "shared_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.13497447967529297,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b2_p34_5",
+      "caption_index": 2,
+      "retrieved_labels": [
+        "Care",
+        "Loyalty",
+        "Respect",
+        "Sanctity"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.10596401989459991
+    }
+  },
+  {
+    "query_id": "b13_p213_9",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b13_p213_9",
+    "caption_index": 2,
+    "retrieved_caption": "A rhinoceros in an outdoor enclosure at a zoo, standing on a dirt surface with its head lowered and surrounded by rocks.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.13334205746650696,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b13_p213_4",
+      "caption_index": 7,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.11015409231185913
+    }
+  },
+  {
+    "query_id": "b14_p260_3",
+    "query_labels": [
+      "Harm"
+    ],
+    "retrieved_image_id": "b14_p260_3",
+    "caption_index": 1,
+    "retrieved_caption": "Two cars are involved in a rear-end collision on a crosswalk, with a pedestrian standing nearby.",
+    "retrieved_labels": [
+      "Harm"
+    ],
+    "shared_labels": [
+      "Harm"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.09650061279535294,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b999_p485_16",
+      "caption_index": 7,
+      "retrieved_labels": [
+        "Betrayal",
+        "Cheating",
+        "Degradation",
+        "Harm",
+        "Subversion"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.04972941800951958
+    }
+  },
+  {
+    "query_id": "b11_p171_9",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b11_p171_9",
+    "caption_index": 2,
+    "retrieved_caption": "A large delta airplane adorned with pink and white accents is stationed on an airfield, set against a backdrop of a blue sky dotted with clouds. The tail bears a pink triangle, and the fuselage proudly displays the company's branding, \"DELTA,\" along with a ribbon motif, suggestive of a breast cancer awareness initiative.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.13267412781715393,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b11_p166_20",
+      "caption_index": 1,
+      "retrieved_labels": [
+        "Care",
+        "Respect"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.06097300723195076
+    }
+  },
+  {
+    "query_id": "b15_p356_1",
+    "query_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm"
+    ],
+    "retrieved_image_id": "b15_p356_1",
+    "caption_index": 9,
+    "retrieved_caption": "An image showing a person's hand with one of its fingers detached from a wedding ring, resting on a fabric surface with a patterned design.",
+    "retrieved_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm"
+    ],
+    "shared_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.10201601684093475,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b2_p37_6",
+      "caption_index": 7,
+      "retrieved_labels": [
+        "Betrayal",
+        "Cheating"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.051333021372556686
+    }
+  },
+  {
+    "query_id": "b15_p449_1",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b15_p449_1",
+    "caption_index": 4,
+    "retrieved_caption": "This black and white photograph shows a dense crowd of individuals gathered in a room, likely at an event or party, with most individuals wearing white and the lighting somewhat dim.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.13128772377967834,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p437_20",
+      "caption_index": 8,
+      "retrieved_labels": [
+        "Betrayal",
+        "Cheating",
+        "Harm"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.12531670928001404
+    }
+  },
+  {
+    "query_id": "b13_p214_14",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b13_p214_14",
+    "caption_index": 3,
+    "retrieved_caption": "The image features a group of individuals dressed in dark, gothic or punk-inspired attire, standing together indoors.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.14344221353530884,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b4_p59_12",
+      "caption_index": 0,
+      "retrieved_labels": [
+        "Fairness",
+        "Loyalty",
+        "Respect"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.05259665846824646
+    }
+  },
+  {
+    "query_id": "b13_p220_7",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b13_p220_7",
+    "caption_index": 1,
+    "retrieved_caption": "A person in equestrian attire is riding a horse over a hurdle with a backdrop of grass, trees, and a fence.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.12385746836662292,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p406_14",
+      "caption_index": 8,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.01560947299003601
+    }
+  },
+  {
+    "query_id": "b14_p255_14",
+    "query_labels": [
+      "Loyalty",
+      "Respect"
+    ],
+    "retrieved_image_id": "b14_p255_14",
+    "caption_index": 8,
+    "retrieved_caption": "A synchronized swimmer performing a routine with fellow teammates in an indoor pool, where splashing water is visible around their glistening bodies.",
+    "retrieved_labels": [
+      "Loyalty",
+      "Respect"
+    ],
+    "shared_labels": [
+      "Loyalty",
+      "Respect"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.0940847396850586,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p360_15",
+      "caption_index": 3,
+      "retrieved_labels": [
+        "Care",
+        "Loyalty",
+        "Respect"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.020351698622107506
+    }
+  },
+  {
+    "query_id": "b15_p312_4",
+    "query_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "retrieved_image_id": "b15_p312_4",
+    "caption_index": 1,
+    "retrieved_caption": "The black and white image depicts three uniformed military personnel engaged in an arrest or detainment process; the central figure is being escorted by a colleague while the other two observe. The backdrop suggests the photo may have been taken in a military context or a related event.",
+    "retrieved_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "shared_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.1405082792043686,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b1_p1_20",
+      "caption_index": 3,
+      "retrieved_labels": [
+        "Betrayal",
+        "Cheating",
+        "Degradation",
+        "Harm",
+        "Subversion"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.10844072699546814
+    }
+  },
+  {
+    "query_id": "b1_p8_6",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b1_p8_6",
+    "caption_index": 0,
+    "retrieved_caption": "A black and white portrait photograph showing a woman with a floral headpiece, her back adorned with an elaborate tattoo design.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.1490292251110077,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p468_15",
+      "caption_index": 6,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.09571755677461624
+    }
+  },
+  {
+    "query_id": "b15_p383_12",
+    "query_labels": [
+      "Care",
+      "Loyalty",
+      "Respect"
+    ],
+    "retrieved_image_id": "b15_p383_12",
+    "caption_index": 5,
+    "retrieved_caption": "A sleeping brown dog with floppy ears rests peacefully with a gray and black cat resting on its back.",
+    "retrieved_labels": [
+      "Care",
+      "Loyalty",
+      "Respect"
+    ],
+    "shared_labels": [
+      "Care",
+      "Loyalty",
+      "Respect"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.15302084386348724,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p316_20",
+      "caption_index": 5,
+      "retrieved_labels": [
+        "Care",
+        "Loyalty"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.11042043566703796
+    }
+  },
+  {
+    "query_id": "b1_p1_2",
+    "query_labels": [
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "retrieved_image_id": "b1_p1_2",
+    "caption_index": 6,
+    "retrieved_caption": "The image captures the interior of a church with a prominent chandelier and ornate decorations, suggesting an impending event or ceremony. An altar can be seen in the background, surrounded by aisles of decorated pews.",
+    "retrieved_labels": [
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "shared_labels": [
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.15746721625328064,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b4_p71_2",
+      "caption_index": 3,
+      "retrieved_labels": [
+        "Care",
+        "Fairness",
+        "Loyalty",
+        "Respect",
+        "Sanctity"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.10489752888679504
+    }
+  },
+  {
+    "query_id": "b15_p440_15",
+    "query_labels": [
+      "Care",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "retrieved_image_id": "b15_p440_15",
+    "caption_index": 5,
+    "retrieved_caption": "A couple dressed in traditional clothing is seated at a table with the man appearing to be making a prayer-like gesture, while the woman has a flower garland around her neck. In the background, a colorful backdrop and various decorative elements are visible, hinting at a cultural or festive setting.",
+    "retrieved_labels": [
+      "Care",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "shared_labels": [
+      "Care",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.15756449103355408,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b4_p71_2",
+      "caption_index": 8,
+      "retrieved_labels": [
+        "Care",
+        "Fairness",
+        "Loyalty",
+        "Respect",
+        "Sanctity"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.1317974478006363
+    }
+  },
+  {
+    "query_id": "b8_p112_19",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b8_p112_19",
+    "caption_index": 8,
+    "retrieved_caption": "The image captures a spiral pattern formed by sparks against a dark backdrop. The sparks extend from the center in a dynamic, spiraling motion, radiating outwards in various angles.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.12912744283676147,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b4_p61_13",
+      "caption_index": 2,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.014037759974598885
+    }
+  },
+  {
+    "query_id": "b14_p262_12",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b14_p262_12",
+    "caption_index": 5,
+    "retrieved_caption": "A person in orange and blue clothing is performing a yoga pose, floating on their hands on a wooden floor against a plain background.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.10681554675102234,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b10_p126_12",
+      "caption_index": 5,
+      "retrieved_labels": [
+        "Care",
+        "Fairness",
+        "Loyalty",
+        "Respect",
+        "Sanctity"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.028541190549731255
+    }
+  },
+  {
+    "query_id": "b1_p1_20",
+    "query_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "retrieved_image_id": "b1_p1_20",
+    "caption_index": 3,
+    "retrieved_caption": "A black and white photograph showing a group of men in military uniforms raising their hands as if protesting or showing defiance.",
+    "retrieved_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "shared_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.13668181002140045,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p312_4",
+      "caption_index": 1,
+      "retrieved_labels": [
+        "Betrayal",
+        "Cheating",
+        "Degradation",
+        "Harm",
+        "Subversion"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.11972542852163315
+    }
+  },
+  {
+    "query_id": "b15_p437_20",
+    "query_labels": [
+      "Betrayal",
+      "Cheating",
+      "Harm"
+    ],
+    "retrieved_image_id": "b15_p437_20",
+    "caption_index": 4,
+    "retrieved_caption": "This is a black and white photograph of a large group of formally dressed people dancing in a large room, with a stage and decorative elements in the background.",
+    "retrieved_labels": [
+      "Betrayal",
+      "Cheating",
+      "Harm"
+    ],
+    "shared_labels": [
+      "Betrayal",
+      "Cheating",
+      "Harm"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.1383870542049408,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p449_1",
+      "caption_index": 4,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.13261151313781738
+    }
+  },
+  {
+    "query_id": "b14_p255_20",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b14_p255_20",
+    "caption_index": 4,
+    "retrieved_caption": "The image depicts a scene of intense rubble and debris strewn across a town, with workers in safety gear scattered across the scene, indicating a significant event such as an earthquake. The word \"SUMO\" appears in large font, possibly a reference to the disaster area. The word \"HAWAII\" is also visible, likely indicating the region where the image was taken.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.11115694791078568,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p363_17",
+      "caption_index": 4,
+      "retrieved_labels": [
+        "Betrayal",
+        "Cheating",
+        "Degradation",
+        "Harm",
+        "Subversion"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.05471029877662659
+    }
+  },
+  {
+    "query_id": "b4_p54_13",
+    "query_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty"
+    ],
+    "retrieved_image_id": "b4_p54_13",
+    "caption_index": 0,
+    "retrieved_caption": "Two children are sitting at a table, one is drinking from a milkshake with a straw, while the other looks on.",
+    "retrieved_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty"
+    ],
+    "shared_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.1476060450077057,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b2_p20_11",
+      "caption_index": 1,
+      "retrieved_labels": [
+        "Care",
+        "Fairness",
+        "Loyalty",
+        "Respect",
+        "Sanctity"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.0715692862868309
+    }
+  },
+  {
+    "query_id": "b15_p377_4",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b15_p377_4",
+    "caption_index": 3,
+    "retrieved_caption": "A person is gesturing with their hand displaying the number five, situated indoors, with a green exit sign visible above and a sink and poster in the background.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.09618842601776123,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p356_1",
+      "caption_index": 3,
+      "retrieved_labels": [
+        "Betrayal",
+        "Cheating",
+        "Degradation",
+        "Harm"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.04076434299349785
+    }
+  },
+  {
+    "query_id": "b11_p160_4",
+    "query_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "retrieved_image_id": "b11_p160_4",
+    "caption_index": 2,
+    "retrieved_caption": "Two individuals clad in green and yellow safety gear are seen amidst debris and rubble, with one of them wearing an orange helmet and the other a yellow one. They appear to be in a military or rescue operation, with the background suggesting an outdoor environment possibly under construction or an emergency response scenario.",
+    "retrieved_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "shared_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.1330334097146988,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b11_p158_3",
+      "caption_index": 8,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.10562331974506378
+    }
+  },
+  {
+    "query_id": "b15_p444_20",
+    "query_labels": [
+      "Care",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "retrieved_image_id": "b15_p444_20",
+    "caption_index": 9,
+    "retrieved_caption": "A black and white photo showing two elderly people standing in the shallow water with wavy lines, possibly the shoreline, and a few smaller figures in the background.",
+    "retrieved_labels": [
+      "Care",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "shared_labels": [
+      "Care",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.1263517439365387,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p360_15",
+      "caption_index": 7,
+      "retrieved_labels": [
+        "Care",
+        "Loyalty",
+        "Respect"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.07318161427974701
+    }
+  },
+  {
+    "query_id": "b2_p30_15",
+    "query_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty"
+    ],
+    "retrieved_image_id": "b2_p30_15",
+    "caption_index": 9,
+    "retrieved_caption": "A black and white photograph featuring a group of people jogging together, with three women in the foreground and a man in the background.",
+    "retrieved_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty"
+    ],
+    "shared_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.1367374062538147,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p371_19",
+      "caption_index": 7,
+      "retrieved_labels": [
+        "Care",
+        "Fairness",
+        "Loyalty",
+        "Respect",
+        "Sanctity"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.05915803462266922
+    }
+  },
+  {
+    "query_id": "b13_p223_17",
+    "query_labels": [
+      "Fairness",
+      "Respect"
+    ],
+    "retrieved_image_id": "b13_p223_17",
+    "caption_index": 3,
+    "retrieved_caption": "The image features a line of eight individuals, each holding an award or certificate, standing on a stage with floral decorations.",
+    "retrieved_labels": [
+      "Fairness",
+      "Respect"
+    ],
+    "shared_labels": [
+      "Fairness",
+      "Respect"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.1336575150489807,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b4_p59_12",
+      "caption_index": 0,
+      "retrieved_labels": [
+        "Fairness",
+        "Loyalty",
+        "Respect"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.09519792348146439
+    }
+  },
+  {
+    "query_id": "b2_p23_18",
+    "query_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "retrieved_image_id": "b2_p23_18",
+    "caption_index": 2,
+    "retrieved_caption": "A group of riot police officers clad in black gear with helmets, actively engaged in a street demonstration. Among them, one officer is using a water blaster to suppress a group of individuals who are standing in a row. There is a noticeable advertisement poster visible in the background, though the text on it is indistinct.",
+    "retrieved_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "shared_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.12177062779664993,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p473_17",
+      "caption_index": 0,
+      "retrieved_labels": [
+        "Betrayal",
+        "Cheating",
+        "Degradation",
+        "Harm",
+        "Subversion"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.11718316376209259
+    }
+  },
+  {
+    "query_id": "b999_p479_17",
+    "query_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "retrieved_image_id": "b999_p479_17",
+    "caption_index": 5,
+    "retrieved_caption": "A number of dead or dying dolphins laid out in rows on a platform, likely after being deadheaded.",
+    "retrieved_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "shared_labels": [
+      "Betrayal",
+      "Cheating",
+      "Degradation",
+      "Harm",
+      "Subversion"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.0995977446436882,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b13_p236_16",
+      "caption_index": 5,
+      "retrieved_labels": [
+        "Degradation",
+        "Harm"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.05573655292391777
+    }
+  },
+  {
+    "query_id": "b15_p310_13",
+    "query_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "retrieved_image_id": "b15_p310_13",
+    "caption_index": 9,
+    "retrieved_caption": "The image shows an expansive outdoor cemetery with rows of gravestones, each marked with a name, and surrounded by gravel and trees. In the distance, a monument can be seen.",
+    "retrieved_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "shared_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.12082895636558533,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p335_3",
+      "caption_index": 1,
+      "retrieved_labels": [
+        "Betrayal",
+        "Cheating",
+        "Degradation",
+        "Harm",
+        "Subversion"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.05356920510530472
+    }
+  },
+  {
+    "query_id": "b4_p49_3",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b4_p49_3",
+    "caption_index": 5,
+    "retrieved_caption": "The image captures the illuminated exterior of an intricate mosque at night, highlighting its golden domes and golden minarets, with string lights adorning the structure. Multiple flags embellish the lower section of the building, further enhancing its striking appearance. The text \"sa_16541\" is discernible in the scene, but its relevance is unclear.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.12931349873542786,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b999_p483_6",
+      "caption_index": 4,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.03420281037688255
+    }
+  },
+  {
+    "query_id": "b13_p236_16",
+    "query_labels": [
+      "Degradation",
+      "Harm"
+    ],
+    "retrieved_image_id": "b13_p236_16",
+    "caption_index": 5,
+    "retrieved_caption": "The image features a display of several raw, hung carcasses resembling animal hides or meat, possibly awaiting processing or preservation in a refrigerated environment.",
+    "retrieved_labels": [
+      "Degradation",
+      "Harm"
+    ],
+    "shared_labels": [
+      "Degradation",
+      "Harm"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.1228100061416626,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b999_p479_17",
+      "caption_index": 1,
+      "retrieved_labels": [
+        "Betrayal",
+        "Cheating",
+        "Degradation",
+        "Harm",
+        "Subversion"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.07950971275568008
+    }
+  },
+  {
+    "query_id": "b999_p495_2",
+    "query_labels": [
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "retrieved_image_id": "b999_p495_2",
+    "caption_index": 8,
+    "retrieved_caption": "The image shows two individuals in traditional attire kneeling or crawling on a gray cloth, with a dog lying on the left side and a red fence with pink flowers in the background.",
+    "retrieved_labels": [
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "shared_labels": [
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.11180064082145691,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p440_15",
+      "caption_index": 7,
+      "retrieved_labels": [
+        "Care",
+        "Loyalty",
+        "Respect",
+        "Sanctity"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.08777457475662231
+    }
+  },
+  {
+    "query_id": "b6_p88_16",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b6_p88_16",
+    "caption_index": 3,
+    "retrieved_caption": "The image shows an ornate architectural doorway or gate with intricate decorative elements, set against a yellow-colored wall, with a few blurred figures visible in the doorway.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.10379970073699951,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b999_p483_6",
+      "caption_index": 4,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.0614192970097065
+    }
+  },
+  {
+    "query_id": "b4_p59_12",
+    "query_labels": [
+      "Fairness",
+      "Loyalty",
+      "Respect"
+    ],
+    "retrieved_image_id": "b4_p59_12",
+    "caption_index": 3,
+    "retrieved_caption": "A group portrait of Supreme Court Justices seated in two rows, posing in formal black robes with a red curtain backdrop.",
+    "retrieved_labels": [
+      "Fairness",
+      "Loyalty",
+      "Respect"
+    ],
+    "shared_labels": [
+      "Fairness",
+      "Loyalty",
+      "Respect"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.13952091336250305,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b13_p223_17",
+      "caption_index": 0,
+      "retrieved_labels": [
+        "Fairness",
+        "Respect"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.061242152005434036
+    }
+  },
+  {
+    "query_id": "b15_p468_15",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b15_p468_15",
+    "caption_index": 5,
+    "retrieved_caption": "A black and white image capturing a woman leaning against a tree trunk, her face partially hidden by the tree.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.12413965165615082,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p449_1",
+      "caption_index": 4,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.017034335061907768
+    }
+  },
+  {
+    "query_id": "b11_p166_20",
+    "query_labels": [
+      "Care",
+      "Respect"
+    ],
+    "retrieved_image_id": "b11_p166_20",
+    "caption_index": 2,
+    "retrieved_caption": "A smiling female flight attendant in a red uniform is holding a cup of coffee, with passengers in the background seated on red seats.",
+    "retrieved_labels": [
+      "Care",
+      "Respect"
+    ],
+    "shared_labels": [
+      "Care",
+      "Respect"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.14754490554332733,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b11_p171_9",
+      "caption_index": 6,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": false,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.04593475162982941
+    }
+  },
+  {
+    "query_id": "b4_p71_2",
+    "query_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "retrieved_image_id": "b4_p71_2",
+    "caption_index": 8,
+    "retrieved_caption": "The image captures a couple during their wedding ceremony with the bride kneeling beside the priest behind the altar adorned with floral decorations. In the foreground, there's a blurred focus on flowers.",
+    "retrieved_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "shared_labels": [
+      "Care",
+      "Fairness",
+      "Loyalty",
+      "Respect",
+      "Sanctity"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.14659449458122253,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p440_15",
+      "caption_index": 0,
+      "retrieved_labels": [
+        "Care",
+        "Loyalty",
+        "Respect",
+        "Sanctity"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.14019623398780823
+    }
+  },
+  {
+    "query_id": "b13_p245_14",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b13_p245_14",
+    "caption_index": 8,
+    "retrieved_caption": "The image features a close-up of a person with blue hair and lipstick, intently eating a pastry.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.16739614307880402,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b14_p260_16",
+      "caption_index": 5,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.09845110774040222
+    }
+  },
+  {
+    "query_id": "b14_p260_16",
+    "query_labels": [
+      "non-moral"
+    ],
+    "retrieved_image_id": "b14_p260_16",
+    "caption_index": 1,
+    "retrieved_caption": "Four pieces of chocolate brownie are arranged on a white background, with chocolate melting or dripping from them onto the surface.",
+    "retrieved_labels": [
+      "non-moral"
+    ],
+    "shared_labels": [
+      "non-moral"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.10702726989984512,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b13_p245_14",
+      "caption_index": 6,
+      "retrieved_labels": [
+        "non-moral"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.07991412281990051
+    }
+  },
+  {
+    "query_id": "b15_p295_17",
+    "query_labels": [
+      "Care",
+      "Loyalty"
+    ],
+    "retrieved_image_id": "b15_p295_17",
+    "caption_index": 0,
+    "retrieved_caption": "The image captures a mother hen and her six chicks in a muddy enclosure, with a tree trunk to the left and the ground below covered in dirt.",
+    "retrieved_labels": [
+      "Care",
+      "Loyalty"
+    ],
+    "shared_labels": [
+      "Care",
+      "Loyalty"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.1458171159029007,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p360_15",
+      "caption_index": 8,
+      "retrieved_labels": [
+        "Care",
+        "Loyalty",
+        "Respect"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.09245789051055908
+    }
+  },
+  {
+    "query_id": "b999_p485_8",
+    "query_labels": [
+      "Cheating",
+      "Degradation",
+      "Harm"
+    ],
+    "retrieved_image_id": "b999_p485_8",
+    "caption_index": 9,
+    "retrieved_caption": "The image shows five bullet casings of various sizes, arranged in a row on a plain background.",
+    "retrieved_labels": [
+      "Cheating",
+      "Degradation",
+      "Harm"
+    ],
+    "shared_labels": [
+      "Cheating",
+      "Degradation",
+      "Harm"
+    ],
+    "r_at_1_correct": true,
+    "paired_r_at_1_correct": true,
+    "cosine_similarity": 0.11086496710777283,
+    "top1_tie_count": 1,
+    "cross_image": {
+      "retrieved_image_id": "b15_p303_10",
+      "caption_index": 9,
+      "retrieved_labels": [
+        "Degradation",
+        "Harm"
+      ],
+      "r_at_1_correct": true,
+      "candidate_count": 1250,
+      "cosine_similarity": 0.10191809386014938
+    }
+  }
+]

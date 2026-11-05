@@ -1,5 +1,7 @@
 # 图文匹配与道德约束
 
+> 2026-11-04 命名更新：项目正式 R@1 指原“道德标签 Hit@1”，按首位文本与查询共享标签判分，见[正式协议](../MORALCLIP_R1_PROTOCOL.md)。本文的同图配对 R@1 是另一诊断，历史分数及选模记录保留，不改记为新主指标。
+
 旧 full 包做的是五维标签 JSON 指令微调。新入口改为图文检索训练：给图片和候选描述分别编码，在同一个 512 维空间里匹配；同时用道德标签约束不同样本间的相似度。旧训练、权重和演示仍可作为历史问答基线。
 
 这是把 MoralCLIP 的训练目标迁移到 LLaVA 组件上，并非论文原始 CLIP 双编码器的完整复现。新检索权重没有做五维 JSON 联合训练，不能用它的检索分数证明问答能力。
@@ -64,14 +66,14 @@ python -m moral_llava.train_alignment --output-dir runs/alignment-smoke --vision
 
 正式匹配基线：同样训练配置，`--moral-weight 0`。道德约束组：`--moral-weight 0.4`。两者默认10轮、真实batch64、AdamW lr=1e-5、weight decay=.01、cosine调度；在 A800 上需以实际显存检查为准。如果 OOM，两组都改成同样的真实batch32，并记录偏离论文batch64。不要用 gradient accumulation 冒充负例数。
 
-每轮用完整 validation 候选池验证，默认按道德标签 MAP 选择；如以同图 R@1 为主要目标，可在两组同时指定 `--selection-metric paired_r1`。checkpoint 存在 `epoch-001` 等目录，`best_checkpoint.json` 指向验证最优轮次。它保存实际训练的语言 adapter、projector、双投影头、温度及处理器，不包含优化器状态，当前不支持断点续训。原始基座和视觉 checkpoint 仍需保留用于重载。
+每轮用完整 validation 候选池验证，本历史实验按道德标签 MAP 选择；新运行默认按道德标签 R@1 选择；如以同图 R@1 为主要目标，可在两组同时指定 `--selection-metric paired_r1`。checkpoint 存在 `epoch-001` 等目录，`best_checkpoint.json` 指向验证最优轮次。它保存实际训练的语言 adapter、projector、双投影头、温度及处理器，不包含优化器状态，当前不支持断点续训。原始基座和视觉 checkpoint 仍需保留用于重载。
 
 最终只用选中的 checkpoint 在 test 评估一次，不用测试结果调 λ。正式比较时先固定 λ=0 与 0.4；如果需要选择其他 λ，在验证集扫参，并明确额外训练预算。
 
 ## 评估和单张图推理
 
 - `same_image_pairing.r_at_1/5/10`：126张测试图查询1260条描述，任一对应描述进入前K即命中。
-- `label_relevance.map_i2t`：共享至少一个道德标签算相关，报告 MAP；该口径的 `r_at_*` 兼容字段实际为 Hit@K，不是“检索到的相关项占全部相关项比例”。
+- `label_relevance.map_i2t`：共享至少一个道德标签算相关，报告 MAP；该口径正式命名为道德标签 R@K（原 Hit@K），按查询统计，不是“检索到的相关项占全部相关项比例”。
 - `cross_image_moral_relevance`：先排除查询图自己的全部描述，再报告道德 MAP/Hit，单独注明候选池改变。
 
 结果记录 checkpoint 与数据 manifest SHA、候选 id、图像 id 和数量。不要把 standalone MoralCLIP 的检索分数、旧标签分类 F1 或 smoke 数字记到本次正式实验名下。

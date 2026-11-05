@@ -75,7 +75,8 @@ def make_parser() -> argparse.ArgumentParser:
     parser.add_argument("--text-max-length", type=int, default=256)
     parser.add_argument("--validation-text-batch-size", type=int, default=32)
     parser.add_argument("--validation-image-batch-size", type=int, default=32)
-    parser.add_argument("--selection-metric", choices=("moral_map", "paired_r1"), default="moral_map")
+    parser.add_argument("--selection-metric", choices=("moral_r1", "moral_map", "paired_r1"), default="moral_r1",
+                        help="Default: project moral-label R@1 on validation; paired_r1 is a separate diagnostic")
     parser.add_argument("--device", choices=("cuda", "cpu"), default="cuda")
     parser.add_argument("--precision", choices=("bf16", "fp32"), default="bf16")
     parser.add_argument("--no-gradient-checkpointing", action="store_true")
@@ -86,6 +87,16 @@ def make_parser() -> argparse.ArgumentParser:
     parser.add_argument("--max-steps", type=int, default=0, help="0 trains all epochs; positive values are marked partial_training")
     parser.add_argument("--smoke-test", action="store_true", help="Only two optimizer steps and 8 validation images; not a benchmark")
     return parser
+
+
+def selection_value(metrics: dict[str, Any], name: str) -> float:
+    if name == "moral_r1":
+        return metrics["label_relevance"]["r_at_1"]
+    if name == "moral_map":
+        return metrics["label_relevance"]["map_i2t"]
+    if name == "paired_r1":
+        return metrics["same_image_pairing"]["r_at_1"]
+    raise ValueError(f"Unknown selection metric: {name}")
 
 
 def train(args: argparse.Namespace) -> dict[str, Any]:
@@ -269,8 +280,7 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
             image_batch_size=args.validation_image_batch_size,
             text_batch_size=args.validation_text_batch_size, text_max_length=args.text_max_length,
         )
-        selected = (metrics["label_relevance"]["map_i2t"] if args.selection_metric == "moral_map"
-                    else metrics["same_image_pairing"]["r_at_1"])
+        selected = selection_value(metrics, args.selection_metric)
         validation = {
             "epoch": epoch + 1, "optimizer_step": global_step, "run_kind": run_kind,
             "split": "validation", "metrics": metrics,

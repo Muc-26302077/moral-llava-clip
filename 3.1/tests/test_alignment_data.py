@@ -167,6 +167,10 @@ class RetrievalProtocolTests(unittest.TestCase):
         self.assertEqual(result["num_queries"], 2)
         self.assertEqual(result["num_candidates"], 4)
         self.assertEqual(result["label_relevance"]["r_at_1"], 0.5)
+        # The official project R@1 follows moral labels, even when no paired caption wins.
+        self.assertEqual(result["primary_metric"], "R@1")
+        self.assertEqual(result["r_at_1"], 0.5)
+        self.assertEqual(result["correct_queries"], 1)
         self.assertEqual(result["same_image_pairing"]["r_at_1"], 0.0)
         self.assertEqual(result["same_image_pairing"]["r_at_5"], 1.0)
         self.assertAlmostEqual(result["label_relevance"]["map_i2t"], 7 / 12)
@@ -191,6 +195,7 @@ class RetrievalProtocolTests(unittest.TestCase):
         self.assertIn("not caption-level recall", label["definition"])
         cross = result["cross_image_moral_relevance"]
         self.assertEqual(cross["hit_at_1"], 0.0)
+        self.assertEqual(cross["r_at_1"], 0.0)
         self.assertEqual(cross["hit_at_5"], 2 / 3)
         # A has AP=1/2, B has AP=(1/2+2/3)/2, C has no other Harm image.
         self.assertAlmostEqual(cross["map_i2t"], 13 / 36)

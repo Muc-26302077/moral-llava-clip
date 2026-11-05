@@ -1,0 +1,91 @@
+{
+  "remote_main_commit": "13bc54ae3d1c0b5ce92a1a0357f3cba5f5cc5dbb",
+  "scope": "fresh remote clone, remote LFS adapters, pinned cached base; current A800 GPU environment",
+  "protocol_scenes": 126,
+  "only_protocol_image_paths_changed": true,
+  "release_verify_status": "PASS",
+  "decodings": {
+    "free": {
+      "predictions": 252,
+      "structured_differences": [],
+      "raw_text_differences": [],
+      "groups": {
+        "A": {
+          "scenes": 63,
+          "consistent_pairs": 43,
+          "strict_agreement": 0.6825396825396826,
+          "both_correct_pairs": 27,
+          "joint_correct_rate": 0.42857142857142855,
+          "image_exact_match": 0.5714285714285714,
+          "image_mean_foundation_accuracy": 0.8222222222222222,
+          "text_exact_match": 0.5079365079365079,
+          "text_mean_foundation_accuracy": 0.7523809523809524
+        },
+        "B": {
+          "scenes": 63,
+          "consistent_pairs": 38,
+          "strict_agreement": 0.6031746031746031,
+          "both_correct_pairs": 26,
+          "joint_correct_rate": 0.4126984126984127,
+          "image_exact_match": 0.5238095238095238,
+          "image_mean_foundation_accuracy": 0.8222222222222222,
+          "text_exact_match": 0.49206349206349204,
+          "text_mean_foundation_accuracy": 0.7396825396825397
+        }
+      }
+    },
+    "constrained": {
+      "predictions": 252,
+      "structured_differences": [],
+      "raw_text_differences": [],
+      "groups": {
+        "A": {
+          "scenes": 63,
+          "consistent_pairs": 43,
+          "strict_agreement": 0.6825396825396826,
+          "both_correct_pairs": 27,
+          "joint_correct_rate": 0.42857142857142855,
+          "image_exact_match": 0.5714285714285714,
+          "image_mean_foundation_accuracy": 0.8222222222222222,
+          "text_exact_match": 0.5079365079365079,
+          "text_mean_foundation_accuracy": 0.7523809523809524
+        },
+        "B": {
+          "scenes": 63,
+          "consistent_pairs": 38,
+          "strict_agreement": 0.6031746031746031,
+          "both_correct_pairs": 26,
+          "joint_correct_rate": 0.4126984126984127,
+          "image_exact_match": 0.5238095238095238,
+          "image_mean_foundation_accuracy": 0.8222222222222222,
+          "text_exact_match": 0.49206349206349204,
+          "text_mean_foundation_accuracy": 0.7396825396825397
+        }
+      }
+    }
+  },
+  "environment": {
+    "python": "3.12.3",
+    "torch": "2.8.0+cu128",
+    "transformers": "4.49.0",
+    "peft": "0.14.0",
+    "precision": "bf16",
+    "device": "cuda"
+  },
+  "fresh_declared_conda_environment_tested": false,
+  "base_full_inference_repeated": false,
+  "qa_branch": {
+    "commit": "75bdf00f08c4788249860bb89dfb0a67a7496614",
+    "prepare_scene_counts": {
+      "train": 2138,
+      "validation": 134,
+      "test": 126
+    },
+    "prepare_record_counts": {
+      "train": 25656,
+      "validation": 1608,
+      "test": 1512
+    },
+    "new_small_sample_adapter_in_remote": false
+  }
+}

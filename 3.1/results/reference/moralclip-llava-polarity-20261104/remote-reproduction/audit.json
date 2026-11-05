@@ -1,0 +1,46 @@
+{
+  "implementation_commit": "4c62f86d8187ddca9aea7773a96cf55037889934",
+  "source": "independent checkout fetched from GitHub",
+  "external_assets": "pinned local base models plus validation-selected newly trained adapter",
+  "prediction_count": 576,
+  "all_raw_answers_identical": true,
+  "all_metrics_identical": true,
+  "commands": [
+    [
+      "/root/autodl-tmp/moral-llava/.venv/bin/python",
+      "-u",
+      "/tmp/moralclip-r1-remote-20261104/3.1/run_moralclip_polarity.py",
+      "prepare"
+    ],
+    [
+      "/root/autodl-tmp/moral-llava/.venv/bin/python",
+      "-u",
+      "/tmp/moralclip-r1-remote-20261104/3.1/run_moralclip_polarity.py",
+      "infer",
+      "--adapter",
+      "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/moralclip-polarity-baseline-20261104/adapter",
+      "--moralclip-model",
+      "/root/autodl-tmp/moralclip-base",
+      "--local-files-only",
+      "--device",
+      "cuda",
+      "--precision",
+      "bf16",
+      "--batch-size",
+      "8",
+      "--output",
+      "/tmp/moralclip-llava-remote-audit-20261104/predictions.jsonl"
+    ],
+    [
+      "/root/autodl-tmp/moral-llava/.venv/bin/python",
+      "-u",
+      "/tmp/moralclip-r1-remote-20261104/3.1/run_moralclip_polarity.py",
+      "score",
+      "--predictions",
+      "/tmp/moralclip-llava-remote-audit-20261104/predictions.jsonl",
+      "--output",
+      "/tmp/moralclip-llava-remote-audit-20261104/metrics.json"
+    ]
+  ],
+  "note": "Model artifact upload is verified separately after publication; this run verifies fetched source execution."
+}

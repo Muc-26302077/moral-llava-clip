@@ -1,0 +1,132 @@
+{
+  "scope": "12-scene diagnostic; not a formal benchmark or stage-2 approval",
+  "unit_tests": "15 passed",
+  "training_steps": 48,
+  "validation_loss": 0.2307368963956833,
+  "initial_adapter_unchanged": true,
+  "methods": {
+    "majority": {
+      "primary_macro": {
+        "agreement": 1.0,
+        "joint_accuracy": 0.6166666666666666,
+        "consistent_pairs": 60,
+        "pairs": 60,
+        "minimum_consistent_pairs_60pct": 36,
+        "image_accuracy": 0.6166666666666666,
+        "image_balanced_accuracy": 0.5,
+        "text_accuracy": 0.6166666666666666,
+        "text_balanced_accuracy": 0.5
+      },
+      "validity": {
+        "image": 1.0,
+        "text": 1.0
+      },
+      "groups": {
+        "A": {
+          "agreement": 1.0,
+          "joint_accuracy": 0.5333333333333333,
+          "consistent_pairs": 30,
+          "pairs": 30,
+          "minimum_consistent_pairs_60pct": 18,
+          "image_accuracy": 0.5333333333333333,
+          "image_balanced_accuracy": 0.5,
+          "text_accuracy": 0.5333333333333333,
+          "text_balanced_accuracy": 0.5
+        },
+        "B": {
+          "agreement": 1.0,
+          "joint_accuracy": 0.7,
+          "consistent_pairs": 30,
+          "pairs": 30,
+          "minimum_consistent_pairs_60pct": 18,
+          "image_accuracy": 0.7,
+          "image_balanced_accuracy": 0.5,
+          "text_accuracy": 0.7,
+          "text_balanced_accuracy": 0.5
+        }
+      }
+    },
+    "baseline": {
+      "primary_macro": {
+        "agreement": 0.9833333333333334,
+        "joint_accuracy": 0.45,
+        "consistent_pairs": 59,
+        "pairs": 60,
+        "minimum_consistent_pairs_60pct": 36,
+        "image_accuracy": 0.45,
+        "image_balanced_accuracy": 0.5,
+        "text_accuracy": 0.45,
+        "text_balanced_accuracy": 0.5
+      },
+      "validity": {
+        "image": 1.0,
+        "text": 0.9833333333333333
+      },
+      "groups": {
+        "A": {
+          "agreement": 1.0,
+          "joint_accuracy": 0.5333333333333333,
+          "consistent_pairs": 30,
+          "pairs": 30,
+          "minimum_consistent_pairs_60pct": 18,
+          "image_accuracy": 0.5333333333333333,
+          "image_balanced_accuracy": 0.5,
+          "text_accuracy": 0.5333333333333333,
+          "text_balanced_accuracy": 0.5
+        },
+        "B": {
+          "agreement": 0.9666666666666666,
+          "joint_accuracy": 0.36666666666666664,
+          "consistent_pairs": 29,
+          "pairs": 30,
+          "minimum_consistent_pairs_60pct": 18,
+          "image_accuracy": 0.36666666666666664,
+          "image_balanced_accuracy": 0.5,
+          "text_accuracy": 0.36666666666666664,
+          "text_balanced_accuracy": 0.5
+        }
+      }
+    },
+    "trained": {
+      "primary_macro": {
+        "agreement": 0.6833333333333333,
+        "joint_accuracy": 0.4833333333333333,
+        "consistent_pairs": 41,
+        "pairs": 60,
+        "minimum_consistent_pairs_60pct": 36,
+        "image_accuracy": 0.7166666666666667,
+        "image_balanced_accuracy": 0.6964285714285714,
+        "text_accuracy": 0.5666666666666667,
+        "text_balanced_accuracy": 0.6053571428571429
+      },
+      "validity": {
+        "image": 1.0,
+        "text": 1.0
+      },
+      "groups": {
+        "A": {
+          "agreement": 0.7666666666666667,
+          "joint_accuracy": 0.5666666666666667,
+          "consistent_pairs": 23,
+          "pairs": 30,
+          "minimum_consistent_pairs_60pct": 18,
+          "image_accuracy": 0.6666666666666667,
+          "image_balanced_accuracy": 0.6083333333333333,
+          "text_accuracy": 0.7,
+          "text_balanced_accuracy": 0.6916666666666667
+        },
+        "B": {
+          "agreement": 0.6,
+          "joint_accuracy": 0.4,
+          "consistent_pairs": 18,
+          "pairs": 30,
+          "minimum_consistent_pairs_60pct": 18,
+          "image_accuracy": 0.7666666666666667,
+          "image_balanced_accuracy": 0.7566666666666666,
+          "text_accuracy": 0.4333333333333333,
+          "text_balanced_accuracy": 0.5316666666666666
+        }
+      }
+    }
+  }
+}

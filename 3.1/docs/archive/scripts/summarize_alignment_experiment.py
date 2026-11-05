@@ -265,7 +265,7 @@ def build_comparison(clip: dict[str, Any], moral: dict[str, Any]) -> dict[str, A
         "limitations": [
             "One seed and one original split; no multi-seed confidence interval or significance test.",
             "Retrieval metrics do not measure VQA or five-foundation generation performance.",
-            "Shared-label Hit@K is query hit rate, not the fraction of all relevant captions recalled.",
+            "Project shared-label R@K (formerly Hit@K) is query hit rate, not the fraction of all relevant captions recalled.",
             "Validation moral_map includes own-image captions; cross-image moral MAP is a separate diagnostic.",
             "This is a LLaVA alignment adaptation, not a reproduction of the full MoralCLIP paper experiment.",
         ],
@@ -308,7 +308,7 @@ def render_report(comparison: dict[str, Any], figure_name: str) -> str:
         scores = run["test_metrics"]
         values = [percent(scores[key]) for key in ("paired_r_at_1", "paired_r_at_5", "paired_r_at_10", "moral_map_i2t", "cross_image_moral_map_i2t")]
         lines.append(f"| {name} | {run['moral_weight']:g} | {run['best_epoch']} | " + " | ".join(values) + " |")
-    lines.extend(["", "| 方案 | 道德 Hit@1 | 道德 Hit@5 | 道德 Hit@10 | 跨图 Hit@1 | 跨图 Hit@5 | 跨图 Hit@10 |", "| --- | ---: | ---: | ---: | ---: | ---: | ---: |"])
+    lines.extend(["", "| 方案 | 道德 R@1 | 道德 R@5 | 道德 R@10 | 跨图 R@1 | 跨图 R@5 | 跨图 R@10 |", "| --- | ---: | ---: | ---: | ---: | ---: | ---: |"])
     for run, name in ((clip, "CLIP式对比基线"), (moral, "MoralCLIP式约束迁移到LLaVA")):
         values = [percent(run["test_metrics"][key]) for key in (
             "moral_hit_at_1", "moral_hit_at_5", "moral_hit_at_10",
@@ -326,7 +326,7 @@ def render_report(comparison: dict[str, Any], figure_name: str) -> str:
         "- 图像经过冻结视觉塔、视觉投影器、patch 均值池化和图像头；caption 经过 Vicuna + LoRA、mask 均值池化和文本头，使用归一化向量余弦相似度检索。",
         "", "## 指标口径", "",
         "- 配对 R@K：前 K 条结果中至少有一条属于查询图片的 caption，按图片查询数平均。",
-        "- 道德相关性：候选 caption 对应图片与查询图片共享至少一个原始道德标签；11 类中包含 non-moral。道德 Hit@K 是查询命中率，不能解释为找回了多少比例的全部相关描述。",
+        "- 道德相关性：候选 caption 对应图片与查询图片共享至少一个原始道德标签；11 类中包含 non-moral。道德 R@K（原 Hit@K）是查询命中率，不能解释为找回了多少比例的全部相关描述。",
         "- 道德 MAP：在全部测试 caption 中按上述标签相关性计算每个查询的平均精度，再按查询平均；它包含查询图片自身的 caption。",
         "- 跨图道德 MAP / Hit：先删除查询图片自身的全部 caption，再排序；分母仍为全部查询，没有跨图正例的查询计零。",
     ])

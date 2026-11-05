@@ -3,8 +3,8 @@
   "files": [
     {
       "path": "README.md",
-      "bytes": 4379,
-      "sha256": "534ed61b26d4dd29eda22013d2295b88e8872c92354d35ce279350ad8a7d86f6"
+      "bytes": 11137,
+      "sha256": "7be2d6582e78ab98c9ef9e358a80bd388815b144867a13d132caf8af9997135b"
     },
     {
       "path": "benchmark/.gitkeep",
@@ -12087,14 +12087,49 @@
       "sha256": "26245d45a1a1c72130d28953b6cb413f819988007f442cdbc4e97586cdb051ca"
     },
     {
+      "path": "docs/BINARY_MORAL_QA_PLAN.md",
+      "bytes": 12915,
+      "sha256": "9348fef46ff7d038be42dc7a1c9e547f85f53ffa72b8ced745900c911c39723e"
+    },
+    {
+      "path": "docs/BINARY_SMALL_SAMPLE_REPORT.md",
+      "bytes": 4953,
+      "sha256": "a0dee230b26fb89deeab808a34f15dc353e0943e64d4479e409817ef494f2b1b"
+    },
+    {
+      "path": "docs/MORALCLIP_LLAVA_BASELINE.md",
+      "bytes": 6362,
+      "sha256": "db014733bc9b26f91a59a9c7e0c64a9ca65bf434174761523fc7847e6c1ba2bc"
+    },
+    {
+      "path": "docs/MORALCLIP_R1_PROTOCOL.md",
+      "bytes": 9088,
+      "sha256": "ff6172486f7138626293e734175ef38f098b89510d007dbda81cd2c3167f1e11"
+    },
+    {
+      "path": "docs/PRESENCE_V1_ANALYSIS.md",
+      "bytes": 3501,
+      "sha256": "c5b85a84a1fc400d261894295bfe324f2195487a432f337a8c47a31cc37acc6f"
+    },
+    {
       "path": "docs/README.md",
-      "bytes": 1434,
-      "sha256": "257e13f636efbd278a67cab4b323ddd02c884ad066878d6e15c1522741210db2"
+      "bytes": 1846,
+      "sha256": "d79cd541c2d1e170a529596e5c5e0e79deaa77fd8bbadf3c2c0ce6c07e29e6e6"
+    },
+    {
+      "path": "docs/REMOTE_REPRODUCIBILITY_AUDIT.md",
+      "bytes": 5024,
+      "sha256": "b333dc58ab78592aeb3275b342d05c30f52e8a8bff91670e41f656b6219cafd2"
+    },
+    {
+      "path": "docs/TICR_POLARITY_PROTOCOL.md",
+      "bytes": 7671,
+      "sha256": "a2e30b2dc5855578745da036da6c1f4a72d2a45bd0d3cf63e7bc02af43dd758b"
     },
     {
       "path": "docs/archive/ALIGNMENT.md",
-      "bytes": 10020,
-      "sha256": "6fe42658445516d9fa34e743d1c72353aa1f9b43959be2e9ba02c8ac76e8fa3a"
+      "bytes": 10378,
+      "sha256": "b07f0015fbdc624ad0712b3c297bc464fe635f93248a9cb00b5923bd76be75ca"
     },
     {
       "path": "docs/archive/CROSSMODAL_CONDITIONAL_DISTILLATION_PLAN.md",
@@ -12123,18 +12158,18 @@
     },
     {
       "path": "docs/archive/EXPERIMENT_REPORT.md",
-      "bytes": 7604,
-      "sha256": "a39678791b75d4632c62f73d86e18b74574706c8d88c284c4fb0f07bf6dcb67f"
+      "bytes": 7885,
+      "sha256": "bcd491bbc72953160065eeefab22251e64291140edc14f68d5208bbdf0bfa46c"
     },
     {
       "path": "docs/archive/HISTORY.md",
-      "bytes": 16087,
-      "sha256": "fc84e3eebbe3bc2b3547284bc7a54e727fdf530f0dd57f18b3f69231032a0449"
+      "bytes": 16368,
+      "sha256": "d243da52264f49ef81c10391ca0afe67872d875d3e0fe30da98fbfd541888f59"
     },
     {
       "path": "docs/archive/PROGRESS_CROSSMODAL.md",
-      "bytes": 9055,
-      "sha256": "5ff7bafff9a5e598cff887f8af2d1a64565432b782d40fe001d0ffe441e2fb7a"
+      "bytes": 9370,
+      "sha256": "3ffab9a4ff1ed67e37e2d64ebce7cbe581e601202ecebfc992e9641561f470bd"
     },
     {
       "path": "docs/archive/alignment_commands.txt",
@@ -12238,8 +12273,8 @@
     },
     {
       "path": "docs/archive/scripts/summarize_alignment_experiment.py",
-      "bytes": 31502,
-      "sha256": "27a24035c8b66e6533ed239755e3ce27a6c8ba134780cb9d070fc8f4eba6e088"
+      "bytes": 31525,
+      "sha256": "7dae01b0c4401879c594337d0567ae58ec51707e6ccfa75539766017a9820bfc"
     },
     {
       "path": "docs/archive/scripts/verify_crossmodal_improvement.py",
@@ -12258,8 +12293,8 @@
     },
     {
       "path": "models/README.md",
-      "bytes": 1762,
-      "sha256": "27dba726980185454d90b5cf3b77404b7311005423763151eb843ec3c1531657"
+      "bytes": 2569,
+      "sha256": "0aa5dbe21b1a3fcd1cee33697c88a37e330331e1297a540442a372aa56614848"
     },
     {
       "path": "models/image-lora/README.md",
@@ -12320,6 +12355,71 @@
       "path": "models/image-lora/training_metadata.json",
       "bytes": 13934,
       "sha256": "2c7c50a6c685cc03f7cb344fddd70f51b7533515bb6d8bbb37e14561b8baaa7b"
+    },
+    {
+      "path": "models/moralclip-llava-polarity/README.md",
+      "bytes": 1769,
+      "sha256": "3af8efd15423fbcfabbf5553b2ec41f303fe910999d71f24689c8c30301a2877"
+    },
+    {
+      "path": "models/moralclip-llava-polarity/adapter_config.json",
+      "bytes": 3815,
+      "sha256": "37088ea3dc92a9a90e3877026ee988d8b9693de4f3e61253690f80b6e7dc339e"
+    },
+    {
+      "path": "models/moralclip-llava-polarity/adapter_model.safetensors",
+      "bytes": 199837384,
+      "sha256": "318b609354f115162f14de9136005ded3cde31865dda8823559b1e0b79f79e2c"
+    },
+    {
+      "path": "models/moralclip-llava-polarity/added_tokens.json",
+      "bytes": 41,
+      "sha256": "a94c56096001713e3eb9a34b1a545a8c1d5e8034ed2fb81f897c8cb54b420121"
+    },
+    {
+      "path": "models/moralclip-llava-polarity/chat_template.json",
+      "bytes": 701,
+      "sha256": "854445c0a45532ecbee1ae9aa31d4be19644060a156f2c88456f50f584261543"
+    },
+    {
+      "path": "models/moralclip-llava-polarity/preprocessor_config.json",
+      "bytes": 505,
+      "sha256": "6958784d1af9838ee9e7ec12b58aaf02137a39cf9fef6568fc6db33efd5e8d9e"
+    },
+    {
+      "path": "models/moralclip-llava-polarity/processor_config.json",
+      "bytes": 173,
+      "sha256": "7e43cbcf10dd9d85677df78c3df4541977add31baa224a7832c100f681e58e28"
+    },
+    {
+      "path": "models/moralclip-llava-polarity/special_tokens_map.json",
+      "bytes": 580,
+      "sha256": "49d67258a3d88ecba09fb7fa47dd831717e08cb2ea12891ea2f3ad7dce3f6401"
+    },
+    {
+      "path": "models/moralclip-llava-polarity/tokenizer.json",
+      "bytes": 3619380,
+      "sha256": "30e1294abd835edfebb24618fce6f47c21ffb2b2802520d150bdee0b808b47cb"
+    },
+    {
+      "path": "models/moralclip-llava-polarity/tokenizer.model",
+      "bytes": 499723,
+      "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347"
+    },
+    {
+      "path": "models/moralclip-llava-polarity/tokenizer_config.json",
+      "bytes": 1452,
+      "sha256": "9649cab5b938617d89006144c603f720239e62fa8d3137c2777250e417bfb067"
+    },
+    {
+      "path": "models/moralclip-llava-polarity/training_metadata.json",
+      "bytes": 58545,
+      "sha256": "79db0d3cedeff47500dc173cc07c66dfc05d8e613dc093c17e2de5970c44f6b3"
+    },
+    {
+      "path": "models/moralclip-original.json",
+      "bytes": 805,
+      "sha256": "683b082c17d348427298d92d3452444b50ded812b70eda18c0ff0b7b68373429"
     },
     {
       "path": "models/moralllava/README.md",
@@ -12402,6 +12502,16 @@
       "sha256": "27477ee30f43fb6770b370ab91d882b4b7ac067cd8b600f62d1a502444dc4eb5"
     },
     {
+      "path": "moral_llava/binary.py",
+      "bytes": 20805,
+      "sha256": "65532115e57b8ced748f3c6b62b2685b3a29ecf56057fc44b39219bd6bd4fcd6"
+    },
+    {
+      "path": "moral_llava/binary_runtime.py",
+      "bytes": 2418,
+      "sha256": "1d05d311c6b6d58f33ab8a520c82b8a64f1eb53fd2dacb3f666df7c6c4f0bf8c"
+    },
+    {
       "path": "moral_llava/crossmodal.py",
       "bytes": 14158,
       "sha256": "a44c9ea5bff4fb613ea93ddb3432db2799a9ba7788c1747c922a8cf453e0e84f"
@@ -12418,8 +12528,8 @@
     },
     {
       "path": "moral_llava/infer.py",
-      "bytes": 11150,
-      "sha256": "2766bf99891a26488e0a7a1a7af251fcd9f9605155487c82ae5285cc94bb091c"
+      "bytes": 14337,
+      "sha256": "7fecff34543df35f37290b4ea68ee8c0354afdab9b7a225ce7a8af504eb70666"
     },
     {
       "path": "moral_llava/infer_crossmodal.py",
@@ -12427,9 +12537,24 @@
       "sha256": "99f400bc3d0fcef1beaa9de51f003f769bf5b265ad6aab7789c030422bd1041f"
     },
     {
+      "path": "moral_llava/moralclip_integration.py",
+      "bytes": 6389,
+      "sha256": "28bbdca6ff0ccfc248e9b87fcc6aef4f416f32fa7a8baa6736d4e2e5974b19ae"
+    },
+    {
       "path": "moral_llava/pipeline.py",
       "bytes": 7339,
       "sha256": "9cfb6bba41ca2489c09b958935c0c787b623b4e40c78b73d7275d9cdefeb8226"
+    },
+    {
+      "path": "moral_llava/polarity.py",
+      "bytes": 20596,
+      "sha256": "56ee3d8199f6013b9e2d7a4986f015369b8ba11b60ef80ce7c8277fcb50362c3"
+    },
+    {
+      "path": "moral_llava/polarity_runtime.py",
+      "bytes": 308,
+      "sha256": "b152b3cb9d6a42671f4368a255c9351db9888da078a18d0878eb1bd912c04c7b"
     },
     {
       "path": "moral_llava/prepare.py",
@@ -12443,13 +12568,13 @@
     },
     {
       "path": "moral_llava/train.py",
-      "bytes": 25809,
-      "sha256": "b7d6aa6c47170d57d0de9f7bdf5860e442d3b78c0a237158e84f3b8d3aada731"
+      "bytes": 33688,
+      "sha256": "a57c18ff40e403071a23b05f9e496381e39891fe64ce8ee794ed450f40b238b3"
     },
     {
       "path": "moral_llava/train_alignment.py",
-      "bytes": 18203,
-      "sha256": "83006d35f2f5a04cab298b70dfef8c36b07918f4eacb668f0645169b4402f50d"
+      "bytes": 18601,
+      "sha256": "91faa257110476fcc09391b17d6fbdf6b9f44a5f148bbccbc23ae4a294a0c874"
     },
     {
       "path": "moral_llava/train_crossmodal.py",
@@ -12460,6 +12585,81 @@
       "path": "results/README.md",
       "bytes": 562,
       "sha256": "bc613a47692fb7a700d1e49302797f8c375321630e131d8028bf694a72309993"
+    },
+    {
+      "path": "results/reference/binary-small-v1/baseline-infer.log",
+      "bytes": 1490,
+      "sha256": "ead27889e0c8b2d9644ee8e3e205d08c98e246597a6210cf5ab3b5de478b064d"
+    },
+    {
+      "path": "results/reference/binary-small-v1/baseline-metrics.json",
+      "bytes": 21200,
+      "sha256": "9f82387e0751b3886e5b8d97a1fc4827c43a473145db4ec20a112e96dec0eef8"
+    },
+    {
+      "path": "results/reference/binary-small-v1/baseline.jsonl",
+      "bytes": 100693,
+      "sha256": "2303e5756cbc4ee97fcc74b9f4b23376b6b48b065e73b8dd4423117008ba4f71"
+    },
+    {
+      "path": "results/reference/binary-small-v1/data_audit_server.json",
+      "bytes": 2401,
+      "sha256": "b37c13381df2467db563cb85d56114a73f6bf32f9c1951411ac1b15aee9a424c"
+    },
+    {
+      "path": "results/reference/binary-small-v1/majority-metrics.json",
+      "bytes": 20707,
+      "sha256": "08af5e28255fa02ce5a8ea827b827d1e698a071407477e2775acc15b1e4be431"
+    },
+    {
+      "path": "results/reference/binary-small-v1/majority.jsonl",
+      "bytes": 64320,
+      "sha256": "5f6144176a9d0b7963ce7043449df7f75f62613c54602e7cc554030848830813"
+    },
+    {
+      "path": "results/reference/binary-small-v1/manifest.json",
+      "bytes": 7003,
+      "sha256": "f6cf7e118a14c50b9a82c58c8c91b044715664ec605c4e9afc81ea9d3adb047f"
+    },
+    {
+      "path": "results/reference/binary-small-v1/summary.json",
+      "bytes": 4070,
+      "sha256": "304f53375f0cb00523f24c87311d2ce06e21ef023ba2a5efebca93b3db16472b"
+    },
+    {
+      "path": "results/reference/binary-small-v1/train.log",
+      "bytes": 16888,
+      "sha256": "f1133c7dcdc9a2fbb053828717946624d86bd0c57d22c4ec374757364b278e2c"
+    },
+    {
+      "path": "results/reference/binary-small-v1/trained-infer.log",
+      "bytes": 1489,
+      "sha256": "7010318348baab10f20a3ad425b9d51c818e1bcd0652856c18e7c2f2ae7c0d84"
+    },
+    {
+      "path": "results/reference/binary-small-v1/trained-metrics.json",
+      "bytes": 21656,
+      "sha256": "6008d60c9e7483c9626e9b687e0e13d3d4e460d0b503c9dc4a61d8920f769b90"
+    },
+    {
+      "path": "results/reference/binary-small-v1/trained.jsonl",
+      "bytes": 100829,
+      "sha256": "d3cfa9bb46de2ab6b2815654da481fa8794d88d9b6680899e0ecb55b0a419742"
+    },
+    {
+      "path": "results/reference/binary-small-v1/training_metadata.json",
+      "bytes": 14935,
+      "sha256": "6e47aeef4425df8da7471dba6adf5d648aaf011d9ebf73a9993884613bf6be14"
+    },
+    {
+      "path": "results/reference/binary-small-v1/unit-tests.log",
+      "bytes": 2624,
+      "sha256": "95325f0cbded8672c52e38cbe97debea9e3947f7583c3074fa45f3a8e1949cbe"
+    },
+    {
+      "path": "results/reference/binary-small-v1/verification.json",
+      "bytes": 1152,
+      "sha256": "a47fe4625e84be08c230e3b747fc5e78d3e141b64634d7efec6569ad3da53f1e"
     },
     {
       "path": "results/reference/evaluation/independent_verification.json",
@@ -12485,6 +12685,351 @@
       "path": "results/reference/evaluation/verification.json",
       "bytes": 14188,
       "sha256": "6a2654387b7cea589a2b35b4131f41ca317991483070445fb2e338b6b07b327e"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/adapter-trainer_state.json",
+      "bytes": 27511,
+      "sha256": "cefd21657549cfa40c59e5339d52434db9f64e8e6b515254ec3f30435cb1558c"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/adapter-training_metadata.json",
+      "bytes": 58545,
+      "sha256": "79db0d3cedeff47500dc173cc07c66dfc05d8e613dc093c17e2de5970c44f6b3"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/analysis.md",
+      "bytes": 4681,
+      "sha256": "dfeeec67e4a7dc9c4758c706ccd64855004cf8f49fccb35b95b5f005ef4eee79"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/artifact_audit.json",
+      "bytes": 9071,
+      "sha256": "24ecdfc5036833f957edab81f5f21170111a4ef234f4b84d0782e0e82f5dbefd"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/base_model.json",
+      "bytes": 1364,
+      "sha256": "4727b8b80d74b186aa179ec92adf7fc1ece2857d1ec2078f285cfbf263db3b30"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/frozen_config.json",
+      "bytes": 4527,
+      "sha256": "5d7ed553dc504e95551445d2223ca32de531fd9d7b18c5db1803eacb6c2c2d1a"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/majority-metrics.json",
+      "bytes": 17222,
+      "sha256": "8be2cc01be54afc7da401433f892017f34cbeb21120ba92dcbdbdd6162aac88e"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/majority.jsonl",
+      "bytes": 261248,
+      "sha256": "53e2864fae463dc7013e869095cc5d27f3386d028fab57cf6f882944b20e24b4"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/polarity-train.log",
+      "bytes": 279914,
+      "sha256": "e69b049688d10b6faa168a01959667ad2a14dfd8a4972f9b772e44f023f47e25"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/projector-trainer_state.json",
+      "bytes": 5386,
+      "sha256": "ab7e3cd84bc1bc60c161ad3c1a89a79fc25b7ac8d0459064c5cf841c67439516"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/projector-training_metadata.json",
+      "bytes": 17310,
+      "sha256": "bc19814ef86792bf57ce545903125ae9049c3fd4c550940bacaaa48b7a8b8293"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/projector-warmup.log",
+      "bytes": 46996,
+      "sha256": "0354507b1a8f3c2e885bb565c047a407d1ec09e75aec6e12037bc0ec1486b0de"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/projector_only-metrics.json",
+      "bytes": 18349,
+      "sha256": "5c31733ce6b8f436030f8ab07f53913a06bc840018223ec045791d515d46e77e"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/projector_only.jsonl",
+      "bytes": 499540,
+      "sha256": "329f3e75b546867e6ea6cdc8a950edb58f33de7e75c60ca1d341b274444153b8"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/publication_audit.json",
+      "bytes": 675,
+      "sha256": "c748ea55e8ef89e24eed7363aee5514cdbf4ec108403ca2ae21611a38dbeef87"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/remote-reproduction/audit.json",
+      "bytes": 1561,
+      "sha256": "1491420a5721699945081ab6dd0ae7fa974319d4333b78e396f5fa2aa4ad346c"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/remote-reproduction/infer.log",
+      "bytes": 2133,
+      "sha256": "c73cf2395e9b1694877e6b99d40ea5798c0e91e32a8c9b452ecc8ead2946b5ba"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/remote-reproduction/metrics.json",
+      "bytes": 18349,
+      "sha256": "9e6c6a114093fe005196e921f732af5c2eb42a3a098d8da116202dad03779049"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/remote-reproduction/predictions.jsonl",
+      "bytes": 499712,
+      "sha256": "1202c6e2573128f1ecc521c4c63277428538df5fd4bbeb9e3de58a10df3b4d61"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/remote-reproduction/prepare.log",
+      "bytes": 22861,
+      "sha256": "3e28ff8a460992f9bfb935afc7d8b28f08453c57df6d97d845b2aa05acc8d42b"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/remote-reproduction/score.log",
+      "bytes": 18349,
+      "sha256": "9e6c6a114093fe005196e921f732af5c2eb42a3a098d8da116202dad03779049"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/report.md",
+      "bytes": 1774,
+      "sha256": "849c3905d36ee20c289443c697b4a2614ac73ba877285c26f33f469a30537c3b"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/screen.log",
+      "bytes": 1344,
+      "sha256": "0ee7c7126a610be1bc7c1a825d36a56c0e81147eab536f54bf27ae1765db9eb1"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/smoke-joint.log",
+      "bytes": 3420,
+      "sha256": "77d6e564942e21e61a679c760945de102446c044af089edeb61481f6eb0629fc"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/smoke-projector.log",
+      "bytes": 3208,
+      "sha256": "cd5eebb0791b3106512f36931bae5acf672566ea3b8936ac6a34f791fc756be8"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/smoke-reload.jsonl",
+      "bytes": 14302,
+      "sha256": "729280f0944e2e5d32fb6d9a19ee8f655c076bd6b375ac5ca2f158fe8dc0fe4a"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/smoke-reload.log",
+      "bytes": 936,
+      "sha256": "d42cd44de7d556a1340fd206de3767d0cb6922627570c6eab5fbbfc4ca689a11"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/status.json",
+      "bytes": 17308,
+      "sha256": "5ff605adc920829ee82250cd40fbd4d4cbde539595f279d702969e45f15f1d08"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/summary.json",
+      "bytes": 68035,
+      "sha256": "b637b49ac12383fc14008266a3697f2a9c0ee39a2f9760f6e7722a5a6589f052"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/tests.log",
+      "bytes": 17341,
+      "sha256": "003894fd8a49b41df6bf14a05975d52c4a4e8635cbc92849f38f30989d2834e1"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/trained-metrics.json",
+      "bytes": 18349,
+      "sha256": "9e6c6a114093fe005196e921f732af5c2eb42a3a098d8da116202dad03779049"
+    },
+    {
+      "path": "results/reference/moralclip-llava-polarity-20261104/trained.jsonl",
+      "bytes": 499712,
+      "sha256": "1202c6e2573128f1ecc521c4c63277428538df5fd4bbeb9e3de58a10df3b4d61"
+    },
+    {
+      "path": "results/reference/moralclip-r1-bidirectional-20261104/screen.log",
+      "bytes": 1835,
+      "sha256": "57c67c0ee7934c62a06edad026ace395960b22f32f30b4c26f434effb19438da"
+    },
+    {
+      "path": "results/reference/moralclip-r1-bidirectional-20261104/test.json",
+      "bytes": 22745,
+      "sha256": "006228149657bc940b14a7f2f2e266bd6b7a5e0f7937cab25c4e27a19ab84619"
+    },
+    {
+      "path": "results/reference/moralclip-r1-bidirectional-20261104/test.predictions.json",
+      "bytes": 120455,
+      "sha256": "cc699e771653dcb898717f99ee0d64f43aea673da6b1359565801997f2655c8f"
+    },
+    {
+      "path": "results/reference/moralclip-r1-bidirectional-20261104/test.report.md",
+      "bytes": 1421,
+      "sha256": "2cfe91530d24796c4383bcb8a13f95c41a9a2179d7243c80fb0a97be19fd7e17"
+    },
+    {
+      "path": "results/reference/moralclip-r1-bidirectional-20261104/test.scores.npy",
+      "bytes": 635168,
+      "sha256": "97e9b5b933e241baeb8a561a2fe741501ca722f4d670512fd1ec85cf73a82876"
+    },
+    {
+      "path": "results/reference/moralclip-r1-bidirectional-20261104/test.text_to_image.predictions.json",
+      "bytes": 879173,
+      "sha256": "147279bed41f5cae2a9822f9a9159f9f1abc3741a3f5d4bdbf96ac644ae1d26e"
+    },
+    {
+      "path": "results/reference/moralclip-r1-original-20261104/public_model_files_audit.json",
+      "bytes": 1239,
+      "sha256": "a09f687543823930e0b5b294f06a5c16ff7691754f3f00bcb275ddfdd38a0265"
+    },
+    {
+      "path": "results/reference/moralclip-r1-original-20261104/remote_audit.json",
+      "bytes": 1093,
+      "sha256": "9d8dcc5f9a404a25a6d55b21f2333f89d53e0a69cd47e9500f98e4f3d4bbbad9"
+    },
+    {
+      "path": "results/reference/moralclip-r1-original-20261104/screen.log",
+      "bytes": 1584,
+      "sha256": "60b6f369f5fd3a64695dfd5aa6767b8c54f1ea128c6df6f2b52dac11095c29ba"
+    },
+    {
+      "path": "results/reference/moralclip-r1-original-20261104/source_audit.json",
+      "bytes": 883,
+      "sha256": "36786f199da8bc478aca705c3e872c62fe1ad947c0173b10b0848f75dbbb3ce8"
+    },
+    {
+      "path": "results/reference/moralclip-r1-original-20261104/test.json",
+      "bytes": 20919,
+      "sha256": "5356ff47115babe1a65b7167eadd2df718e1babac34f3f6b5354941632271381"
+    },
+    {
+      "path": "results/reference/moralclip-r1-original-20261104/test.predictions.json",
+      "bytes": 120455,
+      "sha256": "cc699e771653dcb898717f99ee0d64f43aea673da6b1359565801997f2655c8f"
+    },
+    {
+      "path": "results/reference/moralclip-r1-original-20261104/test.report.md",
+      "bytes": 1918,
+      "sha256": "285aa113f2fe57e584a8f407e3b5455433295d5ec8d6815c6c217443aacf2024"
+    },
+    {
+      "path": "results/reference/moralclip-r1-original-20261104/test.scores.npy",
+      "bytes": 635168,
+      "sha256": "97e9b5b933e241baeb8a561a2fe741501ca722f4d670512fd1ec85cf73a82876"
+    },
+    {
+      "path": "results/reference/polarity-v1-protocol/data_audit.json",
+      "bytes": 22881,
+      "sha256": "5bf06c67602cf91ca3ca5f3485d019684a0e7b5aeaf0eb8b7ef29d2394d2fd63"
+    },
+    {
+      "path": "results/reference/presence-full-v1-20261103/baseline-metrics.json",
+      "bytes": 22676,
+      "sha256": "81250ba1f5f2eb67b0e1bd5c9985725f7e3659ea6f6e8dfae36752b500732b51"
+    },
+    {
+      "path": "results/reference/presence-full-v1-20261103/baseline.jsonl",
+      "bytes": 1059215,
+      "sha256": "52157c232eba245ea0fbe024a5518527089af496a63e9b9ddaaad5b8991d35fa"
+    },
+    {
+      "path": "results/reference/presence-full-v1-20261103/frozen_config.json",
+      "bytes": 1696,
+      "sha256": "c3dc824808edc9b91d937c11340ce0fe94c8458bb3b2618381529495e3483ec8"
+    },
+    {
+      "path": "results/reference/presence-full-v1-20261103/majority-metrics.json",
+      "bytes": 21192,
+      "sha256": "1d7a6ace3ac27f6556a05d16f893b9743e062af52c85850f648000c02c5137c4"
+    },
+    {
+      "path": "results/reference/presence-full-v1-20261103/majority.jsonl",
+      "bytes": 675072,
+      "sha256": "84bcad20b961efcab745bceba685a758f4d33d65a0a91ea164af8a546bcae6b4"
+    },
+    {
+      "path": "results/reference/presence-full-v1-20261103/presence_analysis.json",
+      "bytes": 32475,
+      "sha256": "f310228a9e0da0b9460153e99f82cd0a0b2dd71b08321fd9cf0b380d282c222c"
+    },
+    {
+      "path": "results/reference/presence-full-v1-20261103/presence_analysis.md",
+      "bytes": 3501,
+      "sha256": "c5b85a84a1fc400d261894295bfe324f2195487a432f337a8c47a31cc37acc6f"
+    },
+    {
+      "path": "results/reference/presence-full-v1-20261103/status.json",
+      "bytes": 11898,
+      "sha256": "ce53abd9b7eb8a70949657658397c7fd03501d30c9b61dc77b7fa092878228f7"
+    },
+    {
+      "path": "results/reference/presence-full-v1-20261103/summary.json",
+      "bytes": 74498,
+      "sha256": "3efc6fb683817489082da8cab3da4370df26ef177f51f4b0a286342a89e26b34"
+    },
+    {
+      "path": "results/reference/presence-full-v1-20261103/trained-metrics.json",
+      "bytes": 22785,
+      "sha256": "75a9a78eb77c46e359654c13f34f97c1ebee08bd2c41ab3ca4885d1ce77194c2"
+    },
+    {
+      "path": "results/reference/presence-full-v1-20261103/trained.jsonl",
+      "bytes": 1058774,
+      "sha256": "4a1b824e5e0231adebefafa321d1b7c1587a392c9d53535650c3d8209e99c4bd"
+    },
+    {
+      "path": "results/reference/presence-full-v1-20261103/trainer_state.json",
+      "bytes": 68534,
+      "sha256": "46489b3c15d108330dddf9f1a08170fec709892745e25b58f1e49d60afde4b99"
+    },
+    {
+      "path": "results/reference/presence-full-v1-20261103/training_metadata.json",
+      "bytes": 14996,
+      "sha256": "12e36fca483f6d013ec4a803da17189a1cd02752fae4d02d3ee42e5c3c14433b"
+    },
+    {
+      "path": "results/reference/remote-repro-audit-20261103/full-lora-replay.log",
+      "bytes": 3636,
+      "sha256": "be296bd58f6ea09cc60156b5201503e80a16a56d31a677b7201a3cf9ff00b1c7"
+    },
+    {
+      "path": "results/reference/remote-repro-audit-20261103/full-lora-replay/lora_constrained.jsonl",
+      "bytes": 231214,
+      "sha256": "efddc75f0b56a634cba2ab50e9c5ceacbb80aafb4fa52704a47db17d28badf81"
+    },
+    {
+      "path": "results/reference/remote-repro-audit-20261103/full-lora-replay/lora_free.jsonl",
+      "bytes": 229450,
+      "sha256": "833ea43e82e3f6f4f0060d1841100d8122ac150dd4e6100657b860f71534aa79"
+    },
+    {
+      "path": "results/reference/remote-repro-audit-20261103/full-lora-replay/status.json",
+      "bytes": 1590,
+      "sha256": "e6340be58c09f4e47fb1bc11f83d84e6ebbe736b708e80a83f90f6c3a2cba04e"
+    },
+    {
+      "path": "results/reference/remote-repro-audit-20261103/lfs-download.json",
+      "bytes": 403,
+      "sha256": "1aa065fb8f712fa5e6b153ed2030c51c7b8e8ae94636987bcae4f2c89052b877"
+    },
+    {
+      "path": "results/reference/remote-repro-audit-20261103/qa-prepare.json",
+      "bytes": 2474,
+      "sha256": "c8f2025d93c82a373d351d38f20c2f8ce5c570194077f1f53ca7456c3984501e"
+    },
+    {
+      "path": "results/reference/remote-repro-audit-20261103/qa-tests.log",
+      "bytes": 2624,
+      "sha256": "c724b0f5e8f1bb5d0b4db522065baa11341f6e65da1b7304a5bcf471a8546398"
+    },
+    {
+      "path": "results/reference/remote-repro-audit-20261103/verification.json",
+      "bytes": 2994,
+      "sha256": "d4ae106134b71957eb52575d8592e1b130f062047c1ab0cd46f214174d110a7e"
+    },
+    {
+      "path": "results/reference/remote-repro-audit-20261103/verify.json",
+      "bytes": 2097,
+      "sha256": "a95d69b39a1a7e882cb3093d24c571bc4dcca6913b17cd64aef7032298f5dcd9"
     },
     {
       "path": "results/reference/runs/baseline.jsonl",
@@ -12627,19 +13172,69 @@
       "sha256": "ec05e2a6e0a7c50256eabb72e29fb4e08e48044c7a4e537c6bd520bf219d44ef"
     },
     {
+      "path": "run_binary.py",
+      "bytes": 2644,
+      "sha256": "c0e28af85a1a997eb70df09f282fc067dc80ce4a2479e8a6bf37428978417f44"
+    },
+    {
+      "path": "run_moralclip_polarity.py",
+      "bytes": 1341,
+      "sha256": "ba8a37d5124d73b600934b7d842b7a3e506814f6131d8d8e5b757065da9ba74a"
+    },
+    {
+      "path": "run_polarity.py",
+      "bytes": 2677,
+      "sha256": "29ed47c825d0f27931c96d3eafee699d82fe37b8bee7c014d530a6f20c1483f9"
+    },
+    {
+      "path": "run_retrieval.py",
+      "bytes": 264,
+      "sha256": "6a4fdf2230cec3a07d3920516199d8ca5af47e3c742da24b18ffe46312e831c8"
+    },
+    {
+      "path": "scripts/analyze_presence_experiment.py",
+      "bytes": 11237,
+      "sha256": "6d19c08b35fed3d45d9576fa8e011e6a1ac9ac7a6766d7d84a004cceb90b3931"
+    },
+    {
       "path": "scripts/evaluate_alignment.py",
-      "bytes": 13859,
-      "sha256": "7c72ba200fd14398b8ad8ecacfeff5bc1953aeec4838bedbf93ca3559e5d49ef"
+      "bytes": 14119,
+      "sha256": "a52009fbaa0ae9eaaf6f6b61c0b6dd9617239fcf908710db26399cdace99d26d"
     },
     {
       "path": "scripts/evaluate_retrieval.py",
-      "bytes": 7111,
-      "sha256": "2e851be7c2fd7758864e3ffd8b14723bef0f6d31b58fe6f9ccf3d4e0aa29ff4d"
+      "bytes": 22052,
+      "sha256": "a247df8848b757835ae6a5aa2b47c165d639205a24105dc3079ef32f7e4607c7"
     },
     {
       "path": "scripts/rebuild_manifest.py",
       "bytes": 1322,
       "sha256": "f2bbc92429eec6f97ab29639476aa8ab4ca1aa456eb16327e687f00f2a148cc2"
+    },
+    {
+      "path": "scripts/run_binary_full_experiment.py",
+      "bytes": 16951,
+      "sha256": "c66de57dbcd8a36962ca3ae6e434d91dc0819fb9379ae8d2485c2ac23275cf1e"
+    },
+    {
+      "path": "scripts/run_binary_small_sample.py",
+      "bytes": 9445,
+      "sha256": "aceb2c2ccd04a56421a6b938f4e3b7ef859629b0a2558218e441a0a8a3202ce3"
+    },
+    {
+      "path": "scripts/run_moralclip_polarity_experiment.py",
+      "bytes": 16526,
+      "sha256": "d7a05c8aa1af49e37495d9a9817e740bb1202da27cbd5cc0baf31dd70db08657"
+    },
+    {
+      "path": "scripts/run_polarity_experiment.py",
+      "bytes": 19042,
+      "sha256": "356be074b8b565b4379d029311fb3bed95efe43272c96cbd889bcec9bbe3017e"
+    },
+    {
+      "path": "scripts/score_retrieval.py",
+      "bytes": 6644,
+      "sha256": "8156ae3fd858587c78512eeb23e7a6114174439316a0004fcac107f4f66f405d"
     },
     {
       "path": "scripts/verify_release.py",
@@ -12648,8 +13243,8 @@
     },
     {
       "path": "tests/test_alignment_data.py",
-      "bytes": 10129,
-      "sha256": "e32b3884d997d754769fa0a1d3acf0dcc08dfbfbe4c4c64bf5ed788b2a8f4efc"
+      "bytes": 10428,
+      "sha256": "ebfcb8ef545a9f26dd7eeafbfd788cca7f59ec2c040d497a64f6386c365cf135"
     },
     {
       "path": "tests/test_alignment_losses.py",
@@ -12660,6 +13255,16 @@
       "path": "tests/test_alignment_model.py",
       "bytes": 11466,
       "sha256": "f8ff57414f0bef4b4fa3d35d49831a08d9a2b8ac14c0b255621149e996f2b301"
+    },
+    {
+      "path": "tests/test_binary.py",
+      "bytes": 12188,
+      "sha256": "97a35da3cb777625a130d3aa5f67fd86f65e807e656902645057f0d538234866"
+    },
+    {
+      "path": "tests/test_binary_experiment_runner.py",
+      "bytes": 6341,
+      "sha256": "f55f531a009c4f568f23f6a31f4e8e088ed863502ea2de909d2827b336e83d4f"
     },
     {
       "path": "tests/test_crossmodal.py",
@@ -12677,14 +13282,39 @@
       "sha256": "dc6337a16ccce6307b7df24097b8f06c7c4d930f660c9ed341b1647abe50a515"
     },
     {
+      "path": "tests/test_moralclip_integration.py",
+      "bytes": 6066,
+      "sha256": "34f867bb39fb25e4e92bf57aab4e128edce3fc0b3d7ab8118b3e87cc6218a47b"
+    },
+    {
       "path": "tests/test_pipeline.py",
       "bytes": 4254,
       "sha256": "d66edebad1c3a34bc7e37a282d6c178c7b427fea02c3899946174b4e4160226d"
     },
     {
+      "path": "tests/test_polarity.py",
+      "bytes": 11752,
+      "sha256": "9b4bf3cb669c6afe4003ad82cb434d1870d4bd5d37ef4b0236c493f0e18d37ae"
+    },
+    {
+      "path": "tests/test_polarity_experiment_runner.py",
+      "bytes": 6779,
+      "sha256": "8137db1bcdbcff81839daee6f6cdf1e7a41c4a2174f62c3c186bb5d84d63a8fe"
+    },
+    {
       "path": "tests/test_prepare.py",
       "bytes": 4397,
       "sha256": "3887906eefda26b3454671aa6e5e08aa60dc0113bc3b98ba0b83e467fe2f9081"
+    },
+    {
+      "path": "tests/test_retrieval_rescore.py",
+      "bytes": 5482,
+      "sha256": "2c9346ec5a86c09ea4c52453a19710641eb74be084cca8bbdfb4280609bb0b1a"
+    },
+    {
+      "path": "tests/test_retrieval_target.py",
+      "bytes": 2972,
+      "sha256": "717ea93fada231c3fb1be92b862bef660758368e10acab29eb29146ed335d402"
     },
     {
       "path": "tests/test_schema.py",

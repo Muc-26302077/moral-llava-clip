@@ -1,0 +1,94 @@
+[
+  {
+    "ref": "origin/codex/binary-moral-qa-v1",
+    "commit": "a63dbe204f1d5387bb5236fb07d6f56cfd09a404",
+    "files": 2583,
+    "top_level": {
+      ".gitattributes": 1,
+      ".gitignore": 1,
+      "3.1": 2575,
+      "3.9": 2,
+      "NOTICE.md": 1,
+      "README.md": 1,
+      "environment.yml": 1,
+      "requirements.txt": 1
+    }
+  },
+  {
+    "ref": "origin/codex/binary-moral-qa-v1-server-20261103",
+    "commit": "2bb3c82ebea82b548f77d62f3de2d3932d654307",
+    "files": 89,
+    "top_level": {
+      ".gitignore": 1,
+      ".ipynb_checkpoints": 6,
+      "ALIGNMENT.md": 1,
+      "AUTODL.md": 1,
+      "BINARY_MORAL_QA_PLAN.md": 1,
+      "BINARY_SMALL_SAMPLE_REPORT.md": 1,
+      "CROSSMODAL_CONDITIONAL_DISTILLATION_PLAN.md": 1,
+      "CROSSMODAL_EVALUATION.md": 1,
+      "CROSSMODAL_IMPROVEMENT_PLAN.md": 1,
+      "CROSSMODAL_IMPROVEMENT_RESULTS.md": 1,
+      "CROSSMODAL_RESULTS.md": 1,
+      "EXPERIMENT_REPORT.md": 1,
+      "PROGRESS_CROSSMODAL.md": 1,
+      "README.md": 1,
+      "REMOTE_REPRODUCIBILITY_AUDIT.md": 1,
+      "alignment_commands.txt": 1,
+      "alignment_inference_commands.txt": 1,
+      "configs": 3,
+      "moral_llava": 22,
+      "requirements-autodl.txt": 1,
+      "requirements-data.txt": 1,
+      "requirements-train.txt": 1,
+      "run_binary.py": 1,
+      "scripts": 26,
+      "tests": 12
+    }
+  },
+  {
+    "ref": "origin/codex/moralclip-polarity-baseline",
+    "commit": "be7bcd257a76edf17edc6d46d40918216e5ba9ec",
+    "files": 2675,
+    "top_level": {
+      ".gitattributes": 1,
+      ".gitignore": 1,
+      "3.1": 2667,
+      "3.9": 2,
+      "NOTICE.md": 1,
+      "README.md": 1,
+      "environment.yml": 1,
+      "requirements.txt": 1
+    }
+  },
+  {
+    "ref": "origin/codex/ticr-polarity-v1",
+    "commit": "d885a16e6f2b46ff600ddebc4cdf88b9a97e06d7",
+    "files": 2626,
+    "top_level": {
+      ".gitattributes": 1,
+      ".gitignore": 1,
+      "3.1": 2618,
+      "3.9": 2,
+      "NOTICE.md": 1,
+      "README.md": 1,
+      "environment.yml": 1,
+      "requirements.txt": 1
+    }
+  },
+  {
+    "ref": "origin/main",
+    "commit": "174859952810e84554ba22091df86b057c79bcd4",
+    "files": 2549,
+    "top_level": {
+      ".gitattributes": 1,
+      ".gitignore": 1,
+      "3.1": 2541,
+      "3.9": 2,
+      "NOTICE.md": 1,
+      "README.md": 1,
+      "environment.yml": 1,
+      "requirements.txt": 1
+    }
+  }
+]

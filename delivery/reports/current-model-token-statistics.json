@@ -1,0 +1,126 @@
+{
+  "polarity-v1": {
+    "train": {
+      "scope": "existing-MoralCLIP-LLaVA-training-format",
+      "receiver_acceptance": "not_measured",
+      "records": 9806,
+      "counting_policy": "One dataset pass; no padding; prompt + expanded image + answer + EOS; shifted supervised labels",
+      "image_tokens_per_image": 196,
+      "max_seq_length": 2048,
+      "total_tokens": 2387399,
+      "trainable_tokens": 70496,
+      "length_distribution": {
+        "min": 138,
+        "p50": 302,
+        "p95": 318,
+        "max": 356
+      },
+      "min_trainable_tokens": 4,
+      "records_sha256": "bd48b5f6d4d1188beaec0a8f34a948fcaae56dc7c23eae020d666ba896de0182",
+      "processor": "3.1/models/moralclip-llava-polarity",
+      "tokenizer_sha256": "30e1294abd835edfebb24618fce6f47c21ffb2b2802520d150bdee0b808b47cb"
+    },
+    "validation": {
+      "scope": "existing-MoralCLIP-LLaVA-training-format",
+      "receiver_acceptance": "not_measured",
+      "records": 580,
+      "counting_policy": "One dataset pass; no padding; prompt + expanded image + answer + EOS; shifted supervised labels",
+      "image_tokens_per_image": 196,
+      "max_seq_length": 2048,
+      "total_tokens": 140930,
+      "trainable_tokens": 4188,
+      "length_distribution": {
+        "min": 144,
+        "p50": 302,
+        "p95": 318,
+        "max": 318
+      },
+      "min_trainable_tokens": 4,
+      "records_sha256": "61c6eb812fb1a838f3c14703e33233699cf0ab604fa81c3fff0a9eaccd78186b",
+      "processor": "3.1/models/moralclip-llava-polarity",
+      "tokenizer_sha256": "30e1294abd835edfebb24618fce6f47c21ffb2b2802520d150bdee0b808b47cb"
+    },
+    "test": {
+      "scope": "existing-MoralCLIP-LLaVA-training-format",
+      "receiver_acceptance": "not_measured",
+      "records": 576,
+      "counting_policy": "One dataset pass; no padding; prompt + expanded image + answer + EOS; shifted supervised labels",
+      "image_tokens_per_image": 196,
+      "max_seq_length": 2048,
+      "total_tokens": 139671,
+      "trainable_tokens": 4136,
+      "length_distribution": {
+        "min": 140,
+        "p50": 302,
+        "p95": 318,
+        "max": 318
+      },
+      "min_trainable_tokens": 4,
+      "records_sha256": "e9e2f25c5041cc2fcaeaf7765561bcf9e42c9d52ba1d30778416d877a3185c20",
+      "processor": "3.1/models/moralclip-llava-polarity",
+      "tokenizer_sha256": "30e1294abd835edfebb24618fce6f47c21ffb2b2802520d150bdee0b808b47cb"
+    }
+  },
+  "legacy-three-state-v1": {
+    "train": {
+      "scope": "existing-MoralCLIP-LLaVA-training-format",
+      "receiver_acceptance": "not_measured",
+      "records": 2138,
+      "counting_policy": "One dataset pass; no padding; prompt + expanded image + answer + EOS; shifted supervised labels",
+      "image_tokens_per_image": 196,
+      "max_seq_length": 2048,
+      "total_tokens": 939518,
+      "trainable_tokens": 97146,
+      "length_distribution": {
+        "min": 430,
+        "p50": 439,
+        "p95": 445,
+        "max": 445
+      },
+      "min_trainable_tokens": 36,
+      "records_sha256": "7b7221fa601aa775fdd3045f7f35962a3ff4eef36975b5c55975a89c49503d50",
+      "processor": "3.1/models/moralclip-llava-polarity",
+      "tokenizer_sha256": "30e1294abd835edfebb24618fce6f47c21ffb2b2802520d150bdee0b808b47cb"
+    },
+    "validation": {
+      "scope": "existing-MoralCLIP-LLaVA-training-format",
+      "receiver_acceptance": "not_measured",
+      "records": 134,
+      "counting_policy": "One dataset pass; no padding; prompt + expanded image + answer + EOS; shifted supervised labels",
+      "image_tokens_per_image": 196,
+      "max_seq_length": 2048,
+      "total_tokens": 58916,
+      "trainable_tokens": 6120,
+      "length_distribution": {
+        "min": 430,
+        "p50": 441,
+        "p95": 445,
+        "max": 445
+      },
+      "min_trainable_tokens": 36,
+      "records_sha256": "d89891a684a0628fe81d0ce28c9b46986fb2084b74b5f563ed553f70cf811bd0",
+      "processor": "3.1/models/moralclip-llava-polarity",
+      "tokenizer_sha256": "30e1294abd835edfebb24618fce6f47c21ffb2b2802520d150bdee0b808b47cb"
+    },
+    "test": {
+      "scope": "existing-MoralCLIP-LLaVA-training-format",
+      "receiver_acceptance": "not_measured",
+      "records": 126,
+      "counting_policy": "One dataset pass; no padding; prompt + expanded image + answer + EOS; shifted supervised labels",
+      "image_tokens_per_image": 196,
+      "max_seq_length": 2048,
+      "total_tokens": 55365,
+      "trainable_tokens": 5721,
+      "length_distribution": {
+        "min": 430,
+        "p50": 441,
+        "p95": 445,
+        "max": 445
+      },
+      "min_trainable_tokens": 36,
+      "records_sha256": "0d9f132894f4a54cd21b746c4ece2bb93162ef357884e7663a2aaf06b9c84ba9",
+      "processor": "3.1/models/moralclip-llava-polarity",
+      "tokenizer_sha256": "30e1294abd835edfebb24618fce6f47c21ffb2b2802520d150bdee0b808b47cb"
+    }
+  }
+}

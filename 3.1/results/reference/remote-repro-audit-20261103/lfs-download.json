@@ -1,0 +1,14 @@
+[
+  {
+    "path": "3.1/models/moralllava/adapter_model.safetensors",
+    "sha256": "22cbec8ded2c355f113cf9d55b0cd98e83372e2133b42af41918a09ae8e20fbb",
+    "bytes": 159974600,
+    "seconds": 140.54
+  },
+  {
+    "path": "3.1/models/image-lora/adapter_model.safetensors",
+    "sha256": "8c7adaa741656e41f34434c347624844dcaa5a61589c6c0fef5274cc005eeb02",
+    "bytes": 159974600,
+    "seconds": 133.39
+  }
+]

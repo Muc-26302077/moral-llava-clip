@@ -1,0 +1,245 @@
+{
+  "scope": "small_sample_diagnostic_only",
+  "formal_benchmark": false,
+  "seed": 42,
+  "sampling": "sorted scene IDs shuffled, without inspecting labels; test 6 scenes per frozen group",
+  "output": "/root/autodl-tmp/moral-llava/runs/binary-small-20261103T022000Z",
+  "commands": [
+    {
+      "name": "unit-tests",
+      "argv": [
+        "/root/autodl-tmp/moral-llava/.venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_binary.py",
+        "-v"
+      ],
+      "returncode": 0,
+      "seconds": 3.801
+    },
+    {
+      "name": "majority",
+      "argv": [
+        "/root/autodl-tmp/moral-llava/.venv/bin/python",
+        "run_binary.py",
+        "majority",
+        "--data",
+        "/root/autodl-tmp/moral-llava/runs/binary-small-20261103T022000Z/data/test.json",
+        "--output",
+        "/root/autodl-tmp/moral-llava/runs/binary-small-20261103T022000Z/majority.jsonl"
+      ],
+      "returncode": 0,
+      "seconds": 0.27
+    },
+    {
+      "name": "majority-score",
+      "argv": [
+        "/root/autodl-tmp/moral-llava/.venv/bin/python",
+        "run_binary.py",
+        "score",
+        "--data",
+        "/root/autodl-tmp/moral-llava/runs/binary-small-20261103T022000Z/data/test.json",
+        "--predictions",
+        "/root/autodl-tmp/moral-llava/runs/binary-small-20261103T022000Z/majority.jsonl",
+        "--output",
+        "/root/autodl-tmp/moral-llava/runs/binary-small-20261103T022000Z/majority-metrics.json"
+      ],
+      "returncode": 0,
+      "seconds": 0.055
+    },
+    {
+      "name": "baseline-infer",
+      "argv": [
+        "/root/autodl-tmp/moral-llava/.venv/bin/python",
+        "run_binary.py",
+        "infer",
+        "--data",
+        "/root/autodl-tmp/moral-llava/runs/binary-small-20261103T022000Z/data/test.json",
+        "--device",
+        "cuda",
+        "--precision",
+        "bf16",
+        "--batch-size",
+        "4",
+        "--max-new-tokens",
+        "8",
+        "--local-files-only",
+        "--output",
+        "/root/autodl-tmp/moral-llava/runs/binary-small-20261103T022000Z/baseline.jsonl"
+      ],
+      "returncode": 0,
+      "seconds": 26.059
+    },
+    {
+      "name": "baseline-score",
+      "argv": [
+        "/root/autodl-tmp/moral-llava/.venv/bin/python",
+        "run_binary.py",
+        "score",
+        "--data",
+        "/root/autodl-tmp/moral-llava/runs/binary-small-20261103T022000Z/data/test.json",
+        "--predictions",
+        "/root/autodl-tmp/moral-llava/runs/binary-small-20261103T022000Z/baseline.jsonl",
+        "--output",
+        "/root/autodl-tmp/moral-llava/runs/binary-small-20261103T022000Z/baseline-metrics.json"
+      ],
+      "returncode": 0,
+      "seconds": 0.048
+    },
+    {
+      "name": "train",
+      "argv": [
+        "/root/autodl-tmp/moral-llava/.venv/bin/python",
+        "run_binary.py",
+        "train",
+        "--train-data",
+        "/root/autodl-tmp/moral-llava/runs/binary-small-20261103T022000Z/data/train.json",
+        "--validation-data",
+        "/root/autodl-tmp/moral-llava/runs/binary-small-20261103T022000Z/data/validation.json",
+        "--output-dir",
+        "/root/autodl-tmp/moral-llava/runs/binary-small-20261103T022000Z/adapter",
+        "--epochs",
+        "1",
+        "--batch-size",
+        "4",
+        "--eval-batch-size",
+        "4",
+        "--gradient-accumulation-steps",
+        "2",
+        "--learning-rate",
+        "2e-5",
+        "--logging-steps",
+        "1",
+        "--no-gradient-checkpointing",
+        "--local-files-only"
+      ],
+      "returncode": 0,
+      "seconds": 89.131
+    },
+    {
+      "name": "trained-infer",
+      "argv": [
+        "/root/autodl-tmp/moral-llava/.venv/bin/python",
+        "run_binary.py",
+        "infer",
+        "--data",
+        "/root/autodl-tmp/moral-llava/runs/binary-small-20261103T022000Z/data/test.json",
+        "--device",
+        "cuda",
+        "--precision",
+        "bf16",
+        "--batch-size",
+        "4",
+        "--max-new-tokens",
+        "8",
+        "--local-files-only",
+        "--adapter",
+        "/root/autodl-tmp/moral-llava/runs/binary-small-20261103T022000Z/adapter",
+        "--output",
+        "/root/autodl-tmp/moral-llava/runs/binary-small-20261103T022000Z/trained.jsonl"
+      ],
+      "returncode": 0,
+      "seconds": 25.59
+    },
+    {
+      "name": "trained-score",
+      "argv": [
+        "/root/autodl-tmp/moral-llava/.venv/bin/python",
+        "run_binary.py",
+        "score",
+        "--data",
+        "/root/autodl-tmp/moral-llava/runs/binary-small-20261103T022000Z/data/test.json",
+        "--predictions",
+        "/root/autodl-tmp/moral-llava/runs/binary-small-20261103T022000Z/trained.jsonl",
+        "--output",
+        "/root/autodl-tmp/moral-llava/runs/binary-small-20261103T022000Z/trained-metrics.json"
+      ],
+      "returncode": 0,
+      "seconds": 0.058
+    }
+  ],
+  "splits": {
+    "train": {
+      "scene_ids": [
+        "b11_p173_10",
+        "b11_p173_16",
+        "b11_p176_12",
+        "b13_p225_13",
+        "b13_p232_19",
+        "b13_p236_2",
+        "b14_p252_20",
+        "b14_p263_17",
+        "b14_p282_3",
+        "b15_p293_8",
+        "b15_p297_14",
+        "b15_p303_3",
+        "b15_p311_12",
+        "b15_p377_8",
+        "b15_p379_10",
+        "b15_p398_20",
+        "b15_p434_16",
+        "b15_p450_7",
+        "b15_p458_15",
+        "b15_p471_14",
+        "b1_p8_17",
+        "b2_p30_19",
+        "b4_p51_12",
+        "b4_p58_11",
+        "b4_p66_3",
+        "b4_p67_11",
+        "b4_p68_2",
+        "b4_p72_15",
+        "b8_p119_6",
+        "b999_p483_4",
+        "b999_p488_7",
+        "b999_p496_8"
+      ],
+      "scenes": 32,
+      "records": 384,
+      "source_sha256": "1b1c8f4abbab11f17a508bd7682eae90788c601da699b5df71d5b8d479e9e7f9",
+      "subset_sha256": "3cb6196a7d67df03050856e63b16f43a3869a9e70cc05fd4adfd56b7001d9bff"
+    },
+    "validation": {
+      "scene_ids": [
+        "b10_p125_14",
+        "b10_p129_16",
+        "b14_p267_1",
+        "b15_p292_16",
+        "b1_p1_4",
+        "b2_p18_19",
+        "b999_p477_1",
+        "b999_p477_17"
+      ],
+      "scenes": 8,
+      "records": 96,
+      "source_sha256": "95c329d16006e151d99e0bcd8fa88b4feef14492fc953ebccab50d4a15b95c19",
+      "subset_sha256": "0c72b1b541a020800e7ad78bff394454d9a95a15a77daafd881f0e6feec50228"
+    },
+    "test": {
+      "scene_ids": [
+        "b10_p136_20",
+        "b11_p176_6",
+        "b13_p223_17",
+        "b13_p228_15",
+        "b13_p245_14",
+        "b15_p303_10",
+        "b15_p437_20",
+        "b15_p440_15",
+        "b1_p1_20",
+        "b4_p71_2",
+        "b8_p109_8",
+        "b8_p119_18"
+      ],
+      "scenes": 12,
+      "records": 144,
+      "source_sha256": "f4732e0327b4efdfec9fdf505300afc8d5d2bcca5e3cbf5472201944c3fba10d",
+      "subset_sha256": "c3a8c79a0743b5082fb9a7e4ce94cb8c33e745a63f0d597c7ffeea07793bbdb8"
+    }
+  },
+  "initial_adapter_sha256": "8c7adaa741656e41f34434c347624844dcaa5a61589c6c0fef5274cc005eeb02",
+  "status": "complete"
+}

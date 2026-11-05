@@ -1,0 +1,301 @@
+{
+  "status": "complete",
+  "started_at": "2026-11-03T08:36:25.306799+00:00",
+  "commands": [
+    {
+      "name": "unit-tests",
+      "argv": [
+        "/root/autodl-tmp/moral-llava/.venv/bin/python",
+        "-u",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_binary.py",
+        "-v"
+      ],
+      "started_at": "2026-11-03T08:36:25.725066+00:00",
+      "log": "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/unit-tests.log",
+      "returncode": 0,
+      "finished_at": "2026-11-03T08:36:40.726724+00:00",
+      "seconds": 15.002,
+      "products": {}
+    },
+    {
+      "name": "gpu-smoke",
+      "argv": [
+        "/root/autodl-tmp/moral-llava/.venv/bin/python",
+        "-u",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/run_binary.py",
+        "train",
+        "--epochs",
+        "3",
+        "--batch-size",
+        "4",
+        "--eval-batch-size",
+        "4",
+        "--gradient-accumulation-steps",
+        "2",
+        "--learning-rate",
+        "2e-5",
+        "--seed",
+        "42",
+        "--precision",
+        "bf16",
+        "--no-gradient-checkpointing",
+        "--initial-adapter",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/models/image-lora",
+        "--local-files-only",
+        "--train-data",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/smoke-data/train.json",
+        "--validation-data",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/smoke-data/validation.json",
+        "--max-steps",
+        "2",
+        "--logging-steps",
+        "1",
+        "--output-dir",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/smoke-adapter"
+      ],
+      "started_at": "2026-11-03T08:36:40.731045+00:00",
+      "log": "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/gpu-smoke.log",
+      "returncode": 0,
+      "finished_at": "2026-11-03T08:37:10.733494+00:00",
+      "seconds": 30.002,
+      "products": {
+        "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/smoke-adapter/adapter_model.safetensors": "805a5989bd9c45cf525a2dbcf95e940200ef5490a717cac796191e5bc643eb2f"
+      }
+    },
+    {
+      "name": "smoke-reload",
+      "argv": [
+        "/root/autodl-tmp/moral-llava/.venv/bin/python",
+        "-u",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/run_binary.py",
+        "infer",
+        "--device",
+        "cuda",
+        "--precision",
+        "bf16",
+        "--batch-size",
+        "4",
+        "--max-new-tokens",
+        "8",
+        "--local-files-only",
+        "--data",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/smoke-data/validation.json",
+        "--adapter",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/smoke-adapter",
+        "--limit",
+        "12",
+        "--output",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/smoke-reload.jsonl"
+      ],
+      "started_at": "2026-11-03T08:37:10.909639+00:00",
+      "log": "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/smoke-reload.log",
+      "returncode": 0,
+      "finished_at": "2026-11-03T08:37:25.911314+00:00",
+      "seconds": 15.002,
+      "products": {
+        "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/smoke-reload.jsonl": "80cbe0a75e67a776285a8285cc501984e0ef3fb3e31f361759bd10e868bbaee0"
+      }
+    },
+    {
+      "name": "majority",
+      "argv": [
+        "/root/autodl-tmp/moral-llava/.venv/bin/python",
+        "-u",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/run_binary.py",
+        "majority",
+        "--output",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/majority.jsonl"
+      ],
+      "started_at": "2026-11-03T08:37:25.911742+00:00",
+      "log": "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/majority.log",
+      "returncode": 0,
+      "finished_at": "2026-11-03T08:37:40.913161+00:00",
+      "seconds": 15.001,
+      "products": {
+        "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/majority.jsonl": "84bcad20b961efcab745bceba685a758f4d33d65a0a91ea164af8a546bcae6b4"
+      }
+    },
+    {
+      "name": "baseline-infer",
+      "argv": [
+        "/root/autodl-tmp/moral-llava/.venv/bin/python",
+        "-u",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/run_binary.py",
+        "infer",
+        "--device",
+        "cuda",
+        "--precision",
+        "bf16",
+        "--batch-size",
+        "4",
+        "--max-new-tokens",
+        "8",
+        "--local-files-only",
+        "--adapter",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/models/image-lora",
+        "--output",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/baseline.jsonl"
+      ],
+      "started_at": "2026-11-03T08:37:40.914675+00:00",
+      "log": "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/baseline-infer.log",
+      "returncode": 0,
+      "finished_at": "2026-11-03T08:40:40.926223+00:00",
+      "seconds": 180.012,
+      "products": {
+        "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/baseline.jsonl": "52157c232eba245ea0fbe024a5518527089af496a63e9b9ddaaad5b8991d35fa"
+      }
+    },
+    {
+      "name": "train",
+      "argv": [
+        "/root/autodl-tmp/moral-llava/.venv/bin/python",
+        "-u",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/run_binary.py",
+        "train",
+        "--epochs",
+        "3",
+        "--batch-size",
+        "4",
+        "--eval-batch-size",
+        "4",
+        "--gradient-accumulation-steps",
+        "2",
+        "--learning-rate",
+        "2e-5",
+        "--seed",
+        "42",
+        "--precision",
+        "bf16",
+        "--no-gradient-checkpointing",
+        "--initial-adapter",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/models/image-lora",
+        "--local-files-only",
+        "--logging-steps",
+        "25",
+        "--output-dir",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/adapter"
+      ],
+      "started_at": "2026-11-03T08:40:40.931541+00:00",
+      "log": "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/train.log",
+      "returncode": 0,
+      "finished_at": "2026-11-03T12:36:28.353841+00:00",
+      "seconds": 14147.422,
+      "products": {
+        "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/adapter/adapter_model.safetensors": "fc9a7c8c2a064d07eee702a298800650f810b7813e461f5f738ab6846d3a757c",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/adapter/training_metadata.json": "12e36fca483f6d013ec4a803da17189a1cd02752fae4d02d3ee42e5c3c14433b"
+      }
+    },
+    {
+      "name": "trained-infer",
+      "argv": [
+        "/root/autodl-tmp/moral-llava/.venv/bin/python",
+        "-u",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/run_binary.py",
+        "infer",
+        "--device",
+        "cuda",
+        "--precision",
+        "bf16",
+        "--batch-size",
+        "4",
+        "--max-new-tokens",
+        "8",
+        "--local-files-only",
+        "--adapter",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/adapter",
+        "--output",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/trained.jsonl"
+      ],
+      "started_at": "2026-11-03T12:36:28.576459+00:00",
+      "log": "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/trained-infer.log",
+      "returncode": 0,
+      "finished_at": "2026-11-03T12:39:28.591431+00:00",
+      "seconds": 180.015,
+      "products": {
+        "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/trained.jsonl": "4a1b824e5e0231adebefafa321d1b7c1587a392c9d53535650c3d8209e99c4bd"
+      }
+    },
+    {
+      "name": "majority-score",
+      "argv": [
+        "/root/autodl-tmp/moral-llava/.venv/bin/python",
+        "-u",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/run_binary.py",
+        "score",
+        "--predictions",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/majority.jsonl",
+        "--output",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/majority-metrics.json"
+      ],
+      "started_at": "2026-11-03T12:39:28.596758+00:00",
+      "log": "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/majority-score.log",
+      "returncode": 0,
+      "finished_at": "2026-11-03T12:39:43.600217+00:00",
+      "seconds": 15.003,
+      "products": {
+        "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/majority-metrics.json": "1d7a6ace3ac27f6556a05d16f893b9743e062af52c85850f648000c02c5137c4"
+      }
+    },
+    {
+      "name": "baseline-score",
+      "argv": [
+        "/root/autodl-tmp/moral-llava/.venv/bin/python",
+        "-u",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/run_binary.py",
+        "score",
+        "--predictions",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/baseline.jsonl",
+        "--output",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/baseline-metrics.json"
+      ],
+      "started_at": "2026-11-03T12:39:43.601718+00:00",
+      "log": "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/baseline-score.log",
+      "returncode": 0,
+      "finished_at": "2026-11-03T12:39:58.605278+00:00",
+      "seconds": 15.004,
+      "products": {
+        "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/baseline-metrics.json": "81250ba1f5f2eb67b0e1bd5c9985725f7e3659ea6f6e8dfae36752b500732b51"
+      }
+    },
+    {
+      "name": "trained-score",
+      "argv": [
+        "/root/autodl-tmp/moral-llava/.venv/bin/python",
+        "-u",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/run_binary.py",
+        "score",
+        "--predictions",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/trained.jsonl",
+        "--output",
+        "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/trained-metrics.json"
+      ],
+      "started_at": "2026-11-03T12:39:58.606910+00:00",
+      "log": "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/trained-score.log",
+      "returncode": 0,
+      "finished_at": "2026-11-03T12:40:13.610484+00:00",
+      "seconds": 15.004,
+      "products": {
+        "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/trained-metrics.json": "75a9a78eb77c46e359654c13f34f97c1ebee08bd2c41ab3ca4885d1ce77194c2"
+      }
+    }
+  ],
+  "runner_pid": 35809,
+  "heartbeat_at": "2026-11-03T12:40:14.097792+00:00",
+  "output": "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103",
+  "source_commit": "860bb07105b38d1b504b52ca118056f42e417b92",
+  "phase": "complete",
+  "child_pid": null,
+  "training_progress": {
+    "step": 9621,
+    "total": 9621
+  },
+  "finished_at": "2026-11-03T12:40:14.097761+00:00",
+  "eligible_for_stage2": true,
+  "report": "/root/autodl-tmp/moral-llava/github-project/3.1/results/runs/binary-full-v1-20261103/report.md"
+}

@@ -1,0 +1,38 @@
+{
+  "status": "complete",
+  "started_at": "2026-11-03T02:36:49.007897+00:00",
+  "protocol_sha256": "67d36af73c40e54df0a222a7244f3ec2fed1b48054bf1ec28d08b250a8a5e9b6",
+  "torch": "2.8.0+cu128",
+  "python": "3.12.3",
+  "device": "cuda",
+  "precision": "bf16",
+  "base_revision": "b234b804b114d9e37bb655e11cbbb5f5e971b7a9",
+  "training": false,
+  "output_repair": false,
+  "arguments": {
+    "protocol": "/root/autodl-tmp/moral-llava/runs/remote-repro-audit-20261103/gpu-smoke/protocol.json",
+    "base_model": "/root/autodl-tmp/cache/huggingface/hub/models--llava-hf--llava-1.5-7b-hf/snapshots/b234b804b114d9e37bb655e11cbbb5f5e971b7a9",
+    "adapter": "/tmp/moral-llava-remote-audit-20261103/3.1/models/moralllava",
+    "output": "/root/autodl-tmp/moral-llava/runs/remote-repro-audit-20261103/full-lora-replay",
+    "device": "cuda",
+    "precision": "bf16",
+    "batch_size": 8,
+    "max_new_tokens": 256,
+    "cpu_threads": 8,
+    "decoding": "both",
+    "models": "lora",
+    "limit": 0
+  },
+  "source_sha256": {
+    "infer_crossmodal.py": "99f400bc3d0fcef1beaa9de51f003f769bf5b265ad6aab7789c030422bd1041f",
+    "crossmodal.py": "a44c9ea5bff4fb613ea93ddb3432db2799a9ba7788c1747c922a8cf453e0e84f",
+    "schema.py": "0fe9a39be60143a8f480cda54f60e63a931cdbaf6b38eea84415de87b25dfe3c"
+  },
+  "adapter_sha256": "22cbec8ded2c355f113cf9d55b0cd98e83372e2133b42af41918a09ae8e20fbb",
+  "transformers": "4.49.0",
+  "peft": "0.14.0",
+  "model_load_seconds": 5.1391712464392185,
+  "finished_at": "2026-11-03T02:39:44.570602+00:00",
+  "benchmark_complete": false,
+  "total_seconds": 175.3480863906443
+}

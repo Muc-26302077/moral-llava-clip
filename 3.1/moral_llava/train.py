@@ -62,8 +62,8 @@ def build_supervised_sequence(
     answer = [int(token) for token in answer_ids]
     if not prompt or not answer:
         raise ValueError("Prompt and answer must both contain tokens.")
-    if expected_image_tokens <= 0 or max_length <= 0:
-        raise ValueError("expected_image_tokens and max_length must be positive.")
+    if expected_image_tokens < 0 or max_length <= 0:
+        raise ValueError("expected_image_tokens must be nonnegative and max_length positive.")
     image_count = prompt.count(image_token_id)
     if image_count != expected_image_tokens:
         raise ValueError(
@@ -149,8 +149,17 @@ def load_records(
     image_root: str | Path,
     *,
     require_targets: bool = True,
+    task: str = "five_foundation_json",
 ) -> list[dict[str, Any]]:
     """Read standard two-turn LLaVA records and normalize their training fields."""
+    if task == "binary":
+        from .binary import load_records as load_binary_records
+        return load_binary_records(data_path, image_root, require_targets)
+    if task == "polarity":
+        from .polarity import load_records as load_polarity_records
+        return load_polarity_records(data_path, image_root, require_targets)
+    if task != "five_foundation_json":
+        raise ValueError("Unsupported annotation task")
     from moral_llava.schema import parse_prediction
 
     with Path(data_path).open(encoding="utf-8") as handle:
@@ -333,6 +342,13 @@ def find_language_lora_targets(model: Any, linear_type: type) -> list[str]:
 def make_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--model-id", default=DEFAULT_MODEL_ID)
+    parser.add_argument("--task", choices=("five_foundation_json", "binary", "polarity"), default="five_foundation_json")
+    parser.add_argument("--initial-adapter", help="Optional existing language LoRA for presence or polarity QA.")
+    parser.add_argument("--moralclip-model", help="Original MoralCLIP local checkpoint or pinned HF model ID.")
+    parser.add_argument("--moralclip-revision", default="1e337922befebde3f0cadb5749f37ae9521a0751")
+    parser.add_argument("--moralclip-sha256", default="4ace10e40a63343dc270afe776a0cc851d28dc36fd13417de07dccb12e4bac2a")
+    parser.add_argument("--moralclip-stage", choices=("projector", "joint"), default="joint")
+    parser.add_argument("--projector-learning-rate", type=float, default=1e-4)
     parser.add_argument("--revision", help="Optional Hugging Face model revision/commit.")
     parser.add_argument("--train-data", default="data/processed/train.json")
     parser.add_argument("--validation-data", default="data/processed/validation.json")
@@ -365,6 +381,13 @@ def make_parser() -> argparse.ArgumentParser:
 
 
 def validate_args(args: argparse.Namespace) -> None:
+    if args.moralclip_model:
+        if args.task != 'polarity' or args.load_in_4bit:
+            raise ValueError('Original MoralCLIP baseline requires polarity BF16/FP16 SFT, without 4-bit loading')
+        if args.projector_learning_rate <= 0:
+            raise ValueError('Projector learning rate must be positive')
+    if args.initial_adapter and args.task not in ("binary", "polarity"):
+        raise ValueError("--initial-adapter requires --task binary or polarity.")
     for name in (
         "epochs", "batch_size", "eval_batch_size", "gradient_accumulation_steps",
         "learning_rate", "max_length", "lora_r", "lora_alpha", "logging_steps",
@@ -409,14 +432,19 @@ def run_training(args: argparse.Namespace) -> None:
     output_dir = Path(args.output_dir).expanduser().resolve()
     if output_dir.exists() and any(output_dir.iterdir()) and not args.resume_from_checkpoint:
         raise ValueError("output-dir is nonempty. Choose a new directory or pass --resume-from-checkpoint.")
-    train_records = load_records(args.train_data, args.image_root)
-    validation_records = load_records(args.validation_data, args.image_root)
+    train_records = load_records(args.train_data, args.image_root, task=args.task)
+    validation_records = load_records(args.validation_data, args.image_root, task=args.task)
+    if args.task in ("binary", "polarity"):
+        if {r['split'] for r in train_records} != {'train'} or {r['split'] for r in validation_records} != {'validation'}:
+            raise ValueError('Binary training requires original train/validation splits.')
+        if {r['scene_id'] for r in train_records} & {r['scene_id'] for r in validation_records}:
+            raise ValueError('Binary train/validation share source scenes.')
     train_ids = {record["id"] for record in train_records}
     validation_ids = {record["id"] for record in validation_records}
     if train_ids & validation_ids:
         raise ValueError("Training and validation share image ids.")
-    train_images = {record["image_path"] for record in train_records}
-    if train_images & {record["image_path"] for record in validation_records}:
+    train_images = {record["image_path"] for record in train_records if record["image_path"]}
+    if train_images & {record["image_path"] for record in validation_records if record["image_path"]}:
         raise ValueError("Training and validation share image files.")
     set_seed(args.seed)
     pretrained_kwargs = {"local_files_only": args.local_files_only}
@@ -439,6 +467,12 @@ def run_training(args: argparse.Namespace) -> None:
         )
         model_kwargs["device_map"] = {"": local_rank}
     model = LlavaForConditionalGeneration.from_pretrained(args.model_id, **model_kwargs)
+    integration = None
+    if args.moralclip_model:
+        from .moralclip_integration import install_vision_tower
+        integration = install_vision_tower(model, processor, args.moralclip_model,
+                      expected_sha256=args.moralclip_sha256, revision=args.moralclip_revision,
+                      local_files_only=args.local_files_only)
     expected_image_tokens = configure_processor(processor, model.config, padding_side="right")
     if args.max_length > context_length(model.config):
         raise ValueError(f"max_length exceeds the model context of {context_length(model.config)} tokens.")
@@ -450,23 +484,50 @@ def run_training(args: argparse.Namespace) -> None:
             model, use_gradient_checkpointing=args.gradient_checkpointing
         )
     targets = find_language_lora_targets(model, torch.nn.Linear)
-    model = get_peft_model(model, LoraConfig(
-        task_type=TaskType.CAUSAL_LM,
-        r=args.lora_r,
-        lora_alpha=args.lora_alpha,
-        lora_dropout=args.lora_dropout,
-        bias="none",
-        target_modules=targets,
-    ))
-    trainable_names = [name for name, parameter in model.named_parameters() if parameter.requires_grad]
-    if not trainable_names or any(
-        ".language_model." not in name or "lora_" not in name for name in trainable_names
-    ):
-        raise RuntimeError("Freeze check failed: only language_model LoRA weights may be trainable.")
+    if args.initial_adapter:
+        from peft import PeftModel
+        initial = Path(args.initial_adapter).expanduser().resolve()
+        initial_metadata = json.loads((initial / 'training_metadata.json').read_text())
+        if initial_metadata.get('resolved_base_commit') != getattr(model.config, '_commit_hash', None):
+            raise ValueError('Initial adapter/base revision mismatch.')
+        if integration:
+            from .moralclip_integration import validate_adapter_metadata
+            validate_adapter_metadata(initial_metadata, integration)
+        elif initial_metadata.get('moralclip_integration'):
+            raise ValueError('A MoralCLIP adapter requires --moralclip-model')
+        model = PeftModel.from_pretrained(model, str(initial), is_trainable=True)
+    else:
+        model = get_peft_model(model, LoraConfig(
+            task_type=TaskType.CAUSAL_LM,
+            r=args.lora_r,
+            lora_alpha=args.lora_alpha,
+            lora_dropout=args.lora_dropout,
+            bias="none",
+            target_modules=targets,
+            modules_to_save=["multi_modal_projector"] if integration else None,
+        ))
+    if integration:
+        from .moralclip_integration import configure_trainability
+        trainable_names = configure_trainability(model, args.moralclip_stage)
+        if args.moralclip_stage == 'projector' and any(r['modality'] != 'image' for r in train_records):
+            raise ValueError('Projector warmup accepts image-only training records')
+    else:
+        trainable_names = [name for name, parameter in model.named_parameters() if parameter.requires_grad]
+        if not trainable_names or any(
+            ".language_model." not in name or "lora_" not in name for name in trainable_names
+        ):
+            raise RuntimeError("Freeze check failed: only language_model LoRA weights may be trainable.")
     model.print_trainable_parameters()
     if args.gradient_checkpointing:
         model.enable_input_require_grads()
-    collator = LlavaSFTCollator(
+    collator_type = LlavaSFTCollator
+    if args.task == "binary":
+        from .binary_runtime import BinarySFTCollator
+        collator_type = BinarySFTCollator
+    elif args.task == "polarity":
+        from .polarity_runtime import PolaritySFTCollator
+        collator_type = PolaritySFTCollator
+    collator = collator_type(
         processor,
         image_token_id=model.config.image_token_index,
         expected_image_tokens=expected_image_tokens,
@@ -500,6 +561,38 @@ def run_training(args: argparse.Namespace) -> None:
             "peft": peft.__version__, "accelerate": accelerate.__version__,
         },
     }
+    if args.task in ("binary", "polarity"):
+        import hashlib
+        metadata.update(task='binary_foundation_presence_sft',
+                        prompt_format='USER: <optional image or scene description> binary question ASSISTANT:',
+                        supervision='assistant 是/否 plus EOS; prompt/image/padding masked',
+                        missing_foundation_value='否 means absent dataset annotation, not moral neutrality',
+                        primary_tasks=['care','fairness','loyalty','authority','sanctity'],
+                        auxiliary_tasks=['non_moral'],
+                        selection_metric='validation binary answer token loss (minimum); paired agreement scored separately',
+                        initial_adapter_sha256=None)
+        metadata['data_sha256'] = {}
+        for source in (args.train_data, args.validation_data):
+            with Path(source).open('rb') as handle:
+                metadata['data_sha256'][str(Path(source).resolve())] = hashlib.file_digest(handle,'sha256').hexdigest()
+        if args.initial_adapter:
+            with (Path(args.initial_adapter)/'adapter_model.safetensors').open('rb') as handle:
+                metadata['initial_adapter_sha256'] = hashlib.file_digest(handle,'sha256').hexdigest()
+        if args.task == "polarity":
+            from .polarity import VERSION, ANSWERS
+            metadata.update(task='conditional_foundation_polarity_sft', protocol=VERSION,
+                            metric_name='TICR', metric_full_name='Text-Image Consistency Rate',
+                            prompt_format='USER: <optional image or fixed scene description> conditional polarity question ASSISTANT:',
+                            supervision='literal task-specific positive/negative label plus EOS; prompt/image/padding masked',
+                            missing_foundation_value='excluded from that task; never a negative polarity label',
+                            auxiliary_tasks=[], answer_labels={t:list(labels.values()) for t,labels in ANSWERS.items()},
+                            selection_metric='minimum validation polarity-answer token loss; test TICR never selects checkpoints')
+
+    if integration:
+        metadata.update(moralclip_integration=integration, moralclip_stage=args.moralclip_stage,
+                        freeze_policy='original MoralCLIP vision and language base frozen; dense projector trained; language LoRA trained only in joint stage',
+                        trainable_parameter_names=trainable_names,
+                        projector_learning_rate=args.projector_learning_rate)
 
     def save_metadata(directory: Path, state: Any) -> None:
         directory.mkdir(parents=True, exist_ok=True)
@@ -549,7 +642,23 @@ def run_training(args: argparse.Namespace) -> None:
         ddp_find_unused_parameters=False if int(os.environ.get("WORLD_SIZE", "1")) > 1 else None,
         label_names=["labels"],
     )
-    trainer = Trainer(
+    trainer_class = Trainer
+    if integration:
+        class MoralCLIPTrainer(Trainer):
+            def create_optimizer(self):
+                if self.optimizer is None:
+                    projector, language = [], []
+                    for name, parameter in self.model.named_parameters():
+                        if parameter.requires_grad:
+                            (projector if '.multi_modal_projector.' in name else language).append(parameter)
+                    groups = [{'params': projector, 'lr': args.projector_learning_rate}]
+                    if language:
+                        groups.append({'params': language, 'lr': args.learning_rate})
+                    self.optimizer = torch.optim.AdamW(groups, weight_decay=args.weight_decay,
+                                                       betas=(0.9, 0.999), eps=1e-8)
+                return self.optimizer
+        trainer_class = MoralCLIPTrainer
+    trainer = trainer_class(
         model=model,
         args=training_args,
         train_dataset=ConversationDataset(train_records),
@@ -565,6 +674,9 @@ def run_training(args: argparse.Namespace) -> None:
     trainer.save_model(str(output_dir))
     trainer.save_state()
     if trainer.is_world_process_zero():
+        if integration:
+            from .moralclip_integration import verify_frozen_vision
+            metadata['frozen_vision_verified_after_training'] = verify_frozen_vision(model, integration)
         save_metadata(output_dir, trainer.state)
         print(f"Saved validation-selected LoRA adapter and processor to {output_dir}")
 

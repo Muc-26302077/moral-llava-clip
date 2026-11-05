@@ -1,0 +1,119 @@
+{
+  "protocol": "smid-binary-foundation-v1",
+  "source_sha256": {
+    "/tmp/moral-llava-qa-remote-audit-20261103/3.1/data/raw/SMID_moralclip/smid_manifest.json": "7882efe0fc0500c6b6e27014317b19383b87093ad636d35d47f9cd529d1162d5",
+    "/tmp/moral-llava-qa-remote-audit-20261103/3.1/data/raw/SMID_moralclip/test/smid_manifest.json": "b3812543517aee54fbc5280cf2af2db3dec83ab2f49c119366c274f85ef6d36f"
+  },
+  "group_protocol_sha256": "b8952a3288905e452e1993fac7719eefa79e1d2a210cf0dc55a28b2691f4390d",
+  "caption_policy": "fixed caption 0; no label-conditioned caption selection",
+  "label_semantics": "presence of either annotated pole; no polarity recovery; absent is not verified neutral",
+  "primary_tasks": [
+    "care",
+    "fairness",
+    "loyalty",
+    "authority",
+    "sanctity"
+  ],
+  "auxiliary_tasks": [
+    "non_moral"
+  ],
+  "excluded_training_scene_ids": [
+    "b15_p445_5",
+    "b15_p465_20"
+  ],
+  "scene_counts": {
+    "train": 2138,
+    "validation": 134,
+    "test": 126
+  },
+  "question_counts": {
+    "train": 25656,
+    "validation": 1608,
+    "test": 1512
+  },
+  "class_counts_per_modality": {
+    "train": {
+      "care": {
+        "否": 927,
+        "是": 1211
+      },
+      "fairness": {
+        "否": 1470,
+        "是": 668
+      },
+      "loyalty": {
+        "否": 1095,
+        "是": 1043
+      },
+      "authority": {
+        "否": 1160,
+        "是": 978
+      },
+      "sanctity": {
+        "否": 1135,
+        "是": 1003
+      },
+      "non_moral": {
+        "是": 757,
+        "否": 1381
+      }
+    },
+    "validation": {
+      "care": {
+        "是": 70,
+        "否": 64
+      },
+      "fairness": {
+        "否": 92,
+        "是": 42
+      },
+      "loyalty": {
+        "是": 63,
+        "否": 71
+      },
+      "authority": {
+        "是": 58,
+        "否": 76
+      },
+      "sanctity": {
+        "否": 77,
+        "是": 57
+      },
+      "non_moral": {
+        "否": 79,
+        "是": 55
+      }
+    },
+    "test": {
+      "care": {
+        "是": 72,
+        "否": 54
+      },
+      "fairness": {
+        "是": 42,
+        "否": 84
+      },
+      "loyalty": {
+        "是": 63,
+        "否": 63
+      },
+      "authority": {
+        "是": 55,
+        "否": 71
+      },
+      "sanctity": {
+        "是": 56,
+        "否": 70
+      },
+      "non_moral": {
+        "否": 87,
+        "是": 39
+      }
+    }
+  },
+  "test_groups": {
+    "A": 63,
+    "B": 63
+  },
+  "no_cross_split_exact_images": true
+}

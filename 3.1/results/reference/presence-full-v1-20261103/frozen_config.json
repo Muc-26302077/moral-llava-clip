@@ -1,0 +1,38 @@
+{
+  "scope": "QA v1 complete first stage; no automatic vision-adaptation training",
+  "epochs": 3,
+  "batch_size": 4,
+  "gradient_accumulation_steps": 2,
+  "learning_rate": 2e-05,
+  "seed": 42,
+  "precision": "bf16",
+  "gradient_checkpointing": false,
+  "selection": "minimum validation loss",
+  "initial_adapter": "/root/autodl-tmp/moral-llava/github-project/3.1/models/image-lora",
+  "initial_adapter_sha256": "8c7adaa741656e41f34434c347624844dcaa5a61589c6c0fef5274cc005eeb02",
+  "scene_counts": {
+    "train": 2138,
+    "validation": 134,
+    "test": 126
+  },
+  "question_counts": {
+    "train": 25656,
+    "validation": 1608,
+    "test": 1512
+  },
+  "data_sha256": {
+    "train": "f089bd008152e41093ca3afc2525d21cf3927f933237923b9ab33a16d508215b",
+    "validation": "95c329d16006e151d99e0bcd8fa88b4feef14492fc953ebccab50d4a15b95c19",
+    "test": "f4732e0327b4efdfec9fdf505300afc8d5d2bcca5e3cbf5472201944c3fba10d"
+  },
+  "source_sha256": {
+    "run_binary.py": "c0e28af85a1a997eb70df09f282fc067dc80ce4a2479e8a6bf37428978417f44",
+    "moral_llava/binary.py": "65532115e57b8ced748f3c6b62b2685b3a29ecf56057fc44b39219bd6bd4fcd6",
+    "moral_llava/binary_runtime.py": "8208ae1f8117e2540e587ea69187ef91e8421600c29a564e107d202e5635681f",
+    "moral_llava/train.py": "51a9818c7c862df187940f2e292c4f88d4708e21c539b39ca267a9f89ff7d3d8",
+    "moral_llava/infer.py": "378d8d1aec09a779532112df1bb04461aff1db2ef39724cd19a37630a03398e0"
+  },
+  "expected_training_steps": 9621,
+  "test_policy": "fixed configuration before baseline; no test-driven tuning; only validation-selected final adapter tested",
+  "stage2_policy": "record eligibility, inspect disagreements; do not automatically implement stage 2"
+}

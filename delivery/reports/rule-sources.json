@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://sii-czxy.feishu.cn/wiki/KKWAwsH2diOJzLksJX5c8dvOnPh",
+    "title": "多模态数据格式&交付内容",
+    "read_date": "2026-11-05",
+    "complete_block_count": 152,
+    "normalized_text_sha256": "b341157498afc51b09f668cbacd2da0d3e525ece92be79b11cc89d30764d6fad",
+    "pagination_complete": true
+  },
+  {
+    "url": "https://sii-czxy.feishu.cn/wiki/Hbe5wdHbSiDN5Ik9XL6ceNpSnYP",
+    "title": "SFT 数据交付格式（纯文本）",
+    "read_date": "2026-11-05",
+    "complete_block_count": 152,
+    "normalized_text_sha256": "ca0a6e8c58dd96cb4632f6ec2d3606c029b98885a09795329573d898484cb95c",
+    "pagination_complete": true
+  },
+  {
+    "url": "https://sii-czxy.feishu.cn/wiki/Y245wfcw6iSEOokGjbNc2wwYnxg",
+    "title": "SFT 数据交付格式（多模态）",
+    "read_date": "2026-11-05",
+    "complete_block_count": 304,
+    "normalized_text_sha256": "655a204a02361f19e13f500573a5621322fa192b6d259875c5bbe16eedcb52db",
+    "pagination_complete": true
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "scope": "repository organization, standard delivery format and existing-model reproduction",
+  "unit_tests": {
+    "passed": 121,
+    "failed": 0,
+    "seconds": 12.718
+  },
+  "source_roots": 6,
+  "jsonl_records": 13360,
+  "full_export_regeneration": "byte-identical records and manifests",
+  "cross_split_scene_and_image_isolation": "passed",
+  "original_release_verified_files": 2666,
+  "git_lfs_fsck": "passed",
+  "current_model_inference": {
+    "records": 576,
+    "pairs": 288,
+    "ticr": 0.9020562770562771,
+    "raw_answers_identical_to_previous": true
+  },
+  "privacy_evaluation_entry": "CLI and input preflight checked; full external private-data run pending",
+  "receiver_qwen35_validation": "pending_project_group_receiver",
+  "intern_s2_evaluation": "pending_project_group_joint_evaluation"
+}

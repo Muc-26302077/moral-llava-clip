@@ -1,0 +1,252 @@
+[
+  {
+    "path": "3.9/README.md",
+    "bytes": 3332,
+    "sha256": "9229898d2272b578879eb317c2e104f9af8ad31e35f508b3c3d3bd085a0ee551"
+  },
+  {
+    "path": "3.9/experiments/blip_beam24.json",
+    "bytes": 431,
+    "sha256": "cf69ba09456ef226837ee7d3e4e6ab8f61a61b1c9789c1822844397d275d34e2"
+  },
+  {
+    "path": "3.9/experiments/epsilon20-original-config.json",
+    "bytes": 2798,
+    "sha256": "00d9b336676c80a9dcb62f4d68eeb8a844ff8925dcfd377e2a2ced95bca4d0bd"
+  },
+  {
+    "path": "3.9/experiments/pairwise_image_rerank_anysplit.py",
+    "bytes": 8258,
+    "sha256": "533afa19f4debf7dcca4b3cd4a750c2f8633c610de4f57d196dc38a5cc2e132f"
+  },
+  {
+    "path": "3.9/moralclip_eval/THIRD_PARTY_NOTICES.md",
+    "bytes": 1926,
+    "sha256": "8211bdaa60ef23b25a255b9959730ff9f583ffcd11b15d545108cfe979ab59c1"
+  },
+  {
+    "path": "3.9/moralclip_eval/blip_caption_config.json",
+    "bytes": 479,
+    "sha256": "26f05675650924fc0fe1a36117608f28c018eede34a8209b613a81191b179f17"
+  },
+  {
+    "path": "3.9/moralclip_eval/config.json",
+    "bytes": 838,
+    "sha256": "7b0b14325f1dbdd4775156a32f5a7da07b8b03573ebdaee1dd376e5db54daacc"
+  },
+  {
+    "path": "3.9/moralclip_eval/evaluate.py",
+    "bytes": 15859,
+    "sha256": "f56cdd6a9c6ac37043686dec04c69c4a3904592b6bfd39b356890598515b9562"
+  },
+  {
+    "path": "3.9/moralclip_eval/evaluate_membership_inference.py",
+    "bytes": 24398,
+    "sha256": "49088df15ad916baf930e0c75df35c1123953624c1a1da538ecbbae7a65f694b"
+  },
+  {
+    "path": "3.9/moralclip_eval/evaluate_privacy_alignment.py",
+    "bytes": 17903,
+    "sha256": "8e1a8f563ae22bdbc88320796cc76a5e528951f1713e99c6c660d30016a14d6f"
+  },
+  {
+    "path": "3.9/moralclip_eval/evaluate_private_pairs.py",
+    "bytes": 28590,
+    "sha256": "a6a18218f4340052b41f73c9d54c6d14db0ede301afab41a6a0217ea483a5fd7"
+  },
+  {
+    "path": "3.9/moralclip_eval/experiment.py",
+    "bytes": 2415,
+    "sha256": "fa81784b2cfbed33376fe949904b5fee024dd22a245f5d3f5a6f15e22756338a"
+  },
+  {
+    "path": "3.9/moralclip_eval/formal_eps20_pairwise_beam24.json",
+    "bytes": 1677,
+    "sha256": "c5b5c59e7d90cacea99b16c3e8d78eb15c5a0214aa952837aac391ba6ee86fd7"
+  },
+  {
+    "path": "3.9/moralclip_eval/generate_blip_private_captions.py",
+    "bytes": 4109,
+    "sha256": "6c111b1e9a4902adbb79f03b00f8d4d12e0c02cd3b26be5ba1d4d2c181de7d35"
+  },
+  {
+    "path": "3.9/moralclip_eval/generate_private_pairs.py",
+    "bytes": 12805,
+    "sha256": "75139827f0010568ba5d8eae65d867eb2482ee157a4d5ceb2e528e73f9ed9f98"
+  },
+  {
+    "path": "3.9/moralclip_eval/materialize_blip_caption_variant.py",
+    "bytes": 11082,
+    "sha256": "35c9794d6c989851b4c7bea58b97d322032a46aab3912878be6277d5dae4ab7b"
+  },
+  {
+    "path": "3.9/moralclip_eval/membership_inference_config.json",
+    "bytes": 588,
+    "sha256": "e0c87216c0fa0be116a7c602a82d830ba952ba57ff1a0a0df9b170c48534db5e"
+  },
+  {
+    "path": "3.9/moralclip_eval/plot.py",
+    "bytes": 2685,
+    "sha256": "afa27d37bc7114d2333872206ee511e672767a4141a8ce93d1653620e4b6614f"
+  },
+  {
+    "path": "3.9/moralclip_eval/plot_membership_inference.py",
+    "bytes": 3182,
+    "sha256": "17b5ad958fbf24a2214b30cbeb349f79d3500a75cdff00fc47c9f787cee5ce45"
+  },
+  {
+    "path": "3.9/moralclip_eval/plot_privacy_sweep.py",
+    "bytes": 2657,
+    "sha256": "d00e9e7a535b43b9e67c13d872f2f012e8d9ffecf190626120fad10ab185f5e3"
+  },
+  {
+    "path": "3.9/moralclip_eval/postprocess_private_dataset.py",
+    "bytes": 8164,
+    "sha256": "26ddf9b28757f8be76882c2981081b398f243f29e3dddf36ae2e33b98efd01e0"
+  },
+  {
+    "path": "3.9/moralclip_eval/prepare_privacy_inputs.py",
+    "bytes": 4180,
+    "sha256": "4ddcf0698d9290909141f58235533704e4c84f408ecbcf03bb4f474084e2268e"
+  },
+  {
+    "path": "3.9/moralclip_eval/print_membership_report.py",
+    "bytes": 1958,
+    "sha256": "1e163b1858b2902fa97efe8a367fe780e3495369ef2fb2372628b80800a27127"
+  },
+  {
+    "path": "3.9/moralclip_eval/privacy_alignment_config.json",
+    "bytes": 1512,
+    "sha256": "a2068d57c9e4183a4a55af849558e3c627c8e4cd8bb982d581b3df64bf1c87fd"
+  },
+  {
+    "path": "3.9/moralclip_eval/privacy_attacks/__init__.py",
+    "bytes": 59,
+    "sha256": "6bdbc69bf05822a7c7e0e450c44be3723d207eefb26d2bced1e5f1b953a83ca2"
+  },
+  {
+    "path": "3.9/moralclip_eval/privacy_attacks/clip_mia.py",
+    "bytes": 8862,
+    "sha256": "e81129cdcefdd49746df28738c23dd2c605eeff693d989d8020a42939fd13b9b"
+  },
+  {
+    "path": "3.9/moralclip_eval/privacy_pair_config.json",
+    "bytes": 2395,
+    "sha256": "bf82b14b25b3401242da7658a79f2adbbc586d8c63cd957573ef861641ca57d2"
+  },
+  {
+    "path": "3.9/moralclip_eval/privacy_pair_config.smoke.json",
+    "bytes": 2400,
+    "sha256": "fb03a82c206612a0c5fe0c3d19df5c54db2b2e424fb90a1662c56e8df5dd1d30"
+  },
+  {
+    "path": "3.9/moralclip_eval/privacy_pipeline/__init__.py",
+    "bytes": 138,
+    "sha256": "ff3b277dccfac6c70b41c1322c53587a8746c3bc06f822821ade4b18dd01de17"
+  },
+  {
+    "path": "3.9/moralclip_eval/privacy_pipeline/blip_private_caption.py",
+    "bytes": 12025,
+    "sha256": "d99b3971ca1b88a1f8763ecffbed777200e4f142797e58def97a34a2d2b0c357"
+  },
+  {
+    "path": "3.9/moralclip_eval/privacy_pipeline/clusant_text_adapter.py",
+    "bytes": 16358,
+    "sha256": "d47ee055819978d8fb464cdc969b8e525a736888e31ffe739c073ece5cd54609"
+  },
+  {
+    "path": "3.9/moralclip_eval/privacy_pipeline/image_postprocessing.py",
+    "bytes": 6789,
+    "sha256": "69c15f8d3fb2ead128909f5b8716b19a8cbeba09f9e61a9f2b94427d55b1d661"
+  },
+  {
+    "path": "3.9/moralclip_eval/privacy_pipeline/ldp_image_adapter.py",
+    "bytes": 10976,
+    "sha256": "15c934d3e7c32189eaa33bcc6e8f26144c24821776eaccd6e1b4674cac5b4502"
+  },
+  {
+    "path": "3.9/moralclip_eval/privacy_pipeline/ldp_privacy_budgets.json",
+    "bytes": 5190,
+    "sha256": "8ab4698a9af8e1e76c4b71279a7e264b5ab131c0603aceacc85ceea46b633e07"
+  },
+  {
+    "path": "3.9/moralclip_eval/privacy_pipeline/manifest_schema.py",
+    "bytes": 7336,
+    "sha256": "2e5b4b48f6516fed8d203be70999607d1a6ecd92683c5a78be644af50b10b914"
+  },
+  {
+    "path": "3.9/moralclip_eval/privacy_pipeline/progress.py",
+    "bytes": 2684,
+    "sha256": "85691008ff9f2e634babe2262533baea9cfe1c6a85d86f1e3e59d40169795f39"
+  },
+  {
+    "path": "3.9/moralclip_eval/requirements.txt",
+    "bytes": 87,
+    "sha256": "7009afd488ba7e470688d3df494fec057d53e982dbac7ffa072642063708b191"
+  },
+  {
+    "path": "3.9/moralclip_eval/requirements_privacy.txt",
+    "bytes": 130,
+    "sha256": "2fd68ad25dcaf73bc24577589e3bc2df9229318074c5e809a04431f35c684db2"
+  },
+  {
+    "path": "3.9/moralclip_eval/run_blip_caption_sweep.py",
+    "bytes": 10390,
+    "sha256": "6af1aa28a5117fae82b1a0711866351d7a4ffd491dded6453f9b60d20ad1b6fe"
+  },
+  {
+    "path": "3.9/moralclip_eval/run_cadp_bridge.py",
+    "bytes": 4637,
+    "sha256": "7dff8451fe68f577438e23293b8d8fdef55ae90ab420836c3d5ce2d4e408627c"
+  },
+  {
+    "path": "3.9/moralclip_eval/run_image_postprocess_sweep.py",
+    "bytes": 7222,
+    "sha256": "a75871d545ac3a164adc7cc9d840970d37891edca30bdad56f2e4eb63713433d"
+  },
+  {
+    "path": "3.9/moralclip_eval/run_text_epsilon_sweep.py",
+    "bytes": 10642,
+    "sha256": "2dfc3f3734176ff89336c11d13f245e3d67d006ee0b98737d1587821b22cb23a"
+  },
+  {
+    "path": "3.9/moralclip_eval/test_membership_inference.py",
+    "bytes": 2676,
+    "sha256": "0012fac8a025f96f15a7673f2fd3fde9e5802c0f71f55d364189e82e86cd87c5"
+  },
+  {
+    "path": "3.9/moralclip_eval/test_metrics.py",
+    "bytes": 3127,
+    "sha256": "a86a10980dc9f7cb34d1509f386ce75db48ca01845b27c1bf7dc848b8f74eaed"
+  },
+  {
+    "path": "3.9/moralclip_eval/test_privacy_alignment.py",
+    "bytes": 2496,
+    "sha256": "3dbbb690e9f63d2e9beced1e68a1931068950cf90147ba46ce5df6c7e43d9efb"
+  },
+  {
+    "path": "3.9/moralclip_eval/test_private_pipeline.py",
+    "bytes": 21661,
+    "sha256": "ff404c325887fb7f51f577d4e3124dd5695618f7a179c2bdc2423f9dcacddd2c"
+  },
+  {
+    "path": "3.9/moralclip_eval/validate_private_dataset.py",
+    "bytes": 5759,
+    "sha256": "b5e3f82191e6c16d35666bf81298b1e885e9446722aed94831a7705f4e02e89b"
+  },
+  {
+    "path": "3.9/moralclip_eval/服务器部署与运行说明_LDP_CluSanT.md",
+    "bytes": 6087,
+    "sha256": "d17c56aab20c0f7432d6ab57e6e3989331c37ad02417f86db61dd1a9c24fe9b7"
+  },
+  {
+    "path": "3.9/moralclip_eval/正式参数冻结说明.md",
+    "bytes": 1677,
+    "sha256": "cb0f443167df6ec7d7cdd69fa48d53980add8c6b018975e5ed5786a696d7851a"
+  },
+  {
+    "path": "3.9/moralclip_eval/正式测试结果说明.md",
+    "bytes": 1597,
+    "sha256": "4373a7cc740f342a3d64a2e073a2bae6bdc3bed2df02f441a1287b204480c614"
+  }
+]

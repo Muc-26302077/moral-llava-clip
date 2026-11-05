@@ -1,0 +1,62 @@
+{
+  "train": {
+    "scope": "format-and-media",
+    "records": 9806,
+    "modalities": {
+      "image": 4903,
+      "text": 4903
+    },
+    "unique_images": 1381,
+    "task_counts": {
+      "care": 2422,
+      "fairness": 1336,
+      "loyalty": 2086,
+      "sanctity": 2006,
+      "authority": 1956
+    },
+    "receiver_acceptance": "pending_processor_validation",
+    "max_seq_length": 262144,
+    "total_tokens": null,
+    "trainable_tokens": null
+  },
+  "validation": {
+    "scope": "format-and-media",
+    "records": 580,
+    "modalities": {
+      "image": 290,
+      "text": 290
+    },
+    "unique_images": 79,
+    "task_counts": {
+      "care": 140,
+      "loyalty": 126,
+      "authority": 116,
+      "sanctity": 114,
+      "fairness": 84
+    },
+    "receiver_acceptance": "pending_processor_validation",
+    "max_seq_length": 262144,
+    "total_tokens": null,
+    "trainable_tokens": null
+  },
+  "test": {
+    "scope": "format-and-media",
+    "records": 576,
+    "modalities": {
+      "image": 288,
+      "text": 288
+    },
+    "unique_images": 87,
+    "task_counts": {
+      "care": 144,
+      "fairness": 84,
+      "loyalty": 126,
+      "authority": 110,
+      "sanctity": 112
+    },
+    "receiver_acceptance": "pending_processor_validation",
+    "max_seq_length": 262144,
+    "total_tokens": null,
+    "trainable_tokens": null
+  }
+}

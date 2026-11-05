@@ -1,0 +1,124 @@
+{
+  "status": "PASS",
+  "scope": "project-organization-and-current-model-reproduction",
+  "source_roots": 6,
+  "records": 13360,
+  "rebuild_identical": true,
+  "cross_split_scene_and_image_isolation": true,
+  "current_model_budget_and_supervision": "passed",
+  "live_answers_identical_to_original": true,
+  "ticr": 0.9020562770562771,
+  "receiver_qwen35_validation": "pending_project_group_receiver",
+  "intern_s2_evaluation": "pending_project_group_joint_evaluation",
+  "format_reports": {
+    "polarity-v1": {
+      "train": {
+        "scope": "format-and-media",
+        "records": 9806,
+        "modalities": {
+          "image": 4903,
+          "text": 4903
+        },
+        "unique_images": 1381,
+        "task_counts": {
+          "care": 2422,
+          "fairness": 1336,
+          "loyalty": 2086,
+          "sanctity": 2006,
+          "authority": 1956
+        },
+        "receiver_acceptance": "pending_processor_validation",
+        "max_seq_length": 262144,
+        "total_tokens": null,
+        "trainable_tokens": null
+      },
+      "validation": {
+        "scope": "format-and-media",
+        "records": 580,
+        "modalities": {
+          "image": 290,
+          "text": 290
+        },
+        "unique_images": 79,
+        "task_counts": {
+          "care": 140,
+          "loyalty": 126,
+          "authority": 116,
+          "sanctity": 114,
+          "fairness": 84
+        },
+        "receiver_acceptance": "pending_processor_validation",
+        "max_seq_length": 262144,
+        "total_tokens": null,
+        "trainable_tokens": null
+      },
+      "test": {
+        "scope": "format-and-media",
+        "records": 576,
+        "modalities": {
+          "image": 288,
+          "text": 288
+        },
+        "unique_images": 87,
+        "task_counts": {
+          "care": 144,
+          "fairness": 84,
+          "loyalty": 126,
+          "authority": 110,
+          "sanctity": 112
+        },
+        "receiver_acceptance": "pending_processor_validation",
+        "max_seq_length": 262144,
+        "total_tokens": null,
+        "trainable_tokens": null
+      }
+    },
+    "legacy-three-state-v1": {
+      "train": {
+        "scope": "format-and-media",
+        "records": 2138,
+        "modalities": {
+          "image": 2138
+        },
+        "unique_images": 2138,
+        "task_counts": {
+          "unspecified": 2138
+        },
+        "receiver_acceptance": "pending_processor_validation",
+        "max_seq_length": 262144,
+        "total_tokens": null,
+        "trainable_tokens": null
+      },
+      "validation": {
+        "scope": "format-and-media",
+        "records": 134,
+        "modalities": {
+          "image": 134
+        },
+        "unique_images": 134,
+        "task_counts": {
+          "unspecified": 134
+        },
+        "receiver_acceptance": "pending_processor_validation",
+        "max_seq_length": 262144,
+        "total_tokens": null,
+        "trainable_tokens": null
+      },
+      "test": {
+        "scope": "format-and-media",
+        "records": 126,
+        "modalities": {
+          "image": 126
+        },
+        "unique_images": 126,
+        "task_counts": {
+          "unspecified": 126
+        },
+        "receiver_acceptance": "pending_processor_validation",
+        "max_seq_length": 262144,
+        "total_tokens": null,
+        "trainable_tokens": null
+      }
+    }
+  }
+}

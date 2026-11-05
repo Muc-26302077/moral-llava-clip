@@ -2,7 +2,7 @@
 
 ## 内容介绍
 
-本仓库提供指标 3.1 的测试数据、已训练模型和评测程序，并提供指标 3.9 的隐私保护图文检索实验代码包。当前分支 `codex/moralclip-polarity-baseline` 新增原始 MoralCLIP 视觉塔接入及极性问答基线；原 R@1 与极性 TICR 协议同时保留。
+本仓库提供指标 3.1 的测试数据、已训练模型和评测程序，并提供指标 3.9 的隐私保护图文检索实验代码包。项目包含原始 MoralCLIP 视觉塔接入及极性问答基线；原 R@1 与极性 TICR 协议同时保留。规范化数据、交付信息表、逐文件清单和验收范围见 [项目交付目录](delivery/README.md)。
 
 | 指标大类 | 内容 |
 | --- | --- |
@@ -38,7 +38,7 @@
 
 ```bash
 git lfs install
-git clone --branch codex/moralclip-polarity-baseline https://github.com/Muc-26302077/moral-llava-clip.git
+git clone https://github.com/Muc-26302077/moral-llava-clip.git
 cd moral-llava-clip
 conda env create -f environment.yml
 conda activate moral_llava
@@ -75,7 +75,7 @@ python 3.1/run.py score
 
 ### 指标 3.9
 
-实验代码包：[moralclip_3.9_eps20_20261103.zip](3.9/moralclip_3.9_eps20_20261103.zip)。解压后请阅读 `3.9/README.md` 中的参数、依赖与运行说明；模型权重、数据和外部实现需按包内说明单独准备。`3.1/benchmark/` 仍为空白预留。
+实验代码包：[moralclip_3.9_eps20_20261103.zip](3.9/moralclip_3.9_eps20_20261103.zip)。统一评测入口见 [3.9 说明](3.9/README.md)，解压后另请阅读包内 `3.9/README.md` 中的参数、依赖与运行说明；模型权重、数据和外部实现需按包内说明单独准备。`3.1/benchmark/` 仍为空白预留。
 
 ## 数据与版权
 

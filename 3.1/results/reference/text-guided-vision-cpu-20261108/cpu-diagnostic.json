@@ -1,0 +1,560 @@
+{
+  "kind": "real_moralclip_cpu_feature_diagnostic_not_llava_generation",
+  "seed": 42,
+  "device": "cpu",
+  "threads": 1,
+  "torch": "2.8.0+cu128",
+  "config": {
+    "vision_dim": 768,
+    "text_dim": 4096,
+    "rank": 32,
+    "residual_scale": 0.1,
+    "feature_layer": -2,
+    "condition_source": "human_question_frozen_input_embeddings"
+  },
+  "train_examples": 20,
+  "validation_examples": 10,
+  "unique_images": 30,
+  "adapter_parameters": 192896,
+  "baseline_linear_probe": {
+    "train": {
+      "accuracy": 1.0,
+      "cross_entropy": 5.861896715941839e-05
+    },
+    "validation": {
+      "accuracy": 0.6000000238418579,
+      "cross_entropy": 1.0567376613616943
+    }
+  },
+  "guided_linear_probe": {
+    "train": {
+      "accuracy": 1.0,
+      "cross_entropy": 1.671299833105877e-05
+    },
+    "validation": {
+      "accuracy": 0.6000000238418579,
+      "cross_entropy": 1.1197270154953003
+    }
+  },
+  "shuffled_question_validation": {
+    "accuracy": 0.6000000238418579,
+    "cross_entropy": 1.1171060800552368
+  },
+  "same_image_changed_question_mean_abs_feature_difference": 0.0012207117397338152,
+  "adapter_losses": [
+    {
+      "step": 1,
+      "loss": 6.443033635150641e-05,
+      "cross_entropy": 6.443033635150641e-05
+    },
+    {
+      "step": 2,
+      "loss": 6.0861839301651344e-05,
+      "cross_entropy": 6.085388667997904e-05
+    },
+    {
+      "step": 3,
+      "loss": 8.7200831330847e-05,
+      "cross_entropy": 8.719778270460665e-05
+    },
+    {
+      "step": 4,
+      "loss": 0.00012093361874576658,
+      "cross_entropy": 0.00012093037366867065
+    },
+    {
+      "step": 5,
+      "loss": 3.7552850699285045e-05,
+      "cross_entropy": 3.755022044060752e-05
+    },
+    {
+      "step": 6,
+      "loss": 3.874489266308956e-05,
+      "cross_entropy": 3.8742269680369645e-05
+    },
+    {
+      "step": 7,
+      "loss": 6.639905041083694e-05,
+      "cross_entropy": 6.639736966462806e-05
+    },
+    {
+      "step": 8,
+      "loss": 6.431307701859623e-05,
+      "cross_entropy": 6.431127258110791e-05
+    },
+    {
+      "step": 9,
+      "loss": 2.3428303393302485e-05,
+      "cross_entropy": 2.3424334358423948e-05
+    },
+    {
+      "step": 10,
+      "loss": 2.646766915859189e-05,
+      "cross_entropy": 2.6464113034307957e-05
+    },
+    {
+      "step": 11,
+      "loss": 6.473118992289528e-05,
+      "cross_entropy": 6.472833774751052e-05
+    },
+    {
+      "step": 12,
+      "loss": 5.6460932682966813e-05,
+      "cross_entropy": 5.644348857458681e-05
+    },
+    {
+      "step": 13,
+      "loss": 8.809722930891439e-05,
+      "cross_entropy": 8.809177961666137e-05
+    },
+    {
+      "step": 14,
+      "loss": 0.00011801449727499858,
+      "cross_entropy": 0.00011801010987255722
+    },
+    {
+      "step": 15,
+      "loss": 3.7262005207594484e-05,
+      "cross_entropy": 3.7252208130666986e-05
+    },
+    {
+      "step": 16,
+      "loss": 3.8102098187664524e-05,
+      "cross_entropy": 3.808664041571319e-05
+    },
+    {
+      "step": 17,
+      "loss": 6.527471850859001e-05,
+      "cross_entropy": 6.526495417347178e-05
+    },
+    {
+      "step": 18,
+      "loss": 6.41381848254241e-05,
+      "cross_entropy": 6.413246592273936e-05
+    },
+    {
+      "step": 19,
+      "loss": 2.3212314772536047e-05,
+      "cross_entropy": 2.318592305528e-05
+    },
+    {
+      "step": 20,
+      "loss": 2.6535022698226385e-05,
+      "cross_entropy": 2.652371404110454e-05
+    },
+    {
+      "step": 21,
+      "loss": 6.011906953062862e-05,
+      "cross_entropy": 6.007949195918627e-05
+    },
+    {
+      "step": 22,
+      "loss": 5.450071694212966e-05,
+      "cross_entropy": 5.441708708531223e-05
+    },
+    {
+      "step": 23,
+      "loss": 8.599748980486766e-05,
+      "cross_entropy": 8.594620157964528e-05
+    },
+    {
+      "step": 24,
+      "loss": 0.00011517359234858304,
+      "cross_entropy": 0.00011514943616930395
+    },
+    {
+      "step": 25,
+      "loss": 3.562606798368506e-05,
+      "cross_entropy": 3.552373527782038e-05
+    },
+    {
+      "step": 26,
+      "loss": 3.71587993868161e-05,
+      "cross_entropy": 3.707340147229843e-05
+    },
+    {
+      "step": 27,
+      "loss": 6.0966238379478455e-05,
+      "cross_entropy": 6.085449058446102e-05
+    },
+    {
+      "step": 28,
+      "loss": 6.452425441239029e-05,
+      "cross_entropy": 6.449007196351886e-05
+    },
+    {
+      "step": 29,
+      "loss": 2.2466032532975078e-05,
+      "cross_entropy": 2.223226874775719e-05
+    },
+    {
+      "step": 30,
+      "loss": 2.6474854166735895e-05,
+      "cross_entropy": 2.6404508389532566e-05
+    },
+    {
+      "step": 31,
+      "loss": 5.095496817375533e-05,
+      "cross_entropy": 5.0483726226957515e-05
+    },
+    {
+      "step": 32,
+      "loss": 4.997305222786963e-05,
+      "cross_entropy": 4.958945282851346e-05
+    },
+    {
+      "step": 33,
+      "loss": 7.70156184444204e-05,
+      "cross_entropy": 7.652943895664066e-05
+    },
+    {
+      "step": 34,
+      "loss": 0.0001075631080311723,
+      "cross_entropy": 0.00010740170546341687
+    },
+    {
+      "step": 35,
+      "loss": 3.209352871635929e-05,
+      "cross_entropy": 3.129194737994112e-05
+    },
+    {
+      "step": 36,
+      "loss": 3.517786899465136e-05,
+      "cross_entropy": 3.474890399957076e-05
+    },
+    {
+      "step": 37,
+      "loss": 5.2726227295352146e-05,
+      "cross_entropy": 5.191429954720661e-05
+    },
+    {
+      "step": 38,
+      "loss": 6.414207746274769e-05,
+      "cross_entropy": 6.395367381628603e-05
+    },
+    {
+      "step": 39,
+      "loss": 2.1927124180365354e-05,
+      "cross_entropy": 2.0503768610069528e-05
+    },
+    {
+      "step": 40,
+      "loss": 2.6076013455167413e-05,
+      "cross_entropy": 2.5689270842121914e-05
+    },
+    {
+      "step": 41,
+      "loss": 3.8800375477876514e-05,
+      "cross_entropy": 3.611969077610411e-05
+    },
+    {
+      "step": 42,
+      "loss": 4.271716534276493e-05,
+      "cross_entropy": 4.130493107368238e-05
+    },
+    {
+      "step": 43,
+      "loss": 6.084836059017107e-05,
+      "cross_entropy": 5.811284063383937e-05
+    },
+    {
+      "step": 44,
+      "loss": 8.50944416015409e-05,
+      "cross_entropy": 8.415816409979016e-05
+    },
+    {
+      "step": 45,
+      "loss": 2.8940383344888687e-05,
+      "cross_entropy": 2.5748871848918498e-05
+    },
+    {
+      "step": 46,
+      "loss": 3.2130032195709646e-05,
+      "cross_entropy": 3.0397906812140718e-05
+    },
+    {
+      "step": 47,
+      "loss": 4.488457489060238e-05,
+      "cross_entropy": 4.1960789531003684e-05
+    },
+    {
+      "step": 48,
+      "loss": 5.875348506378941e-05,
+      "cross_entropy": 5.7934004871640354e-05
+    },
+    {
+      "step": 49,
+      "loss": 2.2922637072042562e-05,
+      "cross_entropy": 1.8715662008617073e-05
+    },
+    {
+      "step": 50,
+      "loss": 2.471414154570084e-05,
+      "cross_entropy": 2.318593760719523e-05
+    },
+    {
+      "step": 51,
+      "loss": 3.268604268669151e-05,
+      "cross_entropy": 2.527201286284253e-05
+    },
+    {
+      "step": 52,
+      "loss": 3.2964671845547855e-05,
+      "cross_entropy": 2.860973108909093e-05
+    },
+    {
+      "step": 53,
+      "loss": 4.575409911922179e-05,
+      "cross_entropy": 3.790783375734463e-05
+    },
+    {
+      "step": 54,
+      "loss": 5.6134897022275254e-05,
+      "cross_entropy": 5.203348700888455e-05
+    },
+    {
+      "step": 55,
+      "loss": 2.833214239217341e-05,
+      "cross_entropy": 2.2589902073377743e-05
+    },
+    {
+      "step": 56,
+      "loss": 2.9724227715632878e-05,
+      "cross_entropy": 2.419919110252522e-05
+    },
+    {
+      "step": 57,
+      "loss": 4.032588913105428e-05,
+      "cross_entropy": 3.4868106013163924e-05
+    },
+    {
+      "step": 58,
+      "loss": 4.668349720304832e-05,
+      "cross_entropy": 4.3331638153176755e-05
+    },
+    {
+      "step": 59,
+      "loss": 2.3695780328125693e-05,
+      "cross_entropy": 1.8298433133168146e-05
+    },
+    {
+      "step": 60,
+      "loss": 2.4527569621568546e-05,
+      "cross_entropy": 1.966933996300213e-05
+    },
+    {
+      "step": 61,
+      "loss": 3.1439260055776685e-05,
+      "cross_entropy": 2.10997968679294e-05
+    },
+    {
+      "step": 62,
+      "loss": 2.8814421966671944e-05,
+      "cross_entropy": 1.901367613754701e-05
+    },
+    {
+      "step": 63,
+      "loss": 3.9333244785666466e-05,
+      "cross_entropy": 2.568926902313251e-05
+    },
+    {
+      "step": 64,
+      "loss": 3.9417853258783e-05,
+      "cross_entropy": 2.8132993975305e-05
+    },
+    {
+      "step": 65,
+      "loss": 2.7513182430993766e-05,
+      "cross_entropy": 2.0444182155188173e-05
+    },
+    {
+      "step": 66,
+      "loss": 2.9759514291072264e-05,
+      "cross_entropy": 2.038458114839159e-05
+    },
+    {
+      "step": 67,
+      "loss": 3.526122964103706e-05,
+      "cross_entropy": 2.7119745936943218e-05
+    },
+    {
+      "step": 68,
+      "loss": 3.656215631053783e-05,
+      "cross_entropy": 3.033830398635473e-05
+    },
+    {
+      "step": 69,
+      "loss": 2.2844918930786662e-05,
+      "cross_entropy": 1.800041900423821e-05
+    },
+    {
+      "step": 70,
+      "loss": 2.3962737031979486e-05,
+      "cross_entropy": 1.841766425059177e-05
+    },
+    {
+      "step": 71,
+      "loss": 3.0040413548704237e-05,
+      "cross_entropy": 1.9013685232494026e-05
+    },
+    {
+      "step": 72,
+      "loss": 2.782772025966551e-05,
+      "cross_entropy": 1.6093112208181992e-05
+    },
+    {
+      "step": 73,
+      "loss": 3.56032614945434e-05,
+      "cross_entropy": 1.955013067345135e-05
+    },
+    {
+      "step": 74,
+      "loss": 3.669080251711421e-05,
+      "cross_entropy": 2.2411095415009186e-05
+    },
+    {
+      "step": 75,
+      "loss": 2.590624353615567e-05,
+      "cross_entropy": 1.8656079191714525e-05
+    },
+    {
+      "step": 76,
+      "loss": 2.81875254586339e-05,
+      "cross_entropy": 2.03249765036162e-05
+    },
+    {
+      "step": 77,
+      "loss": 3.161885615554638e-05,
+      "cross_entropy": 2.1338233636924997e-05
+    },
+    {
+      "step": 78,
+      "loss": 3.0096402042545378e-05,
+      "cross_entropy": 2.2649508537142538e-05
+    },
+    {
+      "step": 79,
+      "loss": 2.1265002942527644e-05,
+      "cross_entropy": 1.764280386851169e-05
+    },
+    {
+      "step": 80,
+      "loss": 2.257372580061201e-05,
+      "cross_entropy": 1.853687354014255e-05
+    },
+    {
+      "step": 81,
+      "loss": 2.8508413379313424e-05,
+      "cross_entropy": 1.8060034562950023e-05
+    },
+    {
+      "step": 82,
+      "loss": 2.731369386310689e-05,
+      "cross_entropy": 1.6391131794080138e-05
+    },
+    {
+      "step": 83,
+      "loss": 3.335766086820513e-05,
+      "cross_entropy": 1.9430925021879375e-05
+    },
+    {
+      "step": 84,
+      "loss": 3.527733497321606e-05,
+      "cross_entropy": 1.925211472553201e-05
+    },
+    {
+      "step": 85,
+      "loss": 2.4639135517645627e-05,
+      "cross_entropy": 1.7940836187335663e-05
+    },
+    {
+      "step": 86,
+      "loss": 2.7148518711328506e-05,
+      "cross_entropy": 2.0861407392658293e-05
+    },
+    {
+      "step": 87,
+      "loss": 2.925194894487504e-05,
+      "cross_entropy": 1.811964830267243e-05
+    },
+    {
+      "step": 88,
+      "loss": 2.720401062106248e-05,
+      "cross_entropy": 1.8417666069581173e-05
+    },
+    {
+      "step": 89,
+      "loss": 1.9954843082814477e-05,
+      "cross_entropy": 1.680835703155026e-05
+    },
+    {
+      "step": 90,
+      "loss": 2.1753092369181104e-05,
+      "cross_entropy": 1.8596476365928538e-05
+    },
+    {
+      "step": 91,
+      "loss": 2.7575373678701e-05,
+      "cross_entropy": 1.6867965314304456e-05
+    },
+    {
+      "step": 92,
+      "loss": 2.7056052203988656e-05,
+      "cross_entropy": 1.6808355212560855e-05
+    },
+    {
+      "step": 93,
+      "loss": 3.1832754757488146e-05,
+      "cross_entropy": 1.883488948806189e-05
+    },
+    {
+      "step": 94,
+      "loss": 3.466657653916627e-05,
+      "cross_entropy": 1.7940838006325066e-05
+    },
+    {
+      "step": 95,
+      "loss": 2.3995322408154607e-05,
+      "cross_entropy": 1.7523610949865542e-05
+    },
+    {
+      "step": 96,
+      "loss": 2.6087593141710386e-05,
+      "cross_entropy": 2.0205770852044225e-05
+    },
+    {
+      "step": 97,
+      "loss": 2.7743233658839017e-05,
+      "cross_entropy": 1.6450745533802547e-05
+    },
+    {
+      "step": 98,
+      "loss": 2.6247631467413157e-05,
+      "cross_entropy": 1.6569953004363924e-05
+    },
+    {
+      "step": 99,
+      "loss": 1.8955492123495787e-05,
+      "cross_entropy": 1.5437475667567924e-05
+    },
+    {
+      "step": 100,
+      "loss": 2.0657704226323403e-05,
+      "cross_entropy": 1.77620277099777e-05
+    }
+  ],
+  "formal_ticr": null,
+  "seconds": 37.72649621218443,
+  "peak_rss_mib": 738.66796875,
+  "vision_sha256": "4ace10e40a63343dc270afe776a0cc851d28dc36fd13417de07dccb12e4bac2a",
+  "data_sha256": {
+    "train": "b66dde874732e043182faa768609ffb73903df6b06bafc24f9d78892b1754525",
+    "validation": "4239c3719299771d99871e11ccfa100c18af4f04355bc747bc39b30abf0e6d13"
+  },
+  "limitations": [
+    "Small balanced diagnostic selected from original train/validation only.",
+    "Frozen task-specific linear probe replaces 7B decoder in this CPU diagnostic.",
+    "CPU diagnostic is not a TICR result or evidence of improved LLaVA accuracy.",
+    "Question guidance conveys known moral dimension, not scene-specific captions."
+  ]
+}

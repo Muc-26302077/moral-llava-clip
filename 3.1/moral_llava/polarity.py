@@ -203,7 +203,9 @@ def score(data, predictions, audit=None):
         scenes[row['scene_id']] = row.get('group')
     provenance = {(r.get('decoding'), r.get('base_model_id'), r.get('base_revision'), r.get('adapter_sha256'),
                    r.get('precision'), r.get('max_new_tokens'), r.get('data_sha256'),
-                   r.get('vision_weight_sha256'), r.get('integration_method')) for r in predictions}
+                   r.get('vision_weight_sha256'), r.get('integration_method'),
+                   r.get('guidance_sha256'), r.get('condition_source'),
+                   r.get('guidance_enabled')) for r in predictions}
     if len(provenance) != 1:
         raise ValueError('Mixed or missing model/decoding provenance')
     index, pairs = {}, {}

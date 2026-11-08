@@ -1,0 +1,12 @@
+{
+  "kind": "implementation_snapshot_after_final_targeted_checks",
+  "files": {
+    "moral_llava/text_guided_vision.py": "2716c5158be959c87e8a3083456cb1949b79ad7945c6191b27a9a844195cf6cb",
+    "moral_llava/guided_report.py": "73f3df9ebf02ab6aa4fde006105a9334e9824dc2a6caa88ff57d74c16b738c21",
+    "moral_llava/polarity.py": "193bc6a2112c123b2bc90f35f9e675820d94b657d6ff608cef7972040c513a03",
+    "run_text_guided_vision.py": "5b9f6c824f2a994ca91be5ae3d2da8a3a2452a0012f3d16189cc75d6e27933f6",
+    "scripts/check_text_guided_cpu.py": "12157781cd4e4a7912bcd02b37168bc826449a462328707ee3b1abcb8f724c90",
+    "scripts/extract_guided_features_numpy.py": "89f7a4443cad6aa1cf3a9929cea8f209ff6f21f53392a6f55fcb13c2c93b86fe",
+    "scripts/run_text_guided_gpu.sh": "d7eaeaf45e8997aff723f4e1fd6d944689353b3dd7ea714d6445e2085d805c63"
+  }
+}

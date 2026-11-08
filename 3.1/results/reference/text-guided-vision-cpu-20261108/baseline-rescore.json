@@ -1,0 +1,15 @@
+{
+  "archived_baseline_rescored_with_current_scorer": true,
+  "all_metrics_identical": true,
+  "primary_macro": {
+    "ticr": 0.9020562770562771,
+    "joint_accuracy": 0.8574819624819625,
+    "consistent_pairs": 260,
+    "pairs": 288,
+    "micro_ticr": 0.9027777777777778,
+    "image_accuracy": 0.8896897546897546,
+    "image_balanced_accuracy": 0.8760920170238318,
+    "text_accuracy": 0.9232178932178933,
+    "text_balanced_accuracy": 0.912273012992013
+  }
+}

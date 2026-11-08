@@ -1,0 +1,15 @@
+test_checkpoint_selection_quality_guards (test_text_guided_vision.TextGuidedVisionTests.test_checkpoint_selection_quality_guards) ... ok
+test_cpu_supervised_generation_loss_and_text_dependency (test_text_guided_vision.TextGuidedVisionTests.test_cpu_supervised_generation_loss_and_text_dependency) ... `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+ok
+test_generate_uses_condition_and_scope_cleans_up (test_text_guided_vision.TextGuidedVisionTests.test_generate_uses_condition_and_scope_cleans_up) ... ok
+test_invalid_config_and_layer_rejected (test_text_guided_vision.TextGuidedVisionTests.test_invalid_config_and_layer_rejected) ... ok
+test_numpy_streaming_matches_transformers_selected_layer (test_text_guided_vision.TextGuidedVisionTests.test_numpy_streaming_matches_transformers_selected_layer) ... ok
+test_original_visual_weights_verified_through_structural_wrapper (test_text_guided_vision.TextGuidedVisionTests.test_original_visual_weights_verified_through_structural_wrapper) ... ok
+test_prompt_conditions_exclude_gold_completion (test_text_guided_vision.TextGuidedVisionTests.test_prompt_conditions_exclude_gold_completion) ... ok
+test_save_reload_and_hash_validation (test_text_guided_vision.TextGuidedVisionTests.test_save_reload_and_hash_validation) ... ok
+test_zero_initialization_reproduces_mixed_modality_logits (test_text_guided_vision.TextGuidedVisionTests.test_zero_initialization_reproduces_mixed_modality_logits) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 4.189s
+
+OK

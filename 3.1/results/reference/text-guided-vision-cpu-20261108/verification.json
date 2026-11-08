@@ -1,0 +1,32 @@
+{
+  "structure_tests": {
+    "tests": 9,
+    "passed": true,
+    "log": "structure-tests.log"
+  },
+  "report_protocol_tests": {
+    "tests": 13,
+    "passed": true,
+    "log": "report-protocol-tests.log"
+  },
+  "initial_full_regression": {
+    "tests": 129,
+    "passed": true,
+    "log": "initial-regression-129.log",
+    "scope": "Before final report tests and hardening changes; not claimed as a complete current-suite run."
+  },
+  "final_full_suite_recheck": {
+    "complete": false,
+    "reason": "The 2 GiB environment terminated some repeated model-test workers with SIGKILL; final targeted checks completed.",
+    "log": "resource-limited-regression.log"
+  },
+  "gpu_end_to_end_test": {
+    "executed": false,
+    "reason": "CUDA unavailable"
+  },
+  "cpu_real_image_probe": {
+    "complete": true,
+    "formal_ticr": null
+  },
+  "baseline_adapter_hydrated_from_verified_local_copy": true
+}

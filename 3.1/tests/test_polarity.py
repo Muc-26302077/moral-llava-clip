@@ -106,7 +106,9 @@ class PolarityTests(unittest.TestCase):
         rows,pred,audit=fixture()
         for bad in (pred[:-1],pred+[pred[0]]):
             with self.assertRaises(ValueError):polarity.score(rows,bad,audit)
-        for key,value in (('prompt_sha256','changed'),('smoke_only',True),('adapter_sha256','other'),('caption_index',7)):
+        for key,value in (('prompt_sha256','changed'),('smoke_only',True),('adapter_sha256','other'),('caption_index',7),
+                          ('guidance_sha256','other-guidance'),('condition_source','other-source'),
+                          ('guidance_enabled',True)):
             bad=copy.deepcopy(pred);bad[0][key]=value
             with self.subTest(key=key),self.assertRaises(ValueError):polarity.score(rows,bad,audit)
 

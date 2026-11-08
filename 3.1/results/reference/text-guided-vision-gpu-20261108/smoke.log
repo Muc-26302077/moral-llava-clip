@@ -1,0 +1,99 @@
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.48, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:05<00:11,  5.67s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:11<00:05,  5.75s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:16<00:00,  5.33s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:16<00:00,  5.44s/it]
+validation generated 1/20 guided=False
+validation generated 2/20 guided=False
+validation generated 3/20 guided=False
+validation generated 4/20 guided=False
+validation generated 5/20 guided=False
+validation generated 6/20 guided=False
+validation generated 7/20 guided=False
+validation generated 8/20 guided=False
+validation generated 9/20 guided=False
+validation generated 10/20 guided=False
+validation generated 11/20 guided=False
+validation generated 12/20 guided=False
+validation generated 13/20 guided=False
+validation generated 14/20 guided=False
+validation generated 15/20 guided=False
+validation generated 16/20 guided=False
+validation generated 17/20 guided=False
+validation generated 18/20 guided=False
+validation generated 19/20 guided=False
+validation generated 20/20 guided=False
+validation generated 1/20 guided=True
+validation generated 2/20 guided=True
+validation generated 3/20 guided=True
+validation generated 4/20 guided=True
+validation generated 5/20 guided=True
+validation generated 6/20 guided=True
+validation generated 7/20 guided=True
+validation generated 8/20 guided=True
+validation generated 9/20 guided=True
+validation generated 10/20 guided=True
+validation generated 11/20 guided=True
+validation generated 12/20 guided=True
+validation generated 13/20 guided=True
+validation generated 14/20 guided=True
+validation generated 15/20 guided=True
+validation generated 16/20 guided=True
+validation generated 17/20 guided=True
+validation generated 18/20 guided=True
+validation generated 19/20 guided=True
+validation generated 20/20 guided=True
+{"epoch": 1, "example": 1, "optimizer_step": 0, "generation_loss": 3.552436828613281e-05, "preservation": 0.0}
+validation generated 1/20 guided=True
+validation generated 2/20 guided=True
+validation generated 3/20 guided=True
+validation generated 4/20 guided=True
+validation generated 5/20 guided=True
+validation generated 6/20 guided=True
+validation generated 7/20 guided=True
+validation generated 8/20 guided=True
+validation generated 9/20 guided=True
+validation generated 10/20 guided=True
+validation generated 11/20 guided=True
+validation generated 12/20 guided=True
+validation generated 13/20 guided=True
+validation generated 14/20 guided=True
+validation generated 15/20 guided=True
+validation generated 16/20 guided=True
+validation generated 17/20 guided=True
+validation generated 18/20 guided=True
+validation generated 19/20 guided=True
+validation generated 20/20 guided=True
+validation generated 1/20 guided=True
+validation generated 2/20 guided=True
+validation generated 3/20 guided=True
+validation generated 4/20 guided=True
+validation generated 5/20 guided=True
+validation generated 6/20 guided=True
+validation generated 7/20 guided=True
+validation generated 8/20 guided=True
+validation generated 9/20 guided=True
+validation generated 10/20 guided=True
+validation generated 11/20 guided=True
+validation generated 12/20 guided=True
+validation generated 13/20 guided=True
+validation generated 14/20 guided=True
+validation generated 15/20 guided=True
+validation generated 16/20 guided=True
+validation generated 17/20 guided=True
+validation generated 18/20 guided=True
+validation generated 19/20 guided=True
+validation generated 20/20 guided=True
+{
+  "status": "complete",
+  "command": "smoke",
+  "started_at": "2026-11-08T14:33:02.130506+00:00",
+  "pid": 2684,
+  "phase": "smoke_complete",
+  "epoch": 1,
+  "example": 1,
+  "total": 8,
+  "optimizer_step": 0,
+  "finished_at": "2026-11-08T14:34:04.833151+00:00",
+  "seconds": 62.7023987993598,
+  "frozen_visual_tensors_verified": 199,
+  "cuda_peak_allocated_gib": 13.324511051177979,
+  "formal_ticr_available": false
+}

@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "started_at": "2026-11-08T15:28:06.628055+00:00",
+  "epoch": 3,
+  "role": "fixed_final_epoch_supplement_not_used_for_selection",
+  "evaluator_sha256": "5f271cf9d4f252d34696124ad88c82bb2a8181de7a082518563ca91729ac6bac",
+  "primary_selected_epoch": 0,
+  "reused_primary_predictions": false,
+  "finished_at": "2026-11-08T15:31:39.904897+00:00",
+  "seconds": 213.2768669873476,
+  "frozen_visual_tensors_verified": 199,
+  "cuda_peak_allocated_gib": 13.324511051177979
+}

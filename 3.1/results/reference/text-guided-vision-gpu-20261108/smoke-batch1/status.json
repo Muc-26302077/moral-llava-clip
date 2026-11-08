@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "command": "smoke",
+  "started_at": "2026-11-08T14:33:02.130506+00:00",
+  "pid": 2684,
+  "phase": "smoke_complete",
+  "epoch": 1,
+  "example": 1,
+  "total": 8,
+  "optimizer_step": 0,
+  "finished_at": "2026-11-08T14:34:04.833151+00:00",
+  "seconds": 62.7023987993598,
+  "frozen_visual_tensors_verified": 199,
+  "cuda_peak_allocated_gib": 13.324511051177979,
+  "formal_ticr_available": false
+}

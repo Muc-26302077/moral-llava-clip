@@ -1,0 +1,51 @@
+{
+  "archived_at": "2026-11-08T15:32:44.399739+00:00",
+  "primary_status": {
+    "status": "complete",
+    "command": "experiment",
+    "started_at": "2026-11-08T14:39:47.548581+00:00",
+    "pid": 3645,
+    "phase": "formal_complete",
+    "epoch": 3,
+    "example": 4903,
+    "total": 4903,
+    "optimizer_step": 1839,
+    "finished_at": "2026-11-08T15:28:02.142701+00:00",
+    "seconds": 2894.610583856702,
+    "frozen_visual_tensors_verified": 199,
+    "cuda_peak_allocated_gib": 15.182216167449951,
+    "formal_ticr_available": true
+  },
+  "supplemental_status": {
+    "status": "complete",
+    "started_at": "2026-11-08T15:28:06.628055+00:00",
+    "epoch": 3,
+    "role": "fixed_final_epoch_supplement_not_used_for_selection",
+    "evaluator_sha256": "5f271cf9d4f252d34696124ad88c82bb2a8181de7a082518563ca91729ac6bac",
+    "primary_selected_epoch": 0,
+    "reused_primary_predictions": false,
+    "finished_at": "2026-11-08T15:31:39.904897+00:00",
+    "seconds": 213.2768669873476,
+    "frozen_visual_tensors_verified": 199,
+    "cuda_peak_allocated_gib": 13.324511051177979
+  },
+  "unit_tests": {
+    "count": 133,
+    "passed": true,
+    "log": "full-regression-133.log"
+  },
+  "primary_source_hashes_verified": true,
+  "primary_implementation_commit": "a38cc7a",
+  "supplemental_evaluator_commit": "7429cdd",
+  "text_answers_unchanged": true,
+  "test_questions_per_model": 576,
+  "training_questions_per_epoch": 4903,
+  "epochs": 3,
+  "new_trainable_parameters": 192896,
+  "original_visual_tensors_verified": 199,
+  "baseline_adapter_sha256": "318b609354f115162f14de9136005ded3cde31865dda8823559b1e0b79f79e2c",
+  "question_templates": 5,
+  "changed_image_answers": 13,
+  "right_to_wrong": 7,
+  "wrong_to_right": 6
+}

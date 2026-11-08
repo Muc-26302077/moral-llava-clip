@@ -137,6 +137,6 @@ test_prompt_requires_exactly_one_image (test_training_sequences.TrainingSequence
 test_truncation_cannot_drop_image_or_answer_tokens (test_training_sequences.TrainingSequenceTests.test_truncation_cannot_drop_image_or_answer_tokens) ... ok
 
 ----------------------------------------------------------------------
-Ran 133 tests in 11.506s
+Ran 133 tests in 11.364s
 
 OK

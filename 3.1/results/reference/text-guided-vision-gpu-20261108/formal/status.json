@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "command": "experiment",
+  "started_at": "2026-11-08T14:39:47.548581+00:00",
+  "pid": 3645,
+  "phase": "formal_complete",
+  "epoch": 3,
+  "example": 4903,
+  "total": 4903,
+  "optimizer_step": 1839,
+  "finished_at": "2026-11-08T15:28:02.142701+00:00",
+  "seconds": 2894.610583856702,
+  "frozen_visual_tensors_verified": 199,
+  "cuda_peak_allocated_gib": 15.182216167449951,
+  "formal_ticr_available": true
+}

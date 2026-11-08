@@ -1,0 +1,29 @@
+[
+  {
+    "epoch": 1,
+    "example": 8,
+    "batch_size": 8,
+    "optimizer_step": 1,
+    "generation_loss": 0.0012527131475508213,
+    "preservation": 0.0,
+    "elapsed_training_seconds": 1.0631593577563763
+  },
+  {
+    "epoch": 1,
+    "example": 16,
+    "batch_size": 8,
+    "optimizer_step": 2,
+    "generation_loss": 8.417556091444567e-05,
+    "preservation": 3.605925513738839e-08,
+    "elapsed_training_seconds": 1.9956414848566055
+  },
+  {
+    "epoch": 1,
+    "example": 20,
+    "batch_size": 4,
+    "optimizer_step": 3,
+    "generation_loss": 4.018885374534875e-05,
+    "preservation": 6.592771342184278e-07,
+    "elapsed_training_seconds": 2.4968270249664783
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "checkpoint": "/root/autodl-tmp/moral-llava/main-publication-20261105/3.1/results/runs/text-guided-gpu-20261108/formal/epoch-0",
+  "epoch": 0,
+  "guidance_sha256": "abf33e2710e1381d654c3b16c74a683dc6a50ccf256b37a01061f7c6908debb9",
+  "validation_key": [
+    0.8738841356264224,
+    0.927342025940811,
+    0.9033537867657649
+  ],
+  "locked_at": "2026-11-08T15:21:47.164479+00:00"
+}

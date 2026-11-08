@@ -1,0 +1,20 @@
+{
+  "1": {
+    "batches": 613,
+    "median_generation_ce": 2.920006045314949e-05,
+    "mean_generation_ce": 0.001487429009122213,
+    "p95_generation_ce": 0.000631417497061193
+  },
+  "2": {
+    "batches": 613,
+    "median_generation_ce": 2.8188815122121014e-05,
+    "mean_generation_ce": 0.0002347970225677492,
+    "p95_generation_ce": 0.0005079649854451418
+  },
+  "3": {
+    "batches": 613,
+    "median_generation_ce": 2.642646722961217e-05,
+    "mean_generation_ce": 5.356367218886809e-05,
+    "p95_generation_ce": 0.00019927693938370794
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "historical_baseline": {
+    "ticr": 0.9020562770562771,
+    "joint_accuracy": 0.8574819624819625,
+    "consistent_pairs": 260,
+    "pairs": 288,
+    "micro_ticr": 0.9027777777777778,
+    "image_accuracy": 0.8896897546897546,
+    "image_balanced_accuracy": 0.8760920170238318,
+    "text_accuracy": 0.9232178932178933,
+    "text_balanced_accuracy": 0.912273012992013
+  },
+  "same_run_baseline": {
+    "ticr": 0.901991341991342,
+    "joint_accuracy": 0.8574170274170274,
+    "consistent_pairs": 260,
+    "pairs": 288,
+    "micro_ticr": 0.9027777777777778,
+    "image_accuracy": 0.8896248196248197,
+    "image_balanced_accuracy": 0.8750920170238317,
+    "text_accuracy": 0.9232178932178933,
+    "text_balanced_accuracy": 0.912273012992013
+  },
+  "validation_selected_model": {
+    "ticr": 0.901991341991342,
+    "joint_accuracy": 0.8574170274170274,
+    "consistent_pairs": 260,
+    "pairs": 288,
+    "micro_ticr": 0.9027777777777778,
+    "image_accuracy": 0.8896248196248197,
+    "image_balanced_accuracy": 0.8750920170238317,
+    "text_accuracy": 0.9232178932178933,
+    "text_balanced_accuracy": 0.912273012992013
+  },
+  "fixed_final_epoch_model": {
+    "ticr": 0.8984199134199133,
+    "joint_accuracy": 0.8538455988455989,
+    "consistent_pairs": 259,
+    "pairs": 288,
+    "micro_ticr": 0.8993055555555556,
+    "image_accuracy": 0.886053391053391,
+    "image_balanced_accuracy": 0.8721623473335596,
+    "text_accuracy": 0.9232178932178933,
+    "text_balanced_accuracy": 0.912273012992013
+  },
+  "fixed_final_minus_same_run_baseline": {
+    "ticr": -0.0035714285714286698,
+    "image_accuracy": -0.0035714285714286698,
+    "text_accuracy": 0.0,
+    "image_balanced_accuracy": -0.0029296696902720853,
+    "text_balanced_accuracy": 0.0,
+    "joint_accuracy": -0.0035714285714285587
+  },
+  "fixed_final_paired_scene_bootstrap_delta95": {
+    "ticr": [
+      -0.051259644760090796,
+      0.03508110165442516
+    ],
+    "joint_accuracy": [
+      -0.051259644760090796,
+      0.03508110165442516
+    ],
+    "image_accuracy": [
+      -0.051259644760090796,
+      0.03508110165442516
+    ]
+  },
+  "bootstrap_draws": 2000,
+  "bootstrap_seed": 42,
+  "selected_epoch": 0,
+  "supplemental_epoch": 3,
+  "supplemental_role": "fixed final-epoch evaluation locked before selection; never used to choose a checkpoint",
+  "historical_baseline_replay_changed_outputs": [
+    {
+      "id": "b13_p245_6::authority::image",
+      "historical": " 颠覆",
+      "rerun": " 权威"
+    },
+    {
+      "id": "b2_p20_11::sanctity::image",
+      "historical": " 污秽",
+      "rerun": " 纯洁"
+    }
+  ]
+}

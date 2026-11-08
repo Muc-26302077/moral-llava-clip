@@ -1,0 +1,87 @@
+{
+  "method": "question_conditioned_moralclip_encoder_v1",
+  "guidance_config": {
+    "vision_dim": 768,
+    "text_dim": 4096,
+    "rank": 32,
+    "residual_scale": 0.1,
+    "feature_layer": -2,
+    "condition_source": "human_question_frozen_input_embeddings"
+  },
+  "wrapped_block_index": 10,
+  "environment": {
+    "cuda_available": true,
+    "torch": "2.8.0+cu128",
+    "base_revision": "b234b804b114d9e37bb655e11cbbb5f5e971b7a9",
+    "baseline_adapter_sha256": "318b609354f115162f14de9136005ded3cde31865dda8823559b1e0b79f79e2c",
+    "base_snapshot": "/root/autodl-tmp/cache/huggingface/hub/models--llava-hf--llava-1.5-7b-hf/snapshots/b234b804b114d9e37bb655e11cbbb5f5e971b7a9",
+    "question_counts": {
+      "train": 9806,
+      "validation": 580,
+      "test": 576
+    },
+    "train_image_questions": 4903,
+    "conditioning": "human question only; no paired caption or answer",
+    "training": "GPU generation loss backpropagates into new visual encoder residual only",
+    "cpu_small_sample": "separate real-image linear-probe diagnostic, not TICR",
+    "gpu_training_executed": false,
+    "memory.max": "128849018880",
+    "cpu.max": "1800000 100000",
+    "gpu_name": "NVIDIA A800-SXM4-80GB",
+    "gpu_memory_gib": 79.249755859375,
+    "bf16_supported": true
+  },
+  "arguments": {
+    "command": "smoke",
+    "output": "/root/autodl-tmp/moral-llava/main-publication-20261105/3.1/results/runs/text-guided-gpu-20261108/smoke",
+    "base_model": "/root/autodl-tmp/cache/huggingface/hub/models--llava-hf--llava-1.5-7b-hf/snapshots/b234b804b114d9e37bb655e11cbbb5f5e971b7a9",
+    "baseline_adapter": "/root/autodl-tmp/moral-llava/main-publication-20261105/3.1/models/moralclip-llava-polarity",
+    "moralclip_model": "/root/autodl-tmp/moralclip-base",
+    "data": "/root/autodl-tmp/moral-llava/main-publication-20261105/3.1/data/polarity-v1",
+    "image_root": "/root/autodl-tmp/moral-llava/main-publication-20261105/3.1/data/raw/SMID_moralclip",
+    "precision": "bf16",
+    "epochs": 3,
+    "rank": 32,
+    "learning_rate": 0.0005,
+    "preservation_weight": 0.05,
+    "gradient_accumulation": 8,
+    "eval_batch_size": 1,
+    "max_length": 2048,
+    "smoke_steps": 8,
+    "seed": 42
+  },
+  "training_examples": 20,
+  "validation_questions": 20,
+  "trainable_names": [
+    "base_model.model.vision_tower.vision_model.encoder.layers.10.adapter.visual_norm.weight",
+    "base_model.model.vision_tower.vision_model.encoder.layers.10.adapter.visual_norm.bias",
+    "base_model.model.vision_tower.vision_model.encoder.layers.10.adapter.down.weight",
+    "base_model.model.vision_tower.vision_model.encoder.layers.10.adapter.down.bias",
+    "base_model.model.vision_tower.vision_model.encoder.layers.10.adapter.text_norm.weight",
+    "base_model.model.vision_tower.vision_model.encoder.layers.10.adapter.text_norm.bias",
+    "base_model.model.vision_tower.vision_model.encoder.layers.10.adapter.condition.0.weight",
+    "base_model.model.vision_tower.vision_model.encoder.layers.10.adapter.condition.0.bias",
+    "base_model.model.vision_tower.vision_model.encoder.layers.10.adapter.condition.2.weight",
+    "base_model.model.vision_tower.vision_model.encoder.layers.10.adapter.condition.2.bias",
+    "base_model.model.vision_tower.vision_model.encoder.layers.10.adapter.up.weight",
+    "base_model.model.vision_tower.vision_model.encoder.layers.10.adapter.up.bias"
+  ],
+  "trainable_parameters": 192896,
+  "source_sha256": {
+    "run_text_guided_vision.py": "5b9f6c824f2a994ca91be5ae3d2da8a3a2452a0012f3d16189cc75d6e27933f6",
+    "moral_llava/text_guided_vision.py": "2716c5158be959c87e8a3083456cb1949b79ad7945c6191b27a9a844195cf6cb",
+    "moral_llava/polarity.py": "193bc6a2112c123b2bc90f35f9e675820d94b657d6ff608cef7972040c513a03",
+    "moral_llava/binary_runtime.py": "1d05d311c6b6d58f33ab8a520c82b8a64f1eb53fd2dacb3f666df7c6c4f0bf8c",
+    "moral_llava/train.py": "a57c18ff40e403071a23b05f9e496381e39891fe64ce8ee794ed450f40b238b3",
+    "moral_llava/guided_report.py": "73f3df9ebf02ab6aa4fde006105a9334e9824dc2a6caa88ff57d74c16b738c21",
+    "moral_llava/moralclip_integration.py": "28bbdca6ff0ccfc248e9b87fcc6aef4f416f32fa7a8baa6736d4e2e5974b19ae",
+    "moral_llava/polarity_runtime.py": "b152b3cb9d6a42671f4368a255c9351db9888da078a18d0878eb1bd912c04c7b"
+  },
+  "data_sha256": {
+    "train": "b66dde874732e043182faa768609ffb73903df6b06bafc24f9d78892b1754525",
+    "validation": "4239c3719299771d99871e11ccfa100c18af4f04355bc747bc39b30abf0e6d13",
+    "test": "64a84a13a57df03c27648bef99c7988b810b0881dc7156d35f534e3446ab8756"
+  },
+  "test_policy": "no test predictions until validation selection is locked",
+  "selection": "image accuracy and valid-rate guards, then joint accuracy / image BA / TICR; earlier ties"
+}

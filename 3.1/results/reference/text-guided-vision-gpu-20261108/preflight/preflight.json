@@ -1,0 +1,22 @@
+{
+  "cuda_available": true,
+  "torch": "2.8.0+cu128",
+  "base_revision": "b234b804b114d9e37bb655e11cbbb5f5e971b7a9",
+  "baseline_adapter_sha256": "318b609354f115162f14de9136005ded3cde31865dda8823559b1e0b79f79e2c",
+  "base_snapshot": "/root/autodl-tmp/cache/huggingface/hub/models--llava-hf--llava-1.5-7b-hf/snapshots/b234b804b114d9e37bb655e11cbbb5f5e971b7a9",
+  "question_counts": {
+    "train": 9806,
+    "validation": 580,
+    "test": 576
+  },
+  "train_image_questions": 4903,
+  "conditioning": "human question only; no paired caption or answer",
+  "training": "GPU generation loss backpropagates into new visual encoder residual only",
+  "cpu_small_sample": "separate real-image linear-probe diagnostic, not TICR",
+  "gpu_training_executed": false,
+  "memory.max": "128849018880",
+  "cpu.max": "1800000 100000",
+  "gpu_name": "NVIDIA A800-SXM4-80GB",
+  "gpu_memory_gib": 79.249755859375,
+  "bf16_supported": true
+}

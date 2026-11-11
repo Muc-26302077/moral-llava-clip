@@ -1,6 +1,6 @@
 # TICR：五个道德基础维度的极性二分类
 
-日期：2026-11-03（Asia/Shanghai）。正式指标名称为 **TICR（Text-Image Consistency Rate，图文一致率）**，取代讨论阶段的 C@1。正式目标为“在已知该道德基础的场景中区分正负极性”。完整存在性实验先结束、先独立分析，再建立 `codex/ticr-polarity-v1` 分支。
+日期：2026-11-03。正式指标名称为 **TICR（Text-Image Consistency Rate，图文一致率）**。正式目标为“在已知该道德基础的场景中区分正负极性”。完整存在性实验先结束、先独立分析，再建立 `codex/ticr-polarity-v1` 分支。
 
 ## 1. 任务与答案
 

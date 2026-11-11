@@ -1,0 +1,13 @@
+{
+  "model": "ours",
+  "task": "moralise",
+  "data_sha256": "0ff3692a96ea5feb5b0b3d5831aed95ec84b7cb8c32b775021368468d8a705c0",
+  "precision": "bf16",
+  "decoding": "greedy",
+  "max_new_tokens": 64,
+  "batch_size": 8,
+  "visual_preprocessing": "model-native CLIP processor",
+  "adapter_sha256": "318b609354f115162f14de9136005ded3cde31865dda8823559b1e0b79f79e2c",
+  "smoke_only": false,
+  "script_sha256": "433f72690017ba64095535174438b4356f33a55b5964967b69f8a5200f307df7"
+}

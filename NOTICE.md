@@ -6,8 +6,8 @@
 
 | 材料 | 版权与条款入口 |
 | --- | --- |
-| SMID 图片、标签和衍生描述 | [数据版权说明](3.1/data/COPYRIGHT.md)；原图权利人各自保留权利 |
-| MoralLLaVA LoRA、tokenizer/processor 等模型材料 | [模型说明](3.1/models/README.md)；保留基模和上游组件适用条款 |
+| SMID 图片、标签和衍生描述 | [数据版权说明](data/COPYRIGHT.md)；原图权利人各自保留权利 |
+| MoralLLaVA LoRA、tokenizer/processor 等模型材料 | [模型说明](models/README.md)；保留基模和上游组件适用条款 |
 | 原始 LLaVA 实现 | [LLaVA LICENSE](https://github.com/haotian-liu/LLaVA/blob/main/LICENSE)，代码为 Apache-2.0 |
 | LLaVA-1.5-7B-HF 模型 | [指定版本模型卡](https://huggingface.co/llava-hf/llava-1.5-7b-hf/blob/b234b804b114d9e37bb655e11cbbb5f5e971b7a9/README.md)，遵守模型卡和 Llama 2 等上游适用条款 |
 

@@ -1,0 +1,12 @@
+{
+  "image_record_id": "b10_p126_10::care::image",
+  "swapped_question_record_id": "b10_p126_10::fairness::image",
+  "image_sha256": "e1c65daf34164f53449723da4c8b3b6001a6dc12ecb6596bca8c1ee49c3ab03b",
+  "image_unchanged": true,
+  "condition_mean_abs_difference": 0.0016299262642860413,
+  "selected_visual_feature_mean_abs_difference": 0.0013400118332356215,
+  "selected_visual_feature_max_abs_difference": 0.03125,
+  "selected_visual_feature_changed_fraction": 0.6366257071495056,
+  "precision": "torch.bfloat16",
+  "interpretation": "Condition-path diagnostic on one training image; not evidence of accuracy or TICR improvement."
+}

@@ -1,6 +1,6 @@
 __pycache__/
 *.py[cod]
-.venv/
+.venv*/
 .pytest_cache/
 .ipynb_checkpoints/
 .DS_Store
@@ -12,8 +12,10 @@ __pycache__/
 *token*.txt
 tmp/
 wandb/
-3.1/results/runs/
-3.1/models/base/
-3.1/release_verification.json
-3.1/data/binary-v1/
-3.1/data/polarity-v1/
+results/runs/
+models/base/
+data/polarity-v1/
+data/moralise/
+data/moralise-native.json
+data/moralise-audit.json
+data/moralise-image-audit.json

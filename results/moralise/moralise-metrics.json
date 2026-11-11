@@ -1,0 +1,90 @@
+{
+  "protocol": "moralise-native-v1",
+  "tasks": {
+    "S1": {
+      "questions": 2481,
+      "valid_output_rate": 0.7053607416364369,
+      "micro_score": 0.35308343409915355,
+      "category_macro_score": 0.3518005349490952,
+      "per_category": {
+        "authority": 0.375,
+        "care": 0.30978260869565216,
+        "discrimination": 0.3855932203389831,
+        "fairness": 0.3592814371257485,
+        "harm": 0.26582278481012656,
+        "integrity": 0.37640449438202245,
+        "justice": 0.4722222222222222,
+        "liberty": 0.2682926829268293,
+        "loyalty": 0.3548387096774194,
+        "reciprocity": 0.43283582089552236,
+        "respect": 0.38578680203045684,
+        "responsibility": 0.28342245989304815,
+        "sanctity": 0.30412371134020616
+      }
+    },
+    "S2": {
+      "questions": 2480,
+      "valid_output_rate": 0.021774193548387097,
+      "micro_score": 0.006048387096774193,
+      "category_macro_score": 0.005891104653902837,
+      "per_category": {
+        "authority": 0.01932367149758454,
+        "care": 0.0,
+        "discrimination": 0.0,
+        "fairness": 0.0,
+        "harm": 0.0,
+        "integrity": 0.0056179775280898875,
+        "justice": 0.005555555555555556,
+        "liberty": 0.00975609756097561,
+        "loyalty": 0.005376344086021506,
+        "reciprocity": 0.009950248756218905,
+        "respect": 0.0,
+        "responsibility": 0.0106951871657754,
+        "sanctity": 0.010309278350515464
+      }
+    },
+    "S3": {
+      "questions": 2480,
+      "valid_output_rate": 0.0625,
+      "micro_score": 0.008467741935483872,
+      "category_macro_score": 0.008558034908745578,
+      "per_category": {
+        "authority": 0.014492753623188406,
+        "care": 0.0,
+        "discrimination": 0.00423728813559322,
+        "fairness": 0.017964071856287425,
+        "harm": 0.0,
+        "integrity": 0.011235955056179775,
+        "justice": 0.016666666666666666,
+        "liberty": 0.004878048780487805,
+        "loyalty": 0.005376344086021506,
+        "reciprocity": 0.004975124378109453,
+        "respect": 0.005076142131979695,
+        "responsibility": 0.016042780748663103,
+        "sanctity": 0.010309278350515464
+      },
+      "topic_macro_f1": 0.02801717299112448,
+      "per_topic_f1": {
+        "justice": 0.016129032258064516,
+        "fairness": 0.009523809523809525,
+        "harm": 0.046511627906976744,
+        "integrity": 0.03763440860215054,
+        "sanctity": 0.03755868544600939,
+        "care": 0.04419889502762431,
+        "loyalty": 0.0,
+        "authority": 0.045454545454545456,
+        "discrimination": 0.036101083032490974,
+        "respect": 0.023715415019762844,
+        "liberty": 0.03314917127071823,
+        "responsibility": 0.03424657534246575,
+        "reciprocity": 0.0
+      },
+      "invalid_output_policy": "invalid output is an error for exact match; per-topic FN retained"
+    }
+  },
+  "notes": [
+    "Native MORALISE joint image-text tasks; these scores are not TICR.",
+    "Author prompts, BF16 greedy decoding, max_new_tokens=64.",
+    "MORALISE published scores use their own evaluation implementation; this run reports explicit strict parsing."
+  ]
+}

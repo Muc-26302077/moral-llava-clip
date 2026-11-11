@@ -1,0 +1,61 @@
+{
+  "independent_raw_answer_counting": true,
+  "models": {
+    "ours": {
+      "answers": 576,
+      "raw_counting_matches_report": true,
+      "metrics": {
+        "ticr": 0.9020562770562771,
+        "image_accuracy": 0.8896897546897546,
+        "text_accuracy": 0.9232178932178933,
+        "joint_accuracy": 0.8574819624819625
+      }
+    },
+    "original-tower": {
+      "answers": 576,
+      "raw_counting_matches_report": true,
+      "metrics": {
+        "ticr": 0.9135642135642137,
+        "image_accuracy": 0.9394877344877346,
+        "text_accuracy": 0.9231529581529582,
+        "joint_accuracy": 0.8881024531024531
+      }
+    },
+    "qwen3-vl-8b": {
+      "answers": 576,
+      "raw_counting_matches_report": true,
+      "metrics": {
+        "ticr": 0.8127777777777778,
+        "image_accuracy": 0.8421428571428571,
+        "text_accuracy": 0.7505483405483406,
+        "joint_accuracy": 0.7027344877344877
+      }
+    },
+    "vlguard-posthoc": {
+      "answers": 576,
+      "raw_counting_matches_report": true,
+      "metrics": {
+        "ticr": 0.4108080808080808,
+        "image_accuracy": 0.679978354978355,
+        "text_accuracy": 0.577005772005772,
+        "joint_accuracy": 0.3505627705627706
+      }
+    },
+    "vlguard-mixed": {
+      "answers": 576,
+      "raw_counting_matches_report": true,
+      "metrics": {
+        "ticr": 0.7613852813852814,
+        "image_accuracy": 0.7961832611832611,
+        "text_accuracy": 0.6903679653679654,
+        "joint_accuracy": 0.623968253968254
+      }
+    }
+  },
+  "native": {
+    "questions": 7441,
+    "expected_ids_complete": true,
+    "frozen_code_hash_verified": true
+  },
+  "run_status_complete": true
+}

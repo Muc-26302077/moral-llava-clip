@@ -1,0 +1,16 @@
+{
+  "method": "question_conditioned_moralclip_encoder_v1",
+  "config": {
+    "vision_dim": 768,
+    "text_dim": 4096,
+    "rank": 32,
+    "residual_scale": 0.1,
+    "feature_layer": -2,
+    "condition_source": "human_question_frozen_input_embeddings"
+  },
+  "weights_sha256": "139dfab9f7ad37dc52eb75a68a93e6189da6601f3ab984cb0b2483a03ab93849",
+  "metadata": {
+    "epoch": 3,
+    "baseline_adapter_sha256": "318b609354f115162f14de9136005ded3cde31865dda8823559b1e0b79f79e2c"
+  }
+}

@@ -1,7 +1,0 @@
-{
-  "selected_epoch": 2,
-  "selected_adapter": "runs/crossmodal-joint-v1/epoch-002",
-  "best_validation_agreement": 0.7388059701492538,
-  "selection_split": "validation",
-  "quality_tolerance": 0.02
-}

@@ -1,0 +1,569 @@
+{
+  "protocol": "smid-foundation-polarity-v1",
+  "metric_name": "TICR",
+  "metric_full_name": "Text-Image Consistency Rate",
+  "primary_tasks": [
+    "care",
+    "fairness",
+    "loyalty",
+    "authority",
+    "sanctity"
+  ],
+  "auxiliary_tasks": [],
+  "overall": {
+    "eligible_scenes": 87,
+    "per_task": {
+      "care": {
+        "pairs": 72,
+        "consistent": 66,
+        "ticr": 0.9166666666666666,
+        "joint_correct": 62,
+        "joint_accuracy": 0.8611111111111112,
+        "consistent_wrong": 4,
+        "positive_label": "关怀",
+        "negative_label": "伤害",
+        "positive_references": 38,
+        "ticr_wilson95": [
+          0.8298764477932348,
+          0.9612475750430503
+        ],
+        "image": {
+          "accuracy": 0.875,
+          "balanced_accuracy": 0.8707430340557275,
+          "positive_f1": 0.8888888888888888,
+          "valid_output_rate": 1.0,
+          "positive_predictions": 43,
+          "invalid_outputs": 0,
+          "constant_prediction": false
+        },
+        "text": {
+          "accuracy": 0.9305555555555556,
+          "balanced_accuracy": 0.9264705882352942,
+          "positive_f1": 0.9382716049382716,
+          "valid_output_rate": 1.0,
+          "positive_predictions": 43,
+          "invalid_outputs": 0,
+          "constant_prediction": false
+        }
+      },
+      "fairness": {
+        "pairs": 42,
+        "consistent": 37,
+        "ticr": 0.8809523809523809,
+        "joint_correct": 35,
+        "joint_accuracy": 0.8333333333333334,
+        "consistent_wrong": 2,
+        "positive_label": "公平",
+        "negative_label": "欺骗",
+        "positive_references": 19,
+        "ticr_wilson95": [
+          0.7499960973799032,
+          0.9480619667224176
+        ],
+        "image": {
+          "accuracy": 0.8809523809523809,
+          "balanced_accuracy": 0.8867276887871853,
+          "positive_f1": 0.8780487804878049,
+          "valid_output_rate": 1.0,
+          "positive_predictions": 22,
+          "invalid_outputs": 0,
+          "constant_prediction": false
+        },
+        "text": {
+          "accuracy": 0.9047619047619048,
+          "balanced_accuracy": 0.9130434782608696,
+          "positive_f1": 0.9047619047619048,
+          "valid_output_rate": 1.0,
+          "positive_predictions": 23,
+          "invalid_outputs": 0,
+          "constant_prediction": false
+        }
+      },
+      "loyalty": {
+        "pairs": 63,
+        "consistent": 54,
+        "ticr": 0.8571428571428571,
+        "joint_correct": 51,
+        "joint_accuracy": 0.8095238095238095,
+        "consistent_wrong": 3,
+        "positive_label": "忠诚",
+        "negative_label": "背叛",
+        "positive_references": 42,
+        "ticr_wilson95": [
+          0.7502543407837413,
+          0.922980516652793
+        ],
+        "image": {
+          "accuracy": 0.873015873015873,
+          "balanced_accuracy": 0.8214285714285714,
+          "positive_f1": 0.9111111111111111,
+          "valid_output_rate": 1.0,
+          "positive_predictions": 48,
+          "invalid_outputs": 0,
+          "constant_prediction": false
+        },
+        "text": {
+          "accuracy": 0.8888888888888888,
+          "balanced_accuracy": 0.8452380952380952,
+          "positive_f1": 0.9213483146067416,
+          "valid_output_rate": 1.0,
+          "positive_predictions": 47,
+          "invalid_outputs": 0,
+          "constant_prediction": false
+        }
+      },
+      "authority": {
+        "pairs": 55,
+        "consistent": 49,
+        "ticr": 0.8909090909090909,
+        "joint_correct": 47,
+        "joint_accuracy": 0.8545454545454545,
+        "consistent_wrong": 2,
+        "positive_label": "权威",
+        "negative_label": "颠覆",
+        "positive_references": 35,
+        "ticr_wilson95": [
+          0.7817445091344648,
+          0.9490327499921767
+        ],
+        "image": {
+          "accuracy": 0.8727272727272727,
+          "balanced_accuracy": 0.8464285714285714,
+          "positive_f1": 0.9041095890410958,
+          "valid_output_rate": 1.0,
+          "positive_predictions": 38,
+          "invalid_outputs": 0,
+          "constant_prediction": false
+        },
+        "text": {
+          "accuracy": 0.9454545454545454,
+          "balanced_accuracy": 0.925,
+          "positive_f1": 0.958904109589041,
+          "valid_output_rate": 1.0,
+          "positive_predictions": 38,
+          "invalid_outputs": 0,
+          "constant_prediction": false
+        }
+      },
+      "sanctity": {
+        "pairs": 56,
+        "consistent": 53,
+        "ticr": 0.9464285714285714,
+        "joint_correct": 51,
+        "joint_accuracy": 0.9107142857142857,
+        "consistent_wrong": 2,
+        "positive_label": "纯洁",
+        "negative_label": "污秽",
+        "positive_references": 25,
+        "ticr_wilson95": [
+          0.8539269093117847,
+          0.9816142186178909
+        ],
+        "image": {
+          "accuracy": 0.9285714285714286,
+          "balanced_accuracy": 0.935483870967742,
+          "positive_f1": 0.9259259259259259,
+          "valid_output_rate": 1.0,
+          "positive_predictions": 29,
+          "invalid_outputs": 0,
+          "constant_prediction": false
+        },
+        "text": {
+          "accuracy": 0.9464285714285714,
+          "balanced_accuracy": 0.9516129032258065,
+          "positive_f1": 0.9433962264150944,
+          "valid_output_rate": 1.0,
+          "positive_predictions": 28,
+          "invalid_outputs": 0,
+          "constant_prediction": false
+        }
+      }
+    },
+    "primary_macro": {
+      "ticr": 0.8984199134199133,
+      "joint_accuracy": 0.8538455988455989,
+      "consistent_pairs": 259,
+      "pairs": 288,
+      "micro_ticr": 0.8993055555555556,
+      "image_accuracy": 0.886053391053391,
+      "image_balanced_accuracy": 0.8721623473335596,
+      "text_accuracy": 0.9232178932178933,
+      "text_balanced_accuracy": 0.912273012992013
+    }
+  },
+  "groups": {
+    "A": {
+      "eligible_scenes": 43,
+      "per_task": {
+        "care": {
+          "pairs": 36,
+          "consistent": 32,
+          "ticr": 0.8888888888888888,
+          "joint_correct": 31,
+          "joint_accuracy": 0.8611111111111112,
+          "consistent_wrong": 1,
+          "positive_label": "关怀",
+          "negative_label": "伤害",
+          "positive_references": 19,
+          "ticr_wilson95": [
+            0.7468519140963513,
+            0.9559335969968435
+          ],
+          "image": {
+            "accuracy": 0.8611111111111112,
+            "balanced_accuracy": 0.8591331269349844,
+            "positive_f1": 0.8717948717948718,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 20,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "text": {
+            "accuracy": 0.9722222222222222,
+            "balanced_accuracy": 0.9705882352941176,
+            "positive_f1": 0.9743589743589743,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 20,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          }
+        },
+        "fairness": {
+          "pairs": 21,
+          "consistent": 19,
+          "ticr": 0.9047619047619048,
+          "joint_correct": 19,
+          "joint_accuracy": 0.9047619047619048,
+          "consistent_wrong": 0,
+          "positive_label": "公平",
+          "negative_label": "欺骗",
+          "positive_references": 9,
+          "ticr_wilson95": [
+            0.7108586092608176,
+            0.9734812325619255
+          ],
+          "image": {
+            "accuracy": 0.9523809523809523,
+            "balanced_accuracy": 0.9583333333333333,
+            "positive_f1": 0.9473684210526315,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 10,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "text": {
+            "accuracy": 0.9523809523809523,
+            "balanced_accuracy": 0.9583333333333333,
+            "positive_f1": 0.9473684210526315,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 10,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          }
+        },
+        "loyalty": {
+          "pairs": 30,
+          "consistent": 24,
+          "ticr": 0.8,
+          "joint_correct": 24,
+          "joint_accuracy": 0.8,
+          "consistent_wrong": 0,
+          "positive_label": "忠诚",
+          "negative_label": "背叛",
+          "positive_references": 20,
+          "ticr_wilson95": [
+            0.6269430358685175,
+            0.9049489282271013
+          ],
+          "image": {
+            "accuracy": 0.8666666666666667,
+            "balanced_accuracy": 0.825,
+            "positive_f1": 0.9047619047619048,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 22,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "text": {
+            "accuracy": 0.9333333333333333,
+            "balanced_accuracy": 0.9,
+            "positive_f1": 0.9523809523809523,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 22,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          }
+        },
+        "authority": {
+          "pairs": 27,
+          "consistent": 24,
+          "ticr": 0.8888888888888888,
+          "joint_correct": 24,
+          "joint_accuracy": 0.8888888888888888,
+          "consistent_wrong": 0,
+          "positive_label": "权威",
+          "negative_label": "颠覆",
+          "positive_references": 18,
+          "ticr_wilson95": [
+            0.7194219918172017,
+            0.9614796517169016
+          ],
+          "image": {
+            "accuracy": 0.8888888888888888,
+            "balanced_accuracy": 0.8888888888888888,
+            "positive_f1": 0.9142857142857143,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 17,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "text": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "positive_f1": 1.0,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 18,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          }
+        },
+        "sanctity": {
+          "pairs": 28,
+          "consistent": 27,
+          "ticr": 0.9642857142857143,
+          "joint_correct": 27,
+          "joint_accuracy": 0.9642857142857143,
+          "consistent_wrong": 0,
+          "positive_label": "纯洁",
+          "negative_label": "污秽",
+          "positive_references": 12,
+          "ticr_wilson95": [
+            0.8228780225664668,
+            0.9936674801509623
+          ],
+          "image": {
+            "accuracy": 0.9642857142857143,
+            "balanced_accuracy": 0.96875,
+            "positive_f1": 0.96,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 13,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "text": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "positive_f1": 1.0,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 12,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          }
+        }
+      },
+      "primary_macro": {
+        "ticr": 0.8893650793650794,
+        "joint_accuracy": 0.8838095238095238,
+        "consistent_pairs": 126,
+        "pairs": 142,
+        "micro_ticr": 0.8873239436619719,
+        "image_accuracy": 0.9066666666666666,
+        "image_balanced_accuracy": 0.9000210698314414,
+        "text_accuracy": 0.9715873015873016,
+        "text_balanced_accuracy": 0.9657843137254902
+      }
+    },
+    "B": {
+      "eligible_scenes": 44,
+      "per_task": {
+        "care": {
+          "pairs": 36,
+          "consistent": 34,
+          "ticr": 0.9444444444444444,
+          "joint_correct": 31,
+          "joint_accuracy": 0.8611111111111112,
+          "consistent_wrong": 3,
+          "positive_label": "关怀",
+          "negative_label": "伤害",
+          "positive_references": 19,
+          "ticr_wilson95": [
+            0.8185534279135275,
+            0.9846300133358382
+          ],
+          "image": {
+            "accuracy": 0.8888888888888888,
+            "balanced_accuracy": 0.8823529411764706,
+            "positive_f1": 0.9047619047619048,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 23,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "text": {
+            "accuracy": 0.8888888888888888,
+            "balanced_accuracy": 0.8823529411764706,
+            "positive_f1": 0.9047619047619048,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 23,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          }
+        },
+        "fairness": {
+          "pairs": 21,
+          "consistent": 18,
+          "ticr": 0.8571428571428571,
+          "joint_correct": 16,
+          "joint_accuracy": 0.7619047619047619,
+          "consistent_wrong": 2,
+          "positive_label": "公平",
+          "negative_label": "欺骗",
+          "positive_references": 10,
+          "ticr_wilson95": [
+            0.6536393971937906,
+            0.9501898750027473
+          ],
+          "image": {
+            "accuracy": 0.8095238095238095,
+            "balanced_accuracy": 0.8136363636363637,
+            "positive_f1": 0.8181818181818182,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 12,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "text": {
+            "accuracy": 0.8571428571428571,
+            "balanced_accuracy": 0.8636363636363636,
+            "positive_f1": 0.8695652173913043,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 13,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          }
+        },
+        "loyalty": {
+          "pairs": 33,
+          "consistent": 30,
+          "ticr": 0.9090909090909091,
+          "joint_correct": 27,
+          "joint_accuracy": 0.8181818181818182,
+          "consistent_wrong": 3,
+          "positive_label": "忠诚",
+          "negative_label": "背叛",
+          "positive_references": 22,
+          "ticr_wilson95": [
+            0.7642739435353026,
+            0.9685960584754184
+          ],
+          "image": {
+            "accuracy": 0.8787878787878788,
+            "balanced_accuracy": 0.8181818181818181,
+            "positive_f1": 0.9166666666666666,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 26,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "text": {
+            "accuracy": 0.8484848484848485,
+            "balanced_accuracy": 0.7954545454545454,
+            "positive_f1": 0.8936170212765957,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 25,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          }
+        },
+        "authority": {
+          "pairs": 28,
+          "consistent": 25,
+          "ticr": 0.8928571428571429,
+          "joint_correct": 23,
+          "joint_accuracy": 0.8214285714285714,
+          "consistent_wrong": 2,
+          "positive_label": "权威",
+          "negative_label": "颠覆",
+          "positive_references": 17,
+          "ticr_wilson95": [
+            0.7280414845132785,
+            0.9628816331707
+          ],
+          "image": {
+            "accuracy": 0.8571428571428571,
+            "balanced_accuracy": 0.8181818181818181,
+            "positive_f1": 0.8947368421052632,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 21,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "text": {
+            "accuracy": 0.8928571428571429,
+            "balanced_accuracy": 0.8636363636363636,
+            "positive_f1": 0.918918918918919,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 20,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          }
+        },
+        "sanctity": {
+          "pairs": 28,
+          "consistent": 26,
+          "ticr": 0.9285714285714286,
+          "joint_correct": 24,
+          "joint_accuracy": 0.8571428571428571,
+          "consistent_wrong": 2,
+          "positive_label": "纯洁",
+          "negative_label": "污秽",
+          "positive_references": 13,
+          "ticr_wilson95": [
+            0.7735463743160095,
+            0.9801879358846942
+          ],
+          "image": {
+            "accuracy": 0.8928571428571429,
+            "balanced_accuracy": 0.9,
+            "positive_f1": 0.896551724137931,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 16,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          },
+          "text": {
+            "accuracy": 0.8928571428571429,
+            "balanced_accuracy": 0.9,
+            "positive_f1": 0.896551724137931,
+            "valid_output_rate": 1.0,
+            "positive_predictions": 16,
+            "invalid_outputs": 0,
+            "constant_prediction": false
+          }
+        }
+      },
+      "primary_macro": {
+        "ticr": 0.9064213564213564,
+        "joint_accuracy": 0.823953823953824,
+        "consistent_pairs": 133,
+        "pairs": 146,
+        "micro_ticr": 0.910958904109589,
+        "image_accuracy": 0.8654401154401155,
+        "image_balanced_accuracy": 0.8464705882352941,
+        "text_accuracy": 0.8760461760461761,
+        "text_balanced_accuracy": 0.8610160427807486
+      }
+    }
+  },
+  "notes": [
+    "Conditional polarity classification; unannotated scenes excluded per task.",
+    "TICR is the unweighted five-task macro mean, not pooled pair agreement.",
+    "Invalid outputs remain in denominators; two invalid answers never agree.",
+    "Test scenes and captions overlap historical experiments; this is not a fresh blind test."
+  ],
+  "complete_grouped_benchmark": true,
+  "ticr_passes_60pct_both_groups": true,
+  "above_chance_quality_guard": true,
+  "eligible_for_stage2": true,
+  "formal_test_result": true
+}

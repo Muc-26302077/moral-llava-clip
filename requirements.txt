@@ -1,6 +1,6 @@
 # BF16 evaluation. Install a torch wheel matching your GPU driver when necessary.
-torch==2.6.0
-torchvision==0.21.0
+torch==2.8.0
+torchvision==0.23.0
 transformers==4.49.0
 peft==0.14.0
 accelerate==1.3.0

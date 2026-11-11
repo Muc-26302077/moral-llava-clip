@@ -1,0 +1,13 @@
+{
+  "model": "vlguard-mixed",
+  "benchmark_task": "ticr",
+  "data_sha256": "64a84a13a57df03c27648bef99c7988b810b0881dc7156d35f534e3446ab8756",
+  "precision": "bf16",
+  "decoding": "greedy",
+  "max_new_tokens": 16,
+  "batch_size": 8,
+  "visual_preprocessing": "CLIP mean-color square padding, then CLIP-L/14-336",
+  "adapter_sha256": null,
+  "smoke_only": false,
+  "script_sha256": "a620b8a4e11d1c6cb8252ab9e66ffca8f09a5fd157406d7272bd804bc938d122"
+}

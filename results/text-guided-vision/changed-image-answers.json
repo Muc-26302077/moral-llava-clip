@@ -1,0 +1,132 @@
+[
+  {
+    "id": "b11_p176_6::care::image",
+    "scene_id": "b11_p176_6",
+    "task": "care",
+    "ground_truth": "关怀",
+    "baseline": " 伤害",
+    "trained_epoch3": " 关怀",
+    "baseline_correct": false,
+    "trained_correct": true
+  },
+  {
+    "id": "b15_p330_7::loyalty::image",
+    "scene_id": "b15_p330_7",
+    "task": "loyalty",
+    "ground_truth": "背叛",
+    "baseline": " 忠诚",
+    "trained_epoch3": " 背叛",
+    "baseline_correct": false,
+    "trained_correct": true
+  },
+  {
+    "id": "b15_p330_7::authority::image",
+    "scene_id": "b15_p330_7",
+    "task": "authority",
+    "ground_truth": "颠覆",
+    "baseline": " 权威",
+    "trained_epoch3": " 颠覆",
+    "baseline_correct": false,
+    "trained_correct": true
+  },
+  {
+    "id": "b15_p363_17::authority::image",
+    "scene_id": "b15_p363_17",
+    "task": "authority",
+    "ground_truth": "颠覆",
+    "baseline": " 权威",
+    "trained_epoch3": " 颠覆",
+    "baseline_correct": false,
+    "trained_correct": true
+  },
+  {
+    "id": "b2_p20_11::care::image",
+    "scene_id": "b2_p20_11",
+    "task": "care",
+    "ground_truth": "关怀",
+    "baseline": " 伤害",
+    "trained_epoch3": " 关怀",
+    "baseline_correct": false,
+    "trained_correct": true
+  },
+  {
+    "id": "b2_p20_11::fairness::image",
+    "scene_id": "b2_p20_11",
+    "task": "fairness",
+    "ground_truth": "公平",
+    "baseline": " 欺骗",
+    "trained_epoch3": " 公平",
+    "baseline_correct": false,
+    "trained_correct": true
+  },
+  {
+    "id": "b2_p23_17::care::image",
+    "scene_id": "b2_p23_17",
+    "task": "care",
+    "ground_truth": "伤害",
+    "baseline": " 伤害",
+    "trained_epoch3": " 关怀",
+    "baseline_correct": true,
+    "trained_correct": false
+  },
+  {
+    "id": "b2_p23_17::fairness::image",
+    "scene_id": "b2_p23_17",
+    "task": "fairness",
+    "ground_truth": "欺骗",
+    "baseline": " 欺骗",
+    "trained_epoch3": " 公平",
+    "baseline_correct": true,
+    "trained_correct": false
+  },
+  {
+    "id": "b2_p23_17::loyalty::image",
+    "scene_id": "b2_p23_17",
+    "task": "loyalty",
+    "ground_truth": "背叛",
+    "baseline": " 背叛",
+    "trained_epoch3": " 忠诚",
+    "baseline_correct": true,
+    "trained_correct": false
+  },
+  {
+    "id": "b2_p23_17::authority::image",
+    "scene_id": "b2_p23_17",
+    "task": "authority",
+    "ground_truth": "颠覆",
+    "baseline": " 颠覆",
+    "trained_epoch3": " 权威",
+    "baseline_correct": true,
+    "trained_correct": false
+  },
+  {
+    "id": "b2_p23_17::sanctity::image",
+    "scene_id": "b2_p23_17",
+    "task": "sanctity",
+    "ground_truth": "污秽",
+    "baseline": " 污秽",
+    "trained_epoch3": " 纯洁",
+    "baseline_correct": true,
+    "trained_correct": false
+  },
+  {
+    "id": "b999_p479_17::care::image",
+    "scene_id": "b999_p479_17",
+    "task": "care",
+    "ground_truth": "伤害",
+    "baseline": " 伤害",
+    "trained_epoch3": " 关怀",
+    "baseline_correct": true,
+    "trained_correct": false
+  },
+  {
+    "id": "b999_p479_17::authority::image",
+    "scene_id": "b999_p479_17",
+    "task": "authority",
+    "ground_truth": "颠覆",
+    "baseline": " 颠覆",
+    "trained_epoch3": " 权威",
+    "baseline_correct": true,
+    "trained_correct": false
+  }
+]

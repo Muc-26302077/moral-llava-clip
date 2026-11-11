@@ -1,0 +1,13 @@
+{
+  "model": "qwen3-vl-8b",
+  "benchmark_task": "ticr",
+  "data_sha256": "64a84a13a57df03c27648bef99c7988b810b0881dc7156d35f534e3446ab8756",
+  "precision": "bf16",
+  "decoding": "greedy",
+  "max_new_tokens": 16,
+  "batch_size": 8,
+  "visual_preprocessing": "Qwen3 256-1280 visual tokens",
+  "adapter_sha256": null,
+  "smoke_only": false,
+  "script_sha256": "4b7a4b809c20c9cb8ce86fc111fffba9a792125bbfe7ebf1cd27ae83fcaf2848"
+}

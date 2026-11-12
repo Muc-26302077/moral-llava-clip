@@ -1,0 +1,242 @@
+{
+  "status": "PASS",
+  "diagnostic_only": true,
+  "formal_7b_ticr_available": false,
+  "scope": "real frozen MoralCLIP with new scene adapter; frozen final CLIP block + zero-shot class prompts; no LLaVA decoder",
+  "arguments": {
+    "model": "/root/autodl-tmp/moralclip-base",
+    "data": "/root/autodl-tmp/moral-llava/workflow-clean-20261111/data/polarity-v1",
+    "image_root": "/root/autodl-tmp/moral-llava/workflow-clean-20261111/data/raw/SMID_moralclip",
+    "output": "results/runs/scene-guided-cpu-batched-20261112",
+    "epochs": 5,
+    "per_class": 2,
+    "validation_per_class": 1,
+    "batch_size": 2,
+    "learning_rate": 0.001,
+    "seed": 42
+  },
+  "guidance_config": {
+    "vision_dim": 768,
+    "text_dim": 512,
+    "rank": 32,
+    "residual_scale": 0.1,
+    "feature_layer": -2,
+    "condition_source": "frozen_moralclip_scene_text_or_image_prediction"
+  },
+  "trainable_parameters": 114080,
+  "sample_counts": {
+    "train": {
+      "scene_task_questions": 20,
+      "unique_scenes": 20
+    },
+    "validation": {
+      "scene_task_questions": 10,
+      "unique_scenes": 10
+    }
+  },
+  "selected_ids": {
+    "train": [
+      "b10_p137_12::care::image",
+      "b11_p160_8::sanctity::image",
+      "b11_p170_17::fairness::image",
+      "b11_p172_19::sanctity::image",
+      "b11_p176_5::loyalty::image",
+      "b15_p293_7::sanctity::image",
+      "b15_p317_10::loyalty::image",
+      "b15_p350_18::loyalty::image",
+      "b15_p386_1::sanctity::image",
+      "b15_p395_11::loyalty::image",
+      "b15_p395_15::care::image",
+      "b15_p433_10::fairness::image",
+      "b15_p434_17::care::image",
+      "b15_p452_13::authority::image",
+      "b15_p460_15::care::image",
+      "b2_p19_4::authority::image",
+      "b2_p20_12::fairness::image",
+      "b4_p75_7::authority::image",
+      "b7_p97_11::authority::image",
+      "b999_p487_20::fairness::image"
+    ],
+    "validation": [
+      "b13_p217_1::authority::image",
+      "b14_p268_16::loyalty::image",
+      "b15_p340_9::care::image",
+      "b15_p371_16::sanctity::image",
+      "b15_p439_4::loyalty::image",
+      "b15_p473_10::fairness::image",
+      "b2_p18_7::sanctity::image",
+      "b2_p20_20::fairness::image",
+      "b2_p28_20::care::image",
+      "b999_p488_4::authority::image"
+    ]
+  },
+  "source_sha256": {
+    "model": "4ace10e40a63343dc270afe776a0cc851d28dc36fd13417de07dccb12e4bac2a",
+    "train": "b66dde874732e043182faa768609ffb73903df6b06bafc24f9d78892b1754525",
+    "validation": "4239c3719299771d99871e11ccfa100c18af4f04355bc747bc39b30abf0e6d13",
+    "script": "55178d8b488e99f780f74e729406a68686dcff6defe4dd21165fc392e7c38571",
+    "scene_module": "6df83f4114e55e07204b88c43dff270f50050993f09c6afd891068e54fa7633d"
+  },
+  "baseline": {
+    "train": {
+      "diagnostic_loss": 0.038722322693865864,
+      "image_polarity_accuracy": 1.0,
+      "text_polarity_accuracy": 0.6,
+      "image_text_agreement": 0.6,
+      "scene_predictor_mean_cosine": -0.0011758649721741675
+    },
+    "validation": {
+      "diagnostic_loss": 0.15247941464185716,
+      "image_polarity_accuracy": 1.0,
+      "text_polarity_accuracy": 0.6,
+      "image_text_agreement": 0.6,
+      "scene_predictor_mean_cosine": -0.006343373563140631
+    }
+  },
+  "initial_guided": {
+    "train": {
+      "diagnostic_loss": 0.1388399101793766,
+      "image_polarity_accuracy": 1.0,
+      "text_polarity_accuracy": 0.6,
+      "image_text_agreement": 0.6,
+      "scene_predictor_mean_cosine": -0.0011758649721741675
+    },
+    "validation": {
+      "diagnostic_loss": 0.2531137466430664,
+      "image_polarity_accuracy": 1.0,
+      "text_polarity_accuracy": 0.6,
+      "image_text_agreement": 0.6,
+      "scene_predictor_mean_cosine": -0.006343373563140631
+    }
+  },
+  "final_guided": {
+    "train": {
+      "predicted": {
+        "diagnostic_loss": 0.040787188708782195,
+        "image_polarity_accuracy": 1.0,
+        "text_polarity_accuracy": 0.6,
+        "image_text_agreement": 0.6,
+        "scene_predictor_mean_cosine": 0.6127102255821228
+      },
+      "paired": {
+        "diagnostic_loss": 0.041050587221980094,
+        "image_polarity_accuracy": 1.0,
+        "text_polarity_accuracy": 0.6,
+        "image_text_agreement": 0.6,
+        "scene_predictor_mean_cosine": 0.6127102255821228
+      }
+    },
+    "validation": {
+      "predicted": {
+        "diagnostic_loss": 0.18005322441458702,
+        "image_polarity_accuracy": 1.0,
+        "text_polarity_accuracy": 0.6,
+        "image_text_agreement": 0.6,
+        "scene_predictor_mean_cosine": 0.5657847404479981
+      },
+      "paired": {
+        "diagnostic_loss": 0.12920009568333626,
+        "image_polarity_accuracy": 1.0,
+        "text_polarity_accuracy": 0.6,
+        "image_text_agreement": 0.6,
+        "scene_predictor_mean_cosine": 0.5657847404479981
+      }
+    }
+  },
+  "training_trace": [
+    {
+      "epoch": 1,
+      "train": {
+        "diagnostic_loss": 0.11426647976040841,
+        "image_polarity_accuracy": 1.0,
+        "text_polarity_accuracy": 0.6,
+        "image_text_agreement": 0.6,
+        "scene_predictor_mean_cosine": 0.21811076998710632
+      },
+      "validation": {
+        "diagnostic_loss": 0.23049907237291337,
+        "image_polarity_accuracy": 1.0,
+        "text_polarity_accuracy": 0.6,
+        "image_text_agreement": 0.6,
+        "scene_predictor_mean_cosine": 0.20380986630916595
+      }
+    },
+    {
+      "epoch": 2,
+      "train": {
+        "diagnostic_loss": 0.09817288517951965,
+        "image_polarity_accuracy": 1.0,
+        "text_polarity_accuracy": 0.6,
+        "image_text_agreement": 0.6,
+        "scene_predictor_mean_cosine": 0.30655561089515687
+      },
+      "validation": {
+        "diagnostic_loss": 0.2175508916378021,
+        "image_polarity_accuracy": 1.0,
+        "text_polarity_accuracy": 0.6,
+        "image_text_agreement": 0.6,
+        "scene_predictor_mean_cosine": 0.2836493492126465
+      }
+    },
+    {
+      "epoch": 3,
+      "train": {
+        "diagnostic_loss": 0.07274864502251148,
+        "image_polarity_accuracy": 1.0,
+        "text_polarity_accuracy": 0.6,
+        "image_text_agreement": 0.6,
+        "scene_predictor_mean_cosine": 0.4031458914279938
+      },
+      "validation": {
+        "diagnostic_loss": 0.20065800249576568,
+        "image_polarity_accuracy": 1.0,
+        "text_polarity_accuracy": 0.6,
+        "image_text_agreement": 0.6,
+        "scene_predictor_mean_cosine": 0.3723755419254303
+      }
+    },
+    {
+      "epoch": 4,
+      "train": {
+        "diagnostic_loss": 0.05464660972356796,
+        "image_polarity_accuracy": 1.0,
+        "text_polarity_accuracy": 0.6,
+        "image_text_agreement": 0.6,
+        "scene_predictor_mean_cosine": 0.5033119767904282
+      },
+      "validation": {
+        "diagnostic_loss": 0.2902046374976635,
+        "image_polarity_accuracy": 0.9,
+        "text_polarity_accuracy": 0.6,
+        "image_text_agreement": 0.5,
+        "scene_predictor_mean_cosine": 0.46269081234931947
+      }
+    },
+    {
+      "epoch": 5,
+      "train": {
+        "diagnostic_loss": 0.040787188708782195,
+        "image_polarity_accuracy": 1.0,
+        "text_polarity_accuracy": 0.6,
+        "image_text_agreement": 0.6,
+        "scene_predictor_mean_cosine": 0.6127102255821228
+      },
+      "validation": {
+        "diagnostic_loss": 0.18005322441458702,
+        "image_polarity_accuracy": 1.0,
+        "text_polarity_accuracy": 0.6,
+        "image_text_agreement": 0.6,
+        "scene_predictor_mean_cosine": 0.5657847404479981
+      }
+    }
+  ],
+  "paired_text_changes_visual_features_max_abs": 0.03700241446495056,
+  "independent_caption_swap_changes_features_max_abs": 0.0,
+  "retained_frozen_weights_unchanged": true,
+  "original_clip_parameters_frozen": true,
+  "zero_init_matches_baseline": true,
+  "test_split_used": false,
+  "validation_used_for_selection": false,
+  "seconds": 84.0718109793961,
+  "interpretation": "CPU structural/optimization feasibility only. Diagnostic agreement is not generative TICR and cannot establish 7B improvement."
+}

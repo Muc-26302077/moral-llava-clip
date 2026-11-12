@@ -9874,8 +9874,8 @@
       "sha256": "139dfab9f7ad37dc52eb75a68a93e6189da6601f3ab984cb0b2483a03ab93849"
     },
     "results/README.md": {
-      "bytes": 2177,
-      "sha256": "8c8eca933db096c7f14ad9e1e39b3c1ebab37337b5cfe53e562877a574d97f8b"
+      "bytes": 2346,
+      "sha256": "eeed64f6351f5e57f30212ca14939010d5a9b0dc721842fe76d6378b8c977ea0"
     },
     "results/baseline/majority-metrics.json": {
       "bytes": 17222,
@@ -10016,6 +10016,10 @@
     "results/moralise/moralise.manifest.json": {
       "bytes": 474,
       "sha256": "fb005a181697cab2551eae725e8af632784a08800a3950c6c59877246b66e818"
+    },
+    "results/scene-guided-vision/cpu-feasibility.json": {
+      "bytes": 7984,
+      "sha256": "cb8752e84096bcf771fdf118d3447f28a6535689ffd81196e2ba4a6b18100763"
     },
     "results/text-guided-vision/baseline-metrics.json": {
       "bytes": 18377,

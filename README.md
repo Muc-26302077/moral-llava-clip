@@ -4,6 +4,8 @@
 
 本 README 按项目组的[《多模态数据格式&交付内容》](https://sii-czxy.feishu.cn/wiki/KKWAwsH2diOJzLksJX5c8dvOnPh?from=from_copylink)组织评测和数据交付信息；统一格式依据其关联的[纯文本 SFT 规范](https://sii-czxy.feishu.cn/wiki/Hbe5wdHbSiDN5Ik9XL6ceNpSnYP)与[多模态 SFT 规范](https://sii-czxy.feishu.cn/wiki/Y245wfcw6iSEOokGjbNc2wwYnxg)。[Benchmark 收集表](https://docs.qq.com/sheet/DWkZaa2F5dWhRTkp5?tab=BB08J2)作为项目组参考。
 
+**新结构进展：** 已实现同场景描述监督的双模式视觉模块：有描述时直接编码场景文字，无描述时从图像预测语义条件。已完成 CPU 结构和真实数据小样本验证，尚无新版7B训练或正式 TICR 提升证据，见[场景语义方案与运行说明](docs/scene-guided-vision.md)。下方正式成绩仍对应已有实验。
+
 **使用入口：** [完整训练与评测流程](docs/workflow.md) · [当前结果简报](docs/results.md) · [最终结果与逐条回答](results/README.md) · [模型获取](models/README.md) · [数据来源](data/README.md) · [创新方法成果文案](docs/成果文案.md)
 
 ## 一、评测 code & data

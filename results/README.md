@@ -11,6 +11,7 @@
 | [text-guided-vision](text-guided-vision/final-comparison.json) | 同次基线、验证所选第0轮、实际训练第3轮及配对差值 |
 | [benchmarks](benchmarks/comparison-ticr.csv) | 原视觉塔、Qwen3-VL-8B、VLGuard Posthoc／Mixed 的完整预测与指标 |
 | [moralise](moralise/moralise-metrics.json) | 图文微调基线的7,441条 MORALISE 原始回答、严格评分及格式诊断 |
+| [scene-guided-vision](scene-guided-vision/cpu-feasibility.json) | 同场景描述双模式新版的最终 CPU 可行性诊断；真实30场景，不是7B生成 TICR |
 | [history](history/final-metrics.json) | 较早的图像标签、三状态和存在性任务最终指标；不同任务单独归档，不用于当前极性方法排名 |
 
 复核全部当前结果（仅 CPU，无需模型）：

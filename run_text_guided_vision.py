@@ -119,7 +119,7 @@ def preflight(args):
     return report, raw, normalized, audit
 
 
-def load_runtime(args):
+def load_runtime(args, *, guidance_installer=None):
     import torch
     from transformers import AutoProcessor, LlavaForConditionalGeneration
     from peft import PeftModel
@@ -141,9 +141,12 @@ def load_runtime(args):
     validate_adapter_metadata(metadata,integration)
     model=PeftModel.from_pretrained(model,args.baseline_adapter,is_trainable=False)
     model.eval()
-    cfg=GuidanceConfig(vision_dim=model.config.vision_config.hidden_size,
-                       text_dim=model.config.text_config.hidden_size,rank=args.rank)
-    block,index=install_guidance(model,cfg)
+    if guidance_installer is None:
+        cfg=GuidanceConfig(vision_dim=model.config.vision_config.hidden_size,
+                           text_dim=model.config.text_config.hidden_size,rank=args.rank)
+        block,index=install_guidance(model,cfg)
+    else:
+        block,index=guidance_installer(model,args.rank)
     configure_processor(processor,model.config,padding_side='right')
     # Non-reentrant checkpointing retains gradients through the frozen decoder.
     model.get_base_model().language_model.gradient_checkpointing_enable(

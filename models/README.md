@@ -7,9 +7,10 @@
 | 目录 | 用途 | 依赖 |
 | --- | --- | --- |
 | `moralclip-llava-polarity/` | 已完成图文微调的 LoRA＋完整投影器，主要基线 | 固定 LLaVA＋MoralCLIP |
+| `scene-guided-vision/` | V2验证选中的第0轮零残差；本次没有训练收益 | 上述图文微调基线，使用 `run_scene_guided_vision.py` |
 | `projector-only/` | 第一阶段投影器适配模型，基础阶段对照 | 固定 LLaVA＋MoralCLIP |
-| `text-guided-vision/epoch-3/` | 新结构实际训练第3轮残差，约0.77MB | 上述图文微调基线 |
-| `text-guided-vision/epoch-0/` | 验证所选零初始化残差 | 上述图文微调基线 |
+| `text-guided-vision/epoch-3/` | 旧问题条件版实际训练第3轮残差，约0.77MB | 上述图文微调基线 |
+| `text-guided-vision/epoch-0/` | 旧问题条件版验证所选零初始化残差 | 上述图文微调基线 |
 | `original-tower/` | 原 LLaVA 视觉塔的极性微调对照 | 固定 LLaVA |
 | `image-lora/` | 原视觉塔对照训练所需的图像 LoRA 初始化 | 固定 LLaVA；不用于换塔基线 |
 | `base/` | 用户自行下载的第三方基模，不提交 Git | 按下表获取 |

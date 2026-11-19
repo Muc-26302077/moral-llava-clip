@@ -1,0 +1,61 @@
+{
+  "scope": "independent image-only inference; external scene text used during training only",
+  "baseline": {
+    "ticr": 0.901991341991342,
+    "joint_accuracy": 0.8574170274170274,
+    "consistent_pairs": 260,
+    "pairs": 288,
+    "micro_ticr": 0.9027777777777778,
+    "image_accuracy": 0.8896248196248197,
+    "image_balanced_accuracy": 0.8750920170238317,
+    "text_accuracy": 0.9232178932178933,
+    "text_balanced_accuracy": 0.912273012992013
+  },
+  "guided": {
+    "ticr": 0.901991341991342,
+    "joint_accuracy": 0.8574170274170274,
+    "consistent_pairs": 260,
+    "pairs": 288,
+    "micro_ticr": 0.9027777777777778,
+    "image_accuracy": 0.8896248196248197,
+    "image_balanced_accuracy": 0.8750920170238317,
+    "text_accuracy": 0.9232178932178933,
+    "text_balanced_accuracy": 0.912273012992013
+  },
+  "delta": {
+    "ticr": 0.0,
+    "image_accuracy": 0.0,
+    "text_accuracy": 0.0,
+    "image_balanced_accuracy": 0.0,
+    "joint_accuracy": 0.0
+  },
+  "paired_scene_bootstrap_delta95": {
+    "ticr": [
+      0.0,
+      0.0
+    ],
+    "joint_accuracy": [
+      0.0,
+      0.0
+    ],
+    "image_accuracy": [
+      0.0,
+      0.0
+    ]
+  },
+  "passes_point_estimate_goal": false,
+  "archived_original_tower_reference": {
+    "ticr": 0.9135642135642137,
+    "joint_accuracy": 0.8881024531024531,
+    "consistent_pairs": 263,
+    "pairs": 288,
+    "micro_ticr": 0.9131944444444444,
+    "image_accuracy": 0.9394877344877346,
+    "image_balanced_accuracy": 0.931182147473295,
+    "text_accuracy": 0.9231529581529582,
+    "text_balanced_accuracy": 0.9190818424660778
+  },
+  "exceeds_archived_original_tower_ticr": false,
+  "meets_requested_ticr_target": false,
+  "reference_note": "Original-tower reference is historical; not a new same-runtime paired comparison."
+}

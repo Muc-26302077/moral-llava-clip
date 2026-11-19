@@ -1,0 +1,16 @@
+{
+  "method": "scene_text_distilled_moralclip_encoder_v2",
+  "config": {
+    "vision_dim": 768,
+    "text_dim": 512,
+    "rank": 32,
+    "residual_scale": 0.1,
+    "feature_layer": -2,
+    "condition_source": "frozen_moralclip_scene_text_or_image_prediction"
+  },
+  "weights_sha256": "995469215a5930fe9c352870b058cefc373aac59958becc476ee730df8d8744d",
+  "metadata": {
+    "baseline_adapter_sha256": "318b609354f115162f14de9136005ded3cde31865dda8823559b1e0b79f79e2c",
+    "epoch": 0
+  }
+}

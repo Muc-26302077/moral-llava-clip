@@ -1,0 +1,13 @@
+{
+  "checkpoint": "/root/autodl-tmp/moral-llava/workflow-clean-20261111/results/runs/scene-v2-final-20261117/candidate-a/epoch-0",
+  "epoch": 0,
+  "weights_sha256": "995469215a5930fe9c352870b058cefc373aac59958becc476ee730df8d8744d",
+  "validation_key": [
+    0.9033537867657649,
+    0.8738841356264224,
+    0.927342025940811
+  ],
+  "locked_at": "2026-11-17T02:48:02.138753+08:00",
+  "candidate": "candidate-a",
+  "selection_policy": "validation only; earlier candidate wins ties"
+}

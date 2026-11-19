@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "verified_at": "2026-11-19T22:47:41.430091+08:00",
+  "fresh_gpu_answer_count": 1728,
+  "answers_per_model_or_mode": 576,
+  "all_three_answer_sets_identical": true,
+  "smid": {
+    "baseline": {
+      "ticr": 0.901991341991342,
+      "joint_accuracy": 0.8574170274170274,
+      "consistent_pairs": 260,
+      "pairs": 288,
+      "micro_ticr": 0.9027777777777778,
+      "image_accuracy": 0.8896248196248197,
+      "image_balanced_accuracy": 0.8750920170238317,
+      "text_accuracy": 0.9232178932178933,
+      "text_balanced_accuracy": 0.912273012992013
+    },
+    "guided": {
+      "ticr": 0.901991341991342,
+      "joint_accuracy": 0.8574170274170274,
+      "consistent_pairs": 260,
+      "pairs": 288,
+      "micro_ticr": 0.9027777777777778,
+      "image_accuracy": 0.8896248196248197,
+      "image_balanced_accuracy": 0.8750920170238317,
+      "text_accuracy": 0.9232178932178933,
+      "text_balanced_accuracy": 0.912273012992013
+    },
+    "paired-assisted": {
+      "ticr": 0.901991341991342,
+      "joint_accuracy": 0.8574170274170274,
+      "consistent_pairs": 260,
+      "pairs": 288,
+      "micro_ticr": 0.9027777777777778,
+      "image_accuracy": 0.8896248196248197,
+      "image_balanced_accuracy": 0.8750920170238317,
+      "text_accuracy": 0.9232178932178933,
+      "text_balanced_accuracy": 0.912273012992013
+    }
+  },
+  "moralclip_r1": {
+    "status": "PASS",
+    "metric_name": "R@1",
+    "protocol": "moral-label-r1-v1",
+    "correct_queries": 126,
+    "num_queries": 126,
+    "r_at_1": 1.0,
+    "paired_r_at_1_diagnostic": 1.0,
+    "cross_image_r_at_1_diagnostic": 0.7301587301587301,
+    "model_weight_sha256": {
+      "model.safetensors": "4ace10e40a63343dc270afe776a0cc851d28dc36fd13417de07dccb12e4bac2a"
+    },
+    "directions": {
+      "image_to_text": {
+        "correct_queries": 126,
+        "num_queries": 126,
+        "num_candidates": 1260,
+        "r_at_1": 1.0
+      },
+      "text_to_image": {
+        "correct_queries": 1176,
+        "num_queries": 1260,
+        "num_candidates": 126,
+        "r_at_1": 0.9333333333333333,
+        "paired_r_at_1_diagnostic": 0.8706349206349207
+      }
+    }
+  },
+  "privacy_fresh_gpu_verification": "../project-privacy-gpu-20261119/verification.json",
+  "archived_verification": "../project-archive-20261119/archive-verification.json"
+}

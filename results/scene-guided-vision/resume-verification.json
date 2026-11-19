@@ -1,0 +1,6 @@
+{
+  "exit_code": 0,
+  "no_repeated_inference": true,
+  "prediction_mtimes_unchanged": true,
+  "completion_status_unchanged": true
+}

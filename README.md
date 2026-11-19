@@ -1,10 +1,29 @@
 # 课题三：多模态大模型价值对齐与纠正方法研究
 
-本仓库共享指标 **3.1 跨模态道德判断**的评测数据、SFT 数据构建程序、已训练模型、评测代码与最终结果，并提供指标 **3.9 隐私保护后跨模态价值一致性保持**的独立实验包。主要方法为 MoralCLIP–LLaVA，以及问题文本引导的视觉编码器低秩残差结构。
+**`new` 分支运行入口：** 见[复现指标指南](复现指标指南.md)与[最新复测记录](本次整理与复测记录.md)。`python run_metrics.py archive` 复算历史回答；`python run_metrics.py all` 重新运行GPU模型评测。训练后的基线与V2模块通过Git LFS提供，完整LLaVA与MoralCLIP基座按下列固定版本下载。
+
+```bash
+git lfs install
+git clone --branch new https://github.com/Muc-26302077/moral-llava-clip.git
+cd moral-llava-clip
+git lfs pull
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python scripts/download_models.py moralclip
+python scripts/download_models.py llava
+python run_moral_llava.py prepare
+python run_metrics.py check
+python run_metrics.py all
+```
+
+建议Linux、Python3.11或3.12、支持BF16的NVIDIA GPU。已有本地基座可使用 `--base-model` 与 `--moralclip-model` 指定路径；完整基座、虚拟环境和过程checkpoint不存入Git。无需GPU的归档复算可跳过两个基座下载命令，执行 `python run_metrics.py archive`。11月19日真实GPU复测的回答、指标与日志已随分支提供于[results/reproduction-20261119](results/reproduction-20261119/README.md)。隐私融合命令另需外部已冻结的私有数据与模型目录，详见指南。
+
+本仓库共享指标 **3.1 跨模态道德判断**的评测数据、SFT 数据构建程序、已训练模型、评测代码与最终结果，并提供指标 **3.9 隐私保护后跨模态价值一致性保持**的独立实验包。主要方法为 MoralCLIP–LLaVA，以及同场景语义监督的双模式条件化视觉编码结构。
 
 本 README 按项目组的[《多模态数据格式&交付内容》](https://sii-czxy.feishu.cn/wiki/KKWAwsH2diOJzLksJX5c8dvOnPh?from=from_copylink)组织评测和数据交付信息；统一格式依据其关联的[纯文本 SFT 规范](https://sii-czxy.feishu.cn/wiki/Hbe5wdHbSiDN5Ik9XL6ceNpSnYP)与[多模态 SFT 规范](https://sii-czxy.feishu.cn/wiki/Y245wfcw6iSEOokGjbNc2wwYnxg)。[Benchmark 收集表](https://docs.qq.com/sheet/DWkZaa2F5dWhRTkp5?tab=BB08J2)作为项目组参考。
 
-**新结构进展：** 已实现同场景描述监督的双模式视觉模块：有描述时直接编码场景文字，无描述时从图像预测语义条件。已完成 CPU 结构和真实数据小样本验证，尚无新版7B训练或正式 TICR 提升证据，见[场景语义方案与运行说明](docs/scene-guided-vision.md)。下方正式成绩仍对应已有实验。
+**新结构进展：** 同场景语义引导V2已完成两组GPU实验（rank32三轮、rank64两轮）及完整正式评测。训练后候选均未通过验证质量约束，最终选择第0轮零残差，TICR与同次直接基线同为90.20%，尚无独立提升。见[结构与训练说明](docs/scene-guided-vision.md)和[最终核验记录](results/scene-guided-vision/training-summary.json)。
 
 **使用入口：** [完整训练与评测流程](docs/workflow.md) · [当前结果简报](docs/results.md) · [最终结果与逐条回答](results/README.md) · [模型获取](models/README.md) · [数据来源](data/README.md) · [创新方法成果文案](docs/成果文案.md)
 
@@ -18,9 +37,9 @@
 | Benchmark 名称／类型 | SMID 道德标签相关检索 R@1；SMID 五道德基础条件极性问答 TICR／准确率，属于道德价值判断评测；MORALISE 为独立道德判断与规范识别评测。三者指标分别报告。 |
 | 评测条数 | R@1：126图、1,260条描述；极性任务：87个有效场景、288个场景—维度对、576条图像／文本独立问答；MORALISE：S1为2,481题，S2／S3各2,480题。 |
 | 评测脚本入口 | R@1：`run_retrieval.py`；极性任务的数据＋checkpoint 一键入口：`scripts/evaluate_delivery.py`，命令见下；MORALISE：`scripts/evaluate_moralise.py`。 |
-| 被测模型／checkpoint | `models/moralclip-llava-polarity/` 为已训练基线；`models/text-guided-vision/` 为新增视觉残差。对照包括原视觉塔极性微调模型、Qwen3-VL-8B-Instruct、VLGuard 7B Posthoc／Mixed；固定版本见[模型说明](models/README.md)。 |
+| 被测模型／checkpoint | `models/moralclip-llava-polarity/` 为已训练基线；`models/scene-guided-vision/` 为V2验证所选模块，使用专用入口加载；`models/text-guided-vision/` 为旧问题条件版。公开对照及版本见[模型说明](models/README.md)。 |
 | 评测参数 | 本项目极性模型：自由贪心生成，`do_sample=false`，temperature 不启用，无 thinking 阶段，`max_new_tokens=16`，`max_length=2048`，BF16。历史基线 batch 8；新增模块及其同次基线 batch 1。R@1 非生成任务；MORALISE 最多生成64个 token。外部模型的原生模板和视觉处理见[协议](docs/protocols.md)。 |
-| 评测时间／并行情况 | 标准交付入口的已归档基线完整评测：1进程、batch 8、576问，推理含加载61.014秒、总耗时61.317秒，见[原始运行记录][baseline-run]。该耗时只对应该次运行；新模块3轮训练与两次测试合计约52分钟。其他模型未在本表填报未经核实的统一耗时。 |
+| 评测时间／并行情况 | 标准交付入口的已归档基线完整评测：1进程、batch 8、576问，推理含加载61.014秒、总耗时61.317秒，见[原始运行记录][baseline-run]。该耗时只对应该次运行；旧问题条件版3轮训练与两次测试合计约52分钟。V2两组训练含验证分别82.52／55.65分钟，最终评测于11月17日02:57（北京时间）完成。其他模型未在本表填报未经核实的统一耗时。 |
 | 评测结果与逐条日志 | [结果索引](results/README.md)包含最终指标、逐条原始回答、检索矩阵与协议指纹；标准交付入口基线另有[原始回答][baseline-answers]、[评分][baseline-metrics]和[推理日志][baseline-log]。固定提交链接保留历史证据，其中旧机器路径仅为来源记录。 |
 | Intern-S2 基础评分／逐条评测 log | **待项目组联测。当前没有 Intern-S2 的实测评分、回答和 eval 日志。** 本项目及其他公开对照的成绩不能替代这一交付项。 |
 
@@ -57,7 +76,7 @@ python scripts/evaluate_delivery.py \
 | SFT 训练参数参考 | 冻结 MoralCLIP 与语言基座；先用4,903条图像问答训练投影器1轮，再用9,806条图文问答训练投影器＋语言 LoRA 3轮；BF16、batch 8、seed 42、最大长度2,048。完整参数见[training-config.json](results/baseline/training-config.json)。msswift 为项目组推荐框架，本项目使用现有训练实现。 |
 | 来源、构建做法、采集模型、CoT | 由 SMID 项目衍生标注构造问答，仅使用对应维度已有正／负标注的场景，文本路固定 caption 0。不将未标注当负例；没有新增模型采集，无 CoT；原英文描述生成模型尚未核实。 |
 | 对应 benchmark／各自数据量 | 面向 SMID 极性 TICR 与准确率：train／validation／test分别9,806／580／576条。MORALISE 仅作外部评测，未用于训练或选模；不为三个公开对照额外构造训练数据。 |
-| 验证结果：SFT 模型、loss、基线比较 | [已训练基线](models/moralclip-llava-polarity/README.md)、[创新模块](models/text-guided-vision/README.md)、[最终结果比较](docs/results.md)；已实测的基线[loss 曲线][loss-curve]、[投影器逐点 loss][projector-loss]与[图文微调逐点 loss][adapter-loss]使用固定提交归档链接。 |
+| 验证结果：SFT 模型、loss、基线比较 | [已训练基线](models/moralclip-llava-polarity/README.md)、[V2所选模块](models/scene-guided-vision/README.md)、[最终结果比较](docs/results.md)；已实测的基线[loss 曲线][loss-curve]、[投影器逐点 loss][projector-loss]与[图文微调逐点 loss][adapter-loss]使用固定提交归档链接。 |
 
 下表来自[当前模型 token 实算归档][token-statistics]中 `polarity-v1` 项：按一遍数据统计，包含提示、每图196个展开视觉 token、答案与 EOS；不含 padding 与 epoch 重复，Trainable token 按 next-token shift 后的监督标签计数。这是 **MoralCLIP–LLaVA 口径，不是接收方 Qwen3.5-VL 验收统计**。
 
@@ -119,7 +138,7 @@ python scripts/download_models.py llava
 python run_moral_llava.py prepare
 ```
 
-建议 Linux、Python 3.11、NVIDIA CUDA GPU；CPU 可准备数据与复算指标。已训练的 LoRA、投影器、视觉残差通过 Git LFS 提供；完整基座按固定 Hugging Face revision 下载，也支持本地目录，见[模型说明](models/README.md)。原实验使用 A800 80GB，新残差模块训练峰值已分配显存15.18 GiB；基线两阶段训练的资源需求另见流程。
+建议 Linux、Python 3.11、NVIDIA CUDA GPU；CPU 可准备数据与复算指标。已训练的 LoRA、投影器、视觉残差通过 Git LFS 提供；完整基座按固定 Hugging Face revision 下载，也支持本地目录，见[模型说明](models/README.md)。原实验使用 A800 80GB，V2训练峰值已分配显存14.03 GiB；基线两阶段训练的资源需求另见流程。
 
 | 步骤 | 入口与操作说明 |
 | --- | --- |
@@ -127,7 +146,7 @@ python run_moral_llava.py prepare
 | 2. MoralCLIP 双向 R@1 | [运行检索](docs/workflow.md#2-评测-moralclip-的-r1) · `run_retrieval.py` |
 | 3. Moral-LLaVA 两阶段训练 | [训练函数与参数](docs/workflow.md#3-训练-moralclipllava) · `scripts/train_baseline.py` |
 | 4. TICR 与准确率 | [推理与评分](docs/workflow.md#4-评测-ticr-和准确率) · `run_moral_llava.py` |
-| 5. 文章创新方法 | [文本引导视觉残差训练与评测](docs/workflow.md#5-训练与评测创新结构) · `run_text_guided_vision.py` |
+| 5. 文章创新方法 | [同场景语义引导训练与评测](docs/workflow.md#5-训练与评测创新结构) · `run_scene_guided_vision.py` |
 | 6. 对照模型与 MORALISE | [外部 benchmark](docs/workflow.md#6-外部-benchmark-与-moralise) |
 | 7. 项目组数据交付 | 按上文导出、校验、整目录打包，详见[交付操作](docs/workflow.md#7-按需导出项目组交付数据) |
 
@@ -139,13 +158,14 @@ SMID 极性任务使用五道德维度等权宏平均，单位为%。TICR 判断
 | --- | ---: | ---: | ---: | ---: |
 | MoralCLIP–LLaVA，仅训练投影器 | 74.37 | 90.61 | 70.63 | 67.81 |
 | Moral-LLaVA，原视觉塔极性微调 | 91.36 | 93.95 | 92.32 | 88.81 |
-| MoralCLIP–LLaVA，新增模块的同次基线 | 90.20 | 88.96 | 92.32 | 85.74 |
-| 问题文本引导视觉残差，第3轮 | 89.84 | 88.61 | 92.32 | 85.38 |
+| MoralCLIP–LLaVA，V2同次直接基线 | 90.20 | 88.96 | 92.32 | 85.74 |
+| 旧问题条件版，第3轮（历史） | 89.84 | 88.61 | 92.32 | 85.38 |
+| 同场景语义引导V2，验证所选第0轮 | 90.20 | 88.96 | 92.32 | 85.74 |
 | Qwen3-VL-8B-Instruct | 81.28 | 84.21 | 75.05 | 70.27 |
 | VLGuard：LLaVA-v1.5-7B-Posthoc | 41.08 | 68.00 | 57.70 | 35.06 |
 | VLGuard：LLaVA-v1.5-7B-Mixed | 76.14 | 79.62 | 69.04 | 62.40 |
 
-新增模块在 MoralCLIP 第11个编码块内根据问题文本生成视觉残差调节信号，新增192,896参数，原模型冻结。当前第3轮相对同次基线 TICR 下降0.36个百分点，验证集选择第0轮零残差，尚未证明独立增益。本项目模型经过任务微调，三个外部公开对照直接推理，差异不能全部归因于结构。完整条件与限制见[结果简报](docs/results.md)。
+V2在MoralCLIP第11个编码块内加入场景语义预测器和低秩条件残差；有描述使用真实场景文字，无描述由图像预测语义，问题不作为视觉条件。两组训练共5轮、3065个优化器步骤，均未产生合格候选，最终采用第0轮；该结果不能解释为训练收益。表中旧问题版是历史实验。本项目模型经过任务微调，三个外部公开对照直接推理，差异不能全部归因于结构。完整条件与限制见[结果简报](docs/results.md)。
 
 MoralCLIP 的道德标签相关 R@1：图→文100.00%、文→图93.33%，不等同于严格同图配对 Recall@1。MORALISE 仅完成图文微调基线评测，S1／S2／S3分别为35.18%／0.59%／2.80%，三项定义不同，不作为 TICR 报告。
 
@@ -158,7 +178,7 @@ python scripts/verify_results.py --output results/runs/verification.json
 python scripts/verify_repository.py
 ```
 
-`verify_results.py` 复算10组 SMID 指标、双向 R@1 和7,441条 MORALISE 回答；`verify_repository.py` 检查数据、模型、结果哈希与本地文档链接，需已完成 Git LFS 下载。开发检查在完整依赖环境执行 `python scripts/run_checks.py`。新运行的日志和中间 checkpoint 放入 `results/runs/`，最终归档索引见 [results/README.md](results/README.md)。
+`verify_results.py` 复算12组 SMID 指标、双向 R@1 和7,441条 MORALISE 回答；`verify_repository.py` 检查数据、模型、结果哈希与本地文档链接，需已完成 Git LFS 下载。开发检查在完整依赖环境执行 `python scripts/run_checks.py`。新运行的日志和中间 checkpoint 放入 `results/runs/`，最终归档索引见 [results/README.md](results/README.md)。
 
 ## 六、目录与使用条款
 

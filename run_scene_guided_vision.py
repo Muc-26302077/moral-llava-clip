@@ -6,6 +6,7 @@ its caption. Paired inference uses the provided caption and has separate metrics
 from __future__ import annotations
 
 import argparse
+from datetime import datetime, timezone
 from dataclasses import asdict
 import hashlib
 import json
@@ -204,7 +205,9 @@ def experiment(args):
         raise RuntimeError('CUDA unavailable; scene 7B training did not start. CPU checks are not formal TICR.')
     env, raw, rows, audit = common.preflight(args)
     env.update(conditioning='same-scene caption0 during training; image-predicted scene condition during independent inference')
-    args.output.mkdir(parents=True, exist_ok=False)
+    if args.resume is not None and args.resume.parent != args.output:
+        raise ValueError('Recovery checkpoint must belong to the output experiment directory')
+    args.output.mkdir(parents=True, exist_ok=args.resume is not None)
     state = {'status': 'starting', 'started_at': common.now(), 'pid': os.getpid(), 'method': METHOD}
     common.save(args.output/'status.json', state)
     start = time.monotonic()
@@ -221,7 +224,7 @@ def experiment(args):
         captions = caption_index(raw['train'], split='train')
         source_paths = [Path(__file__), ROOT/'moral_llava/scene_guided_vision.py', ROOT/'run_text_guided_vision.py',
                         ROOT/'moral_llava/text_guided_vision.py', ROOT/'moral_llava/polarity.py',
-                        ROOT/'moral_llava/polarity_runtime.py', ROOT/'moral_llava/train.py']
+                        ROOT/'moral_llava/polarity_runtime.py', ROOT/'moral_llava/train.py', ROOT/'moral_llava/scene_training_state.py']
         config = {'method': METHOD, 'environment': env, 'guidance_config': asdict(block.adapter.config),
             'wrapped_block_index': index, 'trainable_parameters': sum(p.numel() for p in block.adapter.parameters()),
             'arguments': {k: str(v) if isinstance(v, Path) else v for k, v in vars(args).items()},
@@ -229,25 +232,51 @@ def experiment(args):
             'data_sha256': {s: common.sha(args.data/f'{s}.json') for s in raw},
             'selection': 'independent validation TICR; accuracy/BA/joint/validity guards; zero epoch eligible',
             'target': 'beat same-run direct baseline TICR with preserved accuracy; also report archived original-tower reference'}
-        common.save(args.output/'frozen_config.json', config)
-        baseline = predictions(args, model, processor, block, dtype, validation,
-                               enabled=False, split='validation', smoke=smoke)
-        common.write_predictions(args.output/'baseline-validation.jsonl', baseline)
-        baseline_metrics = score(validation_raw, baseline, diagnostic=smoke)
-        common.save(args.output/'baseline-validation-metrics.json', baseline_metrics)
-        zero = predictions(args, model, processor, block, dtype, validation[:20], enabled=True,
-                           split='validation', smoke=True, guidance_hash='zero-init')
-        if [p['raw_prediction'] for p in zero] != [p['raw_prediction'] for p in baseline[:20]]:
-            raise ValueError('Scene zero initialization changed baseline generation')
-        metadata = {'baseline_adapter_sha256': common.baseline_sha(args)}
-        save_scene_guidance(args.output/'epoch-0', block, dict(metadata, epoch=0))
+        from moral_llava.scene_training_state import save_training_state, load_training_state
+        mutable_arguments = {'resume', 'output', 'stop_at', 'max_optimizer_steps'}
+        signature = {'source_sha256': config['source_sha256'], 'data_sha256': config['data_sha256'],
+            'baseline_sha256': common.baseline_sha(args), 'guidance_config': config['guidance_config'],
+            'arguments': {k: v for k, v in config['arguments'].items() if k not in mutable_arguments}}
+        if args.resume is None:
+            common.save(args.output/'frozen_config.json', config)
+            baseline = predictions(args, model, processor, block, dtype, validation,
+                                   enabled=False, split='validation', smoke=smoke)
+            common.write_predictions(args.output/'baseline-validation.jsonl', baseline)
+            baseline_metrics = score(validation_raw, baseline, diagnostic=smoke)
+            common.save(args.output/'baseline-validation-metrics.json', baseline_metrics)
+            zero = predictions(args, model, processor, block, dtype, validation[:20], enabled=True,
+                               split='validation', smoke=True, guidance_hash='zero-init')
+            if [p['raw_prediction'] for p in zero] != [p['raw_prediction'] for p in baseline[:20]]:
+                raise ValueError('Scene zero initialization changed baseline generation')
+            metadata = {'baseline_adapter_sha256': common.baseline_sha(args)}
+            save_scene_guidance(args.output/'epoch-0', block, dict(metadata, epoch=0))
+        else:
+            baseline = [json.loads(line) for line in (args.output/'baseline-validation.jsonl').read_text().splitlines()]
+            baseline_metrics = score(validation_raw, baseline, diagnostic=smoke)
+            metadata = {'baseline_adapter_sha256': common.baseline_sha(args)}
         selected, best = args.output/'epoch-0', scene_selection_key(baseline_metrics, baseline_metrics)
         optimizer = torch.optim.AdamW(block.adapter.parameters(), lr=args.learning_rate, weight_decay=0)
         collator = PolaritySFTCollator(processor, image_token_id=model.config.image_token_index,
             expected_image_tokens=model.config.image_seq_length, max_length=args.max_length)
-        losses = []
-        step = 0
-        for epoch in range(1, (1 if smoke else args.epochs)+1):
+        losses, step, first_epoch, next_batch = [], 0, 1, 0
+        if args.resume is not None:
+            recovery = load_training_state(args.resume, block.adapter, optimizer, signature=signature)
+            losses, step = recovery['losses'], recovery['step']
+            first_epoch, next_batch = recovery['cursor']['epoch'], recovery['cursor']['next_batch']
+            selected, best = Path(recovery['selected']), tuple(recovery['best'])
+            state.update(resumed_from=str(args.resume), resumed_optimizer_step=step)
+        def checkpoint(epoch, batch):
+            save_training_state(args.output/'training-state.pt', block.adapter, optimizer,
+                signature=signature, cursor={'epoch': epoch, 'next_batch': batch},
+                selected=selected, best=best, losses=losses, step=step)
+        def selection_record():
+            payload = json.loads((selected/'guidance.json').read_text())
+            common.save(args.output/'selection.json', {'checkpoint': str(selected),
+                'epoch': payload['metadata']['epoch'], 'weights_sha256': payload['weights_sha256'],
+                'validation_key': best, 'locked_at': common.now()})
+        selection_record()
+        checkpoint(first_epoch, next_batch)
+        for epoch in range(first_epoch, (1 if smoke else args.epochs)+1):
             shuffled = list(train)
             random.Random(args.seed+epoch).shuffle(shuffled)
             if smoke:
@@ -259,6 +288,8 @@ def experiment(args):
             batches = [shuffled[i:i+args.train_batch_size] for i in range(0, len(shuffled), args.train_batch_size)]
             optimizer.zero_grad()
             for i, batch in enumerate(batches):
+                if epoch == first_epoch and i < next_batch:
+                    continue
                 group_start = (i//args.gradient_accumulation)*args.gradient_accumulation
                 group_count = sum(len(b) for b in batches[group_start:group_start+args.gradient_accumulation])
                 args._batch_weight = len(batch)/group_count
@@ -272,14 +303,36 @@ def experiment(args):
                     optimizer.step()
                     optimizer.zero_grad()
                     step += 1
-                losses.append(dict(loss, epoch=epoch, batch=i, optimizer_step=step))
+                losses.append(dict(loss, epoch=epoch, batch=i, optimizer_step=step,
+                                   elapsed_seconds=time.monotonic()-start))
+                boundary = (i+1) % args.gradient_accumulation == 0 or i == len(batches)-1
+                stop = boundary and ((args.stop_at is not None and datetime.now(timezone.utc) >= datetime.fromisoformat(args.stop_at))
+                    or (args.max_optimizer_steps is not None and step >= args.max_optimizer_steps))
+                if boundary and (step % args.checkpoint_every == 0 or stop or i == len(batches)-1):
+                    checkpoint(epoch, i+1)
+                if stop:
+                    verified = verify_original_vision(model, integration)
+                    state.update(status='checkpointed', epoch=epoch, batch=i, batches=len(batches),
+                        optimizer_step=step, finished_at=common.now(), gpu_training_executed=True,
+                        formal_ticr_available=False, frozen_visual_tensors_verified=verified,
+                        checkpoint=str(args.output/'training-state.pt'))
+                    common.save(args.output/'status.json', state)
+                    common.save(args.output/'training-loss.json', losses)
+                    return
                 if i % 10 == 0:
                     state.update(status='training', epoch=epoch, batch=i, batches=len(batches), optimizer_step=step)
                     common.save(args.output/'status.json', state)
                     common.save(args.output/'training-loss.json', losses)
                     print(json.dumps(losses[-1]), flush=True)
             path = args.output/f'epoch-{epoch}'
-            saved = save_scene_guidance(path, block, dict(metadata, epoch=epoch))
+            if path.exists():
+                from safetensors.torch import load_file
+                prior = load_file(path/'guidance.safetensors')
+                if any(not torch.equal(v.detach().cpu(), prior[k]) for k, v in block.adapter.state_dict().items()):
+                    raise ValueError('Existing epoch weights differ from recovery state')
+                saved = json.loads((path/'guidance.json').read_text())
+            else:
+                saved = save_scene_guidance(path, block, dict(metadata, epoch=epoch))
             generated = predictions(args, model, processor, block, dtype, validation, enabled=True,
                 split='validation', smoke=smoke, guidance_hash=saved['weights_sha256'])
             common.write_predictions(args.output/f'epoch-{epoch}-validation.jsonl', generated)
@@ -288,6 +341,8 @@ def experiment(args):
             key = scene_selection_key(metrics, baseline_metrics)
             if key is not None and key > best:
                 selected, best = path, key
+            selection_record()
+            checkpoint(epoch+1, 0)
         common.save(args.output/'training-loss.json', losses)
         saved = load_scene_guidance(selected, block)
         common.save(args.output/'selection.json', {'checkpoint': str(selected),
@@ -431,6 +486,10 @@ def parser():
     p.add_argument('--paired-weight', type=float, default=.5)
     p.add_argument('--temperature', type=float, default=2.)
     p.add_argument('--seed', type=int, default=42)
+    p.add_argument('--resume', type=Path, help='Local training-state.pt from this output directory')
+    p.add_argument('--checkpoint-every', type=int, default=50)
+    p.add_argument('--stop-at', help='Timezone-aware ISO timestamp; save and stop at optimizer boundary')
+    p.add_argument('--max-optimizer-steps', type=int, help='Controlled checkpoint/recovery verification')
     p.add_argument('--evaluate-paired', action='store_true', help='Also report caption-assisted mode separately')
     p.add_argument('--validation-only', action='store_true', help='Train/select without reading test captions or generating test answers')
     p.add_argument('--image', type=Path, help='User image for predict')
@@ -445,13 +504,22 @@ def main(argv=None):
     for key, value in vars(args).items():
         if isinstance(value, Path):
             setattr(args, key, value.expanduser().resolve())
-    for key in ('epochs', 'rank', 'train_batch_size', 'eval_batch_size', 'gradient_accumulation', 'max_length', 'smoke_steps'):
+    for key in ('epochs', 'rank', 'train_batch_size', 'eval_batch_size', 'gradient_accumulation', 'max_length', 'smoke_steps', 'checkpoint_every'):
         if getattr(args, key) <= 0:
             p.error(key+' must be positive')
     for key in ('learning_rate', 'temperature', 'distill_weight', 'alignment_weight', 'preservation_weight', 'paired_weight'):
         value = getattr(args, key)
         if not math.isfinite(value) or value < 0 or (key in ('learning_rate', 'temperature') and value == 0):
             p.error(key+' must be finite and nonnegative (positive for learning rate/temperature)')
+    if args.stop_at is not None:
+        try:
+            deadline = datetime.fromisoformat(args.stop_at)
+            if deadline.tzinfo is None:
+                raise ValueError('timezone required')
+        except ValueError:
+            p.error('--stop-at must be a timezone-aware ISO timestamp')
+    if args.max_optimizer_steps is not None and args.max_optimizer_steps <= 0:
+        p.error('--max-optimizer-steps must be positive')
     if args.command == 'inspect':
         report = inspect_data(args)
         if args.output:

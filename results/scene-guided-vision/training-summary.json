@@ -1,0 +1,420 @@
+{
+  "selection_protocol": "independent validation only; quality guards; earlier candidate wins ties",
+  "candidates": [
+    {
+      "name": "candidate-a",
+      "configuration": {
+        "method": "scene_text_distilled_moralclip_encoder_v2",
+        "environment": {
+          "cuda_available": true,
+          "torch": "2.8.0+cu128",
+          "base_revision": "b234b804b114d9e37bb655e11cbbb5f5e971b7a9",
+          "baseline_adapter_sha256": "318b609354f115162f14de9136005ded3cde31865dda8823559b1e0b79f79e2c",
+          "base_snapshot": "/root/autodl-tmp/cache/huggingface/hub/models--llava-hf--llava-1.5-7b-hf/snapshots/b234b804b114d9e37bb655e11cbbb5f5e971b7a9",
+          "question_counts": {
+            "train": 9806,
+            "validation": 580,
+            "test": 576
+          },
+          "train_image_questions": 4903,
+          "conditioning": "same-scene caption0 during training; image-predicted scene condition during independent inference",
+          "training": "GPU generation loss backpropagates into new visual encoder residual only",
+          "cpu_small_sample": "separate real-image linear-probe diagnostic, not TICR",
+          "gpu_training_executed": false,
+          "memory.max": "128849018880",
+          "cpu.max": "1800000 100000",
+          "gpu_name": "NVIDIA A800-SXM4-80GB",
+          "gpu_memory_gib": 79.249755859375,
+          "bf16_supported": true
+        },
+        "guidance_config": {
+          "vision_dim": 768,
+          "text_dim": 512,
+          "rank": 32,
+          "residual_scale": 0.1,
+          "feature_layer": -2,
+          "condition_source": "frozen_moralclip_scene_text_or_image_prediction"
+        },
+        "wrapped_block_index": 10,
+        "trainable_parameters": 114080,
+        "arguments": {
+          "command": "experiment",
+          "output": "/root/autodl-tmp/moral-llava/workflow-clean-20261111/results/runs/scene-v2-final-20261117/candidate-a",
+          "base_model": "/root/autodl-tmp/cache/huggingface/hub/models--llava-hf--llava-1.5-7b-hf/snapshots/b234b804b114d9e37bb655e11cbbb5f5e971b7a9",
+          "moralclip_model": "/root/autodl-tmp/moralclip-base",
+          "baseline_adapter": "/root/autodl-tmp/moral-llava/workflow-clean-20261111/models/moralclip-llava-polarity",
+          "expected_baseline_sha256": "318b609354f115162f14de9136005ded3cde31865dda8823559b1e0b79f79e2c",
+          "guidance": null,
+          "data": "/root/autodl-tmp/moral-llava/workflow-clean-20261111/data/polarity-v1",
+          "image_root": "/root/autodl-tmp/moral-llava/workflow-clean-20261111/data/raw/SMID_moralclip",
+          "precision": "bf16",
+          "epochs": 3,
+          "rank": 32,
+          "train_batch_size": 4,
+          "eval_batch_size": 1,
+          "gradient_accumulation": 2,
+          "max_length": 2048,
+          "smoke_steps": 2,
+          "learning_rate": 0.0002,
+          "distill_weight": 0.2,
+          "alignment_weight": 0.1,
+          "preservation_weight": 0.05,
+          "paired_weight": 0.5,
+          "temperature": 2.0,
+          "seed": 42,
+          "resume": null,
+          "checkpoint_every": 50,
+          "stop_at": "2026-11-17T07:15:00+08:00",
+          "max_optimizer_steps": null,
+          "evaluate_paired": false,
+          "validation_only": true,
+          "image": null,
+          "scene_text": null,
+          "task": "care",
+          "_baseline_sha256": "318b609354f115162f14de9136005ded3cde31865dda8823559b1e0b79f79e2c"
+        },
+        "source_sha256": {
+          "run_scene_guided_vision.py": "a5ed5bb30605b8f28263ab2ff6cda34ab70921c1d6b0bb50b77bc73507fd0a0a",
+          "moral_llava/scene_guided_vision.py": "6df83f4114e55e07204b88c43dff270f50050993f09c6afd891068e54fa7633d",
+          "run_text_guided_vision.py": "f0f76d0f302d05248a72d2b251966e000c906c5d2686b80d7a2fe8f45805a0ff",
+          "moral_llava/text_guided_vision.py": "2716c5158be959c87e8a3083456cb1949b79ad7945c6191b27a9a844195cf6cb",
+          "moral_llava/polarity.py": "dd5d2e2c80c4b66f3834fd8d38ce3722c7574888a7699afcc3a96b7229b90f1c",
+          "moral_llava/polarity_runtime.py": "45ef2cb3205de65a197584866a0729c3f5554b1895f18b10ec155ce1375f4324",
+          "moral_llava/train.py": "eb28d2970a28a8508f1b329136d07e6b8da2c566b855f56b0a4c1c8cba1c39e2",
+          "moral_llava/scene_training_state.py": "e2ce6339e29ff2f236de8256e557b3870cbea6251c475e537b259a7ea4ac94b1"
+        },
+        "data_sha256": {
+          "train": "b66dde874732e043182faa768609ffb73903df6b06bafc24f9d78892b1754525",
+          "validation": "4239c3719299771d99871e11ccfa100c18af4f04355bc747bc39b30abf0e6d13",
+          "test": "64a84a13a57df03c27648bef99c7988b810b0881dc7156d35f534e3446ab8756"
+        },
+        "selection": "independent validation TICR; accuracy/BA/joint/validity guards; zero epoch eligible",
+        "target": "beat same-run direct baseline TICR with preserved accuracy; also report archived original-tower reference"
+      },
+      "status": {
+        "status": "complete",
+        "started_at": "2026-11-16T16:29:47.719423+00:00",
+        "pid": 6179,
+        "method": "scene_text_distilled_moralclip_encoder_v2",
+        "epoch": 3,
+        "batch": 1220,
+        "batches": 1226,
+        "optimizer_step": 1836,
+        "finished_at": "2026-11-16T17:52:18.597553+00:00",
+        "seconds": 4950.93489382416,
+        "gpu_training_executed": true,
+        "formal_ticr_available": false,
+        "selected_epoch": 0,
+        "frozen_visual_tensors_verified": 199,
+        "truncated_scene_captions": 45,
+        "cuda_peak_allocated_gib": 14.025927066802979
+      },
+      "optimizer_steps": 1839,
+      "completed_epochs": 3,
+      "parameter_tensors_updated": {
+        "predictor.": 6,
+        "residual.": 12
+      },
+      "selected_epoch": 0,
+      "validation": [
+        {
+          "epoch": 0,
+          "metrics": {
+            "ticr": 0.9033537867657649,
+            "joint_accuracy": 0.8738841356264224,
+            "consistent_pairs": 263,
+            "pairs": 290,
+            "micro_ticr": 0.906896551724138,
+            "image_accuracy": 0.9299328781724426,
+            "image_balanced_accuracy": 0.927342025940811,
+            "text_accuracy": 0.9144816063146373,
+            "text_balanced_accuracy": 0.9136171821571437
+          },
+          "quality_guard_passed": true,
+          "validation_key": [
+            0.9033537867657649,
+            0.8738841356264224,
+            0.927342025940811
+          ],
+          "mean_training_losses": null,
+          "score_replay_matches": true
+        },
+        {
+          "epoch": 1,
+          "metrics": {
+            "ticr": 0.9005133523463831,
+            "joint_accuracy": 0.8710437012070406,
+            "consistent_pairs": 262,
+            "pairs": 290,
+            "micro_ticr": 0.903448275862069,
+            "image_accuracy": 0.9270924437530608,
+            "image_balanced_accuracy": 0.9246112567100419,
+            "text_accuracy": 0.9144816063146373,
+            "text_balanced_accuracy": 0.9136171821571437
+          },
+          "quality_guard_passed": false,
+          "validation_key": null,
+          "mean_training_losses": {
+            "image_ce": 0.0003221077612316782,
+            "teacher_kl": 0.01078914821324156,
+            "teacher_gate_fraction": 0.02059543230016313,
+            "scene_alignment": 0.30011423976201607,
+            "preservation": 5.898963758320397e-06
+          },
+          "score_replay_matches": true
+        },
+        {
+          "epoch": 2,
+          "metrics": {
+            "ticr": 0.8970045804165586,
+            "joint_accuracy": 0.8675349292772161,
+            "consistent_pairs": 261,
+            "pairs": 290,
+            "micro_ticr": 0.9,
+            "image_accuracy": 0.9235836718232363,
+            "image_balanced_accuracy": 0.9214862567100418,
+            "text_accuracy": 0.9144816063146373,
+            "text_balanced_accuracy": 0.9136171821571437
+          },
+          "quality_guard_passed": false,
+          "validation_key": null,
+          "mean_training_losses": {
+            "image_ce": 0.0001378274711828416,
+            "teacher_kl": 0.00594923162428726,
+            "teacher_gate_fraction": 0.015497553017944535,
+            "scene_alignment": 0.137413934809057,
+            "preservation": 3.4371193499402706e-05
+          },
+          "score_replay_matches": true
+        },
+        {
+          "epoch": 3,
+          "metrics": {
+            "ticr": 0.8887943997925849,
+            "joint_accuracy": 0.8593247486532423,
+            "consistent_pairs": 259,
+            "pairs": 290,
+            "micro_ticr": 0.8931034482758621,
+            "image_accuracy": 0.9153734911992626,
+            "image_balanced_accuracy": 0.9131384306230853,
+            "text_accuracy": 0.9144816063146373,
+            "text_balanced_accuracy": 0.9136171821571437
+          },
+          "quality_guard_passed": false,
+          "validation_key": null,
+          "mean_training_losses": {
+            "image_ce": 5.2930219754629725e-05,
+            "teacher_kl": 0.0033831071278739716,
+            "teacher_gate_fraction": 0.008564437194127243,
+            "scene_alignment": 0.11756986600223801,
+            "preservation": 7.45208249003521e-05
+          },
+          "score_replay_matches": true
+        }
+      ]
+    },
+    {
+      "name": "candidate-b-capacity",
+      "configuration": {
+        "method": "scene_text_distilled_moralclip_encoder_v2",
+        "environment": {
+          "cuda_available": true,
+          "torch": "2.8.0+cu128",
+          "base_revision": "b234b804b114d9e37bb655e11cbbb5f5e971b7a9",
+          "baseline_adapter_sha256": "318b609354f115162f14de9136005ded3cde31865dda8823559b1e0b79f79e2c",
+          "base_snapshot": "/root/autodl-tmp/cache/huggingface/hub/models--llava-hf--llava-1.5-7b-hf/snapshots/b234b804b114d9e37bb655e11cbbb5f5e971b7a9",
+          "question_counts": {
+            "train": 9806,
+            "validation": 580,
+            "test": 576
+          },
+          "train_image_questions": 4903,
+          "conditioning": "same-scene caption0 during training; image-predicted scene condition during independent inference",
+          "training": "GPU generation loss backpropagates into new visual encoder residual only",
+          "cpu_small_sample": "separate real-image linear-probe diagnostic, not TICR",
+          "gpu_training_executed": false,
+          "memory.max": "128849018880",
+          "cpu.max": "1800000 100000",
+          "gpu_name": "NVIDIA A800-SXM4-80GB",
+          "gpu_memory_gib": 79.249755859375,
+          "bf16_supported": true
+        },
+        "guidance_config": {
+          "vision_dim": 768,
+          "text_dim": 512,
+          "rank": 64,
+          "residual_scale": 0.1,
+          "feature_layer": -2,
+          "condition_source": "frozen_moralclip_scene_text_or_image_prediction"
+        },
+        "wrapped_block_index": 10,
+        "trainable_parameters": 226880,
+        "arguments": {
+          "command": "experiment",
+          "output": "/root/autodl-tmp/moral-llava/workflow-clean-20261111/results/runs/scene-v2-final-20261117/candidate-b-capacity",
+          "base_model": "/root/autodl-tmp/cache/huggingface/hub/models--llava-hf--llava-1.5-7b-hf/snapshots/b234b804b114d9e37bb655e11cbbb5f5e971b7a9",
+          "moralclip_model": "/root/autodl-tmp/moralclip-base",
+          "baseline_adapter": "/root/autodl-tmp/moral-llava/workflow-clean-20261111/models/moralclip-llava-polarity",
+          "expected_baseline_sha256": "318b609354f115162f14de9136005ded3cde31865dda8823559b1e0b79f79e2c",
+          "guidance": null,
+          "data": "/root/autodl-tmp/moral-llava/workflow-clean-20261111/data/polarity-v1",
+          "image_root": "/root/autodl-tmp/moral-llava/workflow-clean-20261111/data/raw/SMID_moralclip",
+          "precision": "bf16",
+          "epochs": 2,
+          "rank": 64,
+          "train_batch_size": 4,
+          "eval_batch_size": 1,
+          "gradient_accumulation": 2,
+          "max_length": 2048,
+          "smoke_steps": 2,
+          "learning_rate": 0.0005,
+          "distill_weight": 0.2,
+          "alignment_weight": 0.1,
+          "preservation_weight": 0.05,
+          "paired_weight": 0.5,
+          "temperature": 2.0,
+          "seed": 42,
+          "resume": null,
+          "checkpoint_every": 50,
+          "stop_at": "2026-11-17T07:15:00+08:00",
+          "max_optimizer_steps": null,
+          "evaluate_paired": false,
+          "validation_only": true,
+          "image": null,
+          "scene_text": null,
+          "task": "care",
+          "_baseline_sha256": "318b609354f115162f14de9136005ded3cde31865dda8823559b1e0b79f79e2c"
+        },
+        "source_sha256": {
+          "run_scene_guided_vision.py": "a5ed5bb30605b8f28263ab2ff6cda34ab70921c1d6b0bb50b77bc73507fd0a0a",
+          "moral_llava/scene_guided_vision.py": "6df83f4114e55e07204b88c43dff270f50050993f09c6afd891068e54fa7633d",
+          "run_text_guided_vision.py": "f0f76d0f302d05248a72d2b251966e000c906c5d2686b80d7a2fe8f45805a0ff",
+          "moral_llava/text_guided_vision.py": "2716c5158be959c87e8a3083456cb1949b79ad7945c6191b27a9a844195cf6cb",
+          "moral_llava/polarity.py": "dd5d2e2c80c4b66f3834fd8d38ce3722c7574888a7699afcc3a96b7229b90f1c",
+          "moral_llava/polarity_runtime.py": "45ef2cb3205de65a197584866a0729c3f5554b1895f18b10ec155ce1375f4324",
+          "moral_llava/train.py": "eb28d2970a28a8508f1b329136d07e6b8da2c566b855f56b0a4c1c8cba1c39e2",
+          "moral_llava/scene_training_state.py": "e2ce6339e29ff2f236de8256e557b3870cbea6251c475e537b259a7ea4ac94b1"
+        },
+        "data_sha256": {
+          "train": "b66dde874732e043182faa768609ffb73903df6b06bafc24f9d78892b1754525",
+          "validation": "4239c3719299771d99871e11ccfa100c18af4f04355bc747bc39b30abf0e6d13",
+          "test": "64a84a13a57df03c27648bef99c7988b810b0881dc7156d35f534e3446ab8756"
+        },
+        "selection": "independent validation TICR; accuracy/BA/joint/validity guards; zero epoch eligible",
+        "target": "beat same-run direct baseline TICR with preserved accuracy; also report archived original-tower reference"
+      },
+      "status": {
+        "status": "complete",
+        "started_at": "2026-11-16T17:52:22.494234+00:00",
+        "pid": 13766,
+        "method": "scene_text_distilled_moralclip_encoder_v2",
+        "epoch": 2,
+        "batch": 1220,
+        "batches": 1226,
+        "optimizer_step": 1223,
+        "finished_at": "2026-11-16T18:48:01.401887+00:00",
+        "seconds": 3338.930440735072,
+        "gpu_training_executed": true,
+        "formal_ticr_available": false,
+        "selected_epoch": 0,
+        "frozen_visual_tensors_verified": 199,
+        "truncated_scene_captions": 45,
+        "cuda_peak_allocated_gib": 14.027889251708984
+      },
+      "optimizer_steps": 1226,
+      "completed_epochs": 2,
+      "parameter_tensors_updated": {
+        "predictor.": 6,
+        "residual.": 12
+      },
+      "selected_epoch": 0,
+      "validation": [
+        {
+          "epoch": 0,
+          "metrics": {
+            "ticr": 0.9033537867657649,
+            "joint_accuracy": 0.8738841356264224,
+            "consistent_pairs": 263,
+            "pairs": 290,
+            "micro_ticr": 0.906896551724138,
+            "image_accuracy": 0.9299328781724426,
+            "image_balanced_accuracy": 0.927342025940811,
+            "text_accuracy": 0.9144816063146373,
+            "text_balanced_accuracy": 0.9136171821571437
+          },
+          "quality_guard_passed": true,
+          "validation_key": [
+            0.9033537867657649,
+            0.8738841356264224,
+            0.927342025940811
+          ],
+          "mean_training_losses": null,
+          "score_replay_matches": true
+        },
+        {
+          "epoch": 1,
+          "metrics": {
+            "ticr": 0.8976562094892403,
+            "joint_accuracy": 0.8681865583498978,
+            "consistent_pairs": 261,
+            "pairs": 290,
+            "micro_ticr": 0.9,
+            "image_accuracy": 0.924235300895918,
+            "image_balanced_accuracy": 0.922111256710042,
+            "text_accuracy": 0.9144816063146373,
+            "text_balanced_accuracy": 0.9136171821571437
+          },
+          "quality_guard_passed": false,
+          "validation_key": null,
+          "mean_training_losses": {
+            "image_ce": 0.0003151346493598766,
+            "teacher_kl": 0.007995842647591385,
+            "teacher_gate_fraction": 0.01794453507340946,
+            "scene_alignment": 0.1727913294175904,
+            "preservation": 5.81637431753752e-05
+          },
+          "score_replay_matches": true
+        },
+        {
+          "epoch": 2,
+          "metrics": {
+            "ticr": 0.8824284850056175,
+            "joint_accuracy": 0.8529588338662748,
+            "consistent_pairs": 257,
+            "pairs": 290,
+            "micro_ticr": 0.8862068965517241,
+            "image_accuracy": 0.909007576412295,
+            "image_balanced_accuracy": 0.906680097289752,
+            "text_accuracy": 0.9144816063146373,
+            "text_balanced_accuracy": 0.9136171821571437
+          },
+          "quality_guard_passed": false,
+          "validation_key": null,
+          "mean_training_losses": {
+            "image_ce": 0.00016515683869789164,
+            "teacher_kl": 0.005435816266043734,
+            "teacher_gate_fraction": 0.01366231647634584,
+            "scene_alignment": 0.10656821281690193,
+            "preservation": 0.00014372383006727564
+          },
+          "score_replay_matches": true
+        }
+      ]
+    }
+  ],
+  "final_selection": {
+    "checkpoint": "/root/autodl-tmp/moral-llava/workflow-clean-20261111/results/runs/scene-v2-final-20261117/candidate-a/epoch-0",
+    "epoch": 0,
+    "weights_sha256": "995469215a5930fe9c352870b058cefc373aac59958becc476ee730df8d8744d",
+    "validation_key": [
+      0.9033537867657649,
+      0.8738841356264224,
+      0.927342025940811
+    ],
+    "locked_at": "2026-11-17T02:48:02.138753+08:00",
+    "candidate": "candidate-a",
+    "selection_policy": "validation only; earlier candidate wins ties"
+  },
+  "validation_only_selection_verified": true,
+  "training_source_hashes_verified": true
+}

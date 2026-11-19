@@ -1,0 +1,66 @@
+{
+  "command": "all",
+  "python": "/root/autodl-tmp/moral-llava/workflow-clean-20261111/.venv/bin/python",
+  "project": "/root/autodl-tmp/moral-llava/workflow-clean-20261111",
+  "started_at": "2026-11-19T22:34:31.147002+08:00",
+  "output": "/root/autodl-tmp/moral-llava/workflow-clean-20261111/results/runs/project-gpu-20261119",
+  "status": "complete",
+  "steps": [
+    {
+      "name": "scene-infer",
+      "argv": [
+        "/root/autodl-tmp/moral-llava/workflow-clean-20261111/.venv/bin/python",
+        "run_scene_guided_vision.py",
+        "infer",
+        "--base-model",
+        "/root/autodl-tmp/moral-llava/workflow-clean-20261111/models/base/llava",
+        "--moralclip-model",
+        "/root/autodl-tmp/moral-llava/workflow-clean-20261111/models/base/moralclip",
+        "--baseline-adapter",
+        "/root/autodl-tmp/moral-llava/workflow-clean-20261111/models/moralclip-llava-polarity",
+        "--expected-baseline-sha256",
+        "318b609354f115162f14de9136005ded3cde31865dda8823559b1e0b79f79e2c",
+        "--guidance",
+        "/root/autodl-tmp/moral-llava/workflow-clean-20261111/models/scene-guided-vision",
+        "--precision",
+        "bf16",
+        "--eval-batch-size",
+        "1",
+        "--evaluate-paired",
+        "--output",
+        "/root/autodl-tmp/moral-llava/workflow-clean-20261111/results/runs/project-gpu-20261119/scene"
+      ],
+      "log": "scene-infer.log",
+      "returncode": 0
+    },
+    {
+      "name": "retrieval",
+      "argv": [
+        "/root/autodl-tmp/moral-llava/workflow-clean-20261111/.venv/bin/python",
+        "run_retrieval.py",
+        "--model",
+        "/root/autodl-tmp/moral-llava/workflow-clean-20261111/models/base/moralclip",
+        "--expected-model-sha256",
+        "4ace10e40a63343dc270afe776a0cc851d28dc36fd13417de07dccb12e4bac2a",
+        "--device",
+        "cuda",
+        "--output",
+        "/root/autodl-tmp/moral-llava/workflow-clean-20261111/results/runs/project-gpu-20261119/retrieval/test.json"
+      ],
+      "log": "retrieval.log",
+      "returncode": 0
+    },
+    {
+      "name": "retrieval-score",
+      "argv": [
+        "/root/autodl-tmp/moral-llava/workflow-clean-20261111/.venv/bin/python",
+        "scripts/score_retrieval.py",
+        "--evaluation",
+        "/root/autodl-tmp/moral-llava/workflow-clean-20261111/results/runs/project-gpu-20261119/retrieval/test.json"
+      ],
+      "log": "retrieval-score.log",
+      "returncode": 0
+    }
+  ],
+  "finished_at": "2026-11-19T22:46:31.336758+08:00"
+}

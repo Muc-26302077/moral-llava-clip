@@ -1,0 +1,23 @@
+{
+  "baseline": {
+    "score_replay_matches": true,
+    "rows": 576,
+    "formal_independent_result": true
+  },
+  "guided": {
+    "score_replay_matches": true,
+    "rows": 576,
+    "formal_independent_result": true
+  },
+  "paired-assisted": {
+    "score_replay_matches": true,
+    "rows": 576,
+    "formal_independent_result": false
+  },
+  "all_raw_outputs_identical_to_baseline": {
+    "guided": true,
+    "paired-assisted": true
+  },
+  "test_data_sha256": "64a84a13a57df03c27648bef99c7988b810b0881dc7156d35f534e3446ab8756",
+  "test_inferences_after_lock_only": true
+}

@@ -1,0 +1,7 @@
+{
+  "score_replay_matches": true,
+  "predictions_per_model": 576,
+  "locked_weight_sha256": "995469215a5930fe9c352870b058cefc373aac59958becc476ee730df8d8744d",
+  "text_branch_unchanged": true,
+  "selection_used_test_results": false
+}

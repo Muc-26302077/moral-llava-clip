@@ -31,6 +31,7 @@ def main():
         cases['baseline/'+name]=(ROOT/f'results/baseline/{name}.jsonl',ROOT/f'results/baseline/{name}-metrics.json')
     for name in ('baseline','guided'):
         cases['text-guided-vision/'+name]=(ROOT/f'results/text-guided-vision/{name}-test.jsonl',ROOT/f'results/text-guided-vision/{name}-metrics.json')
+        cases['scene-guided-vision/'+name]=(ROOT/f'results/scene-guided-vision/{name}-test.jsonl',ROOT/f'results/scene-guided-vision/{name}-metrics.json')
     cases['text-guided-vision/final-trained']=(ROOT/'results/text-guided-vision/final-trained-test.jsonl',ROOT/'results/text-guided-vision/final-trained-metrics.json')
     for name in ('original-tower','qwen3-vl-8b','vlguard-posthoc','vlguard-mixed'):
         cases['benchmarks/'+name]=(ROOT/f'results/benchmarks/{name}/ticr.jsonl',ROOT/f'results/benchmarks/{name}/ticr-metrics.json')
@@ -42,6 +43,16 @@ def main():
         actual=polarity.score(rows,preds,audit)
         expected=polarity.read(metrics)
         expected=expected.get('metrics',expected)
+        if name.startswith('scene-guided-vision/'):
+            if (not expected.get('formal_test_result') or not expected.get('comparable_to_independent_ticr')
+                    or any(p.get('external_image_caption_access') is not False for p in preds)):
+                raise ValueError('Caption-assisted results cannot replace independent TICR: '+name)
+            if name.endswith('/guided'):
+                import hashlib
+                checksum=hashlib.sha256((ROOT/'models/scene-guided-vision/guidance.safetensors').read_bytes()).hexdigest()
+                selection=polarity.read(ROOT/'results/scene-guided-vision/final-selection.json')
+                if checksum!=selection['weights_sha256'] or any(p.get('guidance_sha256')!=checksum for p in preds):
+                    raise ValueError('Selected scene module/prediction SHA-256 mismatch')
         if not actual['complete_grouped_benchmark']:
             raise ValueError('Incomplete archived result: '+name)
         for group in ('overall','A','B'):

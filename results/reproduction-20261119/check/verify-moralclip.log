@@ -1,0 +1,8 @@
+{
+  "model": "anaaa2/moralclip-base",
+  "revision": "1e337922befebde3f0cadb5749f37ae9521a0751",
+  "path": "/root/autodl-tmp/moral-llava/workflow-clean-20261111/models/base/moralclip",
+  "checks": {
+    "weight_sha256": "4ace10e40a63343dc270afe776a0cc851d28dc36fd13417de07dccb12e4bac2a"
+  }
+}

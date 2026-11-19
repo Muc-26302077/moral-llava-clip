@@ -1,0 +1,68 @@
+{
+  "assembled_at": "2026-11-19T22:37:11.559631+08:00",
+  "project_root": "/root/autodl-tmp/moral-llava/workflow-clean-20261111",
+  "source_commit": "3fe38b89647d454fb4466ed3fe5b2b82a8fad686",
+  "source_note": "Snapshot assembled from the latest Nov 17 working tree and published with the unified evaluation workflow on branch new.",
+  "model_sources": {
+    "models/base/llava": "Copied with symlinks dereferenced from the pinned local HF cache snapshot b234b804b114d9e37bb655e11cbbb5f5e971b7a9",
+    "models/base/moralclip": "Copied from /root/autodl-tmp/moralclip-base; verified by scripts/download_models.py"
+  },
+  "scope": "Complete local SMID baseline/V2/R@1 inference assets and archived benchmark scores. External benchmark regeneration needs separate model/data downloads. Newer privacy experiment remains a separate located directory.",
+  "files": {
+    "run_scene_guided_vision.py": {
+      "bytes": 35188,
+      "sha256": "a5ed5bb30605b8f28263ab2ff6cda34ab70921c1d6b0bb50b77bc73507fd0a0a"
+    },
+    "moral_llava/scene_training_state.py": {
+      "bytes": 1653,
+      "sha256": "e2ce6339e29ff2f236de8256e557b3870cbea6251c475e537b259a7ea4ac94b1"
+    },
+    "run_metrics.py": {
+      "bytes": 8302,
+      "sha256": "7f300f9d39e212fff689fe6383355280a005f37a2b281bead1539f5c744dcd8a"
+    },
+    "requirements.txt": {
+      "bytes": 267,
+      "sha256": "1bd625e913240c91a3a719b0e335721adb2741eeaf908474e32149f92da8f115"
+    },
+    "data/polarity-v1/test.json": {
+      "bytes": 470775,
+      "sha256": "64a84a13a57df03c27648bef99c7988b810b0881dc7156d35f534e3446ab8756"
+    },
+    "models/moralclip-llava-polarity/adapter_model.safetensors": {
+      "bytes": 199837384,
+      "sha256": "318b609354f115162f14de9136005ded3cde31865dda8823559b1e0b79f79e2c"
+    },
+    "models/scene-guided-vision/guidance.safetensors": {
+      "bytes": 457856,
+      "sha256": "995469215a5930fe9c352870b058cefc373aac59958becc476ee730df8d8744d"
+    },
+    "README.md": {
+      "bytes": 19509,
+      "sha256": "9df7e7572fcd21b690f94dad7d60f7472ee9934242ff7d7277cc87a23c564c9c"
+    },
+    "复现指标指南.md": {
+      "bytes": 14143,
+      "sha256": "865dfae63b3471627039eb5e29e631b576193c3f1c6fe6ee13c8b5603c3a0564"
+    },
+    "本次整理与复测记录.md": {
+      "bytes": 3656,
+      "sha256": "306d19f520d71f3b92bbe384b126954b24e909d758730913119a8155833cbd1e"
+    }
+  },
+  "privacy_project": "/root/autodl-tmp/privacy_polarity_20261115",
+  "final_verified_at": "2026-11-19T23:00:00.782553+08:00",
+  "verification_reports": [
+    "results/reproduction-20261119/check/run.json",
+    "results/reproduction-20261119/archive/archive-verification.json",
+    "results/reproduction-20261119/main/verification.json",
+    "results/reproduction-20261119/privacy/verification.json"
+  ],
+  "publication": {
+    "repository": "https://github.com/Muc-26302077/moral-llava-clip",
+    "branch": "new",
+    "base_models": "Download pinned full models with scripts/download_models.py; trained project components use Git LFS.",
+    "evidence_directory": "results/reproduction-20261119",
+    "privacy_assets": "External frozen privacy dataset and checkpoint required for privacy commands."
+  }
+}

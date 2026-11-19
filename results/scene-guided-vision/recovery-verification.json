@@ -1,0 +1,8 @@
+{
+  "initial_step": 1,
+  "recovered_final_step": 2,
+  "parameters_changed_after_resume": true,
+  "frozen_visual_tensors_verified": 199,
+  "batch_size": 4,
+  "cuda_peak_allocated_gib": 14.022921085357666
+}

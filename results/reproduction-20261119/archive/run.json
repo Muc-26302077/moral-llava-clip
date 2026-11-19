@@ -1,0 +1,31 @@
+{
+  "command": "archive",
+  "python": "/root/autodl-tmp/moral-llava/workflow-clean-20261111/.venv/bin/python",
+  "project": "/root/autodl-tmp/moral-llava/workflow-clean-20261111",
+  "started_at": "2026-11-19T22:34:07.609054+08:00",
+  "output": "/root/autodl-tmp/moral-llava/workflow-clean-20261111/results/runs/project-archive-20261119",
+  "status": "complete",
+  "steps": [
+    {
+      "name": "repository",
+      "argv": [
+        "/root/autodl-tmp/moral-llava/workflow-clean-20261111/.venv/bin/python",
+        "scripts/verify_repository.py"
+      ],
+      "log": "repository.log",
+      "returncode": 0
+    },
+    {
+      "name": "archive",
+      "argv": [
+        "/root/autodl-tmp/moral-llava/workflow-clean-20261111/.venv/bin/python",
+        "scripts/verify_results.py",
+        "--output",
+        "/root/autodl-tmp/moral-llava/workflow-clean-20261111/results/runs/project-archive-20261119/archive-verification.json"
+      ],
+      "log": "archive.log",
+      "returncode": 0
+    }
+  ],
+  "finished_at": "2026-11-19T22:34:12.215080+08:00"
+}

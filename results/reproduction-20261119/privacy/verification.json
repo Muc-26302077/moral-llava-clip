@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "new_gpu_inference": true,
+  "prediction_count": 576,
+  "unique_ids": 576,
+  "exact_match_to_archived_metrics": true,
+  "metrics": {
+    "ticr": 0.7502164502164502,
+    "joint_accuracy": 0.7395021645021644,
+    "consistent_pairs": 217,
+    "pairs": 288,
+    "micro_ticr": 0.7534722222222222,
+    "image_accuracy": 0.8478282828282829,
+    "image_balanced_accuracy": 0.840943512770872,
+    "text_accuracy": 0.8809595959595959,
+    "text_balanced_accuracy": 0.8785054611200056
+  },
+  "ticr_retention_percent": 83.16736652669465
+}

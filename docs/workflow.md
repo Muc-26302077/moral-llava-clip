@@ -119,37 +119,37 @@ python run_moral_llava.py score \
 
 ## 5. 训练与评测创新结构
 
-**同场景语义新版：** 支持真实场景文字指导和无文字时预测语义条件，已完成 CPU 可行性诊断，正式7B收益待测，见[双模式视觉编码方案](scene-guided-vision.md)。以下命令与已发布权重对应旧问题条件版，正式历史成绩不变。
+当前版本为**同场景语义引导V2**。训练用真实场景描述监督图像侧512维语义预测器；无描述预测使用图像产生的语义条件，有描述时使用实际文字。在MoralCLIP第11块内以条件低秩残差调节空间token，任务问题仅用于正常问答解码。原视觉权重、投影器、LLaVA及既有语言LoRA冻结，rank32新增114,080参数。
 
-问题文本通过冻结的 LLaVA 输入嵌入提供条件，在 MoralCLIP 第11个编码块内部生成低秩残差的缩放和偏移；196个空间 token 受调节，CLS 不变。新增192,896参数，原模型全部冻结。推理时同样输入问题文本；当前实现不生成场景描述，也不生成整套编码器权重。详见 [结构与训练协议](protocols.md) 和 [成果文案](成果文案.md)。
-
-资源检查、小样本 GPU 检查、正式训练依次运行，使用不同输出目录：
+先完成GPU小样本检查，再训练和验证；各输出目录须为新目录：
 
 ```bash
-python run_text_guided_vision.py preflight \
+python run_scene_guided_vision.py preflight \
   --base-model "$LLAVA_MODEL" --moralclip-model "$MORALCLIP_MODEL"
-python run_text_guided_vision.py smoke \
+python run_scene_guided_vision.py smoke \
   --base-model "$LLAVA_MODEL" --moralclip-model "$MORALCLIP_MODEL" \
-  --output results/runs/guided-smoke
-python run_text_guided_vision.py experiment \
+  --output results/runs/scene-smoke
+python run_scene_guided_vision.py experiment --validation-only \
   --base-model "$LLAVA_MODEL" --moralclip-model "$MORALCLIP_MODEL" \
-  --output results/runs/guided
+  --checkpoint-every 50 --output results/runs/scene-train
 ```
 
-默认使用仓库的基线 adapter。要接着自己训练的模型实验，三个命令均增加 `--baseline-adapter results/runs/baseline/adapter`。模块会记录并验证实际基线哈希。`preflight` 可在 CPU 上运行，但需要完整本地模型；`smoke` 和 `experiment` 要求 CUDA。
+默认batch4、梯度累积2、学习率2e-4、3轮、seed42；评测batch1。损失包括答案CE、可靠性筛选的文本教师KL、场景语义对齐、描述辅助CE和残差保持。需要接着自己的基线训练时增加`--baseline-adapter results/runs/baseline/adapter`，之后保持相同基线。
 
-默认训练3轮、rank 32、batch 8、学习率5e-4。每轮在完整验证集选模，图像准确率和合法输出率不能低于基线；再按共同正确率、图像 BA、TICR 选择，零初始化第0轮也参与。选模锁定后评测测试集。结果、原始回答、选模信息和模块权重在运行目录内。
+每轮仅以独立输入验证集TICR选模，同时约束图像准确率、平衡准确率、共同正确率和合法输出率；第0轮参与。训练中断时，在保持原参数、模型、数据和源码不变的前提下，增加`--resume results/runs/scene-train/training-state.pt`并使用同一输出目录。恢复状态含优化器、随机状态和数据位置，每50个优化器步骤更新。
 
-加载已发布的实际训练终轮权重，并与同环境基线成对评测：
+选模后，按[完整说明中的selection.json加载示例](scene-guided-vision.md)锁定自己的checkpoint，再做一次正式评测。复现仓库已归档的所选模块时使用：
 
 ```bash
-python run_text_guided_vision.py infer \
+python run_scene_guided_vision.py infer \
   --base-model "$LLAVA_MODEL" --moralclip-model "$MORALCLIP_MODEL" \
-  --guidance models/text-guided-vision/epoch-3 \
-  --output results/runs/guided-final-evaluation
+  --guidance models/scene-guided-vision --evaluate-paired \
+  --output results/runs/scene-final-evaluation
 ```
 
-也可使用 `models/text-guided-vision/epoch-0` 复现验证所选零残差模型；自己的训练产物使用运行目录中 `selection.json` 记录的 checkpoint。每套残差必须搭配它训练时的 baseline adapter，混用会拒绝加载。当前终轮 TICR 89.84%，同次基线90.20%，尚未证明改善。
+本次两组GPU训练未产生合格候选，仓库模块为验证选中的第0轮；独立输入TICR与同次基线均为90.20%，不能作为训练收益。`paired-assisted`会读取真实场景文字，单独报告辅助一致率，不替代独立TICR。结果和限制见[最终对比](../results/scene-guided-vision/comparison.json)与[训练验证核验](../results/scene-guided-vision/training-summary.json)。
+
+旧问题条件版的权重与历史成绩保留为研究对照，见[旧模块说明](../models/text-guided-vision/README.md)；对应入口为`run_text_guided_vision.py`，不要与V2混用。
 
 下一步：[外部模型与结果复核](#6-外部-benchmark-与-moralise)。
 
@@ -199,7 +199,7 @@ python scripts/evaluate_moralise.py score \
 python scripts/verify_results.py --output results/runs/verification.json
 ```
 
-该命令复算10组 SMID 结果、MoralCLIP 双向 R@1 和7,441条 MORALISE 回答，并与归档指标逐组核对。成绩与限制见 [结果简报](results.md)。
+该命令复算12组 SMID 结果、MoralCLIP 双向 R@1 和7,441条 MORALISE 回答，并与归档指标逐组核对。成绩与限制见 [结果简报](results.md)。
 
 <a id="7-按需导出项目组交付数据"></a>
 

@@ -1,0 +1,62 @@
+{
+  "command": "check",
+  "python": "/root/autodl-tmp/moral-llava/workflow-clean-20261111/.venv/bin/python",
+  "project": "/root/autodl-tmp/moral-llava/workflow-clean-20261111",
+  "started_at": "2026-11-19T22:34:07.616997+08:00",
+  "output": "/root/autodl-tmp/moral-llava/workflow-clean-20261111/results/runs/project-check-20261119",
+  "status": "complete",
+  "steps": [
+    {
+      "name": "repository",
+      "argv": [
+        "/root/autodl-tmp/moral-llava/workflow-clean-20261111/.venv/bin/python",
+        "scripts/verify_repository.py"
+      ],
+      "log": "repository.log",
+      "returncode": 0
+    },
+    {
+      "name": "verify-llava",
+      "argv": [
+        "/root/autodl-tmp/moral-llava/workflow-clean-20261111/.venv/bin/python",
+        "scripts/download_models.py",
+        "llava",
+        "--verify-local",
+        "/root/autodl-tmp/moral-llava/workflow-clean-20261111/models/base/llava"
+      ],
+      "log": "verify-llava.log",
+      "returncode": 0
+    },
+    {
+      "name": "verify-moralclip",
+      "argv": [
+        "/root/autodl-tmp/moral-llava/workflow-clean-20261111/.venv/bin/python",
+        "scripts/download_models.py",
+        "moralclip",
+        "--verify-local",
+        "/root/autodl-tmp/moral-llava/workflow-clean-20261111/models/base/moralclip"
+      ],
+      "log": "verify-moralclip.log",
+      "returncode": 0
+    },
+    {
+      "name": "preflight",
+      "argv": [
+        "/root/autodl-tmp/moral-llava/workflow-clean-20261111/.venv/bin/python",
+        "run_scene_guided_vision.py",
+        "preflight",
+        "--base-model",
+        "/root/autodl-tmp/moral-llava/workflow-clean-20261111/models/base/llava",
+        "--moralclip-model",
+        "/root/autodl-tmp/moral-llava/workflow-clean-20261111/models/base/moralclip",
+        "--expected-baseline-sha256",
+        "318b609354f115162f14de9136005ded3cde31865dda8823559b1e0b79f79e2c",
+        "--output",
+        "/root/autodl-tmp/moral-llava/workflow-clean-20261111/results/runs/project-check-20261119/preflight"
+      ],
+      "log": "preflight.log",
+      "returncode": 0
+    }
+  ],
+  "finished_at": "2026-11-19T22:34:25.713297+08:00"
+}

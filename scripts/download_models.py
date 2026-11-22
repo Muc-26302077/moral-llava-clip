@@ -7,6 +7,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 ASSETS = {
+    'clip': ('openai/clip-vit-base-patch16', '57c216476eefef5ab752ec549e440a49ae4ae5f3', ['*.json','*.txt','pytorch_model.bin']),
     'moralclip': ('anaaa2/moralclip-base', '1e337922befebde3f0cadb5749f37ae9521a0751', ['*.json','*.txt','*.safetensors']),
     'llava': ('llava-hf/llava-1.5-7b-hf', 'b234b804b114d9e37bb655e11cbbb5f5e971b7a9', ['*.json','*.model','*.safetensors']),
     'qwen3-vl-8b': ('Qwen/Qwen3-VL-8B-Instruct', '0c351dd01ed87e9c1b53cbc748cba10e6187ff3b', ['*.json','*.safetensors','*.txt']),
@@ -31,6 +32,12 @@ def main():
     if args.model == 'llava':
         from moral_llava.pipeline import resolve_base
         path, checks = resolve_base(path, offline=True)
+    elif args.model == 'clip':
+        from moral_llava.common import sha
+        expected = 'ec89c7b09c749a60aae3c9cd910516f24b58214a7df060b48962d14c469cfbf0'
+        if sha(path/'pytorch_model.bin') != expected:
+            raise ValueError('CLIP SHA-256 mismatch')
+        checks = {'weight_sha256': expected}
     elif args.model == 'moralclip':
         from moral_llava.moralclip_integration import sha, WEIGHT_SHA256
         if sha(path/'model.safetensors') != WEIGHT_SHA256:

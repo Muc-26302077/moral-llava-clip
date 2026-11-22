@@ -1,5 +1,7 @@
 # 课题三：多模态大模型价值对齐与纠正方法研究
 
+**按测试大纲逐步运行：** 打开[测试大纲Notebook](notebooks/测试大纲逐步复现.ipynb)，从环境、数据检查到CLIP/MoralCLIP真实推理、隐私子集评测及结果导出依次执行；启动方法见[Notebook说明](notebooks/README.md)。共同正确率、TICR、检索保持率分别报告，缺少的验收步骤明确列为待补。
+
 **`new` 分支运行入口：** 见[复现指标指南](复现指标指南.md)与[最新复测记录](本次整理与复测记录.md)。`python run_metrics.py archive` 复算历史回答；`python run_metrics.py all` 重新运行GPU模型评测。训练后的基线与V2模块通过Git LFS提供，完整LLaVA与MoralCLIP基座按下列固定版本下载。
 
 ```bash
